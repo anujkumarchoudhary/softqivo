@@ -20,7 +20,7 @@ const Header = () => {
             onClick={() => router.push("/")}
             className="cursor-pointer capitalize text-[#FFFFFF]"
           >
-            SoftTech
+            SoftQivo
           </h2>
         </div>
         <div className="hidden lg:block">
