@@ -11,7 +11,7 @@ import { staticData } from "../utills/Data";
 
 const Pricing = () => {
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
-  const { heading, label, data } = staticData?.home?.pricingPlan || {};
+  const { headingParts, label, data } = staticData?.home?.pricingPlan || {};
 
   return (
     <section ref={ref} className="relative py-[3rem] lg:py-[6rem] w-full">
@@ -31,7 +31,8 @@ const Pricing = () => {
           <Heading
             textColor="#FFFFFF"
             isCenter
-            heading={heading}
+            isDart={true}
+            headingParts={headingParts}
             label={label}
             className="w-[100%] lg:w-[55%] mx-auto mb-8"
           />

@@ -2,7 +2,7 @@ import React from "react";
 import MaxWidth from "./layout/MaxWidth";
 import img2 from "../../public/images/pricing.jpg";
 import Image from "next/image";
-import Heading from "./common/Heading";
+// import Heading from "./common/Heading";
 import { staticData } from "../utills/Data";
 import { MdCheck } from "react-icons/md";
 import Button from "./common/Button";
@@ -21,7 +21,7 @@ const TeamWork = () => {
         />
       </div>
       <div className="py-[4rem] lg:py-12">
-        <Heading label="Dedicated Team Work" heading={title} />
+        {/* <Heading label="Dedicated Team Work" heading={title} /> */}
         <div className="pb-8">
           {description?.map((desc: any) => {
             return <p>{desc}</p>;

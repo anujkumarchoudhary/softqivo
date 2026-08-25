@@ -26,7 +26,23 @@ export const staticData = {
   home: {
     banner: {
       label: "Custom Software Development",
-      heading: "Build Powerful Digital Solutions That Grow Your Business",
+      headingParts: [
+        {
+          text: "Build Powerful Digital Solutions That ",
+          color: "#FFFFFF",
+          style: "normal",
+          size: "clamp(36px, 6vw, 64px)",
+          weight: "700",
+        },
+        {
+          text: "Grow Your Business",
+          color: "#FFFFFF",
+          // font: "playfair",
+          // style: "italic",
+          size: "clamp(36px, 6vw, 64px)",
+          weight: "700",
+        },
+      ],
       description:
         "We design and develop fast, scalable, and modern websites, web applications, and custom software tailored to your business needs.",
       button: "Get a Quote",
@@ -38,16 +54,28 @@ export const staticData = {
     },
     aboutUs: {
       label: "About Us",
-      heading:
-        "Welcome to our custom software development service For Any Needs",
+      headingParts: [
+        {
+          text: "Welcome to our custom software development service For Any Needs",
+          color: "#001845",
+          size: "clamp(24px, 4vw, 46px)",
+          weight: "700",
+        },
+      ],
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
     },
     whoWeAre: {
       image: "",
       label: "Who We Are",
-      heading:
-        "we specialize in providing tailor-made software solutions Custom Needed",
+      headingParts: [
+        {
+          text: "we specialize in providing tailor-made software solutions Custom Needed",
+          color: "#001845",
+          size: "clamp(24px, 4vw, 46px)",
+          weight: "700",
+        },
+      ],
       description: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
         "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident",
@@ -69,7 +97,14 @@ export const staticData = {
     },
     whatWeDo: {
       label: "What We Do",
-      heading: "Discover Our Best Service Provided From Expert",
+      headingParts: [
+        {
+          text: "Discover Our Best Service Provided From Expert",
+          color: "#001845",
+          size: "clamp(24px, 4vw, 46px)",
+          weight: "700",
+        },
+      ],
       data: [
         {
           icon: "",
@@ -100,7 +135,7 @@ export const staticData = {
           button: "Learn More",
         },
 
-                {
+        {
           icon: "",
           name: "Frontend Development",
           description:
@@ -132,15 +167,28 @@ export const staticData = {
     },
     bringIdea: {
       label: "Bring Your Ideas",
-      heading: "We Have Expertise To Build Customization Software From Idea",
+      headingParts: [
+        {
+          text: "We Have Expertise To Build Customization Software From Idea",
+          color: "#FFFFFF",
+          size: "clamp(24px, 4vw, 46px)",
+          weight: "700",
+        },
+      ],
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
       button: "Get a Quote",
     },
     expertSkill: {
       label: "Expert Skill We Have",
-      heading:
-        "we have the skills and expertise to deliver high-quality Custom software",
+      headingParts: [
+        {
+          text: "we have the skills and expertise to deliver high-quality Custom software",
+          color: "#001845",
+          size: "clamp(24px, 4vw, 46px)",
+          weight: "700",
+        },
+      ],
       description: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
@@ -149,7 +197,14 @@ export const staticData = {
     },
     takeTheTime: {
       label: "take the time to understand",
-      heading: "We work closely with you to develop a customized solution",
+      headingParts: [
+        {
+          text: "We work closely with you to develop a customized solution",
+          color: "#001845",
+          size: "clamp(24px, 4vw, 46px)",
+          weight: "700",
+        },
+      ],
       list: {
         name: "” Lorem ipsum dolor sit amet, consectetur adipiscing elit sed “",
         data: [
@@ -168,7 +223,14 @@ export const staticData = {
     },
     pricingPlan: {
       label: "Pricing Plan",
-      heading: "Choose Our Flexible Pricing Plan For Customizing Software",
+      headingParts: [
+        {
+          text: "Choose Our Flexible Pricing Plan For Customizing Software",
+          color: "#FFFFFF",
+          size: "clamp(24px, 4vw, 46px)",
+          weight: "700",
+        },
+      ],
       data: [
         {
           label: "Starter",
@@ -210,8 +272,14 @@ export const staticData = {
     },
     dedicatedSupport: {
       label: "Dedicated Support",
-      heading:
-        "We provide dedicated support throughout the development process and beyond",
+      headingParts: [
+        {
+          text: "We provide dedicated support throughout the development process and beyond",
+          color: "#001845",
+          size: "clamp(24px, 4vw, 46px)",
+          weight: "700",
+        },
+      ],
       data: [
         {
           //   icon: <TbClock24 />,
@@ -227,7 +295,14 @@ export const staticData = {
     },
     feedbacks: {
       label: "Feedback",
-      heading: "We provide our clients with the most innovative and effective",
+      headingParts: [
+        {
+          text: "We provide our clients with the most innovative and effective",
+          color: "#001845",
+          size: "clamp(24px, 4vw, 46px)",
+          weight: "700",
+        },
+      ],
       data: [
         {
           img: feedback01,
@@ -258,7 +333,14 @@ export const staticData = {
   },
   contact: {
     label: "Stay Tuned With us",
-    heading: "Get Information & Lets Get In Touch With Our Team",
+    headingParts: [
+      {
+        text: "Get Information & Lets Get In Touch With Our Team",
+        color: "#001845",
+        size: "clamp(24px, 4vw, 46px)",
+        weight: "700",
+      },
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
     button: "Send Message",

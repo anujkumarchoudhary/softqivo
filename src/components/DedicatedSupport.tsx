@@ -13,7 +13,7 @@ import { staticData } from "../utills/Data";
 
 const DedicatedSupport = () => {
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
-  const { label, heading, data } = staticData.home.dedicatedSupport;
+  const { label, headingParts, data } = staticData.home.dedicatedSupport;
 
   return (
     <section
@@ -26,7 +26,7 @@ const DedicatedSupport = () => {
           className={`transition-all duration-1000
           ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
         >
-          <Heading heading={heading} label={label} />
+          <Heading headingParts={headingParts} label={label} />
 
           <div
             className={`relative pt-[2rem] transition-all duration-1000 delay-200

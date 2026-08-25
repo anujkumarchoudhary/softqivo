@@ -12,7 +12,7 @@ import { staticData } from "../utills/Data";
 
 const ExpertSkill = () => {
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
-  const { heading, label, description, button } =
+  const { headingParts, label, description, button } =
     staticData.home?.expertSkill || {};
 
   return (
@@ -33,7 +33,7 @@ const ExpertSkill = () => {
             className={`transition-all duration-1000 delay-200
             ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
           >
-            <Heading heading={heading} label={label} />
+            <Heading headingParts={headingParts} label={label} />
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-[1rem] lg:gap-[4rem]  mt-8">

@@ -10,17 +10,17 @@ import { staticData } from "../utills/Data";
 
 const WhoWeAre = () => {
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
-  const { label, heading, description, data } = staticData.home?.whoWeAre;
+  const { label, headingParts, description, data } = staticData.home?.whoWeAre;
 
   return (
     <section ref={ref} className="bg-[#F9F9F9]">
       <MaxWidth className="grid grid-cols-1 overflow-hidden lg:grid-cols-3 gap-2 py-[4rem] lg:py-[6rem]">
         {/* LEFT CONTENT */}
         <div
-          className={`col-span-2 my-auto transition-all duration-1000
+          className={`col-span-2 space-y-10 my-auto transition-all duration-1000
           ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}
         >
-          <Heading label={label} heading={heading} />
+          <Heading label={label} headingParts={headingParts} />
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[1rem] lg:gap-[4rem]">
             {/* Overview Card */}

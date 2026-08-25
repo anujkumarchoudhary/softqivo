@@ -13,7 +13,7 @@ import { staticData } from "../utills/Data";
 
 const TakeTheTime = () => {
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
-  const { heading, label, list, details } = staticData?.home.takeTheTime || {};
+  const { headingParts, label, list, details } = staticData?.home.takeTheTime || {};
 
   return (
     <section ref={ref} className="py-[3rem] lg:py-[6rem]">
@@ -25,7 +25,7 @@ const TakeTheTime = () => {
             className={`w-[100%] lg:w-[50%] transition-all duration-1000
             ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
           >
-            <Heading heading={heading} label={label} />
+            <Heading headingParts={headingParts} label={label} />
           </div>
 
           {/* IMAGE */}

@@ -18,7 +18,7 @@ const WhatWeDo = (service: any) => {
         <Heading
           isCenter
           label={service?.data?.label}
-          heading={service?.data?.heading}
+          headingParts={service?.data?.headingParts}
           className="w-[100%] lg:w-[50%] mx-auto"
         />
 

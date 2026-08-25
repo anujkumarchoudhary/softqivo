@@ -14,12 +14,12 @@ const Button = ({
     <div className={`flex gap-2 ${className}`}>
       <div
         onClick={handleClick}
-        className={`bg-[#0466C8] text-center ${widthClass} font-semibold uppercase text-[#FFFFFF] px-6 lg:px-12 py-[0.85rem] cursor-pointer hover:scale-105 text-[16px] transition-transform`}
+        className={`bg-[#0466C8] text-center ${widthClass} font-semibold uppercase text-[#FFFFFF] px-6 lg:px-15 py-[0.85rem] cursor-pointer hover:scale-105 rounded-full text-[16px] transition-transform`}
       >
         {name}
       </div>
       {is2button && (
-        <div className="bg-transparent text-[16px] border-2 border-white font-semibold uppercase text-white px-6 lg:px-12 py-[0.85rem] cursor-pointer hover:scale-105 transition-transform">
+        <div className="bg-transparent rounded-full text-[16px] border border-white font-semibold uppercase text-white px-6 lg:px-15 py-[0.85rem] cursor-pointer hover:scale-105 transition-transform">
           {name2}
         </div>
       )}

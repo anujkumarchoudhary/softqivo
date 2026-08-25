@@ -36,7 +36,7 @@ const data = [
 const Feedback = () => {
   const [active, setActive] = useState(1);
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
-  const { heading, label, data } = staticData.home?.feedbacks || {};
+  const { headingParts, label, data } = staticData.home?.feedbacks || {};
 
   return (
     <section ref={ref} className="py-[2rem] py-[6rem] bg-[#F9F9F9]">
@@ -48,7 +48,7 @@ const Feedback = () => {
         >
           <Heading
             isCenter
-            heading={heading}
+            headingParts={headingParts}
             label={label}
             className="w-[100%] lg:w-[60%] mx-auto"
           />
