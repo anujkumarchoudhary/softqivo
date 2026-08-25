@@ -13,7 +13,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="bg-[#001845]">
-      <MaxWidth className="flex justify-between h-[10vh] items-center py-4 text-white">
+      <MaxWidth className="flex justify-between h-[9vh] lg:h-[10vh] items-center py-2.5 lg:py-4 text-white">
         <div onClick={() => router.push("/")} className="cursor-pointer">
           <Image
             src={logo}
@@ -25,12 +25,6 @@ const Header = () => {
               height: "auto",
             }}
           />
-          {/* <h2
-            onClick={() => router.push("/")}
-            className="cursor-pointer capitalize text-[#FFFFFF]"
-          >
-            SoftQivo
-          </h2> */}
         </div>
         <div className="hidden lg:block">
           {menuData?.map((menu, idx) => {
@@ -56,24 +50,6 @@ const Header = () => {
           size={35}
           className="block lg:hidden cursor-pointer"
         />
-        {/* {open && (
-          <div className="absolute top-[70px] h-[100vh] left-0 w-full bg-white shadow-lg flex flex-col items-left p-6 gap-4 lg:hidden z-50">
-            {menuData?.map((menu, idx) => {
-              return (
-                <span
-                  key={idx}
-                  onClick={() => {
-                    router.push(menu.link);
-                    setOpen(false);
-                  }}
-                  className="uppercase w-fit text-[#000000] cursor-pointer text-lg font-semibold hover:text-blue-600 transition"
-                >
-                  {menu.title}
-                </span>
-              );
-            })}
-          </div>
-        )} */}
       </MaxWidth>
     </div>
   );
