@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <div className="bg-[#001845]">
       <MaxWidth className="flex justify-between h-[10vh] items-center py-4 text-white">
-        <div>
+        <div onClick={() => router.push("/")} className="cursor-pointer">
           <Image
             src={logo}
             width={225}
@@ -24,7 +24,7 @@ const Header = () => {
               width: "clamp(140px, 18vw, 225px)",
               height: "auto",
             }}
-          />{" "}
+          />
           {/* <h2
             onClick={() => router.push("/")}
             className="cursor-pointer capitalize text-[#FFFFFF]"
