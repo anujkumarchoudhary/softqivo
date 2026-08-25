@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import MaxWidth from "./MaxWidth";
-import logo from "../../../public/logo-cetech.png";
+import logo from "../../../public/softqivo.png";
 import Image from "next/image";
 import { menuData } from "@/src/data/menu";
 import Button from "../common/Button";
@@ -15,13 +15,13 @@ const Header = () => {
     <div className="bg-[#001845]">
       <MaxWidth className="flex justify-between h-[10vh] items-center py-4 text-white">
         <div>
-          {/* <Image src={logo} width={200} height={40} alt="logo" /> */}
-          <h2
+          <Image src={logo} width={225} height={50} alt="logo" />
+          {/* <h2
             onClick={() => router.push("/")}
             className="cursor-pointer capitalize text-[#FFFFFF]"
           >
             SoftQivo
-          </h2>
+          </h2> */}
         </div>
         <div className="hidden lg:block">
           {menuData?.map((menu, idx) => {
