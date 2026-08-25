@@ -31,7 +31,7 @@ export const staticData = {
           text: "Build Powerful Digital Solutions That ",
           color: "#FFFFFF",
           style: "normal",
-          size: "clamp(30px, 6vw, 64px)",
+          size: "clamp(32px, 6vw, 64px)",
           weight: "700",
         },
         {
@@ -39,7 +39,7 @@ export const staticData = {
           color: "#FFFFFF",
           // font: "playfair",
           // style: "italic",
-          size: "clamp(30px, 6vw, 64px)",
+          size: "clamp(32px, 6vw, 64px)",
           weight: "700",
         },
       ],
