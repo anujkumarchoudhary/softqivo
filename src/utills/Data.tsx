@@ -26,9 +26,9 @@ export const staticData = {
   home: {
     banner: {
       label: "Custom Software Development",
-      heading: "specialize in providing custom software solutions unique needs",
+      heading: "Build Powerful Digital Solutions That Grow Your Business",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+        "We design and develop fast, scalable, and modern websites, web applications, and custom software tailored to your business needs.",
       button: "Get a Quote",
       button2: "See Projects",
     },
