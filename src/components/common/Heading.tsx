@@ -109,7 +109,7 @@ const Heading = ({
       {description && (
         <p
           className={`
-            text-[20px]
+            text-[16px] lg:text-[20px]
             transition-all duration-700 delay-300
             ${description && "mt-10"}
             ${
