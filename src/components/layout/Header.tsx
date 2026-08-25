@@ -21,7 +21,7 @@ const Header = () => {
             height={50}
             alt="logo"
             style={{
-              width: "clamp(140px, 18vw, 225px)",
+              width: "clamp(180px, 18vw, 225px)",
               height: "auto",
             }}
           />
