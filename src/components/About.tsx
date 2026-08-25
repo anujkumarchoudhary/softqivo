@@ -16,7 +16,7 @@ import { staticData } from "../utills/Data";
 const About = () => {
   const users = [about3, about3, about3];
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
-  const { label, heading, description } = staticData.home.aboutUs;
+  const { label, headingParts, description } = staticData.home.aboutUs;
 
   return (
     <section ref={ref}>
@@ -62,7 +62,7 @@ const About = () => {
           className={`my-auto transition-all duration-1000 delay-200
           ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}
         >
-          <Heading label={label} heading={heading} description={description} />
+          <Heading label={label} headingParts={headingParts} description={description} />
 
           <div className="flex gap-4 py-6">
             <span className="w-2 h-12 bg-[#001845]" />

@@ -11,6 +11,20 @@
   --text-color: #4b5563;
 }
 
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--text-color);
+    font-family: var(--font-kanit), sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-playfair {
+    font-family: var(--font-playfair-display);
+  }
+}
+
 /* ================================
    BASE TYPOGRAPHY
 ================================ */

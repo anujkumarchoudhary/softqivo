@@ -1,5 +1,5 @@
 import React from "react";
-import Heading from "./common/Heading";
+// import Heading from "./common/Heading";
 import MaxWidth from "./layout/MaxWidth";
 import Image from "next/image";
 import img from "../../public/images/pricing.jpg";

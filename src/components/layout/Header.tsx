@@ -15,7 +15,16 @@ const Header = () => {
     <div className="bg-[#001845]">
       <MaxWidth className="flex justify-between h-[10vh] items-center py-4 text-white">
         <div>
-          <Image src={logo} width={225} height={50} alt="logo" />
+          <Image
+            src={logo}
+            width={225}
+            height={50}
+            alt="logo"
+            style={{
+              width: "clamp(140px, 18vw, 225px)",
+              height: "auto",
+            }}
+          />{" "}
           {/* <h2
             onClick={() => router.push("/")}
             className="cursor-pointer capitalize text-[#FFFFFF]"

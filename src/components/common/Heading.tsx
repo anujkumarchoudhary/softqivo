@@ -1,64 +1,131 @@
-"use client";
-import React from "react";
-import Button from "./Button";
-import { useInViewOnce } from "@/src/hooks/useInViewOnce";
+type HeadingPart = {
+  text: string;
+  color?: string;
+  font?: string;
+  style?: string;
+  size?: string;
+  weight?: string;
+};
 
-export interface HeadingProps {
-  heading: string;
-  isHeadingH1?: boolean;
-  description?: string;
+type HeadingProps = {
   label?: string;
-  isCenter?: boolean;
-  className?: string;
+  description?: string;
+  headingParts: HeadingPart[];
+
   textColor?: string;
-  isButton?: boolean;
-}
+  descColor?: string;
+
+  labelBorderStart?: string;
+  labelBorderEnd?: string;
+  isDart?: boolean;
+  isCenter?: boolean;
+  isVisible?: boolean;
+
+  className?: string;
+  as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+};
+
+const fontMap: Record<string, string> = {
+  playfair: "var(--font-playfair-display)",
+  geist: "var(--font-geist-sans)",
+  "geist-mono": "var(--font-geist-mono)",
+  kanit: "var(--font-kanit)",
+};
 
 const Heading = ({
   label,
-  heading,
-  isHeadingH1,
   description,
-  isCenter,
-  className,
-  textColor,
-  isButton,
+  headingParts,
+  textColor = "#000000",
+  isDart = false,
+  isCenter = false,
+  isVisible = true,
+  className = "",
+  as: Tag = "h1",
 }: HeadingProps) => {
-  const { ref, isVisible } = useInViewOnce<HTMLDivElement>();
-
   return (
-    <div ref={ref} className={`space-y-[2rem] text-[#001845] ${className}`}>
-      <span
-        className={`uppercase w-full inline-block tracking-wides text-sm font-semibold text-[${textColor || "#000000"}] ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"} ${
-          isCenter ? "mx-auto flex justify-center text-center" : ""
-        }`}
-      >
-        {label}
-      </span>
-      {isHeadingH1 ? (
-        <h1
-          className={`capitalize leading-tight text-[${textColor || "#001845"}] ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"} ${
-            isCenter ? "mx-auto flex justify-center text-center" : ""
-          }`}
+    <div className={`${isCenter ? "text-center" : ""}`}>
+      {/* Label */}
+      {label && (
+        <div
+          className={`
+      inline-block rounded-full
+      transition-all duration-700
+      border ${isDart ? "border-[#FFFFFF]/50" : "border-[#000000]/50"} 
+      ${label && "mb-5"}
+      ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
+    `}
         >
-          {heading}
-        </h1>
-      ) : (
-        <h2
-          className={`capitalize text-[${textColor || "#001845"}] ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"} ${
-            isCenter ? "mx-auto flex justify-center text-center" : ""
-          }`}
-        >
-          {heading}
-        </h2>
+          <span
+            className={`
+        uppercase inline-block
+        rounded-full
+        bg-transparent
+        px-5 py-2
+        tracking-widest
+        text-[12px]
+        lg:text-[15px]
+        font-semibold
+        ${isCenter ? "text-center" : ""}
+      `}
+            style={{
+              color: textColor,
+            }}
+          >
+            {label}
+          </span>
+        </div>
       )}
 
-      <p
-        className={`text-[${textColor || "#000000"}] ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+      {/* Heading */}
+      <Tag
+        className={`
+          transition-all duration-700 delay-150
+          ${className}
+          ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }
+        `}
       >
-        {description}
-      </p>
-      {isButton && <Button name="Get a Quote" />}
+        {headingParts.map((part, index) => (
+          <span
+            key={index}
+            style={{
+              color: part.color,
+              fontFamily: part.font
+                ? fontMap[part.font] || part.font
+                : undefined,
+              fontStyle: part.style,
+              fontSize: part.size,
+              fontWeight: part.weight,
+            }}
+          >
+            {part.text}
+          </span>
+        ))}
+      </Tag>
+
+      {/* Description */}
+      {description && (
+        <p
+          className={`
+            text-[20px]
+            transition-all duration-700 delay-300
+            ${description && "mt-10"}
+            ${
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
+            }
+            ${isCenter ? "mx-auto text-center" : ""}
+          `}
+          style={{
+            color: textColor,
+          }}
+        >
+          {description}
+        </p>
+      )}
     </div>
   );
 };

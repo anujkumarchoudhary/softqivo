@@ -4,7 +4,7 @@ import img from "../../public/images/whowe.jpg";
 import img2 from "../../public/images/pricing.jpg";
 
 import Image from "next/image";
-import Heading from "./common/Heading";
+// import Heading from "./common/Heading";
 import { staticData } from "../utills/Data";
 import { MdCheck } from "react-icons/md";
 
@@ -17,7 +17,7 @@ const PointOfService = () => {
         <Image src={img} fill alt="point of service" className="object-fill" />
       </div>
       <div className="col-span-2 py-12">
-        <Heading heading={title} isButton={true} />
+        {/* <Heading heading={title} isButton={true} /> */}
         <div className="grid grid-cols-1 lg:grid-cols-3 py-4 lg:py-8 gap-[2rem]">
           <div className="col-span-2">
             {description?.map((desc: any) => {

@@ -59,7 +59,14 @@ const Blog = () => {
         >
           <Heading
             isCenter
-            heading="Let's Read Our Blog Post Content & Writing Resource"
+            headingParts={[
+              {
+                text: "Let's Read Our Blog Post Content & Writing Resource",
+                color: "#001845",
+                size: "clamp(24px, 4vw, 46px)",
+                weight: "700",
+              },
+            ]}
             label="Blog Content"
             className="w-[100%] lg:w-[60%] mx-auto"
           />

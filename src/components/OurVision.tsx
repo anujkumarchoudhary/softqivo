@@ -10,11 +10,16 @@ import { PiCode } from "react-icons/pi";
 const OurVision = () => {
   return (
     <div className="bg-[#F9F9F9] py-[3rem] lg:py-[6rem]">
-      <MaxWidth>
+      <MaxWidth className="space-y-10"> 
         <Heading
-          heading={
-            "stay up-to-date with the latest technologies and industry trends"
-          }
+          headingParts={[
+            {
+              text: "stay up-to-date with the latest technologies and industry trends",
+              color: "#001845",
+              size: "clamp(24px, 4vw, 46px)",
+              weight: "700",
+            },
+          ]}
           label={"Our Vission"}
           className="w-[75%]"
         />

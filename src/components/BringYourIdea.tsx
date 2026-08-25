@@ -10,7 +10,7 @@ import { staticData } from "../utills/Data";
 
 const BringYourIdea = () => {
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
-  const { heading, label, description } = staticData.home?.bringIdea || {};
+  const { headingParts, label, description } = staticData.home?.bringIdea || {};
 
   return (
     <section ref={ref} className="relative py-[3rem] lg:py-[6rem] w-full overflow-hidden">
@@ -24,10 +24,9 @@ const BringYourIdea = () => {
       <MaxWidth className="relative grid grid-cols-1 lg:grid-cols-2 gap-[2rem] z-10 h-full">
         <div className="flex h-ful items-center">
           <Heading
+          isDart={true}
             textColor="#FFFFFF"
-            isHeadingH1={true}
-            isButton
-            heading={heading}
+            headingParts={headingParts}
             label={label}
             description={description}
           />

@@ -1,6 +1,6 @@
 import React from "react";
 import MaxWidth from "./layout/MaxWidth";
-import Heading from "./common/Heading";
+// import Heading from "./common/Heading";
 import { staticData } from "../utills/Data";
 import { MdCheck } from "react-icons/md";
 import Image from "next/image";
@@ -14,7 +14,7 @@ const WeCreate = () => {
     <div className="bg-[#f9f9f9]">
       <MaxWidth className="grid grid-cols-1 lg:grid-cols-2 py-[2.5rem] lg:py-[6rem] gap-[1rem] lg:gap-[4rem]">
         <div className="">
-          <Heading heading={title} />
+          {/* <Heading heading={title} /> */}
           {description?.map((desc: any) => {
             return <p className="my-4">{desc}</p>;
           })}
