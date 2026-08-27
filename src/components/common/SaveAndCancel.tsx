@@ -34,7 +34,7 @@ const SaveAndCancel = ({
           from-[#A855F7]
           to-[#2563EB]
           px-5 py-3
-          text-[18px]
+          text-[16px]
           sm:text-[18px]
           font-medium
           text-white
@@ -69,7 +69,7 @@ const SaveAndCancel = ({
           border border-white/20
           bg-white/[0.02]
           px-5 py-3
-          text-[18px]
+          text-[16px]
           sm:text-[18px]
           font-medium
           text-white
