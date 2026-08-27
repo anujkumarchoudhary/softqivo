@@ -7,6 +7,8 @@ import Button from "./Button";
 import { useInViewOnce } from "@/src/hooks/useInViewOnce";
 import { staticData } from "@/src/utills/Data";
 import Heading from "./Heading";
+import banner_img from "../../../public/images/home/banner_image_2.png";
+import SaveAndCancel from "./SaveAndCancel";
 
 const Banner = () => {
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
@@ -16,40 +18,36 @@ const Banner = () => {
   return (
     <section
       ref={ref}
-      className="relative py-[4rem] lg:py-[8rem] w-full overflow-hidden"
+      className="relative h-[90vh] bg-primary-bg  w-full overflow-hidden"
     >
-      {/* Background Image */}
-      <Image
-        src={img}
-        alt="Banner"
-        fill
-        priority
-        className="object-cover lg:object-[center_10%]"
-      />
-
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#001845]/100 via-[#001845]/65 to-transparent" />
-
       {/* Content */}
-      <MaxWidth className="relative z-10 h-full">
-        <div className="flex h-full items-center">
-          <div className="max-w-3xl space-y-[2rem] text-white">
-            <Heading
-              isDart={true}
-              label={label}
-              textColor="#FFFFFF"
-              headingParts={headingParts}
-              description={description}
-            />
+      <MaxWidth className="grid mt-[10vh] grid-cols-1 lg:grid-cols-2 items-center justify-between gap-8 relative z-10">
+        <div className=" space-y-[2rem] text-white">
+          <Heading
+            isDart={true}
+            label={label}
+            textColor="#FFFFFF"
+            isGradient={true}
+            headingParts={headingParts}
+            description={description}
+          />
 
-            {/* Buttons */}
-            <div
-              className={`flex gap-4 transition-all duration-700 delay-500
+          {/* Buttons */}
+          <div
+            className={`flex gap-4 transition-all duration-700 delay-500
               ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
-            >
-              <Button name={button} name2={button2} is2button={true} />
-            </div>
+          >
+            {/* <Button name={button} name2={button2} is2button={true} /> */}
+            <SaveAndCancel
+              saveText="Start a Project"
+              cancelText="Explore Our Work"
+              saveHref="/contact"
+              cancelHref="/work"
+            />
           </div>
+        </div>
+        <div className="">
+          <Image src={banner_img} alt="Banner Image" />
         </div>
       </MaxWidth>
     </section>

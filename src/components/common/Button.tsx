@@ -1,27 +1,56 @@
 import React from "react";
+import { IoMdArrowForward } from "react-icons/io";
+
+interface ButtonProps {
+  name: string;
+  name2?: string;
+  is2button?: boolean;
+  buttonWidth?: "full" | "auto";
+  className?: string;
+  handleClick?: () => void;
+}
 
 const Button = ({
   name,
   name2,
   is2button,
-  buttonWidth,
-  className,
+  buttonWidth = "auto",
+  className = "",
   handleClick,
-}: any) => {
-  const widthClass = buttonWidth === "full" ? "w-full" : "w-auto";
+}: ButtonProps) => {
+  const widthClass = buttonWidth === "full" ? "w-full" : "w-fit";
 
   return (
-    <div className={`flex gap-2 ${className}`}>
-      <div
+    <div className={`flex flex-wrap items-center gap-4 ${className}`}>
+      {/* Primary Button */}
+      <button
+        type="button"
         onClick={handleClick}
-        className={`bg-[#0466C8] text-center ${widthClass} font-semibold uppercase text-[#FFFFFF] px-6 lg:px-15 py-[0.85rem] cursor-pointer hover:scale-105 rounded-full text-[16px] transition-transform`}
+        className={`gradient-border-btn group ${widthClass}`}
       >
-        {name}
-      </div>
+        <span className="gradient-border-btn-content">
+          {name}
+
+          <span className="gradient-arrow">
+            <IoMdArrowForward/>
+          </span>
+        </span>
+      </button>
+
+      {/* Secondary Button */}
       {is2button && (
-        <div className="bg-transparent rounded-full text-[16px] border border-white font-semibold uppercase text-white px-6 lg:px-15 py-[0.85rem] cursor-pointer hover:scale-105 transition-transform">
-          {name2}
-        </div>
+        <button
+          type="button"
+          className={`gradient-border-btn group ${widthClass}`}
+        >
+          <span className="gradient-border-btn-content">
+            {name2}
+
+            <span className="gradient-arrow">
+              →
+            </span>
+          </span>
+        </button>
       )}
     </div>
   );

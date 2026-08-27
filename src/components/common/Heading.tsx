@@ -5,6 +5,7 @@ type HeadingPart = {
   style?: string;
   size?: string;
   weight?: string;
+  gradient?: string;
 };
 
 type HeadingProps = {
@@ -20,6 +21,8 @@ type HeadingProps = {
   isDart?: boolean;
   isCenter?: boolean;
   isVisible?: boolean;
+  isGradient?: boolean;
+  gradient?: string;
 
   className?: string;
   as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
@@ -40,6 +43,8 @@ const Heading = ({
   isDart = false,
   isCenter = false,
   isVisible = true,
+  isGradient = false,
+  gradient,
   className = "",
   as: Tag = "h1",
 }: HeadingProps) => {
@@ -48,20 +53,20 @@ const Heading = ({
       {/* Label */}
       {label && (
         <div
-          className={`
-      inline-block rounded-full
-      transition-all duration-700
-      border ${isDart ? "border-[#FFFFFF]/50" : "border-[#000000]/50"} 
-      ${label && "mb-5"}
-      ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
-    `}
+        //       className={`
+        //   inline-block rounded-full
+        //   transition-all duration-700
+        //   border ${isDart ? "border-[#FFFFFF]/50" : "border-[#000000]/50"}
+        //   ${label && "mb-5"}
+        //   ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
+        // `}
         >
           <span
             className={`
         uppercase inline-block
         rounded-full
         bg-transparent
-        px-5 py-2
+        px-0 py-2
         tracking-widest
         text-[12px]
         lg:text-[15px]
@@ -87,22 +92,38 @@ const Heading = ({
           }
         `}
       >
-        {headingParts.map((part, index) => (
-          <span
-            key={index}
-            style={{
-              color: part.color,
-              fontFamily: part.font
-                ? fontMap[part.font] || part.font
-                : undefined,
-              fontStyle: part.style,
-              fontSize: part.size,
-              fontWeight: part.weight,
-            }}
-          >
-            {part.text}
-          </span>
-        ))}
+        {headingParts.map((part, index) => {
+          const isPartGradient = Boolean(part.gradient);
+
+          return (
+            <span
+              key={index}
+              style={{
+                // Normal color when no gradient
+                color: isPartGradient ? "transparent" : part.color,
+
+                // Gradient only for this part
+                backgroundImage: isPartGradient ? part.gradient : undefined,
+
+                backgroundClip: isPartGradient ? "text" : undefined,
+
+                WebkitBackgroundClip: isPartGradient ? "text" : undefined,
+
+                WebkitTextFillColor: isPartGradient ? "transparent" : undefined,
+
+                fontFamily: part.font
+                  ? fontMap[part.font] || part.font
+                  : undefined,
+
+                fontStyle: part.style,
+                fontSize: part.size,
+                fontWeight: part.weight,
+              }}
+            >
+              {part.text}
+            </span>
+          );
+        })}
       </Tag>
 
       {/* Description */}
