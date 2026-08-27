@@ -13,7 +13,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="bg-primary-bg w-full sticky top-0 z-50">
-      <MaxWidth className="flex justify-between h-[9vh] lg:h-[11vh] items-center py-2.5 lg:py-4 text-white">
+      <MaxWidth className="flex justify-between h-[11vh] lg:h-[11vh] items-center py-2.5 lg:py-4 text-white">
         <div onClick={() => router.push("/")} className="cursor-pointer">
           <Image
             src={logo}

@@ -42,7 +42,7 @@ export const staticData = {
           color: "#FFFFFF",
           style: "normal",
           size: "clamp(32px, 6vw, 54px)",
-          weight: "600",
+          weight: "700",
         },
         {
           text: "Grow Your Business",
@@ -50,7 +50,7 @@ export const staticData = {
           // font: "playfair",
           // style: "italic",
           size: "clamp(32px, 6vw, 54px)",
-          weight: "600",
+          weight: "700",
           gradient:
             "linear-gradient(90deg, #A855F7 0%, #7C3AED 50%, #2563EB 100%)",
         },
