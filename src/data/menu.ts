@@ -3,7 +3,6 @@ export const menuData = [
   { title: "Services", link: "/service" },
   { title: "Blog", link: "/blog" },
   { title: "Portfolio", link: "/portfolio" },
-  { title: "Pricing", link: "/pricing" },
   { title: "Contact", link: "/contact" },
 ];
 

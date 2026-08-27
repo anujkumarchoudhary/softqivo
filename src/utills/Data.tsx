@@ -25,22 +25,24 @@ type SupportItem = {
 export const staticData = {
   home: {
     banner: {
-      label: "Custom Software Development",
+      label: "SOFTWARE • DESIGN • INNOVATION",
       headingParts: [
         {
           text: "Build Powerful Digital Solutions That ",
           color: "#FFFFFF",
           style: "normal",
-          size: "clamp(32px, 6vw, 64px)",
-          weight: "700",
+          size: "clamp(32px, 6vw, 54px)",
+          weight: "600",
         },
         {
           text: "Grow Your Business",
           color: "#FFFFFF",
           // font: "playfair",
           // style: "italic",
-          size: "clamp(32px, 6vw, 64px)",
-          weight: "700",
+          size: "clamp(32px, 6vw, 54px)",
+          weight: "600",
+          gradient:
+            "linear-gradient(90deg, #A855F7 0%, #7C3AED 50%, #2563EB 100%)",
         },
       ],
       description:

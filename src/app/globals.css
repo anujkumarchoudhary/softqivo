@@ -4,19 +4,31 @@
    ROOT VARIABLES
 ================================ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Dark / Primary */
+  --primary-bg: #030307;
+  --secondary-bg: #ffffff;
 
   --heading-color: #111827;
   --text-color: #4b5563;
 }
 
-@layer base {
-  body {
-    background: var(--background);
-    color: var(--text-color);
-    font-family: var(--font-kanit), sans-serif;
-  }
+@theme {
+  --color-primary-bg: #030307;
+  --color-secondary-bg: #ffffff;
+
+  /* Text */
+  --color-primary-color: #030307;
+  --color-secondary-color: #FFFFFF;
+
+  /* Brand */
+  --color-brand-purple: #7c3aed;
+  --color-brand-blue: #2563eb;
+
+  --color-heading: #111827;
+  --color-text: #4b5563;
+
+  --color-brand-purple: #7c3aed;
+  --color-brand-blue: #2563eb;
 }
 
 @layer utilities {
@@ -30,7 +42,7 @@
 ================================ */
 @layer base {
   body {
-    background: var(--background);
+    background: var(--secondary-bg);
     color: var(--text-color);
     font-family: var(--font-kanit), sans-serif;
   }
@@ -105,4 +117,126 @@
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
+}
+
+
+/* =================================
+   SOFTQIVO RUNNING GRADIENT BORDER
+================================= */
+
+.gradient-border-btn {
+  position: relative;
+  display: inline-flex;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  isolation: isolate;
+  cursor: pointer;
+
+  background: transparent;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Rotating gradient layer */
+.gradient-border-btn::before {
+  content: "";
+  position: absolute;
+  inset: -100%;
+  z-index: -2;
+
+  background: conic-gradient(
+    from 0deg,
+    #7c3aed,
+    #a855f7,
+    #2563eb,
+    #06b6d4,
+    #2563eb,
+    #a855f7,
+    #7c3aed
+  );
+
+  animation: softqivo-border-rotate 3s linear infinite;
+}
+
+/* Dark mask - creates the actual border */
+.gradient-border-btn::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  z-index: -1;
+
+  border-radius: 9px;
+  background: #030307;
+}
+
+/* Button content */
+.gradient-border-btn-content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  min-height: 40px;
+  padding: 0 24px;
+
+  border-radius: 9px;
+
+  background: rgba(3, 3, 7, 0.92);
+
+  color: #ffffff;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  transition: background 0.3s ease;
+}
+
+/* Rotation */
+@keyframes softqivo-border-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hover */
+.gradient-border-btn:hover {
+  transform: translateY(0px);
+
+  box-shadow:
+    0 0 20px rgba(124, 58, 237, 0.25),
+    0 0 40px rgba(37, 99, 235, 0.12);
+}
+
+.gradient-border-btn:hover .gradient-border-btn-content {
+  background: rgba(10, 8, 20, 0.95);
+}
+
+/* Arrow */
+.gradient-arrow {
+  display: inline-flex;
+  align-items: center;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.gradient-border-btn:hover .gradient-arrow {
+  transform: translateX(4px);
 }

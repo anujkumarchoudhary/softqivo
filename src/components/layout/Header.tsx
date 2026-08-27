@@ -12,8 +12,8 @@ const Header = () => {
   const router = useRouter();
   const [open, setOpen] = useState(false);
   return (
-    <div className="bg-[#001845]">
-      <MaxWidth className="flex justify-between h-[9vh] lg:h-[10vh] items-center py-2.5 lg:py-4 text-white">
+    <div className="bg-primary-bg w-full sticky top-0 z-50">
+      <MaxWidth className="flex justify-between h-[9vh] lg:h-[11vh] items-center py-2.5 lg:py-4 text-white">
         <div onClick={() => router.push("/")} className="cursor-pointer">
           <Image
             src={logo}
@@ -26,24 +26,21 @@ const Header = () => {
             }}
           />
         </div>
-        <div className="hidden lg:block">
+        <div className="hidden lg:flex gap-2 text-white font-semibold">
           {menuData?.map((menu, idx) => {
             return (
-              <span
+              <p
                 key={idx}
                 onClick={() => router.push(menu.link)}
-                className="my-auto mx-4 uppercase cursor-pointer"
+                className="my-auto mx-4 capitalize font-semibold text-secondary-color cursor-pointer"
               >
                 {menu.title}
-              </span>
+              </p>
             );
           })}
         </div>
         <div className="hidden lg:flex gap-8">
-          <p className="cursor-pointer text-[#FFFFFF] font-bold my-auto">
-            +91: 9953176985
-          </p>
-          <Button name="Get a Quote" />
+          <Button name="Let's Talk" />
         </div>
         <IoReorderThreeSharp
           onClick={() => setOpen(!open)}
