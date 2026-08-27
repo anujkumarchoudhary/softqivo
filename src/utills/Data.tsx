@@ -16,6 +16,16 @@ import { TbClock24 } from "react-icons/tb";
 import { FaMapLocationDot, FaHeadphonesSimple } from "react-icons/fa6";
 import { IoIosMailOpen } from "react-icons/io";
 
+import {
+  Code2,
+  Layers3,
+  Smartphone,
+  Palette,
+  Boxes,
+  Cloud,
+  ArrowUpRight,
+} from "lucide-react";
+
 type SupportItem = {
   icon: React.ReactNode;
   title: string;
@@ -49,6 +59,70 @@ export const staticData = {
         "We design and develop fast, scalable, and modern websites, web applications, and custom software tailored to your business needs.",
       button: "Get a Quote",
       button2: "See Projects",
+    },
+    services: {
+      label: "What We Do",
+
+      headingParts: [
+        {
+          text: "End-to-end digital solutions",
+          color: "#111118",
+          style: "normal",
+          size: "clamp(36px, 5vw, 52px)",
+          weight: "600",
+        },
+        {
+          text: "to grow your business.",
+          color: "#111118",
+          style: "normal",
+          size: "clamp(36px, 5vw, 52px)",
+          weight: "600",
+          gradient:
+            "linear-gradient(90deg, #A855F7 0%, #7C3AED 50%, #2563EB 100%)",
+        },
+      ],
+      list: [
+        {
+          title: "Web Development",
+          description:
+            "Modern, responsive and high-performance web applications.",
+          href: "/services/web-development",
+          icon: Code2,
+        },
+        {
+          title: "Software Development",
+          description:
+            "Scalable, secure and custom software built for your business.",
+          href: "/services/software-development",
+          icon: Layers3,
+        },
+        {
+          title: "Mobile Applications",
+          description: "Powerful mobile apps with great user experiences.",
+          href: "/services/mobile-applications",
+          icon: Smartphone,
+        },
+        {
+          title: "UI/UX Design",
+          description:
+            "Beautiful, intuitive and user-focused digital experiences.",
+          href: "/services/ui-ux-design",
+          icon: Palette,
+        },
+        {
+          title: "API & Backend",
+          description: "Robust APIs and backend systems built for performance.",
+          href: "/services/api-backend",
+          icon: Boxes,
+        },
+        {
+          title: "Cloud & DevOps",
+          description:
+            "Reliable infrastructure, deployment and cloud solutions.",
+          href: "/services/cloud-devops",
+          icon: Cloud,
+        },
+      ],
     },
     ourClients: {
       heading: "Our Clients",

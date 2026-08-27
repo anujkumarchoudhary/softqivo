@@ -18,7 +18,7 @@ const Banner = () => {
   return (
     <section
       ref={ref}
-      className="relative h-[90vh] bg-primary-bg  w-full overflow-hidden"
+      className="relative h-[110vh] lg:h-[90vh] bg-primary-bg  w-full overflow-hidden"
     >
       {/* Content */}
       <MaxWidth className="grid mt-[10vh] grid-cols-1 lg:grid-cols-2 items-center justify-between gap-8 relative z-10">

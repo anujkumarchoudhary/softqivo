@@ -13,6 +13,7 @@ import DedicatedSupport from "../components/DedicatedSupport";
 import Feedback from "../components/Feedback";
 import Blog from "../components/Blog";
 import { staticData } from "@/src/utills/Data";
+import Services from "../components/Services";
 
 //test
 const page = () => {
@@ -21,6 +22,7 @@ const page = () => {
   return (
     <div>
       <Banner />
+      <Services/>
       {/* <Client /> */}
       <About />
       <WhoWeAre />
