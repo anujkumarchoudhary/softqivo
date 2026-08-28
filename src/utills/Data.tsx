@@ -38,25 +38,25 @@ export const staticData = {
       label: "SOFTWARE • DESIGN • INNOVATION",
       headingParts: [
         {
-          text: "Build Powerful Digital Solutions That ",
+          text: "Transform Ideas  ",
           color: "#FFFFFF",
-          style: "normal",
+          // style: "normal",
+          font: "playfair",
+          style: "italic",
           size: "clamp(32px, 6vw, 54px)",
-          weight: "700",
+          weight: "400",
         },
         {
-          text: "Grow Your Business",
+          text: "  Into Powerful Digital Solutions.",
           color: "#FFFFFF",
-          // font: "playfair",
-          // style: "italic",
           size: "clamp(32px, 6vw, 54px)",
           weight: "700",
-          gradient:
-            "linear-gradient(90deg, #A855F7 0%, #7C3AED 50%, #2563EB 100%)",
+          // gradient:
+          //   "linear-gradient(90deg, #A855F7 0%, #7C3AED 50%, #2563EB 100%)",
         },
       ],
       description:
-        "We design and develop fast, scalable, and modern websites, web applications, and custom software tailored to your business needs.",
+        "We create fast, scalable, and intelligent digital solutions engineered to solve real business challenges and drive measurable growth.",
       button: "Get a Quote",
       button2: "See Projects",
     },

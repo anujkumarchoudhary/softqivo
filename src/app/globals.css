@@ -18,7 +18,7 @@
 
   /* Text */
   --color-primary-color: #030307;
-  --color-secondary-color: #FFFFFF;
+  --color-secondary-color: #ffffff;
 
   /* Brand */
   --color-brand-purple: #7c3aed;
@@ -35,6 +35,9 @@
   .font-playfair {
     font-family: var(--font-playfair-display);
   }
+  .font-poppins {
+    font-family: var(--font-poppins);
+  }
 }
 
 /* ================================
@@ -44,7 +47,7 @@
   body {
     background: var(--secondary-bg);
     color: var(--text-color);
-    font-family: var(--font-kanit), sans-serif;
+    font-family: var(--font-poppins), sans-serif;
   }
 
   h1 {
@@ -118,7 +121,6 @@
     display: none;
   }
 }
-
 
 /* =================================
    SOFTQIVO RUNNING GRADIENT BORDER
