@@ -1,8 +1,11 @@
+"use client";
 import { Rocket, Award, Users, Code2 } from "lucide-react";
 import MaxWidth from "./layout/MaxWidth";
 import Heading from "./common/Heading";
+import { useResponsive } from "../hooks/useResponsive";
 
 export default function AboutSection() {
+  const { isDesktop } = useResponsive();
   const stats = [
     {
       icon: Rocket,
@@ -33,6 +36,7 @@ export default function AboutSection() {
           {/* Left Content */}
           <div>
             <Heading
+              isCenter={isDesktop ? false : true}
               label="About SoftQivo"
               headingParts={[
                 { text: "We Turn Complex Ideas Into " },
@@ -44,19 +48,19 @@ export default function AboutSection() {
               ]}
             />
 
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-gray-600">
+            <p className="mt-6 max-w-xl text-center lg:text-left text-lg leading-relaxed text-gray-600">
               At SoftQivo, we combine technology, design, and creative thinking
               to build digital products that make businesses better.
             </p>
 
-            <p className="mt-4 max-w-xl text-lg leading-relaxed text-gray-600">
+            <p className="mt-4 max-w-xl text-center lg:text-left text-lg leading-relaxed text-gray-600">
               Whether you’re launching something new or improving an existing
               product, we focus on understanding the problem first — then
               creating a solution that is fast, intuitive, reliable, and built
               to evolve with your business.
             </p>
 
-            <button className="mt-8 rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 px-7 py-3.5 font-semibold text-white shadow-lg shadow-purple-500/20 transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-purple-500/30">
+            <button className="mt-8 w-full lg:w-fit rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 px-7 py-3.5 font-semibold text-white shadow-lg shadow-purple-500/20 transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-purple-500/30">
               Learn More →
             </button>
           </div>
