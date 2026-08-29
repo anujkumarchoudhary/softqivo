@@ -42,7 +42,7 @@ const Footer = () => {
               aria-label="LinkedIn"
               className="flex h-15 w-15 items-center justify-center rounded-full border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
             >
-              <Icon name="LiaLinkedin" size={30} />
+              <Icon name="FaLinkedinIn" size={30} />
             </a>
 
             <a
