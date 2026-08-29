@@ -10,7 +10,7 @@ import CaseStudies from "../components/CaseStudies";
 import FAQ from "../components/FAQ";
 import ProcessSection from "../components/ProcessSection";
 import TeamSection from "../components/TeamSection";
-
+//
 const page = () => {
   const { services, caseStudies, process, team, support } = staticData?.home;
 
