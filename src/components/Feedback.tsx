@@ -39,7 +39,7 @@ const Feedback = () => {
   const { headingParts, label, data } = staticData.home?.feedbacks || {};
 
   return (
-    <section ref={ref} className="py-[2rem] py-[6rem] bg-[#F9F9F9]">
+    <section ref={ref} className="py-12 lg:py-16 bg-secondary-bg">
       <MaxWidth>
         {/* HEADING */}
         <div
@@ -60,7 +60,7 @@ const Feedback = () => {
             <div
               key={index}
               style={{ transitionDelay: `${300 + index * 150}ms` }}
-              className={`mt-[1rem] p-8 bg-[#001845] text-[#FFFFFF]
+              className={`mt-[1rem] p-8 bg-primary-bg text-[#FFFFFF]
               transition-all duration-1000
               ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}
             >
