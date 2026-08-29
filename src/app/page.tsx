@@ -1,24 +1,18 @@
 import React from "react";
 import Banner from "../components/common/Banner";
-import MaxWidth from "../components/layout/MaxWidth";
 import Client from "../components/Client";
 import About from "../components/About";
-import WhoWeAre from "../components/WhoWeAre";
-import WhatWeDo from "../components/WhatWeDo";
-import BringYourIdea from "../components/BringYourIdea";
-import ExpertSkill from "../components/ExpertSkill";
-import TakeTheTime from "../components/TakeTheTime";
-import Pricing from "../components/Pricing";
-import DedicatedSupport from "../components/DedicatedSupport";
 import Feedback from "../components/Feedback";
 import Blog from "../components/Blog";
 import { staticData } from "@/src/utills/Data";
 import Services from "../components/Services";
 import CaseStudies from "../components/CaseStudies";
 import FAQ from "../components/FAQ";
+import ProcessSection from "../components/ProcessSection";
+import TeamSection from "../components/TeamSection";
 
 const page = () => {
-  const { services, caseStudies } = staticData?.home;
+  const { services, caseStudies, process, team, support } = staticData?.home;
 
   return (
     <div>
@@ -26,14 +20,11 @@ const page = () => {
       <Services data={services} />
       <CaseStudies data={caseStudies} />
       <About />
-      <WhoWeAre />
-      <BringYourIdea />
-      <ExpertSkill />
-      <TakeTheTime />
-      <DedicatedSupport />
+      <ProcessSection data={process} />
+      <TeamSection data={team} />
       <Feedback />
       <Blog />
-      <FAQ/>
+      <FAQ />
     </div>
   );
 };

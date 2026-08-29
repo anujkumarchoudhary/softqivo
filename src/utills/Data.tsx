@@ -7,6 +7,13 @@ import client_06 from "../../public/images/clients/logoipsum-286-1.png";
 //card img
 import card_img_01 from "../../public/images/work-5224077_1920.jpg";
 import card_img_02 from "../../public/images/vision.jpg";
+
+//team
+import team from "../../public/images/team/team_1.jpg";
+
+//support
+import support_1 from "../../public/images/support/support_1.png";
+
 //feedback data
 import feedback01 from "../../public/images/software-developer-at-office.jpg";
 import feedback02 from "../../public/images/software-developer-at-office.jpg";
@@ -196,6 +203,150 @@ export const staticData = {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
     },
+    process: {
+      label: "Our Process",
+      headingParts: [
+        {
+          text: "We don't just build.",
+          color: "#FFFFFF",
+          style: "normal",
+          size: "clamp(36px, 5vw, 52px)",
+          weight: "600",
+        },
+        {
+          text: " We build with purpose.",
+          color: "#FFFFFF",
+          style: "normal",
+          size: "clamp(36px, 5vw, 52px)",
+          weight: "600",
+          gradient:
+            "linear-gradient(90deg, #6B7280 0%, #D1D5DB 50%, #6B7280 100%)",
+        },
+      ],
+
+      description:
+        "A focused process that turns ideas into meaningful digital products — from the first conversation to continuous growth.",
+
+      steps: [
+        {
+          number: "01",
+          title: "Discover",
+          description:
+            "We start by understanding your business, your audience, and the opportunity behind your idea.",
+          tag: "CLARITY",
+        },
+        {
+          number: "02",
+          title: "Define",
+          description:
+            "We turn ideas into a focused direction — defining the experience, structure, and technology required.",
+          tag: "STRATEGY",
+        },
+        {
+          number: "03",
+          title: "Create",
+          description:
+            "We design and build the product with precision, combining thoughtful UX with reliable technology.",
+          tag: "EXECUTION",
+        },
+        {
+          number: "04",
+          title: "Evolve",
+          description:
+            "We launch, learn, refine, and continue improving the product as your business moves forward.",
+          tag: "GROWTH",
+        },
+      ],
+
+      result: {
+        label: "The Result",
+        text: "A digital product that doesn't just look good —",
+        highlight: " it works for your business.",
+      },
+    },
+    team: {
+      label: "Meet The Team",
+
+      headingParts: [
+        {
+          text: "Small team.",
+          color: "#111118",
+          size: "clamp(36px, 5vw, 52px)",
+          weight: "700",
+        },
+        {
+          text: " Big ideas.",
+          color: "#111118",
+          size: "clamp(36px, 5vw, 52px)",
+          weight: "700",
+          gradient:
+            "linear-gradient(90deg, #A855F7 0%, #7C3AED 50%, #2563EB 100%)",
+        },
+      ],
+
+      description:
+        "A focused team of designers, developers, and problem-solvers working together to turn ambitious ideas into meaningful digital experiences.",
+
+      members: [
+        {
+          name: "Your Name",
+          role: "Founder & CEO",
+          image: team,
+          linkedin: "LiaLinkedin",
+        },
+        {
+          name: "Team Member",
+          role: "Lead Developer",
+          image: team,
+          linkedin: "LiaLinkedin",
+        },
+        {
+          name: "Team Member",
+          role: "UI/UX Designer",
+          image: team,
+          linkedin: "LiaLinkedin",
+        },
+        {
+          name: "Team Member",
+          role: "UI/UX Designer",
+          image: team,
+          linkedin: "LiaLinkedin",
+        },
+      ],
+    },
+
+  support: {
+    label: "Dedicated Support",
+
+    heading:
+      "We provide dedicated support throughout the development process",
+
+    highlight: "and beyond.",
+
+    description:
+      "Our team stays with you beyond launch — helping you solve problems, improve your product, and keep your digital experience moving forward.",
+
+    mainImage: support_1,
+
+    teamImage: support_1,
+
+    videoHref: "/",
+
+    features: [
+      {
+        icon: "clock" as const,
+        title: "24 Hours Support",
+        description:
+          "Our team is available whenever you need help, guidance, or technical assistance.",
+      },
+      {
+        icon: "infinity" as const,
+        title: "Unlimited Revision",
+        description:
+          "We refine and improve your product until everything feels right and works as expected.",
+      },
+    ],
+  },
     whoWeAre: {
       image: "",
       label: "Who We Are",
