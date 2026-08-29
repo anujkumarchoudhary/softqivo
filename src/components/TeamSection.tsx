@@ -92,7 +92,7 @@ export default function TeamSection({ data }: any) {
                 {/* ================= DETAILS ================= */}
                 <div className="mt-5 flex items-start justify-between gap-4 border-b border-black/10 pb-5">
                   <div>
-                    <h3 className="text-xl font-semibold tracking-tight text-black">
+                    <h3 className="text-xl text-center lg:text-left font-semibold tracking-tight text-black">
                       {member.name}
                     </h3>
 

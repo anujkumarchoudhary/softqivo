@@ -237,7 +237,7 @@ export default function OurProcess({ data }: OurProcessProps) {
               </p>
             </div>
 
-            <div className="group flex items-center gap-4 cursor-pointer">
+            <div className="group flex justify-end items-center gap-4 cursor-pointer">
               <div className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border border-white/15 transition-all duration-300 group-hover:border-purple-500/60 group-hover:bg-purple-500/10">
                 <Icon
                   name="arrow"

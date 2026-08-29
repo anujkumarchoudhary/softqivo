@@ -94,7 +94,7 @@ export default function CaseStudies({ data }: any) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // 2 cards per slide
-  const cardsPerSlide = 2;
+  const cardsPerSlide = isDesktop ? 2 : 1;
 
   const totalSlides = Math.ceil(data.length / cardsPerSlide);
 

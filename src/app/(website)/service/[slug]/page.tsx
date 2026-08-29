@@ -1,5 +1,4 @@
 import PageBanner from "@/src/components/common/PageBanner";
-import DedicatedSupport from "@/src/components/DedicatedSupport";
 import PointOfService from "@/src/components/PointOfService";
 import TeamWork from "@/src/components/TeamWork";
 import WeCreate from "@/src/components/WeCreate";
