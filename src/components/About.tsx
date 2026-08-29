@@ -1,122 +1,93 @@
-"use client";
-
-import React from "react";
+import { Rocket, Award, Users, Code2 } from "lucide-react";
 import MaxWidth from "./layout/MaxWidth";
-import about from "../../public/images/about.jpg";
-import about2 from "../../public/images/about2.jpg";
-import about3 from "../../public/images/software-developer-at-office (1).jpg";
-
-import Image from "next/image";
-import { PiClockCounterClockwiseFill } from "react-icons/pi";
-import { SlSettings } from "react-icons/sl";
 import Heading from "./common/Heading";
-import { useInViewOnce } from "@/src/hooks/useInViewOnce";
-import { staticData } from "../utills/Data";
 
-const About = () => {
-  const users = [about3, about3, about3];
-  const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
-  const { label, headingParts, description } = staticData.home.aboutUs;
+export default function AboutSection() {
+  const stats = [
+    {
+      icon: Rocket,
+      value: "20+",
+      label: "Projects Delivered",
+    },
+    {
+      icon: Users,
+      value: "99%",
+      label: "Client Satisfaction",
+    },
+    {
+      icon: Code2,
+      value: "10+",
+      label: "Modern Technologies",
+    },
+    {
+      icon: Award,
+      value: "24/7",
+      label: "Support & Maintenance",
+    },
+  ];
 
   return (
-    <section ref={ref}>
-      <MaxWidth className="grid grid-cols-1 lg:grid-cols-2 gap-[4rem] py-[4rem] lg:py-[6rem]">
-        {/* LEFT SIDE (Images) */}
-        <div
-          className={`relative transition-all duration-1000
-          ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-16"}`}
-        >
-          <Image
-            width={550}
-            height={600}
-            src={about}
-            alt="About"
-            className="pb-[8rem] aspect-550/600 w-[clamp(340px,40vw,550px)] h-[clamp(500px,60vw,800px)] object-cover"
-          />
+    <section className="relative overflow-hidden bg-white py-12 lg:py-16">
+      <MaxWidth className="relative">
+        <div className="grid items-center gap-16 lg:grid-cols-2">
+          {/* Left Content */}
+          <div>
+            <Heading
+              label="About SoftQivo"
+              headingParts={[
+                { text: "We Turn Complex Ideas Into " },
+                {
+                  text: "Simple Digital Experiences",
+                  gradient:
+                    "linear-gradient(90deg, #A855F7 0%, #7C3AED 50%, #2563EB 100%)",
+                },
+              ]}
+            />
 
-          <Image
-            width={360}
-            height={400}
-            src={about2}
-            alt="About"
-            className="absolute aspect-360/400 w-[clamp(230px,20vw,360px)] h-[clamp(40px,70vw,400px)] bg-[#001845]/90 p-4 bottom-0 right-0"
-          />
-
-          <div
-            className={`flex gap-4 bg-white p-[2rem] shadow absolute bottom-[8%] right-[16%] items-center
-            transition-all duration-700 delay-300
-            ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"}`}
-          >
-            <SlSettings size={40} className="text-[#001845]" />
-            <div>
-              <h3 className="font-bold text-[#001845]">
-                1,2K+ Project Done
-              </h3>
-              <p className="pt-1">Small Until High Projects</p>
-            </div>
-          </div>
-        </div>
-
-        {/* RIGHT SIDE (Content) */}
-        <div
-          className={`my-auto transition-all duration-1000 delay-200
-          ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}
-        >
-          <Heading label={label} headingParts={headingParts} description={description} />
-
-          <div className="flex gap-4 py-6">
-            <span className="w-2 h-12 bg-[#001845]" />
-            <p className="font-semibold italic">
-              ” Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. “
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-gray-600">
+              At SoftQivo, we combine technology, design, and creative thinking
+              to build digital products that make businesses better.
             </p>
+
+            <p className="mt-4 max-w-xl text-lg leading-relaxed text-gray-600">
+              Whether you’re launching something new or improving an existing
+              product, we focus on understanding the problem first — then
+              creating a solution that is fast, intuitive, reliable, and built
+              to evolve with your business.
+            </p>
+
+            <button className="mt-8 rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 px-7 py-3.5 font-semibold text-white shadow-lg shadow-purple-500/20 transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-purple-500/30">
+              Learn More →
+            </button>
           </div>
 
-          <div className="flex gap-4 py-6">
-            <PiClockCounterClockwiseFill size={54} className="text-[#001845]" />
-            <div>
-              <h3 className="text-[1.25rem] font-bold">
-                We Offer Unlimited Revision
-              </h3>
-              <p className="font-semibold italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-          </div>
+          {/* Right Stats */}
+          <div className="grid grid-cols-2 gap-5">
+            {stats.map((item, index) => {
+              const Icon = item.icon;
 
-          <div className="block lg:flex gap-[2rem] py-6">
-            {/* Users */}
-            <div className="flex my-auto">
-              {users.map((user, idx) => (
+              return (
                 <div
-                  key={idx}
-                  className={`relative ${idx !== 0 ? "-ml-6" : ""}`}
-                  style={{ zIndex: users.length - idx }}
+                  key={index}
+                  className="group rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-purple-200 hover:shadow-xl hover:shadow-purple-100/50"
                 >
-                  <Image
-                    src={user}
-                    alt="user"
-                    className="rounded-full w-[70px] h-[70px] border-4 border-white object-cover"
-                  />
+                  <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-purple-100 to-blue-100">
+                    <Icon className="h-5 w-5 text-purple-600" />
+                  </div>
+
+                  <h3 className="text-3xl font-bold text-black">
+                    {item.value}
+                  </h3>
+
+                  <p className="mt-2 text-sm font-medium text-gray-500">
+                    {item.label}
+                  </p>
                 </div>
-              ))}
-            </div>
-
-            <div className="flex gap-4 pt-8 lg:pt-0">
-              <h2 className="font-extrabold text-[#001845]">1,235+</h2>
-
-              <div className="my-auto">
-                <h3 className="text-[1.25rem] font-bold text-[#001845]">
-                  Give Best Feedback
-                </h3>
-                <p className="font-semibold italic">Lorem Ipsum Dolor</p>
-              </div>
-            </div>
+              );
+            })}
           </div>
         </div>
       </MaxWidth>
     </section>
   );
-};
-
-export default About;
+}
