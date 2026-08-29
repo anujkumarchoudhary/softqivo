@@ -49,7 +49,7 @@ const Blog = () => {
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
 
   return (
-    <section ref={ref} className=" py-[3rem] lg:py-[6rem]">
+    <section ref={ref} className=" py-[3rem] lg:py-16 bg-[#F9F9F9]">
       <MaxWidth>
         {/* HEADING */}
         <div
@@ -80,7 +80,7 @@ const Blog = () => {
               style={{
                 transitionDelay: `${index * 300}ms`, // stagger: first, second, third
               }}
-              className={`relative mt-0 lg:mt-10 bg-[#001845] text-white rounded-xl overflow-hidden shadow-lg
+              className={`relative mt-0 lg:mt-10 bg-primary-bg text-white rounded-xl overflow-hidden shadow-lg
               transition-all duration-700 ease-out
               ${
                 isVisible
@@ -94,7 +94,7 @@ const Blog = () => {
                   <Image
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-[15rem] lg:h-[20rem] object-cover"
+                    className="w-full h-[15rem] lg:h-[18rem] object-cover"
                   />
                 )}
 
@@ -115,14 +115,16 @@ const Blog = () => {
               </div>
 
               {/* CONTENT */}
-              <div className="px-[1.5rem] lg:px-[2.5rem] py-[1.25rem] lg:py-[2rem]">
-                <h4 className="text-[#FFFFFF] mt-2">{item.title}</h4>
-                <p className="my-4 text-[#FFFFFF]">{item.description}</p>
-                <Button
-                  handleClick={() => router.push(item.link)}
-                  name="Read More"
-                  className="mt-4 inline-block text-blue-400 font-semibold"
-                />
+              <div className="px-[1.5rem] lg:px-[1.5rem] py-[1.25rem] lg:py-[1rem]">
+                <h3 className="text-[#FFFFFF] text-[22px] mt-2">
+                  {item.title}
+                </h3>
+                <p className="my-4 text-[16px] text-[#FFFFFF]">
+                  {item.description}
+                </p>
+                <p className="text-white font-semibold cursor-pointer">
+                  Read More
+                </p>
               </div>
             </div>
           ))}
