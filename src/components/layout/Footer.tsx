@@ -1,67 +1,194 @@
+"use client";
 import React from "react";
 import MaxWidth from "./MaxWidth";
-import logo from "../../../public/logo-cetech.png";
+import { footerMenuData } from "@/src/data/menu";
+import Icon from "@/src/utills/iconMap ";
 import Image from "next/image";
-import { footerMenuData, menuData } from "@/src/data/menu";
-import Button from "../common/Button";
-import { IoIosArrowForward } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <div className="bg-[#001845]">
-      <MaxWidth className="grid grid-cols-1 lg:grid-cols-4 gap-[2rem] py-[3rem] lg:py-[6rem] text-white">
-        <div className="">
-          <h2 className="text-[2rem] text-[#FFFFFF] font-bold">SoftTech</h2>
-          <p className="text-[#FFFFFF]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+    <footer className="bg-primary-bg text-white">
+      <MaxWidth className="grid grid-cols-1 gap-10 py-12 lg:grid-cols-4 lg:gap-8 lg:py-20">
+        {/* Brand */}
+        <div>
+          <Image
+            src="/softqivo_04.png"
+            width={225}
+            height={50}
+            alt="logo"
+            style={{
+              width: "clamp(180px, 18vw, 225px)",
+              height: "auto",
+            }}
+          />
+
+          <p className="mt-5 leading-7 text-white/70">
+            We build scalable digital solutions, modern web applications, and
+            custom software that help businesses grow and perform better.
           </p>
-        </div>
 
-        <div className="col-span-2">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-20">
-            {/* Left column */}
-            <div className="space-y-2">
-              <h2 className="text-[1.25rem] font-bold mb-4 text-[#FFFFFF]">
-                Quick Link
-              </h2>
-              {footerMenuData.slice(0, 5).map((menu, idx) => (
-                <div key={idx} className="flex gap-1 uppercase cursor-pointer">
-                  <IoIosArrowForward className="my-auto" />
-                  <span className="my-auto">{menu.title}</span>
-                </div>
-              ))}
-            </div>
+          {/* Social Icons */}
+          <div className="mt-7 flex items-center gap-3">
+            <a
+              href="#"
+              aria-label="GitHub"
+              className="flex h-15 w-15 items-center justify-center rounded-full border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
+            >
+              <Icon name="FaGithub" size={30} />
+            </a>
 
-            {/* Right column */}
-            <div className="space-y-2 pt-5 lg:pt-0">
-              <h2 className="text-[1.25rem] font-bold mb-4 text-[#FFFFFF]">
-                Custom Software
-              </h2>
-              {footerMenuData.slice(5).map((menu, idx) => (
-                <div key={idx} className="flex gap-1 uppercase cursor-pointer">
-                  <IoIosArrowForward className="my-auto" />
-                  <span className="my-auto ">{menu.title}</span>
-                </div>
-              ))}
-            </div>
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              className="flex h-15 w-15 items-center justify-center rounded-full border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
+            >
+              <Icon name="LiaLinkedin" size={30} />
+            </a>
+
+            <a
+              href="#"
+              aria-label="Instagram"
+              className="flex h-15 w-15 items-center justify-center rounded-full border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
+            >
+              <Icon name="BsInstagram" size={30} />
+            </a>
           </div>
         </div>
 
-        <div className="">
-          <h2 className="text-[1.25rem] font-bold text-[#FFFFFF]">
-            Head Office Address
-          </h2>
-          <p className="text-[#FFFFFF]">
-            Lumbung Hidup St 425 East Java Madiun City Block ABC 123
-          </p>
-          <h2 className="text-[1.25rem] pt-2 font-bold text-[#FFFFFF]">
-            Days Open
-          </h2>
-          <p className="text-[#FFFFFF]">Monday - Friday 08 AM - 10 PM</p>
+        {/* Quick Links */}
+        <div>
+          <h3 className="mb-8 text-[25px] text-white font-semibold">
+            Quick Links
+          </h3>
+
+          <ul className="space-y-3">
+            {footerMenuData.slice(0, 5).map((menu, idx) => (
+              <li key={idx}>
+                <a
+                  href={"#"}
+                  className="group flex items-center gap-2 text-[18px] text-white/70 transition hover:text-white"
+                >
+                  <Icon
+                    name="chevronRight"
+                    size={15}
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  />
+
+                  <span>{menu.title}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Services */}
+        <div>
+          <h3 className="mb-8 text-[25px] text-white font-semibold">
+            Custom Software
+          </h3>
+
+          <ul className="space-y-3">
+            {footerMenuData.slice(5).map((menu, idx) => (
+              <li key={idx}>
+                <a
+                  href={"#"}
+                  className="group flex items-center gap-2 text-[18px] text-white/70 transition hover:text-white"
+                >
+                  <Icon
+                    name="chevronRight"
+                    size={15}
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  />
+
+                  <span>{menu.title}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Contact */}
+        <div>
+          <h3 className="mb-8 text-[25px] text-white font-semibold">
+            Contact Us
+          </h3>
+
+          <div className="space-y-5">
+            {/* Address */}
+            <div className="flex gap-3">
+              <Icon name="location" size={22} className="mt-1 shrink-0" />
+
+              <a
+                href="https://share.google/E7oFNNvoY9Nm77Ais"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group"
+              >
+                <p className="mb-1 text-[18px] font-medium text-white">
+                  Head Office
+                </p>
+
+                <p className="text-[18px] leading-6 text-white/65 transition-colors group-hover:text-white">
+                  New Ashok Nagar, Delhi 110096
+                </p>
+              </a>
+            </div>
+            {/* Phone */}
+            <div className="flex gap-3">
+              <div className="mt-1 shrink-0">
+                <Icon name="phone" size={19} className="text-white" />
+              </div>
+
+              <div>
+                <p className="mb-1 text-[18px] font-medium text-white">Phone</p>
+
+                <a
+                  href="tel:+919953176985"
+                  className="text-[18px] text-white/65 transition hover:text-white"
+                >
+                  +91 99531 76985
+                </a>
+              </div>
+            </div>
+
+            {/* Email */}
+            <div className="flex gap-3">
+              <div className="mt-1 shrink-0">
+                <Icon name="mail" size={19} className="text-white" />
+              </div>
+
+              <div>
+                <p className="mb-1 text-[18px] font-medium text-white">Email</p>
+
+                <a
+                  href="mailto:softqivo@gmail.com"
+                  className="text-[18px] text-white/65 transition hover:text-white"
+                >
+                  softqivo@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </MaxWidth>
-    </div>
+
+      {/* Bottom Bar */}
+      <div className="border-t border-white/10">
+        <MaxWidth className="flex flex-col items-center justify-between gap-3 py-5 text-sm text-white/50 md:flex-row">
+          <p>© {new Date().getFullYear()} SoftQivo. All rights reserved.</p>
+
+          <div className="flex gap-5">
+            <a href="/privacy-policy" className="transition hover:text-white">
+              Privacy Policy
+            </a>
+
+            <a href="/terms" className="transition hover:text-white">
+              Terms & Conditions
+            </a>
+          </div>
+        </MaxWidth>
+      </div>
+    </footer>
   );
 };
 
