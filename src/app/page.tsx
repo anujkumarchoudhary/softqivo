@@ -14,23 +14,22 @@ import Feedback from "../components/Feedback";
 import Blog from "../components/Blog";
 import { staticData } from "@/src/utills/Data";
 import Services from "../components/Services";
+import CaseStudies from "../components/CaseStudies";
 
 //test
 const page = () => {
-  const { whatWeDo } = staticData.home || {};
+  const { services, caseStudies } = staticData?.home;
 
   return (
     <div>
       <Banner />
-      <Services/>
-      {/* <Client /> */}
+      <Services data={services} />
+      <CaseStudies data={caseStudies} />
       <About />
       <WhoWeAre />
-      <WhatWeDo data={whatWeDo} />
       <BringYourIdea />
       <ExpertSkill />
       <TakeTheTime />
-      <Pricing />
       <DedicatedSupport />
       <Feedback />
       <Blog />
