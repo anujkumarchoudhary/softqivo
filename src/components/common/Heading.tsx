@@ -10,6 +10,7 @@ type HeadingPart = {
 
 type HeadingProps = {
   label?: string;
+  labelColor?: string;
   description?: string;
   headingParts: HeadingPart[];
 
@@ -37,6 +38,7 @@ const fontMap: Record<string, string> = {
 
 const Heading = ({
   label,
+  labelColor,
   description,
   headingParts,
   textColor = "#000000",
@@ -52,15 +54,7 @@ const Heading = ({
     <div className={`${isCenter ? "text-center" : ""}`}>
       {/* Label */}
       {label && (
-        <div
-        //       className={`
-        //   inline-block rounded-full
-        //   transition-all duration-700
-        //   border ${isDart ? "border-[#FFFFFF]/50" : "border-[#000000]/50"}
-        //   ${label && "mb-5"}
-        //   ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
-        // `}
-        >
+        <div>
           <span
             className={`
         uppercase inline-block
@@ -74,7 +68,7 @@ const Heading = ({
         ${isCenter ? "text-center" : ""}
       `}
             style={{
-              color: textColor,
+              color: labelColor ?? textColor,
             }}
           >
             {label}
