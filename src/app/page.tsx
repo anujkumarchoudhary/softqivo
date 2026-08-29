@@ -16,9 +16,7 @@ import { staticData } from "@/src/utills/Data";
 import Services from "../components/Services";
 import CaseStudies from "../components/CaseStudies";
 import FAQ from "../components/FAQ";
-import Testimonials from "../components/testimonials";
 
-//test
 const page = () => {
   const { services, caseStudies } = staticData?.home;
 
