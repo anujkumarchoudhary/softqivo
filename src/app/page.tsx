@@ -15,6 +15,7 @@ import Blog from "../components/Blog";
 import { staticData } from "@/src/utills/Data";
 import Services from "../components/Services";
 import CaseStudies from "../components/CaseStudies";
+import FAQ from "../components/FAQ";
 
 //test
 const page = () => {
@@ -33,6 +34,7 @@ const page = () => {
       <DedicatedSupport />
       <Feedback />
       <Blog />
+      <FAQ/>
     </div>
   );
 };

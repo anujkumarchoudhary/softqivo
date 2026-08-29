@@ -1,6 +1,7 @@
 // components/ui/IconMap.tsx
 
 import {
+    
   ArrowRight,
   ArrowUpRight,
   ArrowLeft,
@@ -34,8 +35,14 @@ import {
   Boxes,
   Cloud,
 } from "lucide-react";
+import { BsInstagram } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa6";
+import { LiaLinkedin } from "react-icons/lia";
 
 const iconMap = {
+    FaGithub,
+    LiaLinkedin,
+    BsInstagram,
   Code2,
   Layers3,
   Smartphone,
