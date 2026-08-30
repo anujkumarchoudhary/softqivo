@@ -31,15 +31,7 @@ const Footer = () => {
           <div className="mt-7 flex items-center gap-3">
             <a
               href="#"
-              aria-label="GitHub"
-              className="flex h-15 w-15 items-center justify-center rounded-full border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
-            >
-              <Icon name="FaGithub" size={30} />
-            </a>
-
-            <a
-              href="#"
-              aria-label="LinkedIn"
+              aria-label="FaLinkedinIn"
               className="flex h-15 w-15 items-center justify-center rounded-full border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
             >
               <Icon name="FaLinkedinIn" size={30} />
@@ -47,10 +39,20 @@ const Footer = () => {
 
             <a
               href="#"
-              aria-label="Instagram"
+              aria-label="FaInstagram"
               className="flex h-15 w-15 items-center justify-center rounded-full border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
             >
-              <Icon name="BsInstagram" size={30} />
+              <Icon name="FaInstagram" size={30} />
+            </a>
+
+            <a
+              href="https://x.com/softqivo"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="SoftQivo on X"
+              className="flex h-15 w-15 items-center justify-center rounded-full border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
+            >
+              <Icon name="FaTwitter" size={30} />
             </a>
           </div>
         </div>

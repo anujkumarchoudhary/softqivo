@@ -34,14 +34,12 @@ import {
   Boxes,
   Cloud,
 } from "lucide-react";
-import { BsInstagram } from "react-icons/bs";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 
 const iconMap = {
   FaGithub,
   FaLinkedinIn,
-  BsInstagram,
   FaFacebookF,
   FaTwitter,
   FaInstagram,
