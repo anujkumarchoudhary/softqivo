@@ -12,7 +12,7 @@ import ProcessSection from "../components/ProcessSection";
 import TeamSection from "../components/TeamSection";
 //
 const page = () => {
-  const { services, caseStudies, process, team, support } = staticData?.home;
+  const { services, caseStudies, process, team, blogs } = staticData?.home;
 
   return (
     <div>
@@ -23,7 +23,7 @@ const page = () => {
       <ProcessSection data={process} />
       <TeamSection data={team} />
       <Feedback />
-      <Blog />
+      <Blog data={blogs} />
       <FAQ />
     </div>
   );

@@ -39,7 +39,7 @@ const Feedback = () => {
   const { headingParts, label, data } = staticData.home?.feedbacks || {};
 
   return (
-    <section ref={ref} className="py-12 lg:py-16 bg-secondary-bg">
+    <section ref={ref} className="pb-12 lg:pb-16 bg-secondary-bg">
       <MaxWidth>
         {/* HEADING */}
         <div
@@ -50,7 +50,7 @@ const Feedback = () => {
             isCenter
             headingParts={headingParts}
             label={label}
-            className="w-[100%] lg:w-[60%] mx-auto"
+            className="w-[100%] lg:w-[65%] mx-auto"
           />
         </div>
 
@@ -60,7 +60,7 @@ const Feedback = () => {
             <div
               key={index}
               style={{ transitionDelay: `${300 + index * 150}ms` }}
-              className={`mt-[1rem] p-8 bg-primary-bg text-[#FFFFFF]
+              className={`mt-[1rem] rounded-[20px] p-8 bg-primary-bg text-[#FFFFFF]
               transition-all duration-1000
               ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}
             >
@@ -70,7 +70,7 @@ const Feedback = () => {
                 ))}
               </div>
 
-              <p className="mb-4 italic font-semibold text-[#FFFFFF]">
+              <p className="mb-14 italic font-semibold text-[#FFFFFF]">
                 "{item.message}"
               </p>
 
