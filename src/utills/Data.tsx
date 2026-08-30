@@ -575,40 +575,125 @@ export const staticData = {
         },
       ] as SupportItem[],
     },
-    feedbacks: {
-      label: "Feedback",
+    blogs: {
+      label: "Our Insights",
+
       headingParts: [
         {
-          text: "We provide our clients with the most innovative and effective",
-          color: "#001845",
+          text: "Ideas, insights & digital thinking.",
+          color: "#000000",
           size: "clamp(24px, 4vw, 46px)",
           weight: "700",
         },
       ],
+
+      list: [
+        {
+          img: "/images/blogs/blog_01.png",
+
+          category: "Web Development",
+
+          title:
+            "Building Modern Web Applications That Scale With Your Business",
+
+          excerpt:
+            "Discover how the right technology, architecture, and development approach can help businesses build faster, more secure, and scalable web applications.",
+
+          date: "Aug 28, 2026",
+
+          readTime: "6 min read",
+
+          href: "/blog/building-modern-web-applications-that-scale",
+        },
+
+        {
+          img: "/images/blogs/blog_02.png",
+
+          category: "UI/UX Design",
+
+          title:
+            "Why Great UI/UX Design Is More Than Just a Beautiful Interface",
+
+          excerpt:
+            "Learn how thoughtful user experiences, intuitive interactions, and purposeful design can create digital products people enjoy using and trust.",
+
+          date: "Aug 21, 2026",
+
+          readTime: "5 min read",
+
+          href: "/blog/why-great-ui-ux-design-matters",
+        },
+
+        {
+          img: "/images/blogs/blog_03.png",
+
+          category: "Software Development",
+
+          title:
+            "From Idea to Product: Building Software That Creates Real Business Value",
+
+          excerpt:
+            "Explore the key decisions behind successful software products, from validating an idea and choosing technology to building for long-term growth.",
+
+          date: "Aug 14, 2026",
+
+          readTime: "7 min read",
+
+          href: "/blog/from-idea-to-product",
+        },
+      ],
+    },
+
+    feedbacks: {
+      label: "Client Feedback",
+
+      headingParts: [
+        {
+          text: "What our clients say.",
+          color: "#000000",
+          size: "clamp(24px, 4vw, 46px)",
+          weight: "700",
+        },
+      ],
+
       data: [
         {
-          img: feedback01,
+          img: "/images/review/review_1.jpg",
           message:
-            "Excellent experience working with the team. Excellent experience working with the team.",
-          name: "John Doe",
-          comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          designation: "CEO, Company",
+            "SoftQivo understood our vision quickly and turned it into a polished digital product that exceeded our expectations.",
+
+          name: "Arjun Mehta",
+
+          comment:
+            "The team was responsive, professional, and technically strong throughout the entire project. We were impressed with the quality and attention to detail.",
+
+          designation: "Founder & CEO, Nexora",
         },
+
         {
-          img: feedback02,
+          img: "/images/review/review_2.webp",
           message:
-            "Excellent experience working with the team. Excellent experience working with the team.",
-          name: "John Doe",
-          comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          designation: "CEO, Company",
+            "Working with SoftQivo made the entire development process simple, transparent, and genuinely enjoyable for our team.",
+
+          name: "Sarah Williams",
+
+          comment:
+            "From design to development and delivery, everything was handled with care. They consistently delivered thoughtful solutions and were always open to feedback.",
+
+          designation: "Director, BrightLabs",
         },
+
         {
-          img: feedback03,
+          img: "/images/review/review_3.jpg",
           message:
-            "Excellent experience working with the team. Excellent experience working with the team.",
-          name: "John Doe",
-          comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          designation: "CEO, Company",
+            "SoftQivo delivered a modern, scalable solution that gave our business the technology foundation we needed to grow.",
+
+          name: "Rahul Sharma",
+
+          comment:
+            "Their combination of design thinking and technical expertise really stood out. The final product feels fast, intuitive, and built for the future.",
+
+          designation: "Co-Founder, ElevateX",
         },
       ],
     },

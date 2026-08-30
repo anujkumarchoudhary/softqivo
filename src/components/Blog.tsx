@@ -10,6 +10,7 @@ import Image from "next/image";
 import { useInViewOnce } from "@/src/hooks/useInViewOnce";
 import Button from "./common/Button";
 import { useRouter } from "next/navigation";
+import { ArrowUpRight } from "lucide-react";
 
 const data = [
   {
@@ -44,8 +45,7 @@ const data = [
   },
 ];
 
-const Blog = () => {
-  const router = useRouter();
+const Blog = ({ data }: any) => {
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
 
   return (
@@ -59,72 +59,90 @@ const Blog = () => {
         >
           <Heading
             isCenter
-            headingParts={[
-              {
-                text: "Let's Read Our Blog Post Content & Writing Resource",
-                color: "#001845",
-                size: "clamp(24px, 4vw, 46px)",
-                weight: "700",
-              },
-            ]}
-            label="Blog Content"
+            headingParts={data?.headingParts}
+            label={data?.label}
+            description={data?.description}
             className="w-[100%] lg:w-[60%] mx-auto"
           />
         </div>
 
         {/* BLOG CARDS */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-[1rem] lg:gap-[2rem] mt-4 lg:mt-12">
-          {data.map((item, index) => (
+          {data.list.map((item: any, index: number) => (
             <div
-              key={item.id}
+              key={index}
               style={{
-                transitionDelay: `${index * 300}ms`, // stagger: first, second, third
+                transitionDelay: `${index * 150}ms`,
               }}
-              className={`relative mt-0 lg:mt-10 bg-primary-bg text-white rounded-xl overflow-hidden shadow-lg
-              transition-all duration-700 ease-out
-              ${
-                isVisible
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-12"
-              }`}
+              className={`group relative overflow-hidden rounded-2xl border-2 border-[#000000]/40
+    bg-secondary-bg
+    transition-all duration-700
+    hover:-translate-y-2
+    hover:border-purple-500/40
+    ${isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"}`}
             >
-              {/* IMAGE + LABEL */}
-              <div className="relative">
-                {item.image && (
+              {/* Image */}
+              <div className="relative aspect-[16/10] overflow-hidden">
+                {item.img && (
                   <Image
-                    src={item.image}
+                    src={item.img}
                     alt={item.title}
-                    className="w-full h-[15rem] lg:h-[18rem] object-cover"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 )}
 
-                {/* LABEL BADGE */}
-                <span className="absolute top-4 left-4 bg-[#5C677D] px-4 py-2 uppercase font-semibold rounded">
-                  {item.label}
-                </span>
-
-                {/* DATE BADGE */}
-                <p className="absolute top-[45%] left-2 bg-[#023E7D] p-5 font-bold text-[1.5rem] rounded">
-                  {new Date(item.date).getDate()} <br />
-                  <span className="text-[1rem]">
-                    {new Date(item.date).toLocaleString("en-US", {
-                      month: "short",
-                    })}
-                  </span>
-                </p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               </div>
 
-              {/* CONTENT */}
-              <div className="px-[1.5rem] lg:px-[1.5rem] py-[1.25rem] lg:py-[1rem]">
-                <h3 className="text-[#FFFFFF] text-[22px] mt-2">
+              {/* Content */}
+              <div className="p-7">
+                {/* Date + Read Time */}
+                <div className="flex items-center gap-3 text-xs text-gray-500">
+                  <span>
+                    {new Date(item.date).toLocaleDateString("en-US", {
+                      month: "short",
+                      day: "numeric",
+                      year: "numeric",
+                    })}
+                  </span>
+
+                  <span className="h-1 w-1 rounded-full bg-purple-500" />
+
+                  <span>{item.readTime}</span>
+                </div>
+
+                {/* Title */}
+                <h3 className="mt-5 text-2xl font-semibold leading-tight tracking-tight text-primary-color">
                   {item.title}
                 </h3>
-                <p className="my-4 text-[16px] text-[#FFFFFF]">
+
+                {/* Description */}
+                <p className="mt-4 line-clamp-3 text-[15px] leading-7 text-gray-500">
                   {item.description}
                 </p>
-                <p className="text-white font-semibold cursor-pointer">
-                  Read More
-                </p>
+
+                {/* Gradient accent */}
+                <div className="mt-8 h-px w-full bg-[#000000]/20">
+                  <div className="h-px w-0 bg-gradient-to-r from-purple-500 to-blue-500 transition-all duration-500 group-hover:w-full" />
+                </div>
+
+                {/* Read More */}
+                <div className="mt-5 flex items-center justify-between">
+                  <span className="text-[10px] font-semibold uppercase tracking-[0.25em] text-gray-600">
+                    SoftQivo
+                  </span>
+
+                  <a
+                    href={item.href}
+                    className="group/link flex items-center gap-2 text-sm font-semibold text-primary-color/60 transition-colors hover:text-primary-color"
+                  >
+                    Read More
+                    <span className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 transition-all duration-300 group-hover/link:border-purple-500/50 group-hover/link:bg-purple-500/10">
+                      <ArrowUpRight className="h-4 w-4 text-gray-400 transition-all duration-300 group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5 group-hover/link:text-purple-400" />
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
           ))}
