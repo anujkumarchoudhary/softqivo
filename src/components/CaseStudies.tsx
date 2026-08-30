@@ -124,6 +124,7 @@ export default function CaseStudies({ data }: any) {
           <Heading
             isCenter={isDesktop ? false : true}
             labelColor="#800080"
+            accentColor="#BF40BF"
             label={data?.label}
             headingParts={data?.headingParts}
             className=" mx-auto lg:mx-0 w-full md:w-[60%] lg:w-[60%]"

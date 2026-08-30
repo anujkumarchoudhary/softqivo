@@ -10,13 +10,16 @@ import CaseStudies from "../components/CaseStudies";
 import FAQ from "../components/FAQ";
 import ProcessSection from "../components/ProcessSection";
 import TeamSection from "../components/TeamSection";
+import FinalCTA from "../components/FinalCTA";
 //
 const page = () => {
-  const { services, caseStudies, process, team, blogs } = staticData?.home;
+  const { services, caseStudies, process, team, blogs, finalCta } =
+    staticData?.home;
 
   return (
     <div>
       <Banner />
+      {/* <Client/> */}
       <Services data={services} />
       <CaseStudies data={caseStudies} />
       <About />
@@ -24,6 +27,7 @@ const page = () => {
       <TeamSection data={team} />
       <Feedback />
       <Blog data={blogs} />
+      <FinalCTA data={finalCta} />
       <FAQ />
     </div>
   );

@@ -5,7 +5,7 @@ function page() {
   return (
     <div>
       <PageBanner heading={"Our Portfolio"}/>
-      <Blog />
+      {/* <Blog /> */}
       <LetsStart />
     </div>
   );

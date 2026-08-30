@@ -57,6 +57,7 @@ const Banner = () => {
             <Heading
               isDart={true}
               label={label}
+              accentColor="#00FFFF"
               isCenter={isDesktop ? false : true}
               textColor="#FFFFFF"
               isGradient={true}
