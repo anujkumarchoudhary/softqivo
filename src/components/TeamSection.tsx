@@ -18,9 +18,9 @@ export default function TeamSection({ data }: any) {
         {/* =========================================
             HEADER
         ========================================= */}
-        <div className="w-full lg:w-[60%]">
+        <div className="w-full lg:w-[60%] mx-auto">
           <Heading
-            isCenter={isDesktop ? false : true}
+            isCenter={true}
             label={data?.label}
             headingParts={data.headingParts}
             description={data.description}
