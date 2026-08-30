@@ -41,7 +41,7 @@ export default function TeamSection({ data }: any) {
                   <div className="absolute inset-0 z-10 rounded-2xl border border-black/5 transition-all duration-500 group-hover:border-purple-500/60" />
 
                   <img
-                    src={"/images/team/team_1.jpg"}
+                    src={member?.image}
                     alt={member.name}
                     className="aspect-[4/4.5] w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
                   />

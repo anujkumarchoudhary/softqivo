@@ -88,7 +88,8 @@ export const staticData = {
             "linear-gradient(90deg, #A855F7 0%, #7C3AED 50%, #2563EB 100%)",
         },
       ],
-      description:"From strategy and design to development and deployment, we build digital products that are fast, scalable and purpose-driven.",
+      description:
+        "From strategy and design to development and deployment, we build digital products that are fast, scalable and purpose-driven.",
       list: [
         {
           title: "Web Development",
@@ -290,64 +291,72 @@ export const staticData = {
 
       members: [
         {
-          name: "Your Name",
+          name: "Anuj Kumar Choudhary",
           role: "Founder & CEO",
-          image: team,
+          image: "/images/author/softqivo_ceo.png",
           linkedin: "FaLinkedinIn",
+          instagram: "BsInstagram",
+          twitter: "FaTwitter",
         },
         {
           name: "Team Member",
           role: "Lead Developer",
-          image: team,
+          image: "/images/team/team_2.png",
           linkedin: "FaLinkedinIn",
+          instagram: "BsInstagram",
+          twitter: "FaTwitter",
+        },
+        {
+          name: "Sherry Lin",
+          role: "UI/UX Designer",
+          image: "/images/team/team_1.png",
+          linkedin: "FaLinkedinIn",
+          instagram: "BsInstagram",
+          twitter: "FaTwitter",
         },
         {
           name: "Team Member",
-          role: "UI/UX Designer",
-          image: team,
+          role: "Sales & Marketing",
+          image: "/images/team/team_3.png",
           linkedin: "FaLinkedinIn",
-        },
-        {
-          name: "Team Member",
-          role: "UI/UX Designer",
-          image: team,
-          linkedin: "FaLinkedinIn",
+          instagram: "BsInstagram",
+          twitter: "FaTwitter",
         },
       ],
     },
 
-  support: {
-    label: "Dedicated Support",
+    support: {
+      label: "Dedicated Support",
 
-    heading:
-      "We provide dedicated support throughout the development process",
+      heading:
+        "We provide dedicated support throughout the development process",
 
-    highlight: "and beyond.",
+      highlight: "and beyond.",
 
-    description:
-      "Our team stays with you beyond launch — helping you solve problems, improve your product, and keep your digital experience moving forward.",
+      description:
+        "Our team stays with you beyond launch — helping you solve problems, improve your product, and keep your digital experience moving forward.",
 
-    mainImage: support_1,
+      mainImage: support_1,
 
-    teamImage: support_1,
+      teamImage: support_1,
 
-    videoHref: "/",
+      videoHref: "/",
 
-    features: [
-      {
-        icon: "clock" as const,
-        title: "24 Hours Support",
-        description:
-          "Our team is available whenever you need help, guidance, or technical assistance.",
-      },
-      {
-        icon: "infinity" as const,
-        title: "Unlimited Revision",
-        description:
-          "We refine and improve your product until everything feels right and works as expected.",
-      },
-    ],
-  },
+      features: [
+        {
+          icon: "clock" as const,
+          title: "24 Hours Support",
+          description:
+            "Our team is available whenever you need help, guidance, or technical assistance.",
+        },
+        {
+          icon: "infinity" as const,
+          title: "Unlimited Revision",
+          description:
+            "We refine and improve your product until everything feels right and works as expected.",
+        },
+      ],
+    },
     whoWeAre: {
       image: "",
       label: "Who We Are",
