@@ -11,6 +11,7 @@ type HeadingPart = {
 type HeadingProps = {
   label?: string;
   labelColor?: string;
+  accentColor?: string;
   description?: string;
   headingParts: HeadingPart[];
 
@@ -39,6 +40,7 @@ const fontMap: Record<string, string> = {
 const Heading = ({
   label,
   labelColor,
+  accentColor,
   description,
   headingParts,
   textColor = "#000000",
@@ -54,7 +56,19 @@ const Heading = ({
     <div className={`${isCenter ? "text-center" : ""}`}>
       {/* Label */}
       {label && (
-        <div>
+        <div
+          className={`flex items-center gap-3  ${isCenter ? "text-center w-fit mx-auto" : "w-full"}`}
+        >
+          {accentColor && (
+            <span
+              className="h-2.5 w-2.5 animate-pulse rounded-full"
+              style={{
+                backgroundColor: accentColor ?? "#A855F7",
+                boxShadow: `0 0 12px ${accentColor ?? "#A855F7"}`,
+              }}
+            />
+          )}
+
           <span
             className={`
         uppercase inline-block
@@ -63,9 +77,8 @@ const Heading = ({
         px-0 py-2
         tracking-widest
         text-[12px]
-        lg:text-[15px]
+        lg:text-[14px]
         font-semibold
-        ${isCenter ? "text-center" : ""}
       `}
             style={{
               color: labelColor ?? textColor,

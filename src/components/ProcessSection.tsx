@@ -187,6 +187,7 @@ export default function OurProcess({ data }: OurProcessProps) {
           {/* Heading + Description */}
           <Heading
             isCenter={true}
+            accentColor="#7CFC00"
             labelColor="fff"
             textColor="#fff"
             label={data.label}

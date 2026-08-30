@@ -12,39 +12,6 @@ import Button from "./common/Button";
 import { useRouter } from "next/navigation";
 import { ArrowUpRight } from "lucide-react";
 
-const data = [
-  {
-    id: 1,
-    label: "Freelancer",
-    image: blog,
-    title: "Tips Recommendation Remote Worker Today",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-    date: "2024-01-01",
-    link: "/blog/1",
-  },
-  {
-    id: 2,
-    label: "Freelancer",
-    image: blog2,
-    title: "Best Choosing Frontend Framework Tools",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-    date: "2024-01-02",
-    link: "/blog/2",
-  },
-  {
-    id: 3,
-    label: "Freelancer",
-    image: blog3,
-    title: "Tips To Get Clean Code Programs",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-    date: "2024-01-03",
-    link: "/blog/3",
-  },
-];
-
 const Blog = ({ data }: any) => {
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
 
@@ -68,7 +35,7 @@ const Blog = ({ data }: any) => {
 
         {/* BLOG CARDS */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-[1rem] lg:gap-[2rem] mt-4 lg:mt-12">
-          {data.list.map((item: any, index: number) => (
+          {data?.list?.map((item: any, index: number) => (
             <div
               key={index}
               style={{

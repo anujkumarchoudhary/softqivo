@@ -62,6 +62,8 @@ const FAQ = () => {
         <div className="mx-auto mb-14 w-[90%] lg:w-[40%] text-center">
           <Heading
             label="FAQ"
+            // accentColor="#0000FF"
+            isCenter={true}
             headingParts={[{ text: "Frequently Asked Questions" }]}
             description="Everything you need to know about our services, development process,
             and working with SoftQivo."

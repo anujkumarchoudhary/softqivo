@@ -314,7 +314,6 @@ export const staticData = {
         },
       ],
     },
-
     support: {
       label: "Dedicated Support",
 
@@ -643,7 +642,6 @@ export const staticData = {
         },
       ],
     },
-
     feedbacks: {
       label: "Client Feedback",
 
@@ -696,6 +694,29 @@ export const staticData = {
           designation: "Co-Founder, ElevateX",
         },
       ],
+    },
+    finalCta: {
+      label: "Let's Build",
+
+      headingParts: [
+        {
+          text: "Have an idea worth building?",
+          color: "#FFFFFF",
+          size: "clamp(24px, 4vw, 46px)",
+          weight: "700",
+        },
+      ],
+
+      description:
+        "Tell us what you're building. We'll help turn your idea into a thoughtful, scalable digital product designed for real business growth.",
+
+      buttonText: "Start a Project",
+
+      buttonHref: "/contact",
+
+      image: "/images/cta/final-cta.jpg",
+
+      imageAlt: "Digital product development at SoftQivo",
     },
   },
   contact: {
@@ -767,6 +788,7 @@ export const staticData = {
       ],
       cardImges: [card_img_01, card_img_02],
     },
+
     teamWork: {
       label: "Dedicated Team Work",
       title:
