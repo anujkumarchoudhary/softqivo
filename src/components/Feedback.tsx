@@ -39,7 +39,7 @@ const Feedback = () => {
   const { headingParts, label, data } = staticData.home?.feedbacks || {};
 
   return (
-    <section ref={ref} className="pb-12 lg:pb-16 bg-secondary-bg">
+    <section ref={ref} className="py-12 lg:py-16 bg-secondary-bg">
       <MaxWidth>
         {/* HEADING */}
         <div

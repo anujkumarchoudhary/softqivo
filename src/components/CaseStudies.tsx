@@ -115,8 +115,26 @@ export default function CaseStudies({ data }: any) {
 
   return (
     <section className="relative overflow-hidden bg-[#050507] py-12 lg:py-16">
-      {/* Background glow */}
+      {/* ================= BACKGROUND ================= */}
+
+      {/* Localized glow */}
       <div className="pointer-events-none absolute left-1/2 top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-purple-600/5 blur-[140px]" />
+
+      {/* Localized grid around glow */}
+      <div
+        className="pointer-events-none absolute left-1/2 top-0 h-[520px] w-[900px] -translate-x-1/2 opacity-[0.08]"
+        style={{
+          backgroundImage: `
+          linear-gradient(rgba(255,255,255,0.12) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255,255,255,0.12) 1px, transparent 1px)
+        `,
+          backgroundSize: "45px 45px",
+          maskImage:
+            "radial-gradient(ellipse at center, black 0%, transparent 72%)",
+          WebkitMaskImage:
+            "radial-gradient(ellipse at center, black 0%, transparent 72%)",
+        }}
+      />
 
       <MaxWidth className="relative">
         {/* Header */}

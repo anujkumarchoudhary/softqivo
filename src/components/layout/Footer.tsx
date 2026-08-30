@@ -7,7 +7,46 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary-bg text-white">
+    <footer className="relative overflow-hidden bg-primary-bg text-white">
+      {/* Purple localized glow + grid */}
+      <div className="pointer-events-none absolute -left-24 -top-24 h-[420px] w-[520px] opacity-70">
+        <div className="absolute inset-0 rounded-full bg-purple-600/[0.12] blur-[120px]" />
+
+        <div
+          className="absolute inset-0 opacity-[0.07]"
+          style={{
+            backgroundImage: `
+          linear-gradient(rgba(168,85,247,0.8) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(168,85,247,0.8) 1px, transparent 1px)
+        `,
+            backgroundSize: "45px 45px",
+            maskImage:
+              "radial-gradient(ellipse at center, black 0%, transparent 72%)",
+            WebkitMaskImage:
+              "radial-gradient(ellipse at center, black 0%, transparent 72%)",
+          }}
+        />
+      </div>
+
+      {/* Blue localized glow + grid */}
+      <div className="pointer-events-none absolute -bottom-28 -right-24 h-[420px] w-[520px] opacity-70">
+        <div className="absolute inset-0 rounded-full bg-blue-600/[0.12] blur-[120px]" />
+
+        <div
+          className="absolute inset-0 opacity-[0.07]"
+          style={{
+            backgroundImage: `
+          linear-gradient(rgba(37,99,235,0.8) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(37,99,235,0.8) 1px, transparent 1px)
+        `,
+            backgroundSize: "45px 45px",
+            maskImage:
+              "radial-gradient(ellipse at center, black 0%, transparent 72%)",
+            WebkitMaskImage:
+              "radial-gradient(ellipse at center, black 0%, transparent 72%)",
+          }}
+        />
+      </div>
       <MaxWidth className="grid grid-cols-1 gap-10 py-12 lg:grid-cols-4 lg:gap-8 lg:py-20">
         {/* Brand */}
         <div>
