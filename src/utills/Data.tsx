@@ -18,20 +18,8 @@ import support_1 from "../../public/images/support/support_1.png";
 import feedback01 from "../../public/images/software-developer-at-office.jpg";
 import feedback02 from "../../public/images/software-developer-at-office.jpg";
 import feedback03 from "../../public/images/software-developer-at-office.jpg";
-import { PiClockCounterClockwiseFill } from "react-icons/pi";
-import { TbClock24 } from "react-icons/tb";
 import { FaMapLocationDot, FaHeadphonesSimple } from "react-icons/fa6";
 import { IoIosMailOpen } from "react-icons/io";
-
-import {
-  Code2,
-  Layers3,
-  Smartphone,
-  Palette,
-  Boxes,
-  Cloud,
-  ArrowUpRight,
-} from "lucide-react";
 
 type SupportItem = {
   icon: React.ReactNode;
@@ -94,40 +82,42 @@ export const staticData = {
         {
           title: "Web Development",
           description:
-            "Modern, responsive and high-performance web applications.",
+            "We build fast, responsive websites and web applications with modern technologies, clean architecture, strong security, seamless experiences, and scalable performance for growth.",
           href: "/services/web-development",
           icon: "Code2",
         },
         {
           title: "Software Development",
           description:
-            "Scalable, secure and custom software built for your business.",
+            "We create custom software solutions tailored to your business workflows, combining secure architecture, powerful functionality, scalable technology, and reliable performance for growth.",
           href: "/services/software-development",
           icon: "Layers3",
         },
         {
           title: "Mobile Applications",
-          description: "Powerful mobile apps with great user experiences.",
+          description:
+            "We develop intuitive mobile applications with seamless experiences, powerful features, responsive interfaces, and reliable performance across modern devices and platforms for businesses.",
           href: "/services/mobile-applications",
           icon: "Smartphone",
         },
         {
           title: "UI/UX Design",
           description:
-            "Beautiful, intuitive and user-focused digital experiences.",
+            "We design intuitive digital experiences through thoughtful research, clear interfaces, engaging interactions, and user-focused design that improves usability, engagement, and conversions.",
           href: "/services/ui-ux-design",
           icon: "Palette",
         },
         {
           title: "API & Backend",
-          description: "Robust APIs and backend systems built for performance.",
+          description:
+            "We develop secure, scalable backend systems and APIs that power applications, enable integrations, manage data efficiently, and deliver reliable performance at scale.",
           href: "/services/api-backend",
           icon: "Boxes",
         },
         {
           title: "Cloud & DevOps",
           description:
-            "Reliable infrastructure, deployment and cloud solutions.",
+            "We build reliable cloud infrastructure and DevOps workflows that improve deployment speed, scalability, security, monitoring, automation, and overall operational efficiency for businesses.",
           href: "/services/cloud-devops",
           icon: "Cloud",
         },
@@ -299,17 +289,17 @@ export const staticData = {
           twitter: "FaTwitter",
         },
         {
-          name: "Team Member",
-          role: "Lead Developer",
-          image: "/images/team/team_2.png",
+          name: "Sherry Lin",
+          role: "UI/UX Designer",
+          image: "/images/team/team_1.png",
           linkedin: "FaLinkedinIn",
           instagram: "BsInstagram",
           twitter: "FaTwitter",
         },
         {
-          name: "Sherry Lin",
-          role: "UI/UX Designer",
-          image: "/images/team/team_1.png",
+          name: "John Smith",
+          role: "Lead Developer",
+          image: "/images/team/team_2.png",
           linkedin: "FaLinkedinIn",
           instagram: "BsInstagram",
           twitter: "FaTwitter",

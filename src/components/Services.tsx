@@ -64,7 +64,7 @@ const Services = ({ data }: any) => {
                   {service.title}
                 </h3>
 
-                <p className="mt-3 text-[16px] text-center lg:text-left leading-5 text-[#777780]">
+                <p className="mt-3 text-[16px] text-center lg:text-left leading-7 text-[#777780]">
                   {service.description}
                 </p>
               </div>
