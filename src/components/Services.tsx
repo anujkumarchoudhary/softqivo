@@ -19,17 +19,9 @@ const Services = ({ data }: any) => {
   return (
     <MaxWidth className="relative overflow-hidden bg-white py-10 sm:py-12 lg:py-16">
       {/* ================= HEADER ================= */}
-      <div className="mb-12 grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
+      <div className="mb-12 mx-auto w-full lg:w-[60%]">
         {/* Left */}
-        <Heading isCenter={isDesktop ? false : true} headingParts={headingParts}  />
-
-        {/* Right */}
-        <div className="lg:pb-1 lg:pl-16">
-          <p className="text-[18px] text-center lg:text-left leading-6 text-[#686873]">
-            From strategy and design to development and deployment, we build
-            digital products that are fast, scalable and purpose-driven.
-          </p>
-        </div>
+        <Heading isCenter={true} headingParts={headingParts} description={data?.description}  />
       </div>
 
       {/* ================= SERVICES ================= */}

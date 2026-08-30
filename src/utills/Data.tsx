@@ -88,6 +88,7 @@ export const staticData = {
             "linear-gradient(90deg, #A855F7 0%, #7C3AED 50%, #2563EB 100%)",
         },
       ],
+      description:"From strategy and design to development and deployment, we build digital products that are fast, scalable and purpose-driven.",
       list: [
         {
           title: "Web Development",
