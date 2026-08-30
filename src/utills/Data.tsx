@@ -642,6 +642,106 @@ export const staticData = {
         },
       ],
     },
+    technologes: {
+      label: "Technology",
+
+      headingParts: [
+        {
+          text: "Built with technology that moves your business forward.",
+          color: "#ffffff",
+          size: "clamp(24px, 4vw, 46px)",
+          weight: "700",
+        },
+      ],
+
+      description:
+        "We use modern, reliable technologies to create fast, scalable, secure, and maintainable digital products.",
+
+      technologies: [
+        {
+          name: "React",
+          category: "Frontend",
+          icon: "/images/technology/icon_1.webp",
+          description: "Flexible interfaces built for modern web experiences.",
+        },
+        {
+          name: "Next.js",
+          category: "Framework",
+          icon: "/images/technology/icon_2.png",
+          description:
+            "High-performance applications with powerful full-stack capabilities.",
+        },
+        {
+          name: "TypeScript",
+          category: "Language",
+          icon: "/images/technology/icon_4.svg",
+          description:
+            "Reliable and maintainable code for scalable applications.",
+        },
+        {
+          name: "Node.js",
+          category: "Backend",
+          icon: "/images/technology/icon_3.png",
+          description: "Fast and scalable backend systems and APIs.",
+        },
+        {
+          name: "MongoDB",
+          category: "Database",
+          icon: "/images/technology/icon_5.png",
+          description:
+            "Flexible data architecture built for growing applications.",
+        },
+        {
+          name: "PostgreSQL",
+          category: "Database",
+          icon: "/images/technology/icon_7.webp",
+          description:
+            "Powerful relational data solutions for complex systems.",
+        },
+        {
+          name: "AWS",
+          category: "Cloud",
+          icon: "/images/technology/icon_6.webp",
+          description:
+            "Secure and scalable cloud infrastructure for production.",
+        },
+        {
+          name: "Docker",
+          category: "DevOps",
+          icon: "/images/technology/icon_9.png",
+          description:
+            "Consistent and reliable application deployment environments.",
+        },
+        {
+          name: "Figma",
+          category: "Design",
+          icon: "/images/technology/icon_8.png",
+          description:
+            "Collaborative product design and prototyping workflows.",
+        },
+        // {
+        //   name: "Git",
+        //   category: "Development",
+        //   icon: "/images/technology/icon_2.png",
+        //   description:
+        //     "Reliable version control for collaborative development.",
+        // },
+        // {
+        //   name: "REST API",
+        //   category: "Backend",
+        //   icon: "/images/technology/icon_2.png",
+        //   description:
+        //     "Clean and scalable APIs connecting products and services.",
+        // },
+        // {
+        //   name: "Cloudflare",
+        //   category: "Infrastructure",
+        //   icon: "/images/technology/icon_2.png",
+        //   description:
+        //     "Performance, security, and reliable edge infrastructure.",
+        // },
+      ],
+    },
     feedbacks: {
       label: "Client Feedback",
 

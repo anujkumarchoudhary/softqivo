@@ -181,6 +181,24 @@ export default function OurProcess({ data }: OurProcessProps) {
 
       <div className="pointer-events-none absolute -right-40 top-1/2 h-[400px] w-[400px] rounded-full bg-blue-600/10 blur-[160px]" />
 
+      {/* Localized grid */}
+      <div
+        className="pointer-events-none absolute left-1/2 top-1/3 h-[700px] w-[1000px] -translate-x-1/2 opacity-[0.07]"
+        style={{
+          backgroundImage: `
+      linear-gradient(rgba(255,255,255,0.14) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.14) 1px, transparent 1px)
+    `,
+          backgroundSize: "50px 50px",
+
+          maskImage:
+            "radial-gradient(ellipse 60% 55% at center, black 0%, rgba(0,0,0,0.8) 35%, transparent 75%)",
+
+          WebkitMaskImage:
+            "radial-gradient(ellipse 60% 55% at center, black 0%, rgba(0,0,0,0.8) 35%, transparent 75%)",
+        }}
+      />
+
       <MaxWidth className="relative">
         {/* ================= HEADER ================= */}
         <div className=" w-full md:w-[80%] lg:w-[55%] mx-auto">

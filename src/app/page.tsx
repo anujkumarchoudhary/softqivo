@@ -11,9 +11,10 @@ import FAQ from "../components/FAQ";
 import ProcessSection from "../components/ProcessSection";
 import TeamSection from "../components/TeamSection";
 import FinalCTA from "../components/FinalCTA";
+import TechnologySection from "../components/TechnologySection";
 //
 const page = () => {
-  const { services, caseStudies, process, team, blogs, finalCta } =
+  const { services, caseStudies, process, team, blogs, technologes, finalCta } =
     staticData?.home;
 
   return (
@@ -25,10 +26,11 @@ const page = () => {
       <About />
       <ProcessSection data={process} />
       <TeamSection data={team} />
+      <TechnologySection data={technologes} />
       <Feedback />
       <Blog data={blogs} />
-      <FinalCTA data={finalCta} />
       <FAQ />
+      <FinalCTA />
     </div>
   );
 };

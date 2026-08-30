@@ -48,8 +48,47 @@ const Banner = () => {
   return (
     <section
       ref={ref}
-      className="py-12 lg:py-16 bg-primary-bg  w-full overflow-hidden"
+      className="relative py-12 lg:py-16 bg-primary-bg  w-full overflow-hidden"
     >
+      {/* Purple localized glow + grid */}
+      <div className="pointer-events-none absolute -left-24 -top-24 h-[420px] w-[520px] opacity-70">
+        <div className="absolute inset-0 rounded-full bg-purple-600/[0.12] blur-[120px]" />
+
+        <div
+          className="absolute inset-0 opacity-[0.07]"
+          style={{
+            backgroundImage: `
+          linear-gradient(rgba(168,85,247,0.8) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(168,85,247,0.8) 1px, transparent 1px)
+        `,
+            backgroundSize: "45px 45px",
+            maskImage:
+              "radial-gradient(ellipse at center, black 0%, transparent 72%)",
+            WebkitMaskImage:
+              "radial-gradient(ellipse at center, black 0%, transparent 72%)",
+          }}
+        />
+      </div>
+
+      {/* Blue localized glow + grid */}
+      <div className="pointer-events-none absolute -bottom-28 -right-24 h-[420px] w-[520px] opacity-70">
+        <div className="absolute inset-0 rounded-full bg-blue-600/[0.12] blur-[120px]" />
+
+        <div
+          className="absolute inset-0 opacity-[0.07]"
+          style={{
+            backgroundImage: `
+          linear-gradient(rgba(37,99,235,0.8) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(37,99,235,0.8) 1px, transparent 1px)
+        `,
+            backgroundSize: "45px 45px",
+            maskImage:
+              "radial-gradient(ellipse at center, black 0%, transparent 72%)",
+            WebkitMaskImage:
+              "radial-gradient(ellipse at center, black 0%, transparent 72%)",
+          }}
+        />
+      </div>
       {/* Content */}
       <MaxWidth className="relative space-y-0 lg:h-fit  my-auto">
         <div className="grid  grid-cols-1 lg:grid-cols-2 justify-between gap-8 relative z-10">
@@ -83,7 +122,7 @@ const Banner = () => {
             <Image src={banner_img} alt="Banner Image" />
           </div>
         </div>
-        <div className="">
+        <div className="mt-10">
           <h3 className="text-white text-[20px] uppercase">
             Trusted By Business Workplace
           </h3>
