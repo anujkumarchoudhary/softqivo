@@ -20,7 +20,6 @@ const page = () => {
   return (
     <div>
       <Banner />
-      {/* <Client/> */}
       <Services data={services} />
       <CaseStudies data={caseStudies} />
       <About />

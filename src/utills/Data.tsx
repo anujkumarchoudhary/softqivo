@@ -281,7 +281,7 @@ export const staticData = {
 
       members: [
         {
-          name: "Anuj Kumar Choudhary",
+          name: "Anuj Choudhary",
           role: "Founder & CEO",
           image: "/images/author/softqivo_ceo.png",
           linkedin: "FaLinkedinIn",
