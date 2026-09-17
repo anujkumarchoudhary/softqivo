@@ -795,6 +795,49 @@ export const staticData = {
         },
       ],
     },
+    howWeWork: {
+      label: "How We Work",
+
+      heading: "A better process creates better products.",
+
+      description:
+        "We combine strategy, design, technology, and continuous collaboration to turn ambitious ideas into digital products that create lasting value.",
+
+      steps: [
+        {
+          number: "01",
+          title: "Understand",
+          tag: "DISCOVERY",
+          icon: "search",
+          description:
+            "We start by understanding your business, your audience, your challenges, and the opportunity behind your idea.",
+        },
+        {
+          number: "02",
+          title: "Plan",
+          tag: "STRATEGY",
+          icon: "target",
+          description:
+            "We define the product direction, priorities, user experience, and technology required to build the right solution.",
+        },
+        {
+          number: "03",
+          title: "Build",
+          tag: "EXECUTION",
+          icon: "code",
+          description:
+            "Our designers and developers work together to create a thoughtful, scalable, and high-performing digital product.",
+        },
+        {
+          number: "04",
+          title: "Improve",
+          tag: "GROWTH",
+          icon: "rocket",
+          description:
+            "After launch, we learn from real users, refine the product, and continue improving it as your business evolves.",
+        },
+      ],
+    },
     finalCta: {
       label: "Let's Build",
 

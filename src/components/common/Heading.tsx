@@ -92,7 +92,7 @@ const Heading = ({
       {/* Heading */}
       <Tag
         className={`
-          transition-all duration-700 delay-150
+          transition-all duration-700 delay-150 leading-10 lg:leading-19
           ${className}
           ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
