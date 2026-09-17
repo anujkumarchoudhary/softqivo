@@ -14,7 +14,7 @@ const Header = () => {
   const router = useRouter();
   const [open, setOpen] = useState(false);
   return (
-    <div className="bg-primary-bg w-full py-2 lg:py-2.5 sticky top-0 z-50">
+    <div className="relative bg-primary-bg w-full py-2 lg:py-2.5 sticky top-0 z-50">
       <MaxWidth className="flex justify-between items-center text-white">
         <div onClick={() => router.push("/")} className="cursor-pointer">
           <Image
@@ -60,7 +60,7 @@ const Header = () => {
         )}
       </MaxWidth>
       {open && (
-        <div className="bg-white pb-4 divide-y divide-[#000000]/20  space-y-4 py-1 lg:hidden">
+        <div className="absolute top-full left-0 right-0 bg-white pb-4 divide-y divide-[#000000]/20  space-y-4 py-1 lg:hidden">
           <div className="flex flex-col ">
             {menuData?.map((menu, idx) => {
               return (
