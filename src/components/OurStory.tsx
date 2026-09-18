@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import MaxWidth from "./layout/MaxWidth";
 import Icon from "@/src/utills/iconMap ";
+import SectionBackground from "./ui/SectionBackground";
 
 const values = [
   {
@@ -42,6 +43,8 @@ export default function OurStory() {
   return (
     <section className="relative overflow-hidden bg-white py-16 lg:py-24">
       {/* Ambient glow */}
+            <SectionBackground />
+
       <div className="pointer-events-none absolute left-[5%] top-10 h-[350px] w-[350px] rounded-full bg-purple-500/[0.06] blur-[130px]" />
 
       <div className="pointer-events-none absolute right-[10%] top-[45%] h-[300px] w-[300px] rounded-full bg-blue-500/[0.05] blur-[120px]" />

@@ -70,7 +70,7 @@ const Feedback = () => {
                 ))}
               </div>
 
-              <p className="mb-14 italic font-semibold text-[#FFFFFF]">
+              <p className="mb-14 font-normal text-[#FFFFFF]">
                 "{item.message}"
               </p>
 

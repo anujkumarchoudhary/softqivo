@@ -97,7 +97,6 @@ const Banner = () => {
               isDart={true}
               label={label}
               accentColor="#00FFFF"
-              isCenter={isDesktop ? false : true}
               textColor="#FFFFFF"
               isGradient={true}
               headingParts={headingParts}
