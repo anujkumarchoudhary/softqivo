@@ -41,9 +41,9 @@ const values = [
 
 export default function OurStory() {
   return (
-    <section className="relative overflow-hidden bg-white py-16 lg:py-24">
+    <section className="relative overflow-hidden bg-[#fbfbfb] py-16 lg:py-24">
       {/* Ambient glow */}
-            <SectionBackground />
+            {/* <SectionBackground /> */}
 
       <div className="pointer-events-none absolute left-[5%] top-10 h-[350px] w-[350px] rounded-full bg-purple-500/[0.06] blur-[130px]" />
 
