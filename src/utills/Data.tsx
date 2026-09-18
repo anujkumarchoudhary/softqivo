@@ -200,19 +200,18 @@ export const staticData = {
       headingParts: [
         {
           text: "We don't just build.",
-          color: "#FFFFFF",
+          color: "#000000",
           style: "normal",
           size: "clamp(36px, 5vw, 52px)",
           weight: "600",
         },
         {
           text: " We build with purpose.",
-          color: "#FFFFFF",
           style: "normal",
           size: "clamp(36px, 5vw, 52px)",
           weight: "600",
-          gradient:
-            "linear-gradient(90deg, #6B7280 0%, #D1D5DB 50%, #6B7280 100%)",
+          gradient: "linear-gradient(90deg, #A855F7, #3B82F6)",
+
         },
       ],
 
