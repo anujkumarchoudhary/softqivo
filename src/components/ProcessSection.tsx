@@ -38,7 +38,7 @@ interface OurProcessProps {
   data: ProcessData;
 }
 
-export default function OurProcess({ data }: OurProcessProps) {
+export default function OurProcess({ data }: any) {
   const sectionRef = useRef<HTMLElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -112,7 +112,7 @@ export default function OurProcess({ data }: OurProcessProps) {
           {/* Steps */}
 
           <div className="space-y-28 md:space-y-40">
-            {data.steps.map((step, index) => (
+            {data.steps.map((step:any, index:number) => (
               <ProcessItem
                 key={step.number}
                 step={step}
