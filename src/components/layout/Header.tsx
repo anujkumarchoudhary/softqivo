@@ -14,7 +14,7 @@ const Header = () => {
   const router = useRouter();
   const [open, setOpen] = useState(false);
   return (
-    <div className="relative bg-primary-bg w-full py-2 lg:py-2.5 top-0 z-50">
+    <div className="bg-primary-bg w-full py-2 lg:py-2.5 sticky top-0 z-50">
       <MaxWidth className="flex justify-between items-center text-white">
         <div onClick={() => router.push("/")} className="cursor-pointer">
           <Image
@@ -60,7 +60,7 @@ const Header = () => {
         )}
       </MaxWidth>
       {open && (
-        <div className="absolute h-[90vh] top-full left-0 right-0 bg-white py-1 lg:hidden">
+        <div className="absolute top-full left-0 right-0 bg-white pb-4 divide-y divide-[#000000]/20  space-y-4 py-1 lg:hidden">
           <div className="flex flex-col ">
             {menuData?.map((menu, idx) => {
               return (
@@ -79,7 +79,7 @@ const Header = () => {
           </div>
 
           {/* Social Icons */}
-          <div className="absolute bottom-6 border-t border-[#000000]/20 w-full pt-4 flex px-6 items-center gap-3">
+          <div className="flex px-6 items-center gap-3">
             <a
               href="#"
               aria-label="FaLinkedinIn"
