@@ -13,7 +13,7 @@ type HeadingProps = {
   labelColor?: string;
   accentColor?: string;
   description?: string;
-  headingParts: HeadingPart[];
+  headingParts?: HeadingPart[];
 
   textColor?: string;
   descColor?: string;
@@ -99,7 +99,7 @@ const Heading = ({
           }
         `}
       >
-        {headingParts.map((part, index) => {
+        {headingParts?.map((part, index) => {
           const isPartGradient = Boolean(part.gradient);
 
           return (
