@@ -9,6 +9,7 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 import MaxWidth from "./layout/MaxWidth";
 import Heading from "./common/Heading";
 import SectionBackground from "./ui/SectionBackground";
+import about_hero_banner from "../../public/images/about/about_hero_banner.png";
 
 const stats = [
   {
@@ -62,7 +63,7 @@ export default function AboutBanner() {
   {/* Right */}
   <div className="relative h-140">
   <Image  
-        src="/images/about/about_hero_banner.png "
+        src={about_hero_banner}
         alt="SoftQivo"
         fill
         className="object-cover rounded-[20px]"
