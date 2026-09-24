@@ -4,12 +4,10 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Rocket, Users, BadgeCheck, Code2 } from "lucide-react";
-import { RiDoubleQuotesL } from "react-icons/ri";
-
 import MaxWidth from "./layout/MaxWidth";
 import Heading from "./common/Heading";
-import SectionBackground from "./ui/SectionBackground";
 import about_hero_banner from "../../public/images/about/about_hero_banner.png";
+import Button from "./common/Button";
 
 const stats = [
   {
@@ -34,30 +32,22 @@ const stats = [
   },
 ];
 
-export default function AboutBanner() {
+export default function AboutBanner({ data }: { data: any }) {
+  console.log("data21", data);
   return (
-    <section className="relative py-12 lg:py-16 overflow-hidden text-black">
+    <section className="relative py-12 lg:py-24 overflow-hidden text-black">
       {/* Background */}
       {/* <SectionBackground /> */}
       <MaxWidth className="grid grid-cols-1 justify-between gap-10 md:grid-cols-[40%_50%]">
   {/* Left */}
-  <div className="my-auto">
+  <div className="my-auto space-y-15">
         <Heading
-        labelColor="#000000"
+        labelColor="#800080"
       label="WHO WE ARE"
-      headingParts={[
-        {
-          text: "Building digital solutions",
-          color: "#000000",
-          font: "playfair",
-        },
-        {
-          text: " for modern businesses.",
-          gradient: "linear-gradient(90deg, #A855F7, #3B82F6)",
-        },
-      ]}
-      description="SoftQivo is a digital technology company focused on web development and digital solutions. We combine technology, creativity, and business thinking to build fast, scalable, and meaningful digital experiences."
+      headingParts={data?.headingParts}
+      description={"SoftQivo is a digital technology company focused on web development and digital solutions. We combine technology, creativity, and business thinking to build fast, scalable, and meaningful digital experiences."}
     />
+    <Button name={"Book a Consultation"} />
   </div>
 
   {/* Right */}

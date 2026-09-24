@@ -26,7 +26,7 @@ const Button = ({
       <button
         type="button"
         onClick={handleClick}
-        className={`gradient-border-btn group ${widthClass}`}
+        className={`gradient-border-btn  group ${widthClass}`}
       >
         <span className="gradient-border-btn-content">
           {name}

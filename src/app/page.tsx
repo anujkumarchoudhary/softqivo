@@ -12,7 +12,6 @@ import ProcessSection from "../components/ProcessSection";
 import TeamSection from "../components/TeamSection";
 import FinalCTA from "../components/FinalCTA";
 import TechnologySection from "../components/TechnologySection";
-//
 const page = () => {
   const { services, caseStudies, process, team, blogs, technologes, finalCta } =
     staticData?.home;

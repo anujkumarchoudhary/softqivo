@@ -48,7 +48,7 @@ const Banner = () => {
   return (
     <section
       ref={ref}
-      className="relative py-12 lg:py-16 bg-primary-bg  w-full overflow-hidden"
+      className="relative py-120 lg:py-0 h-[120vh] lg:h-[90vh] bg-primary-bg  w-full overflow-hidden"
     >
       {/* Purple localized glow + grid */}
       <div className="pointer-events-none absolute -left-24 -top-24 h-[420px] w-[520px] opacity-70">
@@ -69,9 +69,8 @@ const Banner = () => {
           }}
         />
       </div>
-
       {/* Blue localized glow + grid */}
-      <div className="pointer-events-none absolute -bottom-28 -right-24 h-[420px] w-[520px] opacity-70">
+      <div className="pointer-events-none absolute -bottom-28 right-0 h-[420px] w-[520px] opacity-70">
         <div className="absolute inset-0 rounded-full bg-blue-600/[0.12] blur-[120px]" />
 
         <div
@@ -89,15 +88,16 @@ const Banner = () => {
           }}
         />
       </div>
+
       {/* Content */}
-      <MaxWidth className="relative space-y-0 lg:h-fit  my-auto">
-        <div className="grid  grid-cols-1 lg:grid-cols-2 justify-between gap-8 relative z-10">
-          <div className=" space-y-8 my-auto">
+      <MaxWidth className=" absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 space-y-0 lg:h-fit  my-auto">
+        <div className="grid  grid-cols-1 lg:grid-cols-[50%_50%] justify-between gap-2 z-10">
+          <div className="space-y-10 my-auto">
             <Heading
               isDart={true}
               label={label}
-              accentColor="#00FFFF"
-              textColor="#FFFFFF"
+              accentColor="#ffffff"
+              textColor="#ffffff"
               isGradient={true}
               headingParts={headingParts}
               description={description}
@@ -116,13 +116,9 @@ const Banner = () => {
                 className="mx-auto lg:mx-0"
               />
             </div>
-          </div>
-          <div className="flex justify-end">
-            <Image src={banner_img} alt="Banner Image" />
-          </div>
-        </div>
-        <div className="mt-10">
-          <h3 className="text-white text-[20px] uppercase">
+
+            <div className="mt-24 hidden lg:block">
+          <h3 className="text-secondary-color text-[20px] uppercase">
             Trusted By Business Workplace
           </h3>
           <div className="flex gap-14 mt-8">
@@ -132,6 +128,28 @@ const Banner = () => {
                   src={partner.image}
                   width={120}
                   height={60}
+                  alt={partner.name}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+          </div>
+          <div className="flex h-fit my-auto justify-end">
+            <Image src={banner_img} alt="Banner Image" />
+          </div>
+        </div>
+        <div className="mt-14 lg:hidden block">
+          <h3 className="text-secondary-color text-[18px] text-center uppercase">
+            Trusted By Business Workplace
+          </h3>
+          <div className="flex justify-center gap-14 mt-8">
+            {partners.map((partner, index) => (
+              <div key={index} className="flex items-center justify-center">
+                <Image
+                  src={partner.image}
+                  width={60}
+                  height={30}
                   alt={partner.name}
                 />
               </div>

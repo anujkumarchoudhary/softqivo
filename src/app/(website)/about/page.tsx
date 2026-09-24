@@ -19,10 +19,11 @@ import OurProcess from "@/src/components/ProcessSection";
 const Page = () => {
   const { services, caseStudies, process, team, blogs,howWeWork, technologes, finalCta } =
     staticData?.home;
+      const { banner,  } =
+    staticData?.about;
   return (
     <div>
-      {/* <PageBanner heading={"About"} /> */}
-      <AboutBanner/>
+      <AboutBanner data={banner}/>
       <OurStory />
       <OurProcess data={process} />
       <TeamSection data={team} />

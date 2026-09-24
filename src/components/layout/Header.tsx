@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import MaxWidth from "./MaxWidth";
 import logo from "../../../public/softqivo_04.png";
+// import logo from "../../../public/softqivo.png";
+
 import Image from "next/image";
 import { menuData } from "@/src/data/menu";
 import Button from "../common/Button";
