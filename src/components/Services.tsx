@@ -17,7 +17,10 @@ const Services = ({ data }: any) => {
   const { headingParts, label, list } = data || {};
   const {isDesktop}=useResponsive();
   return (
-    <MaxWidth className="relative overflow-hidden bg-white py-10 sm:py-12 lg:py-16">
+    <div className="relative">
+
+      <MaxWidth className=" overflow-hidden bg-white py-10 sm:py-12 lg:py-16">
+
       {/* ================= HEADER ================= */}
       <div className="mb-12 mx-auto w-full lg:w-[60%]">
         {/* Left */}
@@ -100,6 +103,7 @@ const Services = ({ data }: any) => {
         })}
       </div>
     </MaxWidth>
+    </div>
   );
 };
 

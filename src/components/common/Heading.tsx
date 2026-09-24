@@ -53,13 +53,13 @@ const Heading = ({
   as: Tag = "h1",
 }: HeadingProps) => {
   return (
-    <div className={`${isCenter ? "text-center" : ""}`}>
+    <div className={` space-y-3 ${isCenter ? "text-center" : ""}`}>
       {/* Label */}
       {label && (
         <div
-          className={`flex items-center gap-3  ${isCenter ? "text-center w-fit mx-auto" : "w-full"}`}
+          className={`flex items-center gap-5 justify-center lg:justify-normal  ${isCenter ? "text-center w-fit mx-auto" : "w-full"}`}
         >
-          {accentColor && (
+          {/* {accentColor && (
             <span
               className="h-2.5 w-2.5 animate-pulse rounded-full"
               style={{
@@ -67,7 +67,8 @@ const Heading = ({
                 boxShadow: `0 0 12px ${accentColor ?? "#A855F7"}`,
               }}
             />
-          )}
+          )} */}
+              <span className="h-px w-7 animate-ping" style={{backgroundColor: accentColor ?? "#A855F7",animationDelay: "0s",}} />
 
           <span
             className={`
@@ -75,9 +76,9 @@ const Heading = ({
         rounded-full
         bg-transparent
         px-0 py-2
-        tracking-widest
-        text-[12px]
-        lg:text-[14px]
+        text-[10px]
+        lg:text-[12px]
+        tracking-[0.25em]
         font-semibold
       `}
             style={{
@@ -86,6 +87,7 @@ const Heading = ({
           >
             {label}
           </span>
+              <span className="h-px w-7 animate-ping" style={{backgroundColor: accentColor ?? "#A855F7",animationDelay: "0.5s",}} />
         </div>
       )}
 
@@ -105,6 +107,7 @@ const Heading = ({
           return (
             <span
               key={index}
+              className="text-center lg:text-left flex justify-center lg:justify-start lg:leading-16"
               style={{
                 // Normal color when no gradient
                 color: isPartGradient ? "transparent" : part.color,
@@ -138,7 +141,7 @@ const Heading = ({
         <p
           className={`
             text-[18px] lg:text-[20px]
-            transition-all duration-700 delay-300
+            transition-all text-center lg:text-left duration-700 delay-300
             ${description && "mt-10"}
             ${
               isVisible

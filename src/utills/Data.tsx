@@ -35,12 +35,12 @@ export const staticData = {
         {
           text: "Transform Ideas  ",
           color: "#FFFFFF",
-          // style: "normal",
           font: "playfair",
           style: "italic",
           size: "clamp(32px, 6vw, 54px)",
           weight: "400",
         },
+        
         {
           text: "  Into Powerful Digital Solutions.",
           color: "#FFFFFF",
@@ -861,6 +861,23 @@ export const staticData = {
       imageAlt: "Digital product development at SoftQivo",
     },
   },
+  about: {
+    banner: {
+      label: "About Us",
+      headingParts: [
+        {
+          text: "Building digital solutions",
+          color: "#000000",
+          font: "playfair",
+        },
+        {
+          text: " for modern businesses.",
+          gradient: "linear-gradient(90deg, #A855F7, #3B82F6)",
+        },
+      ]},
+      description: "SoftQivo is a digital technology company focused on web development and digital solutions. We combine technology, creativity, and business thinking to build fast, scalable, and meaningful digital experiences.",
+      button:"Book a Consultation",
+    },
   contact: {
     label: "Stay Tuned With us",
     headingParts: [
