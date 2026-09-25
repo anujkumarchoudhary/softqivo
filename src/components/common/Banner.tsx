@@ -15,16 +15,19 @@ import img_2 from "../../../public/images/partner/digitalocean.png";
 import img_3 from "../../../public/images/partner/google.png";
 import img_4 from "../../../public/images/partner/microsoft.png";
 import img_5 from "../../../public/images/partner/vercel.png";
+import { GrSecure } from "react-icons/gr";
+import { MdSecurity } from "react-icons/md";
+import { SiFsecure } from "react-icons/si";
 
 const partners = [
-  // {
-  //   name: "AWS",
-  //   image: img_1,
-  // },
-  // {
-  //   name: "DigitalOcean",
-  //   image: img_2,
-  // },
+  {
+    name: "AWS",
+    image: img_1,
+  },
+  {
+    name: "DigitalOcean",
+    image: img_2,
+  },
   {
     name: "Google",
     image: img_3,
@@ -48,7 +51,7 @@ const Banner = () => {
   return (
     <section
       ref={ref}
-      className="relative py-120 lg:py-0 h-[120vh] lg:h-[90vh] bg-primary-bg  w-full overflow-hidden"
+      className="py-12 lg:py-20 bg-primary-bg  w-full overflow-hidden"
     >
       {/* Purple localized glow + grid */}
       <div className="pointer-events-none absolute -left-24 -top-24 h-[420px] w-[520px] opacity-70">
@@ -90,7 +93,7 @@ const Banner = () => {
       </div>
 
       {/* Content */}
-      <MaxWidth className=" absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 space-y-0 lg:h-fit  my-auto">
+      <MaxWidth className="my-auto">
         <div className="grid  grid-cols-1 lg:grid-cols-[50%_50%] justify-between gap-2 z-10">
           <div className="space-y-10 my-auto">
             <Heading
@@ -139,11 +142,12 @@ const Banner = () => {
             <Image src={banner_img} alt="Banner Image" />
           </div>
         </div>
-        <div className="mt-14 lg:hidden block">
+        <div className="mt-14 block lg:hidden ">
           <h3 className="text-secondary-color text-[18px] text-center uppercase">
+            <SiFsecure size={40} className="text-white"/>
             Trusted By Business Workplace
           </h3>
-          <div className="flex justify-center gap-14 mt-8">
+          <div className="flex justify-center gap-3 lg:gap-14 mt-6">
             {partners.map((partner, index) => (
               <div key={index} className="flex items-center justify-center">
                 <Image

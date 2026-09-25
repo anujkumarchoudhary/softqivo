@@ -69,7 +69,7 @@ const SaveAndCancel = ({
           border border-white/20
           bg-white/[0.02]
           px-5 py-3
-          text-[16px]
+          text-[12px]
           sm:text-[18px]
           font-medium
           text-white
