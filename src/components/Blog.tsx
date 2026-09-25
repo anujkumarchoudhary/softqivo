@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import MaxWidth from "./layout/MaxWidth";
 import Heading from "./common/Heading";
 import blog from "../../public/images/blog_1.jpg";
@@ -11,42 +11,59 @@ import { useInViewOnce } from "@/src/hooks/useInViewOnce";
 import Button from "./common/Button";
 import { useRouter } from "next/navigation";
 import { ArrowUpRight } from "lucide-react";
+import Pagination from "./Pagination";
+import Link from "next/link";
 
 const Blog = ({ data }: any) => {
-  const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
+  const { ref, isVisible } =
+    useInViewOnce<HTMLDivElement>(0.3);
+
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const postsPerPage = 6;
+
+  const allBlogs = data?.list ?? [];
+
+  const totalPages = Math.ceil(
+    allBlogs.length / postsPerPage
+  );
+
+  const startIndex =
+    (currentPage - 1) * postsPerPage;
+
+  const blogs = allBlogs.slice(
+    startIndex,
+    startIndex + postsPerPage
+  );
 
   return (
-    <section ref={ref} className=" py-[3rem] lg:py-16 bg-[#F9F9F9]">
+    <section
+      ref={ref}
+      className="bg-[#F9F9F9] py-[3rem] lg:py-16"
+    >
       <MaxWidth>
-        {/* HEADING */}
-        <div
-          className={`transition-all duration-1000 ease-out ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-          }`}
-        >
-          <Heading
-            isCenter
-            headingParts={data?.headingParts}
-            label={data?.label}
-            description={data?.description}
-            className="w-[100%] lg:w-[60%] mx-auto"
-          />
-        </div>
 
         {/* BLOG CARDS */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[1rem] lg:gap-[2rem] mt-4 lg:mt-12">
-          {data?.list?.map((item: any, index: number) => (
+        <div className="mt-4 grid grid-cols-1 gap-[1rem] lg:mt-12 lg:grid-cols-3 lg:gap-[2rem]">
+          {blogs.map((item: any, index: number) => (
             <div
-              key={index}
+              key={item.href || index}
               style={{
                 transitionDelay: `${index * 150}ms`,
               }}
-              className={`group relative overflow-hidden rounded-2xl border-2 border-[#000000]/40
-    bg-secondary-bg
-    transition-all duration-700
-    hover:-translate-y-2
-    hover:border-purple-500/40
-    ${isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"}`}
+              className={`
+                group relative overflow-hidden rounded-2xl
+                border-2 border-[#000000]/40
+                bg-secondary-bg
+                transition-all duration-700
+                hover:-translate-y-2
+                hover:border-purple-500/40
+                ${
+                  isVisible
+                    ? "translate-y-0 opacity-100"
+                    : "translate-y-12 opacity-0"
+                }
+              `}
             >
               {/* Image */}
               <div className="relative aspect-[16/10] overflow-hidden">
@@ -64,14 +81,18 @@ const Blog = ({ data }: any) => {
 
               {/* Content */}
               <div className="p-7">
+
                 {/* Date + Read Time */}
                 <div className="flex items-center gap-3 text-xs text-gray-500">
                   <span>
-                    {new Date(item.date).toLocaleDateString("en-US", {
-                      month: "short",
-                      day: "numeric",
-                      year: "numeric",
-                    })}
+                    {new Date(item.date).toLocaleDateString(
+                      "en-US",
+                      {
+                        month: "short",
+                        day: "numeric",
+                        year: "numeric",
+                      }
+                    )}
                   </span>
 
                   <span className="h-1 w-1 rounded-full bg-purple-500" />
@@ -86,7 +107,7 @@ const Blog = ({ data }: any) => {
 
                 {/* Description */}
                 <p className="mt-4 line-clamp-3 text-[15px] leading-7 text-gray-500">
-                  {item.description}
+                  {item.excerpt}
                 </p>
 
                 {/* Gradient accent */}
@@ -100,20 +121,30 @@ const Blog = ({ data }: any) => {
                     SoftQivo
                   </span>
 
-                  <a
+                  <Link
                     href={item.href}
                     className="group/link flex items-center gap-2 text-sm font-semibold text-primary-color/60 transition-colors hover:text-primary-color"
                   >
                     Read More
+
                     <span className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 transition-all duration-300 group-hover/link:border-purple-500/50 group-hover/link:bg-purple-500/10">
                       <ArrowUpRight className="h-4 w-4 text-gray-400 transition-all duration-300 group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5 group-hover/link:text-purple-400" />
                     </span>
-                  </a>
+                  </Link>
                 </div>
+
               </div>
             </div>
           ))}
         </div>
+
+        {/* Pagination */}
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={setCurrentPage}
+        />
+
       </MaxWidth>
     </section>
   );
