@@ -30,9 +30,10 @@ export default function CommonBanner({
   <MaxWidth className=" py-20 max-w-310 sm:px-8 lg:px-12 lg:py-24">
       <Heading
         label={label}
-        breakIndex={4}
+        isAccentLine={true}
+        breakIndex={breakIndex}
         labelColor="rgba(255,255,255,0.7)"
-        accentColor="#A855F7"
+        accentColor="#ffffff"
         textColor="rgba(255,255,255,0.6)"
         isCenter={true}
         isVisible={true}
