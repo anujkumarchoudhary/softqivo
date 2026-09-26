@@ -1,67 +1,215 @@
 "use client";
 
-import React from "react";
-import Image from "next/image";
+import { ArrowDownRight, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
-import { Rocket, Users, BadgeCheck, Code2 } from "lucide-react";
-import MaxWidth from "./layout/MaxWidth";
+
+import MaxWidth from "@/src/components/layout/MaxWidth";
 import Heading from "./common/Heading";
-import about_hero_banner from "../../public/images/about/about_hero_banner.png";
-import Button from "./common/Button";
+import BackgroundEffects from "./BackgroundEffects";
 
-const stats = [
-  {
-    value: "50+",
-    label: "Projects Delivered",
-    icon: Rocket,
-  },
-  {
-    value: "25+",
-    label: "Happy Clients",
-    icon: Users,
-  },
-  {
-    value: "10+",
-    label: "Years of Experience",
-    icon: BadgeCheck,
-  },
-  {
-    value: "15+",
-    label: "Tech Experts",
-    icon: Code2,
-  },
-];
-
-export default function AboutBanner({ data }: { data: any }) {
-  console.log("data21", data);
+const AboutBanner = () => {
   return (
-    <section className="relative py-12 lg:py-24 overflow-hidden text-black">
-      {/* Background */}
-      {/* <SectionBackground /> */}
-      <MaxWidth className="grid grid-cols-1 justify-between gap-10 md:grid-cols-[40%_50%]">
-  {/* Left */}
-  <div className="my-auto space-y-15">
-        <Heading
-        labelColor="#800080"
-      label="WHO WE ARE"
-      headingParts={data?.headingParts}
-      description={"SoftQivo is a digital technology company focused on web development and digital solutions. We combine technology, creativity, and business thinking to build fast, scalable, and meaningful digital experiences."}
-    />
-    <Button name={"Book a Consultation"} />
-  </div>
+    <section className="relative min-h-[78vh] overflow-hidden bg-black text-white">
 
-  {/* Right */}
-  <div className="relative h-140">
-  <Image  
-        src={about_hero_banner}
-        alt="SoftQivo"
-        fill
-        className="object-cover rounded-[20px]"
+      {/* ======================================================
+          BACKGROUND
+      ====================================================== */}
+
+    <BackgroundEffects variant={2} />
+
+
+      {/* ======================================================
+          CONTENT
+      ====================================================== */}
+
+      <MaxWidth
+        className="
+          relative
+          z-10
+          flex
+          min-h-[78vh]
+          items-center
+        "
+      >
+
+        <div className="w-[50%] py-32 sm:py-40">
+
+<Heading
+  label="ABOUT SOFTQIVO"
+  labelColor="rgba(255,255,255,0.45)"
+  accentColor="#A855F7"
+  isSparkles={true}
+  textColor="#ffffff"
+  isCenter={false}
+  isVisible={true}
+  as="h1"
+  breakIndex={2}
+  headingParts={[
+    {
+      text: "We turn ",
+      color: "#ffffff",
+      weight: 600,
+      size: "clamp(3rem, 7vw, 4rem)",
+      lineHeight: 1.1,
+    },
+    {
+      text: "ideas",
+      gradient:
+        "linear-gradient(90deg, #A855F7, #8B5CF6, #3B82F6)",
+      weight: 600,
+      size: "clamp(3rem, 7vw, 4rem)",
+      lineHeight: 1.1,
+    },
+    {
+      text: " into digital products.",
+      color: "#ffffff",
+      weight: 600,
+      size: "clamp(3rem, 7vw, 4rem)",
+      lineHeight: 1.1,
+    },
+  ]}
+  description="SoftQivo helps startups, businesses, and entrepreneurs transform ideas into powerful digital solutions — from modern websites and applications to custom software systems built around real business needs."
+  descColor="rgba(255,255,255,0.45)"
+  className="tracking-[-0.045em]"
+/>
+
+
+          {/* ==================================================
+              BOTTOM META
+          ================================================== */}
+
+          <motion.div
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{
+              duration: 1,
+              delay: 0.45,
+            }}
+            className="
+              mt-20
+              flex
+              flex-wrap
+              items-center
+              gap-x-10
+              gap-y-4
+              border-t
+              border-white/[0.08]
+              pt-6
+            "
+          >
+
+            <div>
+              <span
+                className="
+                  block
+                  text-[9px]
+                  uppercase
+                  tracking-[0.25em]
+                  text-white/25
+                "
+              >
+                Focus
+              </span>
+
+              <span
+                className="
+                  mt-1
+                  block
+                  text-sm
+                  font-medium
+                  text-white/60
+                "
+              >
+                Digital Products
+              </span>
+            </div>
+
+
+            <div>
+              <span
+                className="
+                  block
+                  text-[9px]
+                  uppercase
+                  tracking-[0.25em]
+                  text-white/25
+                "
+              >
+                Approach
+              </span>
+
+              <span
+                className="
+                  mt-1
+                  block
+                  text-sm
+                  font-medium
+                  text-white/60
+                "
+              >
+                Strategy · Design · Technology
+              </span>
+            </div>
+
+
+            <div>
+              <span
+                className="
+                  block
+                  text-[9px]
+                  uppercase
+                  tracking-[0.25em]
+                  text-white/25
+                "
+              >
+                Built For
+              </span>
+
+              <span
+                className="
+                  mt-1
+                  block
+                  text-sm
+                  font-medium
+                  text-white/60
+                "
+              >
+                Startups · Businesses · Entrepreneurs
+              </span>
+            </div>
+
+          </motion.div>
+
+        </div>
+
+      </MaxWidth>
+
+
+      {/* ======================================================
+          DECORATIVE EDGE
+      ====================================================== */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          bottom-0
+          left-0
+          h-px
+          w-full
+          bg-gradient-to-r
+          from-transparent
+          via-purple-500/40
+          to-transparent
+        "
       />
-  </div>
-</MaxWidth>
 
-  
     </section>
   );
-}
+};
+
+export default AboutBanner;
