@@ -169,8 +169,8 @@ const Footer = () => {
                   Head Office
                 </p>
 
-                <p className="text-[18px] leading-6 text-white/65 transition-colors group-hover:text-white">
-                  New Ashok Nagar, Delhi 110096
+                <p className="text-[16px] lg:text-[18px] leading-7 text-white/65 transition-colors group-hover:text-white">
+                  A-21, 2nd Floor, BSI Business Park, Sector-63, Noida, Uttar Pradesh, India
                 </p>
               </a>
             </div>
