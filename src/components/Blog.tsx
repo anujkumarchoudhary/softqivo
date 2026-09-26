@@ -42,6 +42,32 @@ const Blog = ({ data }: any) => {
       className="py-12 lg:py-16"
     >
       <MaxWidth>
+        <div className="w-[70%] mx-auto">
+          <Heading
+          label="Our Blog"
+          labelColor="#9333EA"
+          accentColor="#9333EA"
+          isAccentLine
+          textColor="#000000"
+          isVisible={isVisible}
+          isCenter={true}
+          as="h2"
+          className="mx-auto text-4xl font-bold leading-[1.05] tracking-[-0.04em] sm:text-5xl lg:text-6xl"
+          headingParts={[
+            {
+              text: "Ideas that ",
+              color: "#000000",
+              weight: 700,
+            },
+            {
+              text: "inspire. Insights",
+              gradient: "linear-gradient(to right, #9333EA, #3B82F6)",
+              weight: 700,
+            }
+          ]}
+          description="Explore practical insights, technology trends, and expert perspectives on building digital products, creating better experiences, and growing your business with technology."
+        />
+        </div>
 
         {/* BLOG CARDS */}
         <div className="mt-4 grid grid-cols-1 gap-[1rem] lg:mt-12 lg:grid-cols-3 lg:gap-[2rem]">
@@ -58,10 +84,9 @@ const Blog = ({ data }: any) => {
                 transition-all duration-700
                 hover:-translate-y-2
                 hover:border-purple-500/40
-                ${
-                  isVisible
-                    ? "translate-y-0 opacity-100"
-                    : "translate-y-12 opacity-0"
+                ${isVisible
+                  ? "translate-y-0 opacity-100"
+                  : "translate-y-12 opacity-0"
                 }
               `}
             >
@@ -106,9 +131,9 @@ const Blog = ({ data }: any) => {
                 </h3>
 
                 {/* Description */}
-                <p className="mt-4 line-clamp-3 text-[15px] leading-7 text-gray-500">
+                {/* <p className="mt-4 line-clamp-3 text-[15px] leading-7 text-gray-500">
                   {item.excerpt}
-                </p>
+                </p> */}
 
                 {/* Gradient accent */}
                 <div className="mt-8 h-px w-full bg-[#000000]/20">

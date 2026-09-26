@@ -40,7 +40,7 @@ export const staticData = {
           size: "clamp(28px, 6vw, 54px)",
           weight: "400",
         },
-        
+
         {
           text: "  Into Powerful Digital Solutions.",
           color: "#FFFFFF",
@@ -573,7 +573,7 @@ export const staticData = {
         },
       ] as SupportItem[],
     },
-    blogs: {
+     blogs: {
       label: "Our Insights",
 
       headingParts: [
@@ -585,247 +585,297 @@ export const staticData = {
         },
       ],
 
-  list: [
-  {
-    img: "/images/blogs/blog_01.png",
-    category: "Web Development",
-    title:
-      "Building Modern Web Applications That Scale With Your Business",
-    excerpt:
-      "Discover how the right technology, architecture, and development approach can help businesses build faster, more secure, and scalable web applications.",
-    date: "Aug 28, 2026",
-    readTime: "6 min read",
-    href: "/blog/building-modern-web-applications-that-scale",
-  },
+      list: [
+        {
+          img: "/images/blogs/blog_01.png",
+          category: "Web Development",
+          title:
+            "Building Modern Web Applications That Scale With Your Business",
+          excerpt:
+            "Discover how the right technology, architecture, and development approach can help businesses build faster, more secure, and scalable web applications.",
+          date: "Aug 28, 2026",
+          readTime: "6 min read",
+          href: "/blog/building-modern-web-applications-that-scale",
+        },
 
-  {
-    img: "/images/blogs/blog_02.png",
-    category: "UI/UX Design",
-    title:
-      "Why Great UI/UX Design Is More Than Just a Beautiful Interface",
-    excerpt:
-      "Learn how thoughtful user experiences, intuitive interactions, and purposeful design can create digital products people enjoy using and trust.",
-    date: "Aug 21, 2026",
-    readTime: "5 min read",
-    href: "/blog/why-great-ui-ux-design-matters",
-  },
+        {
+          img: "/images/blogs/blog_02.png",
+          category: "UI/UX Design",
+          title:
+            "Why Great UI/UX Design Is More Than Just a Beautiful Interface",
+          excerpt:
+            "Learn how thoughtful user experiences, intuitive interactions, and purposeful design can create digital products people enjoy using and trust.",
+          date: "Aug 21, 2026",
+          readTime: "5 min read",
+          href: "/blog/why-great-ui-ux-design-matters",
+        },
 
-  {
-    img: "/images/blogs/blog_03.png",
-    category: "Software Development",
-    title:
-      "From Idea to Product: Building Software That Creates Real Business Value",
-    excerpt:
-      "Explore the key decisions behind successful software products, from validating an idea and choosing technology to building for long-term growth.",
-    date: "Aug 14, 2026",
-    readTime: "7 min read",
-    href: "/blog/from-idea-to-product",
-  },
+        {
+          img: "/images/blogs/blog_03.png",
+          category: "Software Development",
+          title:
+            "From Idea to Product: Building Software That Creates Real Business Value",
+          excerpt:
+            "Explore the key decisions behind successful software products, from validating an idea and choosing technology to building for long-term growth.",
+          date: "Aug 14, 2026",
+          readTime: "7 min read",
+          href: "/blog/from-idea-to-product",
+        },
+      ],
+    },
+    blogs2: {
+      label: "Our Insights",
 
-  {
-    img: "/images/blogs/blog_04.png",
-    category: "Mobile Development",
-    title:
-      "How to Build Mobile Apps People Actually Want to Use",
-    excerpt:
-      "Explore the principles behind useful mobile applications, from user-focused experiences and performance to reliable architecture and long-term maintenance.",
-    date: "Aug 7, 2026",
-    readTime: "6 min read",
-    href: "/blog/how-to-build-mobile-apps-people-use",
-  },
+      headingParts: [
+        {
+          text: "Ideas, insights & digital thinking.",
+          color: "#000000",
+          size: "clamp(24px, 4vw, 46px)",
+          weight: "700",
+        },
+      ],
 
-  {
-    img: "/images/blogs/blog_05.png",
-    category: "Backend Development",
-    title:
-      "Why a Strong Backend Is the Foundation of a Reliable Digital Product",
-    excerpt:
-      "Understand how APIs, databases, authentication, and backend architecture work together to create secure and dependable digital products.",
-    date: "Jul 31, 2026",
-    readTime: "7 min read",
-    href: "/blog/strong-backend-reliable-digital-products",
-  },
+      list: [
+        {
+          img: "/images/blogs/blog_01.png",
+          category: "Web Development",
+          title:
+            "Building Modern Web Applications That Scale With Your Business",
+          excerpt:
+            "Discover how the right technology, architecture, and development approach can help businesses build faster, more secure, and scalable web applications.",
+          date: "Aug 28, 2026",
+          readTime: "6 min read",
+          href: "/blog/building-modern-web-applications-that-scale",
+        },
 
-  {
-    img: "/images/blogs/blog_06.png",
-    category: "API Development",
-    title:
-      "Designing APIs That Are Ready for Growth and Integration",
-    excerpt:
-      "Learn how thoughtful API architecture, consistent standards, security, and documentation can make applications easier to integrate and scale.",
-    date: "Jul 24, 2026",
-    readTime: "6 min read",
-    href: "/blog/designing-apis-for-growth-and-integration",
-  },
+        {
+          img: "/images/blogs/blog_02.png",
+          category: "UI/UX Design",
+          title:
+            "Why Great UI/UX Design Is More Than Just a Beautiful Interface",
+          excerpt:
+            "Learn how thoughtful user experiences, intuitive interactions, and purposeful design can create digital products people enjoy using and trust.",
+          date: "Aug 21, 2026",
+          readTime: "5 min read",
+          href: "/blog/why-great-ui-ux-design-matters",
+        },
 
-  {
-    img: "/images/blogs/blog_07.png",
-    category: "Cloud & DevOps",
-    title:
-      "How Cloud Infrastructure Helps Modern Businesses Scale Faster",
-    excerpt:
-      "Discover how cloud infrastructure, automation, monitoring, and deployment practices can improve reliability while supporting business growth.",
-    date: "Jul 17, 2026",
-    readTime: "8 min read",
-    href: "/blog/cloud-infrastructure-for-business-growth",
-  },
+        {
+          img: "/images/blogs/blog_03.png",
+          category: "Software Development",
+          title:
+            "From Idea to Product: Building Software That Creates Real Business Value",
+          excerpt:
+            "Explore the key decisions behind successful software products, from validating an idea and choosing technology to building for long-term growth.",
+          date: "Aug 14, 2026",
+          readTime: "7 min read",
+          href: "/blog/from-idea-to-product",
+        },
 
-  {
-    img: "/images/blogs/blog_08.png",
-    category: "Web Development",
-    title:
-      "Choosing the Right Technology Stack for Your Web Project",
-    excerpt:
-      "A practical look at the factors businesses should consider when selecting frameworks, languages, databases, and infrastructure for a new web product.",
-    date: "Jul 10, 2026",
-    readTime: "7 min read",
-    href: "/blog/choosing-the-right-technology-stack",
-  },
+        {
+          img: "/images/blogs/blog_04.png",
+          category: "Mobile Development",
+          title:
+            "How to Build Mobile Apps People Actually Want to Use",
+          excerpt:
+            "Explore the principles behind useful mobile applications, from user-focused experiences and performance to reliable architecture and long-term maintenance.",
+          date: "Aug 7, 2026",
+          readTime: "6 min read",
+          href: "/blog/how-to-build-mobile-apps-people-use",
+        },
 
-  {
-    img: "/images/blogs/blog_09.png",
-    category: "UI/UX Design",
-    title:
-      "Designing Digital Experiences That Turn Visitors Into Customers",
-    excerpt:
-      "Learn how research, information architecture, visual hierarchy, and clear interactions can create experiences that guide users toward meaningful actions.",
-    date: "Jul 3, 2026",
-    readTime: "6 min read",
-    href: "/blog/designing-experiences-that-convert-visitors",
-  },
+        {
+          img: "/images/blogs/blog_05.png",
+          category: "Backend Development",
+          title:
+            "Why a Strong Backend Is the Foundation of a Reliable Digital Product",
+          excerpt:
+            "Understand how APIs, databases, authentication, and backend architecture work together to create secure and dependable digital products.",
+          date: "Jul 31, 2026",
+          readTime: "7 min read",
+          href: "/blog/strong-backend-reliable-digital-products",
+        },
 
-  {
-    img: "/images/blogs/blog_10.png",
-    category: "Software Development",
-    title:
-      "MVP Development: Turning a Business Idea Into a Working Product",
-    excerpt:
-      "Learn how an MVP can help businesses validate product ideas, understand users, reduce unnecessary development, and build a foundation for future growth.",
-    date: "Jun 26, 2026",
-    readTime: "6 min read",
-    href: "/blog/mvp-development-business-ideas",
-  },
+        {
+          img: "/images/blogs/blog_06.png",
+          category: "API Development",
+          title:
+            "Designing APIs That Are Ready for Growth and Integration",
+          excerpt:
+            "Learn how thoughtful API architecture, consistent standards, security, and documentation can make applications easier to integrate and scale.",
+          date: "Jul 24, 2026",
+          readTime: "6 min read",
+          href: "/blog/designing-apis-for-growth-and-integration",
+        },
 
-  {
-    img: "/images/blogs/blog_11.png",
-    category: "Web Performance",
-    title:
-      "Why Website Performance Matters for Business Growth",
-    excerpt:
-      "Explore how loading speed, optimized assets, efficient code, and responsive experiences can improve usability and create better digital experiences.",
-    date: "Jun 19, 2026",
-    readTime: "5 min read",
-    href: "/blog/why-website-performance-matters",
-  },
+        {
+          img: "/images/blogs/blog_07.png",
+          category: "Cloud & DevOps",
+          title:
+            "How Cloud Infrastructure Helps Modern Businesses Scale Faster",
+          excerpt:
+            "Discover how cloud infrastructure, automation, monitoring, and deployment practices can improve reliability while supporting business growth.",
+          date: "Jul 17, 2026",
+          readTime: "8 min read",
+          href: "/blog/cloud-infrastructure-for-business-growth",
+        },
 
-  {
-    img: "/images/blogs/blog_12.png",
-    category: "Cybersecurity",
-    title:
-      "Essential Security Practices for Modern Web Applications",
-    excerpt:
-      "Understand the fundamental security practices businesses can use to protect applications, user data, APIs, authentication systems, and infrastructure.",
-    date: "Jun 12, 2026",
-    readTime: "8 min read",
-    href: "/blog/web-application-security-practices",
-  },
+        {
+          img: "/images/blogs/blog_08.png",
+          category: "Web Development",
+          title:
+            "Choosing the Right Technology Stack for Your Web Project",
+          excerpt:
+            "A practical look at the factors businesses should consider when selecting frameworks, languages, databases, and infrastructure for a new web product.",
+          date: "Jul 10, 2026",
+          readTime: "7 min read",
+          href: "/blog/choosing-the-right-technology-stack",
+        },
 
-  {
-    img: "/images/blogs/blog_13.png",
-    category: "Product Development",
-    title:
-      "What Makes a Digital Product Ready for Long-Term Growth",
-    excerpt:
-      "Explore the technical and product decisions that help digital solutions remain maintainable, adaptable, reliable, and ready for changing business needs.",
-    date: "Jun 5, 2026",
-    readTime: "7 min read",
-    href: "/blog/digital-product-long-term-growth",
-  },
+        {
+          img: "/images/blogs/blog_09.png",
+          category: "UI/UX Design",
+          title:
+            "Designing Digital Experiences That Turn Visitors Into Customers",
+          excerpt:
+            "Learn how research, information architecture, visual hierarchy, and clear interactions can create experiences that guide users toward meaningful actions.",
+          date: "Jul 3, 2026",
+          readTime: "6 min read",
+          href: "/blog/designing-experiences-that-convert-visitors",
+        },
 
-  {
-    img: "/images/blogs/blog_14.png",
-    category: "Mobile Development",
-    title:
-      "Native vs Cross-Platform App Development: What Businesses Should Know",
-    excerpt:
-      "Compare the key considerations behind native and cross-platform mobile development, including performance, development speed, maintenance, and scalability.",
-    date: "May 29, 2026",
-    readTime: "8 min read",
-    href: "/blog/native-vs-cross-platform-app-development",
-  },
+        {
+          img: "/images/blogs/blog_10.png",
+          category: "Software Development",
+          title:
+            "MVP Development: Turning a Business Idea Into a Working Product",
+          excerpt:
+            "Learn how an MVP can help businesses validate product ideas, understand users, reduce unnecessary development, and build a foundation for future growth.",
+          date: "Jun 26, 2026",
+          readTime: "6 min read",
+          href: "/blog/mvp-development-business-ideas",
+        },
 
-  {
-    img: "/images/blogs/blog_15.png",
-    category: "Cloud & DevOps",
-    title:
-      "Continuous Deployment: Building a Faster Software Delivery Process",
-    excerpt:
-      "Learn how automated testing, continuous integration, and deployment workflows can help development teams release software more consistently and efficiently.",
-    date: "May 22, 2026",
-    readTime: "7 min read",
-    href: "/blog/continuous-deployment-software-delivery",
-  },
+        {
+          img: "/images/blogs/blog_11.png",
+          category: "Web Performance",
+          title:
+            "Why Website Performance Matters for Business Growth",
+          excerpt:
+            "Explore how loading speed, optimized assets, efficient code, and responsive experiences can improve usability and create better digital experiences.",
+          date: "Jun 19, 2026",
+          readTime: "5 min read",
+          href: "/blog/why-website-performance-matters",
+        },
 
-  {
-    img: "/images/blogs/blog_16.png",
-    category: "UI/UX Design",
-    title:
-      "The Role of User Research in Creating Better Digital Products",
-    excerpt:
-      "Discover how understanding user needs, behaviors, and challenges can help teams make better design decisions and create more useful digital experiences.",
-    date: "May 15, 2026",
-    readTime: "6 min read",
-    href: "/blog/user-research-better-digital-products",
-  },
+        {
+          img: "/images/blogs/blog_12.png",
+          category: "Cybersecurity",
+          title:
+            "Essential Security Practices for Modern Web Applications",
+          excerpt:
+            "Understand the fundamental security practices businesses can use to protect applications, user data, APIs, authentication systems, and infrastructure.",
+          date: "Jun 12, 2026",
+          readTime: "8 min read",
+          href: "/blog/web-application-security-practices",
+        },
 
-  {
-    img: "/images/blogs/blog_17.png",
-    category: "Software Development",
-    title:
-      "Custom Software vs Off-the-Shelf Solutions: What Businesses Need to Consider",
-    excerpt:
-      "Explore the differences between custom software and ready-made solutions and the factors businesses should consider before making a technology investment.",
-    date: "May 8, 2026",
-    readTime: "7 min read",
-    href: "/blog/custom-software-vs-off-the-shelf",
-  },
+        {
+          img: "/images/blogs/blog_13.png",
+          category: "Product Development",
+          title:
+            "What Makes a Digital Product Ready for Long-Term Growth",
+          excerpt:
+            "Explore the technical and product decisions that help digital solutions remain maintainable, adaptable, reliable, and ready for changing business needs.",
+          date: "Jun 5, 2026",
+          readTime: "7 min read",
+          href: "/blog/digital-product-long-term-growth",
+        },
 
-  {
-    img: "/images/blogs/blog_18.png",
-    category: "Database Development",
-    title:
-      "Building a Database Architecture That Can Grow With Your Application",
-    excerpt:
-      "Learn how thoughtful database design, indexing, data relationships, backups, and scalability planning can support reliable application growth.",
-    date: "May 1, 2026",
-    readTime: "8 min read",
-    href: "/blog/database-architecture-for-scalable-applications",
-  },
+        {
+          img: "/images/blogs/blog_14.png",
+          category: "Mobile Development",
+          title:
+            "Native vs Cross-Platform App Development: What Businesses Should Know",
+          excerpt:
+            "Compare the key considerations behind native and cross-platform mobile development, including performance, development speed, maintenance, and scalability.",
+          date: "May 29, 2026",
+          readTime: "8 min read",
+          href: "/blog/native-vs-cross-platform-app-development",
+        },
 
-  {
-    img: "/images/blogs/blog_19.png",
-    category: "Digital Transformation",
-    title:
-      "How Businesses Can Turn Digital Ideas Into Scalable Solutions",
-    excerpt:
-      "Discover a practical approach to transforming business ideas into digital products through strategy, design, development, testing, and continuous improvement.",
-    date: "Apr 24, 2026",
-    readTime: "7 min read",
-    href: "/blog/digital-ideas-into-scalable-solutions",
-  },
+        {
+          img: "/images/blogs/blog_15.png",
+          category: "Cloud & DevOps",
+          title:
+            "Continuous Deployment: Building a Faster Software Delivery Process",
+          excerpt:
+            "Learn how automated testing, continuous integration, and deployment workflows can help development teams release software more consistently and efficiently.",
+          date: "May 22, 2026",
+          readTime: "7 min read",
+          href: "/blog/continuous-deployment-software-delivery",
+        },
 
-  {
-    img: "/images/blogs/blog_20.png",
-    category: "Technology",
-    title:
-      "Technology Decisions That Can Shape the Future of Your Digital Product",
-    excerpt:
-      "Explore the technology, architecture, design, and development decisions that can influence how effectively a digital product evolves over time.",
-    date: "Apr 17, 2026",
-    readTime: "6 min read",
-    href: "/blog/technology-decisions-for-digital-products",
-  },
-],
+        {
+          img: "/images/blogs/blog_16.png",
+          category: "UI/UX Design",
+          title:
+            "The Role of User Research in Creating Better Digital Products",
+          excerpt:
+            "Discover how understanding user needs, behaviors, and challenges can help teams make better design decisions and create more useful digital experiences.",
+          date: "May 15, 2026",
+          readTime: "6 min read",
+          href: "/blog/user-research-better-digital-products",
+        },
+
+        {
+          img: "/images/blogs/blog_17.png",
+          category: "Software Development",
+          title:
+            "Custom Software vs Off-the-Shelf Solutions: What Businesses Need to Consider",
+          excerpt:
+            "Explore the differences between custom software and ready-made solutions and the factors businesses should consider before making a technology investment.",
+          date: "May 8, 2026",
+          readTime: "7 min read",
+          href: "/blog/custom-software-vs-off-the-shelf",
+        },
+
+        {
+          img: "/images/blogs/blog_18.png",
+          category: "Database Development",
+          title:
+            "Building a Database Architecture That Can Grow With Your Application",
+          excerpt:
+            "Learn how thoughtful database design, indexing, data relationships, backups, and scalability planning can support reliable application growth.",
+          date: "May 1, 2026",
+          readTime: "8 min read",
+          href: "/blog/database-architecture-for-scalable-applications",
+        },
+
+        {
+          img: "/images/blogs/blog_19.png",
+          category: "Digital Transformation",
+          title:
+            "How Businesses Can Turn Digital Ideas Into Scalable Solutions",
+          excerpt:
+            "Discover a practical approach to transforming business ideas into digital products through strategy, design, development, testing, and continuous improvement.",
+          date: "Apr 24, 2026",
+          readTime: "7 min read",
+          href: "/blog/digital-ideas-into-scalable-solutions",
+        },
+
+        {
+          img: "/images/blogs/blog_20.png",
+          category: "Technology",
+          title:
+            "Technology Decisions That Can Shape the Future of Your Digital Product",
+          excerpt:
+            "Explore the technology, architecture, design, and development decisions that can influence how effectively a digital product evolves over time.",
+          date: "Apr 17, 2026",
+          readTime: "6 min read",
+          href: "/blog/technology-decisions-for-digital-products",
+        },
+      ],
     },
     technologes: {
       label: "Technology",
@@ -1060,48 +1110,101 @@ export const staticData = {
           text: " for modern businesses.",
           gradient: "linear-gradient(90deg, #A855F7, #3B82F6)",
         },
-      ]},
-      description: "SoftQivo is a digital technology company focused on web development and digital solutions. We combine technology, creativity, and business thinking to build fast, scalable, and meaningful digital experiences.",
-      button:"Book a Consultation",
+      ]
     },
-contact: {
-  label: "LET'S CONNECT",
-  headingParts: [
-    {
-      text: "Let’s Build Something ",
-      color: "#001845",
-      size: "clamp(24px, 4vw, 46px)",
-      weight: "700",
+
+    description: "SoftQivo is a digital technology company focused on web development and digital solutions. We combine technology, creativity, and business thinking to build fast, scalable, and meaningful digital experiences.",
+    button: "Book a Consultation",
+
+  blogs: {
+      label: "Our Insights",
+
+      headingParts: [
+        {
+          text: "Ideas, insights & digital thinking.",
+          color: "#000000",
+          size: "clamp(24px, 4vw, 46px)",
+          weight: "700",
+        },
+      ],
+
+      list: [
+        {
+          img: "/images/blogs/blog_01.png",
+          category: "Web Development",
+          title:
+            "Building Modern Web Applications That Scale With Your Business",
+          excerpt:
+            "Discover how the right technology, architecture, and development approach can help businesses build faster, more secure, and scalable web applications.",
+          date: "Aug 28, 2026",
+          readTime: "6 min read",
+          href: "/blog/building-modern-web-applications-that-scale",
+        },
+
+        {
+          img: "/images/blogs/blog_02.png",
+          category: "UI/UX Design",
+          title:
+            "Why Great UI/UX Design Is More Than Just a Beautiful Interface",
+          excerpt:
+            "Learn how thoughtful user experiences, intuitive interactions, and purposeful design can create digital products people enjoy using and trust.",
+          date: "Aug 21, 2026",
+          readTime: "5 min read",
+          href: "/blog/why-great-ui-ux-design-matters",
+        },
+
+        {
+          img: "/images/blogs/blog_03.png",
+          category: "Software Development",
+          title:
+            "From Idea to Product: Building Software That Creates Real Business Value",
+          excerpt:
+            "Explore the key decisions behind successful software products, from validating an idea and choosing technology to building for long-term growth.",
+          date: "Aug 14, 2026",
+          readTime: "7 min read",
+          href: "/blog/from-idea-to-product",
+        },
+      ],
     },
-    {
-      text: "Great Together.",
-      gradient: "linear-gradient(90deg, #A855F7, #7C3AED, #2563EB)",
-      size: "clamp(24px, 4vw, 46px)",
-      weight: "700",
-    },
-  ],
-  description:
-    "Have an idea, a project, or a business challenge in mind? Tell us what you’re looking to build, and our team will get back to you with the right direction.",
-  button: "Send Message",
-  data: [
-    {
-      icon: <FaMapLocationDot size={40} className="text-[#001845]" />,
-      title: "Head Office",
-      description:
-        "A-21, 2nd Floor, BSI Business Park, Sector-63, Noida, Uttar Pradesh, India",
-    },
-    {
-      icon: <IoIosMailOpen size={40} className="text-[#001845]" />,
-      title: "Email Us",
-      description: "softqivo@gmail.com",
-    },
-    {
-      icon: <FaHeadphonesSimple size={40} className="text-[#001845]" />,
-      title: "Working Hours",
-      description: "Monday - Friday, 9:00 AM - 6:00 PM",
-    },
-  ],
-},
+  },
+  contact: {
+    label: "LET'S CONNECT",
+    headingParts: [
+      {
+        text: "Let’s Build Something ",
+        color: "#001845",
+        size: "clamp(24px, 4vw, 46px)",
+        weight: "700",
+      },
+      {
+        text: "Great Together.",
+        gradient: "linear-gradient(90deg, #A855F7, #7C3AED, #2563EB)",
+        size: "clamp(24px, 4vw, 46px)",
+        weight: "700",
+      },
+    ],
+    description:
+      "Have an idea, a project, or a business challenge in mind? Tell us what you’re looking to build, and our team will get back to you with the right direction.",
+    button: "Send Message",
+    data: [
+      {
+        icon: <FaMapLocationDot size={40} className="text-[#001845]" />,
+        title: "Head Office",
+        description:
+          "A-21, 2nd Floor, BSI Business Park, Sector-63, Noida, Uttar Pradesh, India",
+      },
+      {
+        icon: <IoIosMailOpen size={40} className="text-[#001845]" />,
+        title: "Email Us",
+        description: "softqivo@gmail.com",
+      },
+      {
+        icon: <FaHeadphonesSimple size={40} className="text-[#001845]" />,
+        title: "Working Hours",
+        description: "Monday - Friday, 9:00 AM - 6:00 PM",
+      },
+    ],
+  },
   serviceDetails: {
     pointOfService: {
       title:
