@@ -74,7 +74,7 @@ const Banner = () => {
         />
       </div>
       {/* Blue localized glow + grid */}
-      <div className="pointer-events-none absolute -bottom-28 right-0 h-[320px] w-[320px] lg:h-[420px] lg:w-[520px] opacity-70">
+      <div className="pointer-events-none absolute -bottom-28 right-0 h-[220px] w-[220px] lg:h-[420px] lg:w-[520px] opacity-70">
         <div className="absolute inset-0 rounded-full bg-blue-600/[0.12] blur-[120px]" />
 
         <div
