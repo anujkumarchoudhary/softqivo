@@ -12,7 +12,7 @@ import { useInViewOnce } from "@/src/hooks/useInViewOnce";
 import { staticData } from "../utills/Data";
 
 const TakeTheTime = () => {
-  const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
+  const { ref, isVisible } = useInViewOnce<HTMLDivElement>();
   const { headingParts, label, list, details } = staticData?.home.takeTheTime || {};
 
   return (

@@ -11,7 +11,7 @@ import { useInViewOnce } from "@/src/hooks/useInViewOnce";
 import { staticData } from "../utills/Data";
 
 const ExpertSkill = () => {
-  const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
+  const { ref, isVisible } = useInViewOnce<HTMLDivElement>();
   const { headingParts, label, description, button } =
     staticData.home?.expertSkill || {};
 

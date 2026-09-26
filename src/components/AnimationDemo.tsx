@@ -3,7 +3,7 @@
 import { useInViewOnce } from "@/src/hooks/useInViewOnce";
 
 export default function AnimationDemo() {
-  const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
+  const { ref, isVisible } = useInViewOnce<HTMLDivElement>();
 
   return (
     <section ref={ref} className="py-32 bg-slate-100">

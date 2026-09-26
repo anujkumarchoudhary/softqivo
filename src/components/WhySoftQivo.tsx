@@ -46,7 +46,7 @@ const reasons = [
 
 const WhySoftQivo = () => {
   const { ref, isVisible } =
-    useInViewOnce<HTMLDivElement>(0.2);
+    useInViewOnce<HTMLDivElement>();
 
   return (
     <section

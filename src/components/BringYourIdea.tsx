@@ -9,7 +9,7 @@ import Heading from "./common/Heading";
 import { staticData } from "../utills/Data";
 
 const BringYourIdea = () => {
-  const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
+  const { ref, isVisible } = useInViewOnce<HTMLDivElement>();
   const { headingParts, label, description } = staticData.home?.bringIdea || {};
 
   return (

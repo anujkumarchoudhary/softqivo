@@ -16,7 +16,7 @@ import Link from "next/link";
 
 const Blog = ({ data }: any) => {
   const { ref, isVisible } =
-    useInViewOnce<HTMLDivElement>(0);
+    useInViewOnce<HTMLDivElement>();
 
   const [currentPage, setCurrentPage] = useState(1);
 

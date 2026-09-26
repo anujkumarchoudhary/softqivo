@@ -35,7 +35,7 @@ const data = [
 
 const Feedback = () => {
   const [active, setActive] = useState(1);
-  const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
+  const { ref, isVisible } = useInViewOnce<HTMLDivElement>();
   const { headingParts, label, data } = staticData.home?.feedbacks || {};
 
   return (
