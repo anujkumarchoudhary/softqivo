@@ -97,7 +97,8 @@ const Banner = () => {
       <MaxWidth className="my-auto">
         <div className="grid  grid-cols-1 lg:grid-cols-[50%_50%] justify-between gap-2 z-10">
           <div className="space-y-10 my-auto">
-            <Heading
+            <div  className="hidden lg:block">
+              <Heading
               isDart={true}
               label={label}
               accentColor="#ffffff"
@@ -106,6 +107,19 @@ const Banner = () => {
               headingParts={headingParts}
               description={description}
             />
+            </div>
+            <div  className="block lg:hidden">
+              <Heading
+              isDart={true}
+              label={label}
+              isCenter={true}
+              accentColor="#ffffff"
+              textColor="#ffffff"
+              isGradient={true}
+              headingParts={headingParts}
+              description={description}
+            />
+            </div>
 
             {/* Buttons */}
             <div
@@ -145,7 +159,7 @@ const Banner = () => {
         </div>
         <div className="mt-14 block lg:hidden ">
          <div className="flex gap-2 justify-center md:justify-start">
-            <SiFsecure className="text-blue-400 my-auto w-6 h-6"/>
+            {/* <SiFsecure className="text-blue-400 my-auto w-6 h-6"/> */}
              <h3 className="text-secondary-color text-[15px] lg:text-[18px] text-center my-auto uppercase">Trusted By Business Workplace</h3>
           </div>
           <div className="flex justify-center gap-3 lg:gap-14 mt-6">
