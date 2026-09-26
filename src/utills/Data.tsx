@@ -959,4 +959,524 @@ export const staticData = {
     },
   },
 
+  privacyPolicy: {
+  label: "Privacy Policy",
+  title: "Your Privacy Matters to Us",
+  lastUpdated: "September 26, 2026",
+
+  introduction:
+    "At SoftQivo, we respect your privacy and are committed to protecting the information you share with us. This Privacy Policy explains what information we may collect, how we use it, how we protect it, and the choices available to you when you use our website and services.",
+
+  sections: [
+    {
+      id: "information-we-collect",
+      title: "Information We Collect",
+      paragraphs: [
+        "We may collect information that you voluntarily provide when you contact us, request a consultation, submit an inquiry, or otherwise interact with our website.",
+      ],
+      list: [
+        "Name",
+        "Email address",
+        "Phone number",
+        "Company or organization name",
+        "Project or service requirements",
+        "Information included in your messages or inquiries",
+        "Any other information you choose to provide",
+      ],
+      additionalParagraphs: [
+        "We may also automatically collect limited technical information when you visit our website, such as:",
+      ],
+      additionalList: [
+        "IP address",
+        "Browser type and version",
+        "Device type",
+        "Operating system",
+        "Pages visited",
+        "Referring pages or websites",
+        "Approximate usage and interaction information",
+        "Date and time of website access",
+      ],
+      closingParagraphs: [
+        "The information collected automatically may be used to understand website usage, maintain security, and improve website performance.",
+      ],
+    },
+
+    {
+      id: "how-we-use-information",
+      title: "How We Use Your Information",
+      paragraphs: [
+        "SoftQivo may use the information we collect to:",
+      ],
+      list: [
+        "Respond to inquiries and requests",
+        "Provide information about our services",
+        "Understand your project requirements",
+        "Schedule consultations or discussions",
+        "Provide and manage our services",
+        "Improve our website, products, and services",
+        "Communicate with you regarding your inquiry or project",
+        "Maintain website security and prevent misuse",
+        "Analyze website performance and user experience",
+        "Comply with applicable legal and regulatory requirements",
+      ],
+      closingParagraphs: [
+        "We will use personal information only for legitimate business purposes and in accordance with applicable laws.",
+      ],
+    },
+
+    {
+      id: "communication",
+      title: "Communication",
+      paragraphs: [
+        "If you contact SoftQivo through our website, email, phone, or another communication channel, we may use the information you provide to respond to your request.",
+        "We do not intend to use your contact information for unrelated promotional communications without an appropriate legal basis or, where required, your consent.",
+        "You may request that we stop sending non-essential communications at any time.",
+      ],
+    },
+
+    {
+      id: "cookies",
+      title: "Cookies and Similar Technologies",
+      paragraphs: [
+        "Our website may use cookies and similar technologies to support website functionality, understand website usage, improve performance, and provide a better user experience.",
+        "Cookies are small files stored on your device by a website.",
+        "Depending on how our website is configured, cookies may be used for purposes such as:",
+      ],
+      list: [
+        "Essential website functionality",
+        "Security",
+        "Performance monitoring",
+        "Understanding website traffic",
+        "Remembering preferences",
+      ],
+      closingParagraphs: [
+        "You can control or disable cookies through your browser settings. However, disabling certain cookies may affect some website functionality.",
+        "If we introduce additional analytics, advertising, or other third-party tracking technologies, this Privacy Policy may be updated accordingly.",
+      ],
+    },
+
+    {
+      id: "third-party-services",
+      title: "Third-Party Services",
+      paragraphs: [
+        "SoftQivo may use third-party services or technology providers to support website functionality, hosting, analytics, communication, security, or other business operations.",
+        "These providers may process information on our behalf where necessary to provide their services.",
+        "We expect applicable service providers to handle information responsibly and in accordance with appropriate contractual, technical, and organizational safeguards.",
+        "We do not sell your personal information to third parties.",
+      ],
+    },
+
+    {
+      id: "data-security",
+      title: "Data Security",
+      paragraphs: [
+        "We take reasonable technical and organizational measures to protect personal information from unauthorized access, alteration, disclosure, misuse, or destruction.",
+        "However, no internet transmission or electronic storage system can be guaranteed to be completely secure. Therefore, while we work to protect your information, we cannot guarantee absolute security.",
+      ],
+    },
+
+    {
+      id: "data-retention",
+      title: "Data Retention",
+      paragraphs: [
+        "We retain personal information only for as long as reasonably necessary for the purposes described in this Privacy Policy, including providing services, maintaining business records, resolving disputes, enforcing agreements, and complying with applicable legal obligations.",
+        "The retention period may vary depending on the type of information and the reason it was collected.",
+      ],
+    },
+
+    {
+      id: "privacy-rights",
+      title: "Your Privacy Rights",
+      paragraphs: [
+        "Depending on applicable law and your location, you may have rights regarding your personal information, which may include the right to:",
+      ],
+      list: [
+        "Request access to personal information we hold about you",
+        "Request correction of inaccurate information",
+        "Request deletion of certain personal information",
+        "Request restriction of certain processing",
+        "Object to certain uses of your information",
+        "Withdraw consent where processing is based on consent",
+        "Request information about how your personal information is processed",
+      ],
+      closingParagraphs: [
+        "These rights may be subject to applicable legal limitations and exceptions.",
+        "To exercise a privacy-related right, you can contact us using the details provided below.",
+      ],
+    },
+
+    {
+      id: "childrens-privacy",
+      title: "Children's Privacy",
+      paragraphs: [
+        "Our website and services are intended for businesses, organizations, and general users and are not specifically directed toward children.",
+        "We do not knowingly collect personal information from children where prohibited by applicable law.",
+        "If you believe that a child has provided personal information to us, please contact us so that we can review and take appropriate action.",
+      ],
+    },
+
+    {
+      id: "third-party-links",
+      title: "Links to Other Websites",
+      paragraphs: [
+        "Our website may contain links to third-party websites, platforms, or services.",
+        "SoftQivo is not responsible for the privacy practices, security, content, or policies of third-party websites. We recommend reviewing the privacy policy of any third-party website you visit.",
+      ],
+    },
+
+    {
+      id: "international-data",
+      title: "International Data Processing",
+      paragraphs: [
+        "Depending on the technologies and service providers used by SoftQivo, your information may be processed or stored in countries other than the country in which you reside.",
+        "Where required by applicable law, we will take appropriate measures for the lawful transfer and protection of personal information.",
+      ],
+    },
+
+    {
+      id: "policy-changes",
+      title: "Changes to This Privacy Policy",
+      paragraphs: [
+        "We may update this Privacy Policy from time to time to reflect changes in our services, website, technology, legal requirements, or privacy practices.",
+        "When we make changes, we will update the Last Updated date at the top of this page.",
+        "We encourage you to review this Privacy Policy periodically to stay informed about how we handle personal information.",
+      ],
+    },
+
+    {
+      id: "contact-us",
+      title: "Contact Us",
+      paragraphs: [
+        "If you have questions about this Privacy Policy, your personal information, or our privacy practices, please contact us.",
+      ],
+      contact: {
+        company: "SoftQivo",
+        email: "YOUR_OFFICIAL_EMAIL",
+        website: "https://www.softqivo.com/",
+      },
+      closingParagraphs: [
+        "We will make reasonable efforts to respond to privacy-related requests and inquiries within an appropriate period.",
+      ],
+    },
+  ],
+},
+
+termsOfService: {
+  label: "Terms of Service",
+  title: "Terms & Conditions for Using SoftQivo",
+  lastUpdated: "September 26, 2026",
+
+  introduction:
+    "These Terms of Service govern your access to and use of the SoftQivo website and the services we provide. By accessing our website, submitting an inquiry, or engaging SoftQivo for services, you agree to comply with these Terms and any applicable laws and regulations.",
+
+  sections: [
+    {
+      id: "acceptance-of-terms",
+      title: "Acceptance of Terms",
+      paragraphs: [
+        "By accessing or using the SoftQivo website and services, you acknowledge that you have read, understood, and agreed to these Terms of Service.",
+        "If you do not agree with any part of these Terms, you should not use our website or services.",
+      ],
+    },
+
+    {
+      id: "our-services",
+      title: "Our Services",
+      paragraphs: [
+        "SoftQivo provides digital technology and software development services for businesses, startups, entrepreneurs, and organizations.",
+        "Our services may include web development, web application development, custom software development, mobile application development, UI/UX design, API and backend development, cloud and DevOps services, and other related digital solutions.",
+        "The specific scope, deliverables, timelines, pricing, technologies, and responsibilities for a project will be agreed upon separately between SoftQivo and the client where applicable.",
+      ],
+    },
+
+    {
+      id: "project-engagements",
+      title: "Project Engagements",
+      paragraphs: [
+        "Before beginning a project, SoftQivo and the client may agree on the project scope, requirements, deliverables, milestones, estimated timeline, fees, payment terms, and other applicable conditions.",
+        "Changes to the agreed project scope may affect the project timeline, cost, or deliverables. Additional requirements or features may require a separate estimate or agreement.",
+        "Project-specific agreements, proposals, statements of work, invoices, or other written agreements may contain additional terms that apply to a particular engagement.",
+      ],
+    },
+
+    {
+      id: "client-responsibilities",
+      title: "Client Responsibilities",
+      paragraphs: [
+        "Clients are responsible for providing accurate information, requirements, content, credentials, approvals, assets, and other materials reasonably required for the project.",
+        "Clients are also responsible for reviewing deliverables and providing timely feedback, approvals, or requested changes when required.",
+        "Delays caused by missing information, approvals, access, content, or other client dependencies may affect the project schedule.",
+      ],
+    },
+
+    {
+      id: "payments-and-fees",
+      title: "Payments and Fees",
+      paragraphs: [
+        "Project fees, payment schedules, deposits, milestones, and other payment conditions will be communicated and agreed upon before or during the relevant project engagement.",
+        "Unless otherwise agreed in writing, work may be scheduled or delivered according to the payment milestones established for the project.",
+        "Additional work outside the agreed scope may result in additional charges.",
+        "Any applicable taxes, third-party service charges, licenses, hosting costs, domain costs, or other external expenses may be handled separately where applicable.",
+      ],
+    },
+
+    {
+      id: "intellectual-property",
+      title: "Intellectual Property",
+      paragraphs: [
+        "Ownership and usage rights for project deliverables will depend on the terms agreed between SoftQivo and the client for the specific engagement.",
+        "Unless otherwise agreed, SoftQivo may retain rights to its pre-existing tools, frameworks, libraries, reusable components, development methodologies, know-how, and other materials that were not created exclusively for the client.",
+        "Third-party software, libraries, fonts, images, APIs, services, or other licensed materials remain subject to their respective licenses and terms.",
+      ],
+    },
+
+    {
+      id: "client-content",
+      title: "Client Content and Materials",
+      paragraphs: [
+        "Clients are responsible for ensuring that any content, images, logos, documents, data, software, or other materials they provide to SoftQivo can legally be used for the intended project.",
+        "Clients should not provide materials that infringe the intellectual property, privacy, contractual, or other legal rights of third parties.",
+        "SoftQivo may rely on the information and materials provided by the client when performing services.",
+      ],
+    },
+
+    {
+      id: "third-party-services",
+      title: "Third-Party Services and Integrations",
+      paragraphs: [
+        "Projects may require third-party platforms, APIs, hosting providers, payment services, analytics tools, cloud services, software libraries, or other external technologies.",
+        "Third-party services are generally subject to their own terms, policies, availability, pricing, and technical limitations.",
+        "SoftQivo is not responsible for changes, outages, restrictions, pricing changes, or failures caused by third-party services that are outside our reasonable control.",
+      ],
+    },
+
+    {
+      id: "website-use",
+      title: "Acceptable Use",
+      paragraphs: [
+        "You agree to use the SoftQivo website and services only for lawful purposes and in a manner that does not violate applicable laws or the rights of others.",
+        "You must not attempt to gain unauthorized access to our website, systems, servers, accounts, or other infrastructure.",
+        "You must not knowingly introduce malicious code, attempt to disrupt website functionality, abuse our services, or use our website for fraudulent or unlawful activities.",
+      ],
+    },
+
+    {
+      id: "confidentiality",
+      title: "Confidentiality",
+      paragraphs: [
+        "During a project, SoftQivo and the client may exchange confidential business, technical, commercial, or other information.",
+        "Both parties should take reasonable steps to protect confidential information and use it only for legitimate purposes related to the relevant engagement.",
+        "Specific confidentiality obligations may be established through a separate confidentiality agreement or project agreement where required.",
+      ],
+    },
+
+    {
+      id: "warranties",
+      title: "Warranties and Disclaimers",
+      paragraphs: [
+        "SoftQivo will make reasonable efforts to provide services professionally and in accordance with the agreed project requirements.",
+        "However, unless expressly agreed in writing, we do not guarantee that a website, application, software system, or other digital product will be completely error-free, continuously available, or compatible with every third-party system or future technology.",
+        "The SoftQivo website and general information provided through it are provided for informational purposes and may be changed or updated without notice.",
+      ],
+    },
+
+    {
+      id: "limitation-of-liability",
+      title: "Limitation of Liability",
+      paragraphs: [
+        "To the extent permitted by applicable law, SoftQivo will not be liable for indirect, incidental, consequential, special, or other losses arising from the use of our website, services, third-party services, or project deliverables.",
+        "This may include losses related to business interruption, loss of profits, loss of data, or loss of opportunities, except where liability cannot legally be excluded or limited.",
+      ],
+    },
+
+    {
+      id: "termination",
+      title: "Termination",
+      paragraphs: [
+        "A project or service engagement may be terminated in accordance with the terms agreed between SoftQivo and the client.",
+        "Where a project is terminated, the parties may remain responsible for fees, deliverables, expenses, or other obligations that became due before termination.",
+        "SoftQivo may suspend or restrict access to its website or services where reasonably necessary to protect its systems, comply with legal obligations, or address misuse.",
+      ],
+    },
+
+    {
+      id: "changes-to-services",
+      title: "Changes to Services",
+      paragraphs: [
+        "SoftQivo may modify, update, suspend, or discontinue parts of its website or services from time to time.",
+        "We may also update technologies, service offerings, features, processes, or website content as our business develops.",
+      ],
+    },
+
+    {
+      id: "changes-to-terms",
+      title: "Changes to These Terms",
+      paragraphs: [
+        "We may update these Terms of Service from time to time to reflect changes in our services, business practices, technology, or legal requirements.",
+        "When changes are made, we will update the Last Updated date at the top of this page.",
+        "Your continued use of the website or services after updated Terms become available may constitute acceptance of the revised Terms, to the extent permitted by applicable law.",
+      ],
+    },
+
+    {
+      id: "governing-law",
+      title: "Governing Law",
+      paragraphs: [
+        "These Terms will be interpreted and applied in accordance with applicable laws and regulations.",
+        "Where a specific project agreement contains governing-law or dispute-resolution provisions, those provisions may apply to that engagement.",
+      ],
+    },
+
+    {
+      id: "contact-us",
+      title: "Contact Us",
+      paragraphs: [
+        "If you have questions about these Terms of Service or our services, please contact SoftQivo using the details below.",
+      ],
+      contact: {
+        company: "SoftQivo",
+        email: "YOUR_OFFICIAL_EMAIL",
+        website: "https://www.softqivo.com/",
+      },
+    },
+  ],
+},
+
+sitemap: {
+  label: "Sitemap",
+  title: "Explore SoftQivo",
+  description:
+    "Explore SoftQivo's website to discover our digital services, projects, insights, company information, and ways to get in touch with our team.",
+
+  groups: [
+    {
+      title: "Main Pages",
+      links: [
+        {
+          title: "Home",
+          description: "Discover SoftQivo and our digital solutions.",
+          href: "/",
+        },
+        {
+          title: "About Us",
+          description:
+            "Learn more about SoftQivo, our approach, and how we build digital products.",
+          href: "/about",
+        },
+        {
+          title: "Services",
+          description:
+            "Explore our web, software, mobile, UI/UX, backend, and cloud services.",
+          href: "/services",
+        },
+        {
+          title: "Case Studies",
+          description:
+            "Explore selected projects and digital solutions developed by SoftQivo.",
+          href: "/case-studies",
+        },
+        {
+          title: "Blog",
+          description:
+            "Read insights about web development, UI/UX, software, and digital products.",
+          href: "/blog",
+        },
+        {
+          title: "Contact",
+          description:
+            "Get in touch with SoftQivo to discuss your project or business requirements.",
+          href: "/contact",
+        },
+      ],
+    },
+
+    {
+      title: "Our Services",
+      links: [
+        {
+          title: "Web Development",
+          description:
+            "Modern websites and web applications built for performance and scalability.",
+          href: "/services/web-development",
+        },
+        {
+          title: "Software Development",
+          description:
+            "Custom software solutions designed around your business workflows.",
+          href: "/services/software-development",
+        },
+        {
+          title: "Mobile Applications",
+          description:
+            "User-focused mobile applications for modern businesses and digital products.",
+          href: "/services/mobile-applications",
+        },
+        {
+          title: "UI/UX Design",
+          description:
+            "Purposeful user experiences and interfaces designed for usability and engagement.",
+          href: "/services/ui-ux-design",
+        },
+        {
+          title: "API & Backend",
+          description:
+            "Secure backend systems and APIs that power applications and integrations.",
+          href: "/services/api-backend",
+        },
+        {
+          title: "Cloud & DevOps",
+          description:
+            "Cloud infrastructure and DevOps solutions for reliable deployment and operations.",
+          href: "/services/cloud-devops",
+        },
+      ],
+    },
+
+    {
+      title: "Insights",
+      links: [
+        {
+          title:
+            "Building Modern Web Applications That Scale With Your Business",
+          description:
+            "Explore modern architecture, performance, scalability, and web application development.",
+          href: "/blog/building-modern-web-applications-that-scale",
+        },
+        {
+          title:
+            "Why Great UI/UX Design Is More Than Just a Beautiful Interface",
+          description:
+            "Learn how thoughtful design improves usability and digital product experiences.",
+          href: "/blog/why-great-ui-ux-design-matters",
+        },
+        {
+          title:
+            "From Idea to Product: Building Software That Creates Real Business Value",
+          description:
+            "Explore the process of turning an idea into a reliable software product.",
+          href: "/blog/from-idea-to-product",
+        },
+      ],
+    },
+
+    {
+      title: "Company & Legal",
+      links: [
+        {
+          title: "Privacy Policy",
+          description:
+            "Learn how SoftQivo collects, uses, and protects personal information.",
+          href: "/privacy-policy",
+        },
+        {
+          title: "Terms of Service",
+          description:
+            "Review the terms and conditions governing the use of SoftQivo's website and services.",
+          href: "/terms-of-service",
+        },
+      ],
+    },
+  ],
+},
+
 };
