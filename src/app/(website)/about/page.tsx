@@ -17,9 +17,9 @@ import HowWeWork from "@/src/components/HowWeWork";
 import OurProcess from "@/src/components/ProcessSection";
 
 const Page = () => {
-  const { services, caseStudies, process, team, blogs,howWeWork, technologes, finalCta } =
+  const { services, caseStudies, process, team,howWeWork, technologes, finalCta } =
     staticData?.home;
-      const { banner,  } =
+      const { banner, blogs } =
     staticData?.about;
   return (
     <div>
@@ -27,7 +27,7 @@ const Page = () => {
       <OurStory />
       <OurProcess data={process} />
       <TeamSection data={team} />
-      {/* <TechnologySection data={technologes} /> */}
+      <TechnologySection data={technologes} />
       <Blog data={blogs} />
       <FinalCTA />
     </div>

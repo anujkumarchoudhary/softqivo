@@ -59,7 +59,7 @@ const FAQ = () => {
     <section className="bg-white py-12 lg:py-16">
       <MaxWidth>
         {/* Section Heading */}
-        <div className="mx-auto mb-14 w-[90%] lg:w-[40%] text-center">
+        <div className="mx-auto mb-14 w-[90%] lg:w-[50%] text-center">
           <Heading
             label="FAQ"
             // accentColor="#0000FF"
