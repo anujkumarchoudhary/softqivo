@@ -200,6 +200,8 @@
 import { motion } from "framer-motion";
 import MaxWidth from "./layout/MaxWidth";
 import Icon from "@/src/utills/iconMap ";
+import { useState } from "react";
+import GetEnquiryForm from "./form/GetEnquiryForm";
 
 interface FinalCTAData {
   label: string;
@@ -214,6 +216,7 @@ interface FinalCTAProps {
 }
 
 export default function FinalCTA() {
+  const [open, setOpen] = useState(false);
   return (
     <section className="bg-gradient-to-r from-purple-600 via-violet-600 to-blue-600 py-12 lg:py-16">
       <MaxWidth>
@@ -243,9 +246,9 @@ export default function FinalCTA() {
             </div>
 
             {/* Button */}
-            <a
-              href={"/"}
-              className="group flex text-center shrink-0 mt-10 lg:mt-0 items-center gap-2 rounded-[4px] mx-auto lg:mx-0 w-fit bg-black px-5 py-3 text-[18px] font-semibold text-white transition-all duration-300 hover:bg-white hover:text-black sm:px-7 sm:py-3.5"
+            <button
+              onClick={() => setOpen(true)}
+              className="group cursor-pointer flex text-center shrink-0 mt-10 lg:mt-0 items-center gap-2 rounded-[4px] mx-auto lg:mx-0 w-fit bg-black px-5 py-3 text-[18px] font-semibold text-white transition-all duration-300 hover:bg-white hover:text-black sm:px-7 sm:py-3.5"
             >
               Let's Talk
               <Icon
@@ -253,10 +256,11 @@ export default function FinalCTA() {
                 size={14}
                 className="transition-transform duration-300 group-hover:translate-x-1"
               />
-            </a>
+            </button>
           </div>
         </motion.div>
       </MaxWidth>
+      <GetEnquiryForm isOpen={open} handleClose={() => setOpen(false)} />
     </section>
   );
 }

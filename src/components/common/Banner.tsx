@@ -18,6 +18,8 @@ import { GrSecure } from "react-icons/gr";
 import { MdSecurity } from "react-icons/md";
 import { SiFsecure } from "react-icons/si";
 import BackgroundEffects from "../BackgroundEffects";
+import { useState } from "react";
+import GetEnquiryForm from "../form/GetEnquiryForm";
 
 const partners = [
   {
@@ -43,6 +45,7 @@ const partners = [
 ];
 
 const Banner = () => {
+  const [open, setOpen] = useState(false);
   const { isMobile, isTablet, isDesktop } = useResponsive();
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>();
   const { label, headingParts, description, button, button2 } =
@@ -133,8 +136,15 @@ const Banner = () => {
               <SaveAndCancel
                 saveText="Start a Project"
                 cancelText="Explore Our Work"
-                saveHref="/contact"
-                cancelHref="/work"
+                handleClick={()=>setOpen(!open)}
+                handleClick2={() => {
+                  document
+                    .getElementById("case-studies")
+                    ?.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                }}
                 className="mx-auto lg:mx-0"
               />
             </div>
@@ -180,6 +190,7 @@ const Banner = () => {
           </div>
         </div>
       </MaxWidth>
+      <GetEnquiryForm isOpen={open} handleClose={()=>setOpen(false)} />
     </section>
   );
 };

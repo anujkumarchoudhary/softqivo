@@ -3,16 +3,16 @@ import Link from "next/link";
 type SaveAndCancelProps = {
   saveText?: string;
   cancelText?: string;
-  saveHref?: string;
-  cancelHref?: string;
+  handleClick?: () => void;
+  handleClick2: () => void;
   className?: string;
 };
 
 const SaveAndCancel = ({
   saveText = "Start a Project",
   cancelText = "Explore Our Work",
-  saveHref = "/contact",
-  cancelHref = "/work",
+  handleClick = () => {},
+  handleClick2,
   className = "",
 }: SaveAndCancelProps) => {
   return (
@@ -23,11 +23,11 @@ const SaveAndCancel = ({
       `}
     >
       {/* Start a Project */}
-      <Link
-        href={saveHref}
+      <button
+        onClick={handleClick}
         className="
           group
-          inline-flex items-center justify-center
+          inline-flex cursor-pointer items-center justify-center
           gap-2
           rounded-md
           bg-gradient-to-r
@@ -58,13 +58,14 @@ const SaveAndCancel = ({
         >
           →
         </span>
-      </Link>
+      </button>
 
       {/* Explore Our Work */}
-      <Link
-        href={cancelHref}
+      <button
+      onClick={handleClick2}
+        
         className="
-          inline-flex items-center justify-center
+          inline-flex items-center cursor-pointer justify-center
           rounded-md
           border border-white/20
           bg-white/[0.02]
@@ -81,7 +82,7 @@ const SaveAndCancel = ({
         "
       >
         {cancelText}
-      </Link>
+      </button>
     </div>
   );
 };

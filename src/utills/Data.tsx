@@ -269,7 +269,7 @@ export const staticData = {
           image: "/images/author/softqivo_ceo.png",
           linkedin: "FaLinkedinIn",
           instagram: "BsInstagram",
-          twitter: "FaTwitter",
+          twitter: "https://x.com/softqivo",
         },
         {
           name: "Sherry Lin",
@@ -277,7 +277,7 @@ export const staticData = {
           image: "/images/team/team_1.png",
           linkedin: "FaLinkedinIn",
           instagram: "BsInstagram",
-          twitter: "FaTwitter",
+          twitter: "https://x.com/softqivo",
         },
         {
           name: "John Smith",
@@ -285,7 +285,7 @@ export const staticData = {
           image: "/images/team/team_2.png",
           linkedin: "FaLinkedinIn",
           instagram: "BsInstagram",
-          twitter: "FaTwitter",
+          twitter: "https://x.com/softqivo",
         },
         {
           name: "Team Member",
@@ -293,7 +293,7 @@ export const staticData = {
           image: "/images/team/team_3.png",
           linkedin: "FaLinkedinIn",
           instagram: "BsInstagram",
-          twitter: "FaTwitter",
+          twitter: "https://x.com/softqivo",
         },
       ],
     },
