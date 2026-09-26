@@ -114,7 +114,7 @@ export default function CaseStudies({ data }: any) {
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#050507] py-12 lg:py-16">
+    <section id="case-studies" className="relative overflow-hidden bg-[#050507] py-12 lg:py-16">
       {/* ================= BACKGROUND ================= */}
 
       {/* Localized glow */}
