@@ -106,7 +106,7 @@ const Footer = () => {
             {footerMenuData.slice(0, 5).map((menu, idx) => (
               <li key={idx}>
                 <a
-                  href={"#"}
+                  href={`${menu.link}`}
                   className="group flex items-center gap-2 text-[18px] text-white/70 transition hover:text-white"
                 >
                   <Icon
@@ -132,7 +132,7 @@ const Footer = () => {
             {footerMenuData.slice(5).map((menu, idx) => (
               <li key={idx}>
                 <a
-                  href={"#"}
+                  href={`${menu.link}`}
                   className="group flex items-center gap-2 text-[18px] text-white/70 transition hover:text-white"
                 >
                   <Icon
@@ -216,7 +216,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <MaxWidth className="flex flex-col items-center justify-between gap-3 py-5 text-sm text-white/50 md:flex-row">
-          <p>© {new Date().getFullYear()} SoftQivo. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} SoftQivo Technology. All rights reserved.</p>
 
           <div className="flex gap-5">
             <a href="/privacy-policy" className="transition hover:text-white">

@@ -9,12 +9,12 @@ export const menuData = [
 export const footerMenuData = [
   { title: "Privacy Policy", link: "/privacy-policy" },
   { title: "Terms of Service", link: "/terms-of-service" },
-  { title: "Help Center", link: "/help-center" },
-  { title: "Careers", link: "/careers" },
+  { title: "Help Center", link: "#" },
+  { title: "Careers", link: "#" },
   { title: "Sitemap", link: "/sitemap" },
-  { title: "Accessibility", link: "/accessibility" },
-  { title: "Cookie Policy", link: "/cookie-policy" },
-  { title: "Press", link: "/press" },
+  { title: "Accessibility", link: "#" },
+  { title: "Cookie Policy", link: "#" },
+  { title: "Press", link: "#" },
   { title: "Blog", link: "/blog" },
   { title: "Contact", link: "/contact" },
 ];
