@@ -16,7 +16,7 @@ import Link from "next/link";
 
 const Blog = ({ data }: any) => {
   const { ref, isVisible } =
-    useInViewOnce<HTMLDivElement>(0.3);
+    useInViewOnce<HTMLDivElement>(0);
 
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -39,7 +39,7 @@ const Blog = ({ data }: any) => {
   return (
     <section
       ref={ref}
-      className="bg-[#F9F9F9] py-[3rem] lg:py-16"
+      className="py-12 lg:py-16"
     >
       <MaxWidth>
 
@@ -139,11 +139,11 @@ const Blog = ({ data }: any) => {
         </div>
 
         {/* Pagination */}
-        <Pagination
+        {/* <Pagination
           currentPage={currentPage}
           totalPages={totalPages}
           onPageChange={setCurrentPage}
-        />
+        /> */}
 
       </MaxWidth>
     </section>

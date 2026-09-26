@@ -200,7 +200,7 @@ export const staticData = {
       headingParts: [
         {
           text: "We don't just build.",
-          color: "#000000",
+          color: "#ffffff",
           style: "normal",
           size: "clamp(36px, 5vw, 52px)",
           weight: "600",
