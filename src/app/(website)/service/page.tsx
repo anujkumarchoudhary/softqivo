@@ -9,6 +9,7 @@ import FinalCTA from '@/src/components/FinalCTA'
 import ProcessSection from '@/src/components/ProcessSection'
 import WhySoftQivo from '@/src/components/WhySoftQivo'
 import ProcessSection2 from '@/src/components/ProcessSection2'
+import OurServices from '@/src/components/OurServices'
 
 const page = () => {
     const { whatWeDo } = staticData.home || {};
@@ -26,7 +27,7 @@ const page = () => {
       />
 
       {/* Services */}
-      <Services data={services} />
+      <OurServices data={services} />
 
       {/* Why SoftQivo */}
       <WhySoftQivo />

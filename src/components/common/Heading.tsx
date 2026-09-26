@@ -1,3 +1,5 @@
+import { Sparkles } from "lucide-react";
+
 type HeadingPart = {
   text: string;
   color?: string;
@@ -6,16 +8,21 @@ type HeadingPart = {
   size?: string;
   weight?: string | number;
   lineHeight?: string | number;
+  letterSpacing?: string;
   gradient?: string;
+  className?: string;
 };
 
 type HeadingProps = {
   label?: string;
   isAccentCircle?: boolean;
-  isAccentLine?:boolean
+  isAccentLine?: boolean;
+  isSparkles?: boolean;
+
   labelColor?: string;
   accentColor?: string;
   description?: string;
+
   headingParts?: HeadingPart[];
 
   textColor?: string;
@@ -23,13 +30,19 @@ type HeadingProps = {
 
   labelBorderStart?: string;
   labelBorderEnd?: string;
+
   isDart?: boolean;
   isCenter?: boolean;
   isVisible?: boolean;
   isGradient?: boolean;
+
   gradient?: string;
 
+  // Break line after this heading part index
+  breakIndex?: number;
+
   className?: string;
+
   as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 };
 
@@ -77,6 +90,7 @@ const Heading = ({
   label,
   labelColor,
   accentColor,
+  isSparkles,
   isAccentCircle,
   isAccentLine,
   description,
@@ -85,6 +99,7 @@ const Heading = ({
   isDart = false,
   isCenter = false,
   isVisible = true,
+  breakIndex,
   isGradient = false,
   gradient,
   className = "",
@@ -98,6 +113,40 @@ const Heading = ({
         <div
           className={``}
         >
+          { isSparkles &&  <div className={`flex items-center gap-5 justify-center lg:justify-normal  ${isCenter ? "text-center w-fit mx-auto" : "w-full"}`}>
+            <span
+              className="
+                flex
+                h-8
+                w-8
+                items-center
+                justify-center
+                rounded-full
+                border
+                border-white/10
+                bg-white/[0.04]
+              "
+            >
+              <Sparkles className="h-3.5 w-3.5 text-purple-400" />
+            </span>
+                         <span
+            className={`
+        uppercase inline-block
+        rounded-full
+        bg-transparent
+        px-0 py-2
+        text-[10px]
+        lg:text-[12px]
+        tracking-[0.25em]
+        font-semibold
+      `}
+            style={{
+              color: labelColor ?? textColor,
+            }}
+          >
+            {label}
+          </span>
+            </div>}
           {isAccentCircle && (
             <div className={`flex items-center gap-5 justify-center lg:justify-normal  ${isCenter ? "text-center w-fit mx-auto" : "w-full"}`}>
               <span
@@ -155,6 +204,7 @@ const Heading = ({
 <Tag
   className={`
     transition-all duration-700 delay-150
+    ${isCenter ? "text-center" : "text-left"}
     ${className}
     ${
       isVisible
@@ -167,54 +217,57 @@ const Heading = ({
     const isPartGradient = Boolean(part.gradient);
 
     return (
-      <span
-        key={index}
-        className={`
-          flex
-          ${
-            isCenter
-              ? "justify-center text-center"
-              : "justify-center text-center lg:justify-start lg:text-left"
-          }
-        `}
-        style={{
-          color: isPartGradient
-            ? "transparent"
-            : part.color ?? textColor,
+      <span key={index}>
+        <span
+          className={`
+            inline
+            ${part.className ?? ""}
+          `}
+          style={{
+            color: isPartGradient
+              ? "transparent"
+              : part.color ?? textColor,
 
-          backgroundImage: isPartGradient
-            ? part.gradient
-            : undefined,
+            backgroundImage: isPartGradient
+              ? part.gradient
+              : undefined,
 
-          backgroundClip: isPartGradient
-            ? "text"
-            : undefined,
+            backgroundClip: isPartGradient
+              ? "text"
+              : undefined,
 
-          WebkitBackgroundClip: isPartGradient
-            ? "text"
-            : undefined,
+            WebkitBackgroundClip: isPartGradient
+              ? "text"
+              : undefined,
 
-          WebkitTextFillColor: isPartGradient
-            ? "transparent"
-            : undefined,
+            WebkitTextFillColor: isPartGradient
+              ? "transparent"
+              : undefined,
 
-          fontFamily: part.font
-            ? fontMap[part.font] || part.font
-            : undefined,
+            fontFamily: part.font
+              ? fontMap[part.font] || part.font
+              : undefined,
 
-          fontStyle: part.style,
+            fontStyle: part.style,
 
-          fontSize:
-            part.size ?? defaultHeading.fontSize,
+            fontSize:
+              part.size ?? defaultHeading.fontSize,
 
-          fontWeight:
-            part.weight ?? defaultHeading.fontWeight,
+            fontWeight:
+              part.weight ?? defaultHeading.fontWeight,
 
-          lineHeight:
-            part.lineHeight ?? defaultHeading.lineHeight,
-        }}
-      >
-        {part.text}
+            lineHeight:
+              part.lineHeight ?? defaultHeading.lineHeight,
+
+            letterSpacing:
+              part.letterSpacing ?? undefined,
+          }}
+        >
+          {part.text}
+        </span>
+
+        {/* Break after this part */}
+        {breakIndex === index + 1 && <br />}
       </span>
     );
   })}
