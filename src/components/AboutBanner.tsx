@@ -6,8 +6,10 @@ import { motion } from "framer-motion";
 import MaxWidth from "@/src/components/layout/MaxWidth";
 import Heading from "./common/Heading";
 import BackgroundEffects from "./BackgroundEffects";
+import { useResponsive } from "../hooks/useResponsive";
 
-const AboutBanner = ({data}: {data: any}) => {
+const AboutBanner = ({ data }: { data: any }) => {
+  const { isDesktop } = useResponsive()
   return (
     <section className="relative min-h-[78vh] overflow-hidden bg-black text-white">
 
@@ -15,7 +17,7 @@ const AboutBanner = ({data}: {data: any}) => {
           BACKGROUND
       ====================================================== */}
 
-    <BackgroundEffects variant={2} />
+      <BackgroundEffects variant={2} />
 
 
       {/* ======================================================
@@ -32,46 +34,43 @@ const AboutBanner = ({data}: {data: any}) => {
         "
       >
 
-        <div className="w-[50%] py-32 sm:py-40">
+        <div className="w-full lg:w-[50%] py-12 lg:py-20">
 
-<Heading
-  label="ABOUT SOFTQIVO"
-  labelColor="rgba(255,255,255,0.45)"
-  accentColor="#A855F7"
-  isSparkles={true}
-  textColor="#ffffff"
-  isCenter={false}
-  isVisible={true}
-  as="h1"
-  breakIndex={5}
-  headingParts={[
-    {
-      text: "We turn ",
-      color: "#ffffff",
-      weight: 600,
-      size: "clamp(3rem, 7vw, 4rem)",
-      lineHeight: 1.1,
-    },
-    {
-      text: "ideas",
-      gradient:
-        "linear-gradient(90deg, #A855F7, #8B5CF6, #3B82F6)",
-      weight: 600,
-      size: "clamp(3rem, 7vw, 4rem)",
-      lineHeight: 1.1,
-    },
-    {
-      text: " into digital products.",
-      color: "#ffffff",
-      weight: 600,
-      size: "clamp(3rem, 7vw, 4rem)",
-      lineHeight: 1.1,
-    },
-  ]}
-  description="SoftQivo helps startups, businesses, and entrepreneurs transform ideas into powerful digital solutions — from modern websites and applications to custom software systems built around real business needs."
-  descColor="rgba(255,255,255,0.45)"
-  className="tracking-[-0.045em]"
-/>
+          <Heading
+            label="ABOUT SOFTQIVO"
+            labelColor="rgba(255,255,255,0.45)"
+            accentColor="#A855F7"
+            isSparkles={true}
+            textColor="#ffffff"
+            isCenter={isDesktop ? false : true}
+            isVisible={true}
+            as="h1"
+            breakIndex={5}
+            headingParts={[
+              {
+                text: "We turn ",
+                color: "#ffffff",
+                weight: 600,
+                lineHeight: 1.1,
+              },
+              {
+                text: "ideas",
+                gradient:
+                  "linear-gradient(90deg, #A855F7, #8B5CF6, #3B82F6)",
+                weight: 600,
+                lineHeight: 1.1,
+              },
+              {
+                text: " into digital products.",
+                color: "#ffffff",
+                weight: 600,
+                lineHeight: 1.1,
+              },
+            ]}
+            description="SoftQivo helps startups, businesses, and entrepreneurs transform ideas into powerful digital solutions — from modern websites and applications to custom software systems built around real business needs."
+            descColor="rgba(255,255,255,0.45)"
+            className="tracking-[-0.045em]"
+          />
 
 
           {/* ==================================================
@@ -90,7 +89,8 @@ const AboutBanner = ({data}: {data: any}) => {
               delay: 0.45,
             }}
             className="
-              mt-20
+            mt-10
+              lg:mt-20
               flex
               flex-wrap
               items-center
