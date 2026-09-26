@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import MaxWidth from "@/src/components/layout/MaxWidth";
 import Heading from "@/src/components/common/Heading";
