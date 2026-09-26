@@ -213,64 +213,83 @@ const Heading = ({
     }
   `}
 >
-  {headingParts?.map((part, index) => {
-    const isPartGradient = Boolean(part.gradient);
+  {(() => {
+    let wordCount = 0;
 
-    return (
-      <span key={index}>
-        <span
-          className={`
-            inline
-            ${part.className ?? ""}
-          `}
-          style={{
-            color: isPartGradient
-              ? "transparent"
-              : part.color ?? textColor,
+    return headingParts?.map((part, partIndex) => {
+      const isPartGradient = Boolean(part.gradient);
 
-            backgroundImage: isPartGradient
-              ? part.gradient
-              : undefined,
+      // Split while preserving whitespace
+      const words = part.text.split(/(\s+)/);
 
-            backgroundClip: isPartGradient
-              ? "text"
-              : undefined,
+      return (
+        <span key={partIndex}>
+          {words.map((word, wordIndex) => {
+            const isWhitespace = /^\s+$/.test(word);
 
-            WebkitBackgroundClip: isPartGradient
-              ? "text"
-              : undefined,
+            if (isWhitespace) {
+              return word;
+            }
 
-            WebkitTextFillColor: isPartGradient
-              ? "transparent"
-              : undefined,
+            wordCount++;
 
-            fontFamily: part.font
-              ? fontMap[part.font] || part.font
-              : undefined,
+            const shouldBreak = wordCount === breakIndex;
 
-            fontStyle: part.style,
+            return (
+              <span key={wordIndex}>
+                <span
+                  className={`inline ${part.className ?? ""}`}
+                  style={{
+                    color: isPartGradient
+                      ? "transparent"
+                      : part.color ?? textColor,
 
-            fontSize:
-              part.size ?? defaultHeading.fontSize,
+                    backgroundImage: isPartGradient
+                      ? part.gradient
+                      : undefined,
 
-            fontWeight:
-              part.weight ?? defaultHeading.fontWeight,
+                    backgroundClip: isPartGradient
+                      ? "text"
+                      : undefined,
 
-            lineHeight:
-              part.lineHeight ?? defaultHeading.lineHeight,
+                    WebkitBackgroundClip: isPartGradient
+                      ? "text"
+                      : undefined,
 
-            letterSpacing:
-              part.letterSpacing ?? undefined,
-          }}
-        >
-          {part.text}
+                    WebkitTextFillColor: isPartGradient
+                      ? "transparent"
+                      : undefined,
+
+                    fontFamily: part.font
+                      ? fontMap[part.font] || part.font
+                      : undefined,
+
+                    fontStyle: part.style,
+
+                    fontSize:
+                      part.size ?? defaultHeading.fontSize,
+
+                    fontWeight:
+                      part.weight ?? defaultHeading.fontWeight,
+
+                    lineHeight:
+                      part.lineHeight ?? defaultHeading.lineHeight,
+
+                    letterSpacing:
+                      part.letterSpacing ?? undefined,
+                  }}
+                >
+                  {word}
+                </span>
+
+                {shouldBreak && <br />}
+              </span>
+            );
+          })}
         </span>
-
-        {/* Break after this part */}
-        {breakIndex === index + 1 && <br />}
-      </span>
-    );
-  })}
+      );
+    });
+  })()}
 </Tag>
 
 {/* Description */}

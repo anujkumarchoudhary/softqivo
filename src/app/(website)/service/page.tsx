@@ -19,6 +19,7 @@ const page = () => {
     <div>
       {/* Banner */}
       <CommonBanner
+      breakIndex={4}
         label="OUR SERVICES"
         title="Digital solutions built"
         highlight="for real growth."

@@ -11,14 +11,16 @@ interface CommonBannerProps {
   title: string;
   highlight?: string;
   description?: string;
+  breakIndex?: number;
   breadcrumb?: string;
 }
 
 export default function CommonBanner({
   label = "GET IN TOUCH",
-  title = "Let's Build",
+  title = " Let's Build ",
   highlight = "",
   description = "",
+  breakIndex,
   breadcrumb = "Contact",
 }: CommonBannerProps) {
   return (
@@ -28,6 +30,7 @@ export default function CommonBanner({
   <MaxWidth className=" py-20 max-w-310 sm:px-8 lg:px-12 lg:py-24">
       <Heading
         label={label}
+        breakIndex={4}
         labelColor="rgba(255,255,255,0.7)"
         accentColor="#A855F7"
         textColor="rgba(255,255,255,0.6)"

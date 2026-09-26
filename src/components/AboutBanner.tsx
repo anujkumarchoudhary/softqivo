@@ -43,7 +43,7 @@ const AboutBanner = () => {
   isCenter={false}
   isVisible={true}
   as="h1"
-  breakIndex={2}
+  breakIndex={5}
   headingParts={[
     {
       text: "We turn ",
