@@ -4,20 +4,9 @@ import client_03 from "../../public/images/clients/logoipsum-286-1.png";
 import client_04 from "../../public/images/clients/logoipsum-286-1.png";
 import client_05 from "../../public/images/clients/logoipsum-286-1.png";
 import client_06 from "../../public/images/clients/logoipsum-286-1.png";
-//card img
 import card_img_01 from "../../public/images/work-5224077_1920.jpg";
 import card_img_02 from "../../public/images/vision.jpg";
-
-//team
-import team from "../../public/images/team/team_1.jpg";
-
-//support
 import support_1 from "../../public/images/support/support_1.png";
-
-//feedback data
-import feedback01 from "../../public/images/software-developer-at-office.jpg";
-import feedback02 from "../../public/images/software-developer-at-office.jpg";
-import feedback03 from "../../public/images/software-developer-at-office.jpg";
 import { FaMapLocationDot, FaHeadphonesSimple } from "react-icons/fa6";
 import { IoIosMailOpen } from "react-icons/io";
 
@@ -31,9 +20,10 @@ export const staticData = {
   home: {
     banner: {
       label: "SOFTWARE • DESIGN • INNOVATION",
+
       headingParts: [
         {
-          text: "Transform Ideas  ",
+          text: "Transform Ideas ",
           color: "#FFFFFF",
           font: "playfair",
           style: "italic",
@@ -41,15 +31,17 @@ export const staticData = {
         },
 
         {
-          text: "  Into Powerful Digital Solutions.",
+          text: " Into Powerful Digital Solutions.",
           color: "#FFFFFF",
           weight: "600",
           // gradient:
           //   "linear-gradient(90deg, #A855F7 0%, #7C3AED 50%, #2563EB 100%)",
         },
       ],
+
       description:
-        "We create fast, scalable, and intelligent digital solutions engineered to solve real business challenges and drive measurable growth.",
+        "We design and develop fast, scalable digital products that solve real business challenges, improve customer experiences, and create lasting business value.",
+
       button: "Get a Quote",
       button2: "See Projects",
     },
@@ -72,48 +64,50 @@ export const staticData = {
             "linear-gradient(90deg, #A855F7 0%, #7C3AED 50%, #2563EB 100%)",
         },
       ],
+
       description:
-        "From strategy and design to development and deployment, we build digital products that are fast, scalable and purpose-driven.",
+        "From strategy and design to development and deployment, we build reliable digital products that combine great experiences, scalable technology, and measurable business value.",
+
       list: [
         {
           title: "Web Development",
           description:
-            "We build fast, responsive websites and web applications with modern technologies, clean architecture, strong security, seamless experiences, and scalable performance for growth.",
+            "We build fast, responsive websites and web applications with modern technologies, clean architecture, strong security, and scalable performance across devices.",
           href: "/services/web-development",
           icon: "Code2",
         },
         {
           title: "Software Development",
           description:
-            "We create custom software solutions tailored to your business workflows, combining secure architecture, powerful functionality, scalable technology, and reliable performance for growth.",
+            "We develop custom software tailored to your business workflows, combining secure architecture, powerful functionality, integrations, and scalable technology.",
           href: "/services/software-development",
           icon: "Layers3",
         },
         {
           title: "Mobile Applications",
           description:
-            "We develop intuitive mobile applications with seamless experiences, powerful features, responsive interfaces, and reliable performance across modern devices and platforms for businesses.",
+            "We develop intuitive mobile applications with engaging user experiences, reliable performance, scalable architecture, and business-focused features for modern platforms.",
           href: "/services/mobile-applications",
           icon: "Smartphone",
         },
         {
           title: "UI/UX Design",
           description:
-            "We design intuitive digital experiences through thoughtful research, clear interfaces, engaging interactions, and user-focused design that improves usability, engagement, and conversions.",
+            "We design intuitive digital experiences through research, clear interfaces, thoughtful interactions, and user-focused design that improves usability and engagement.",
           href: "/services/ui-ux-design",
           icon: "Palette",
         },
         {
           title: "API & Backend",
           description:
-            "We develop secure, scalable backend systems and APIs that power applications, enable integrations, manage data efficiently, and deliver reliable performance at scale.",
+            "We build secure, scalable backend systems and APIs that power applications, connect third-party services, manage data efficiently, and support reliable performance.",
           href: "/services/api-backend",
           icon: "Boxes",
         },
         {
           title: "Cloud & DevOps",
           description:
-            "We build reliable cloud infrastructure and DevOps workflows that improve deployment speed, scalability, security, monitoring, automation, and overall operational efficiency for businesses.",
+            "We build reliable cloud infrastructure and DevOps workflows that improve deployment, scalability, security, monitoring, automation, and operational efficiency.",
           href: "/services/cloud-devops",
           icon: "Cloud",
         },
@@ -303,260 +297,8 @@ export const staticData = {
         },
       ],
     },
-    support: {
-      label: "Dedicated Support",
 
-      heading:
-        "We provide dedicated support throughout the development process",
-
-      highlight: "and beyond.",
-
-      description:
-        "Our team stays with you beyond launch — helping you solve problems, improve your product, and keep your digital experience moving forward.",
-
-      mainImage: support_1,
-
-      teamImage: support_1,
-
-      videoHref: "/",
-
-      features: [
-        {
-          icon: "clock" as const,
-          title: "24 Hours Support",
-          description:
-            "Our team is available whenever you need help, guidance, or technical assistance.",
-        },
-        {
-          icon: "infinity" as const,
-          title: "Unlimited Revision",
-          description:
-            "We refine and improve your product until everything feels right and works as expected.",
-        },
-      ],
-    },
-    whoWeAre: {
-      image: "",
-      label: "Who We Are",
-      headingParts: [
-        {
-          text: "we specialize in providing tailor-made software solutions Custom Needed",
-          color: "#001845",
-          weight: "700",
-        },
-      ],
-      description: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident",
-      ],
-      data: [
-        {
-          name: "15 Years Experience",
-          description: "Lorem ipsum dolor sit amet consectetur",
-        },
-        {
-          name: "Best Certification Team",
-          description: "Lorem ipsum dolor sit amet consectetur",
-        },
-        {
-          name: "Unlimited Revision",
-          description: "Lorem ipsum dolor sit amet consectetur",
-        },
-      ],
-    },
-    whatWeDo: {
-      label: "What We Do",
-      headingParts: [
-        {
-          text: "Discover Our Best Service Provided From Expert",
-          color: "#001845",
-          weight: "700",
-        },
-      ],
-      data: [
-        {
-          icon: "",
-          name: "Web Development",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          button: "Learn More",
-        },
-        {
-          icon: "",
-          name: "App Development",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          button: "Learn More",
-        },
-        {
-          icon: "",
-          name: "Payment Gateway",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          button: "Learn More",
-        },
-        {
-          icon: "",
-          name: "CRM Software",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          button: "Learn More",
-        },
-
-        {
-          icon: "",
-          name: "Frontend Development",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          button: "Learn More",
-        },
-        {
-          icon: "",
-          name: "Backend Development",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          button: "Learn More",
-        },
-        {
-          icon: "",
-          name: "API Integration",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          button: "Learn More",
-        },
-        {
-          icon: "",
-          name: "HRMS Software",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          button: "Learn More",
-        },
-      ],
-    },
-    bringIdea: {
-      label: "Bring Your Ideas",
-      headingParts: [
-        {
-          text: "We Have Expertise To Build Customization Software From Idea",
-          color: "#FFFFFF",
-          weight: "700",
-        },
-      ],
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-      button: "Get a Quote",
-    },
-    expertSkill: {
-      label: "Expert Skill We Have",
-      headingParts: [
-        {
-          text: "we have the skills and expertise to deliver high-quality Custom software",
-          color: "#001845",
-          weight: "700",
-        },
-      ],
-      description: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      ],
-      button: "Get a Quote",
-    },
-    takeTheTime: {
-      label: "take the time to understand",
-      headingParts: [
-        {
-          text: "We work closely with you to develop a customized solution",
-          color: "#001845",
-          weight: "700",
-        },
-      ],
-      list: {
-        name: "” Lorem ipsum dolor sit amet, consectetur adipiscing elit sed “",
-        data: [
-          "Lorem ipsum dolor sit amet",
-          "Sit amet consectetur",
-          "Lorem ipsum dolor sit amet",
-        ],
-      },
-      details: {
-        name: "Experienced Developer",
-        data: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident",
-        ],
-      },
-    },
-    pricingPlan: {
-      label: "Pricing Plan",
-      headingParts: [
-        {
-          text: "Choose Our Flexible Pricing Plan For Customizing Software",
-          color: "#FFFFFF",
-          weight: "700",
-        },
-      ],
-      data: [
-        {
-          label: "Starter",
-          description: "Lorem ipsum dolor sit amet",
-          rate: "15",
-          button: "Get Started",
-          service: [
-            "Full Custimization",
-            "Clean Code",
-            "Exclusive Programs",
-            "Expert Consultation",
-          ],
-        },
-        {
-          label: "Medium",
-          description: "Lorem ipsum dolor sit amet",
-          rate: "32",
-          button: "Get Started",
-          service: [
-            "Full Custimization",
-            "Clean Code",
-            "Exclusive Programs",
-            "Expert Consultation",
-          ],
-        },
-        {
-          label: "Expert",
-          description: "Lorem ipsum dolor sit amet",
-          rate: "69",
-          button: "Get Started",
-          service: [
-            "Full Custimization",
-            "Clean Code",
-            "Exclusive Programs",
-            "Expert Consultation",
-          ],
-        },
-      ],
-    },
-    dedicatedSupport: {
-      label: "Dedicated Support",
-      headingParts: [
-        {
-          text: "We provide dedicated support throughout the development process and beyond",
-          color: "#001845",
-          weight: "700",
-        },
-      ],
-      data: [
-        {
-          //   icon: <TbClock24 />,
-          title: "24 Hours Support",
-          desc: "Lorem ipsum dolor sit amet consectetur",
-        },
-        {
-          //   icon: <PiClockCounterClockwiseFill />,
-          title: "Unlimited Revision",
-          desc: "Lorem ipsum dolor sit amet consectetur",
-        },
-      ] as SupportItem[],
-    },
-     blogs: {
+    blogs: {
       label: "Our Insights",
 
       headingParts: [
@@ -957,6 +699,7 @@ export const staticData = {
         // },
       ],
     },
+
     feedbacks: {
       label: "Client Feedback",
 
@@ -971,87 +714,48 @@ export const staticData = {
       data: [
         {
           img: "/images/review/review_1.jpg",
+
           message:
-            "SoftQivo understood our vision quickly and turned it into a polished digital product that exceeded our expectations.",
+            "SoftQivo understood our vision quickly and turned our ideas into a polished digital product that matched our goals.",
 
           name: "Arjun Mehta",
 
           comment:
-            "The team was responsive, professional, and technically strong throughout the entire project. We were impressed with the quality and attention to detail.",
+            "The team was responsive, professional, and technically strong throughout the project. Their attention to detail and willingness to understand our requirements made the development process smooth.",
 
           designation: "Founder & CEO, Nexora",
         },
 
         {
           img: "/images/review/review_2.webp",
+
           message:
-            "Working with SoftQivo made the entire development process simple, transparent, and genuinely enjoyable for our team.",
+            "Working with SoftQivo made our development process clear, collaborative, and straightforward from design through delivery.",
 
           name: "Sarah Williams",
 
           comment:
-            "From design to development and delivery, everything was handled with care. They consistently delivered thoughtful solutions and were always open to feedback.",
+            "The team handled design, development, and delivery with care. They listened to our feedback, communicated clearly, and consistently worked toward practical solutions for our product.",
 
           designation: "Director, BrightLabs",
         },
 
         {
           img: "/images/review/review_3.jpg",
+
           message:
-            "SoftQivo delivered a modern, scalable solution that gave our business the technology foundation we needed to grow.",
+            "SoftQivo helped us build a modern, scalable solution that gave our business a stronger technology foundation.",
 
           name: "Rahul Sharma",
 
           comment:
-            "Their combination of design thinking and technical expertise really stood out. The final product feels fast, intuitive, and built for the future.",
+            "Their combination of design thinking and technical expertise stood out throughout the project. The final product is fast, intuitive, and aligned with the way our business operates.",
 
           designation: "Co-Founder, ElevateX",
         },
       ],
     },
-    howWeWork: {
-      label: "How We Work",
 
-      heading: "A better process creates better products.",
-
-      description:
-        "We combine strategy, design, technology, and continuous collaboration to turn ambitious ideas into digital products that create lasting value.",
-
-      steps: [
-        {
-          number: "01",
-          title: "Understand",
-          tag: "DISCOVERY",
-          icon: "search",
-          description:
-            "We start by understanding your business, your audience, your challenges, and the opportunity behind your idea.",
-        },
-        {
-          number: "02",
-          title: "Plan",
-          tag: "STRATEGY",
-          icon: "target",
-          description:
-            "We define the product direction, priorities, user experience, and technology required to build the right solution.",
-        },
-        {
-          number: "03",
-          title: "Build",
-          tag: "EXECUTION",
-          icon: "code",
-          description:
-            "Our designers and developers work together to create a thoughtful, scalable, and high-performing digital product.",
-        },
-        {
-          number: "04",
-          title: "Improve",
-          tag: "GROWTH",
-          icon: "rocket",
-          description:
-            "After launch, we learn from real users, refine the product, and continue improving it as your business evolves.",
-        },
-      ],
-    },
     finalCta: {
       label: "Let's Build",
 
@@ -1075,26 +779,29 @@ export const staticData = {
       imageAlt: "Digital product development at SoftQivo",
     },
   },
+
   about: {
     banner: {
-      label: "About Us",
+      label: "About SoftQivo",
       headingParts: [
         {
-          text: "Building digital solutions",
+          text: "Building digital products",
           color: "#000000",
           font: "playfair",
         },
         {
-          text: " for modern businesses.",
+          text: " that help businesses grow.",
           gradient: "linear-gradient(90deg, #A855F7, #3B82F6)",
         },
-      ]
+      ],
     },
 
-    description: "SoftQivo is a digital technology company focused on web development and digital solutions. We combine technology, creativity, and business thinking to build fast, scalable, and meaningful digital experiences.",
+    description:
+      "SoftQivo is a software development and digital product company helping startups, businesses, and entrepreneurs turn ideas into reliable digital products. We design and develop modern websites, web applications, custom software, mobile applications, APIs, and scalable cloud solutions with a focus on performance, usability, and long-term growth.",
+
     button: "Book a Consultation",
 
-  blogs: {
+    blogs: {
       label: "Our Insights",
 
       headingParts: [
@@ -1112,9 +819,9 @@ export const staticData = {
           title:
             "Building Modern Web Applications That Scale With Your Business",
           excerpt:
-            "Discover how the right technology, architecture, and development approach can help businesses build faster, more secure, and scalable web applications.",
-          date: "Aug 28, 2026",
-          readTime: "6 min read",
+            "Explore how thoughtful architecture, modern technologies, performance optimization, and scalable development practices help businesses build reliable web applications for long-term growth.",
+          date: "Sep 26, 2026",
+          readTime: "8 min read",
           href: "/blog/building-modern-web-applications-that-scale",
         },
 
@@ -1124,9 +831,9 @@ export const staticData = {
           title:
             "Why Great UI/UX Design Is More Than Just a Beautiful Interface",
           excerpt:
-            "Learn how thoughtful user experiences, intuitive interactions, and purposeful design can create digital products people enjoy using and trust.",
-          date: "Aug 21, 2026",
-          readTime: "5 min read",
+            "Discover how user research, intuitive navigation, accessibility, and purposeful interactions can turn a visually appealing interface into a digital product people actually enjoy using.",
+          date: "Sep 20, 2026",
+          readTime: "7 min read",
           href: "/blog/why-great-ui-ux-design-matters",
         },
 
@@ -1136,14 +843,15 @@ export const staticData = {
           title:
             "From Idea to Product: Building Software That Creates Real Business Value",
           excerpt:
-            "Explore the key decisions behind successful software products, from validating an idea and choosing technology to building for long-term growth.",
-          date: "Aug 14, 2026",
-          readTime: "7 min read",
+            "Learn how product strategy, user experience, technology choices, and continuous improvement can transform an early idea into a reliable software product built for real business needs.",
+          date: "Sep 15, 2026",
+          readTime: "8 min read",
           href: "/blog/from-idea-to-product",
         },
       ],
     },
   },
+
   contact: {
     label: "LET'S CONNECT",
     headingParts: [
@@ -1182,56 +890,73 @@ export const staticData = {
       },
     ],
   },
+
   serviceDetails: {
     pointOfService: {
-      title:
-        "Point Of Sales Customization Software Development Web Based Service",
+      title: "Custom Point of Sale (POS) Software Development",
       description: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Build a modern point-of-sale system tailored to your business operations, products, customers, and sales processes. SoftQivo develops custom POS solutions that help businesses manage transactions, inventory, customers, staff, and reporting from a centralized platform.",
+        "Whether you need a retail POS, restaurant POS, multi-location sales system, or a customized business management solution, we design and develop software around your actual workflows instead of forcing your business to adapt to a generic system.",
       ],
       list: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing",
-        "Lorem ipsum dolor sit amet, consectetur",
+        "Custom billing and sales management workflows",
+        "Inventory and product management",
+        "Customer and staff management",
+        "Real-time sales and business reporting",
+        "Multi-location and multi-user support",
+        "Third-party API and payment integrations",
       ],
     },
+
     weCreate: {
       title:
-        "We create a detailed design of the software including user interface functionality",
+        "We Design and Build POS Software Around Your Business Workflow",
       description: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "A successful POS system needs more than a billing screen. We combine intuitive UI/UX design with reliable backend architecture to create software that is easy for employees to use and flexible enough to support changing business requirements.",
+        "From product and inventory management to sales reporting, customer records, user permissions, and integrations, every part of the application is planned around your operational needs. Our development approach also considers security, performance, scalability, and future feature expansion.",
       ],
       list: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing",
-        "Lorem ipsum dolor sit amet, consectetur",
+        "User-friendly POS interface designed for fast daily operations",
+        "Scalable backend architecture for growing transaction volumes",
+        "Role-based access and user permission management",
+        "Integration with payment gateways, APIs, and third-party systems",
+        "Responsive web-based POS applications for different devices",
+        "Analytics and reporting for better business decisions",
       ],
+
       cardData: [
         {
-          title: "UI UX Design",
+          title: "UI/UX Design",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "We design simple, intuitive POS interfaces that help staff complete sales and manage daily operations quickly and efficiently.",
         },
         {
-          title: "Development Proccess",
+          title: "POS Development",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Our developers build secure, scalable POS applications with reliable frontend, backend, database, API, and integration architecture.",
         },
       ],
+
       cardImges: [card_img_01, card_img_02],
     },
 
     teamWork: {
-      label: "Dedicated Team Work",
+      label: "Dedicated Development Team",
       title:
-        "We're excited to Give The Best Work Result For Your Projects Work With us",
+        "Build a POS Solution That Grows With Your Business",
       description: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+        "Our team works closely with you to understand your business processes, define the right features, design the experience, develop the platform, and continuously improve the product as your requirements evolve.",
+        "Whether you are replacing an outdated POS system or building a new solution from the ground up, SoftQivo can provide the development expertise needed to turn your requirements into reliable business software.",
       ],
       list: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing",
-        "Lorem ipsum dolor sit amet, consectetur",
+        "Requirement analysis and product planning",
+        "UI/UX design and interactive prototypes",
+        "Frontend and backend development",
+        "Database and API development",
+        "Testing, deployment, and optimization",
+        "Ongoing maintenance and feature improvements",
       ],
     },
   },
+
 };
