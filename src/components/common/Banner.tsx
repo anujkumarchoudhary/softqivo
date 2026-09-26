@@ -9,7 +9,6 @@ import banner_img from "../../../public/images/home/banner_05.png";
 
 import SaveAndCancel from "./SaveAndCancel";
 import { useResponsive } from "@/src/hooks/useResponsive";
-import TrustedCompanies from "../TrustedCompanies";
 import img_1 from "../../../public/images/partner/aws.png";
 import img_2 from "../../../public/images/partner/digitalocean.png";
 import img_3 from "../../../public/images/partner/google.png";
