@@ -141,8 +141,9 @@ export default function CaseStudies({ data }: any) {
         <div className="mb-10  flex flex-col gap-8 sm:mb-12 lg:flex-row lg:items-end lg:justify-between">
           <Heading
             isCenter={isDesktop ? false : true}
-            labelColor="#800080"
-            accentColor="#BF40BF"
+            isAccentCircle={true}
+            labelColor="#088F8F"
+            accentColor="#088F8F"
             label={data?.label}
             headingParts={data?.headingParts}
             className=" mx-auto lg:mx-0 w-full md:w-[60%] lg:w-[60%]"

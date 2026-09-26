@@ -95,30 +95,35 @@ const Banner = () => {
 
       {/* Content */}
       <MaxWidth className="my-auto">
-        <div className="grid  grid-cols-1 lg:grid-cols-[50%_50%] justify-between gap-2 z-10">
+        <div className="grid  grid-cols-1 lg:grid-cols-[45%_50%] justify-between gap-2 z-10">
           <div className="space-y-10 my-auto">
-            <div  className="hidden lg:block">
+            <div className="hidden lg:block">
               <Heading
-              isDart={true}
-              label={label}
-              accentColor="#ffffff"
-              textColor="#ffffff"
-              isGradient={true}
-              headingParts={headingParts}
-              description={description}
-            />
+                as="h1"
+                isDart={true}
+                isSparkles={true}
+                label={label}
+                breakIndex={5}
+                accentColor="#ffffff"
+                textColor="#ffffff"
+                isGradient={true}
+                headingParts={headingParts}
+                description={description}
+              />
             </div>
-            <div  className="block lg:hidden">
+            <div className="block lg:hidden">
               <Heading
-              isDart={true}
-              label={label}
-              isCenter={true}
-              accentColor="#ffffff"
-              textColor="#ffffff"
-              isGradient={true}
-              headingParts={headingParts}
-              description={description}
-            />
+                isDart={true}
+                as="h1"
+                label={label}
+                isCenter={true}
+                isSparkles={true}
+                accentColor="#ffffff"
+                textColor="#ffffff"
+                isGradient={true}
+                headingParts={headingParts}
+                description={description}
+              />
             </div>
 
             {/* Buttons */}
@@ -136,31 +141,31 @@ const Banner = () => {
             </div>
 
             <div className="mt-24 hidden lg:block">
-          <h3 className="text-secondary-color text-[20px] uppercase">
-            Trusted By Business Workplace
-          </h3>
-          <div className="flex gap-14 mt-8">
-            {partners.map((partner, index) => (
-              <div key={index} className="flex items-center justify-center">
-                <Image
-                  src={partner.image}
-                  width={120}
-                  height={60}
-                  alt={partner.name}
-                />
+              <h3 className="text-secondary-color text-[20px] uppercase">
+                Trusted By Business Workplace
+              </h3>
+              <div className="flex gap-14 mt-8">
+                {partners.map((partner, index) => (
+                  <div key={index} className="flex items-center justify-center">
+                    <Image
+                      src={partner.image}
+                      width={120}
+                      height={60}
+                      alt={partner.name}
+                    />
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-        </div>
+            </div>
           </div>
           <div className="flex h-fit my-auto justify-end">
             <Image src={banner_img} alt="Banner Image" />
           </div>
         </div>
         <div className="mt-14 block lg:hidden ">
-         <div className="flex gap-2 justify-center md:justify-start">
+          <div className="flex gap-2 justify-center md:justify-start">
             {/* <SiFsecure className="text-blue-400 my-auto w-6 h-6"/> */}
-             <h3 className="text-secondary-color text-[15px] lg:text-[18px] text-center my-auto uppercase">Trusted By Business Workplace</h3>
+            <h3 className="text-secondary-color text-[15px] lg:text-[18px] text-center my-auto uppercase">Trusted By Business Workplace</h3>
           </div>
           <div className="flex justify-center gap-3 lg:gap-14 mt-6">
             {partners.map((partner, index) => (

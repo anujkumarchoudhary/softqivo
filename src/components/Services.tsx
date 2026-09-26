@@ -24,7 +24,7 @@ const Services = ({ data }: any) => {
       {/* ================= HEADER ================= */}
       <div className="mb-12 mx-auto w-full lg:w-[60%]">
         {/* Left */}
-        <Heading isCenter={true} headingParts={headingParts} description={data?.description}  />
+        <Heading as="h2" isCenter={true} headingParts={headingParts} description={data?.description}  />
       </div>
 
       {/* ================= SERVICES ================= */}

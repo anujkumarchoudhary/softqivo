@@ -37,23 +37,25 @@ export default function AboutSection() {
           <div>
             <Heading
               isCenter={isDesktop ? false : true}
+              isAccentLine={true}
               label="About SoftQivo"
               headingParts={[
-                { text: "We Turn Complex Ideas Into " },
+                { text: "We Turn Complex Ideas Into Simple ", weight: "600" },
                 {
-                  text: "Simple Digital Experiences",
+                  text: " Digital Experiences",
+                  weight: "600",
                   gradient:
                     "linear-gradient(90deg, #A855F7 0%, #7C3AED 50%, #2563EB 100%)",
                 },
               ]}
             />
 
-            <p className="mt-6 max-w-xl text-center lg:text-left text-lg leading-relaxed text-gray-600">
+            <p className="mt-6 text-center lg:text-left text-lg leading-relaxed text-gray-600">
               At SoftQivo, we combine technology, design, and creative thinking
               to build digital products that make businesses better.
             </p>
 
-            <p className="mt-4 max-w-xl text-center lg:text-left text-lg leading-relaxed text-gray-600">
+            <p className="mt-4 text-center lg:text-left text-lg leading-relaxed text-gray-600">
               Whether you’re launching something new or improving an existing
               product, we focus on understanding the problem first — then
               creating a solution that is fast, intuitive, reliable, and built

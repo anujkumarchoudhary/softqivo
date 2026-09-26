@@ -280,6 +280,7 @@ export default function TechnologySection({ data }: any) {
           {/* Left */}
           <Heading
             isCenter={isDesktop ? false : true}
+            isAccentCircle={true}
             accentColor="#A855F7"
             labelColor="#6B7280"
             label={data?.label}

@@ -70,7 +70,7 @@ const Blog = ({ data }: any) => {
         </div>
 
         {/* BLOG CARDS */}
-        <div className="mt-4 grid grid-cols-1 gap-[1rem] lg:mt-12 lg:grid-cols-3 lg:gap-[2rem]">
+        <div className="mt-4 grid grid-cols-1 gap-[1rem] lg:mt-16 lg:grid-cols-3 lg:gap-[2rem]">
           {blogs.map((item: any, index: number) => (
             <div
               key={item.href || index}
@@ -164,11 +164,11 @@ const Blog = ({ data }: any) => {
         </div>
 
         {/* Pagination */}
-        {/* <Pagination
+        <Pagination
           currentPage={currentPage}
           totalPages={totalPages}
           onPageChange={setCurrentPage}
-        /> */}
+        />
 
       </MaxWidth>
     </section>

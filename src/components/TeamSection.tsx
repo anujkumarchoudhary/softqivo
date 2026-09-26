@@ -31,7 +31,7 @@ export default function TeamSection({ data }: any) {
             TEAM / EXPERTISE GRID
         ========================================= */}
 
-        <div className="mt-20 grid gap-4 sm:grid-cols-2 lg:mt-28 lg:grid-cols-4">
+        <div className="mt-20 grid gap-4 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4">
           {data.members.map((member: any, idx: number) => {
             return (
               <div key={idx} className="group relative">
