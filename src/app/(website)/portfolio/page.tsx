@@ -1,5 +1,3 @@
-import Blog from "@/src/components/Blog";
-import PageBanner from "@/src/components/common/PageBanner";
 import CommonBanner from "@/src/components/CommonBanner";
 import LetsStart from "@/src/components/LetsStart";
 import OurPortfolio from "@/src/components/OurPortfolio";
