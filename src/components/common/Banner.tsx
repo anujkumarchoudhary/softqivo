@@ -18,6 +18,7 @@ import img_5 from "../../../public/images/partner/vercel.png";
 import { GrSecure } from "react-icons/gr";
 import { MdSecurity } from "react-icons/md";
 import { SiFsecure } from "react-icons/si";
+import BackgroundEffects from "../BackgroundEffects";
 
 const partners = [
   {
@@ -44,7 +45,7 @@ const partners = [
 
 const Banner = () => {
   const { isMobile, isTablet, isDesktop } = useResponsive();
-  const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
+  const { ref, isVisible } = useInViewOnce<HTMLDivElement>();
   const { label, headingParts, description, button, button2 } =
     staticData?.home?.banner;
 
@@ -54,7 +55,7 @@ const Banner = () => {
       className="py-12 lg:py-20 bg-primary-bg  w-full overflow-hidden"
     >
       {/* Purple localized glow + grid */}
-      <div className="pointer-events-none absolute -left-24 -top-24 h-[420px] w-[520px] opacity-70">
+      <div className="pointer-events-none absolute -left-24 -top-24 h-[420px] w-[520px] lg:h-[420px] lg:w-[520px] opacity-70">
         <div className="absolute inset-0 rounded-full bg-purple-600/[0.12] blur-[120px]" />
 
         <div
@@ -73,7 +74,7 @@ const Banner = () => {
         />
       </div>
       {/* Blue localized glow + grid */}
-      <div className="pointer-events-none absolute -bottom-28 right-0 h-[420px] w-[520px] opacity-70">
+      <div className="pointer-events-none absolute -bottom-28 right-0 h-[320px] w-[320px] lg:h-[420px] lg:w-[520px] opacity-70">
         <div className="absolute inset-0 rounded-full bg-blue-600/[0.12] blur-[120px]" />
 
         <div
@@ -143,10 +144,10 @@ const Banner = () => {
           </div>
         </div>
         <div className="mt-14 block lg:hidden ">
-          <h3 className="text-secondary-color text-[18px] text-center uppercase">
-            <SiFsecure size={40} className="text-white"/>
-            Trusted By Business Workplace
-          </h3>
+         <div className="flex gap-2 justify-center md:justify-start">
+            <SiFsecure className="text-blue-400 my-auto w-6 h-6"/>
+             <h3 className="text-secondary-color text-[15px] lg:text-[18px] text-center my-auto uppercase">Trusted By Business Workplace</h3>
+          </div>
           <div className="flex justify-center gap-3 lg:gap-14 mt-6">
             {partners.map((partner, index) => (
               <div key={index} className="flex items-center justify-center">
