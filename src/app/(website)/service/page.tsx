@@ -19,9 +19,9 @@ const page = () => {
     <div>
       {/* Banner */}
       <CommonBanner
-      breakIndex={4}
+        breakIndex={6}
         label="OUR SERVICES"
-        title="Digital solutions built"
+        title=" Digital solutions built "
         highlight="for real growth."
         description="From websites and web applications to custom software, mobile apps, and scalable backend systems, we build digital products designed to perform and grow with your business."
         breadcrumb="Services"

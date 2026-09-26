@@ -1064,37 +1064,44 @@ export const staticData = {
       description: "SoftQivo is a digital technology company focused on web development and digital solutions. We combine technology, creativity, and business thinking to build fast, scalable, and meaningful digital experiences.",
       button:"Book a Consultation",
     },
-  contact: {
-    label: "Stay Tuned With us",
-    headingParts: [
-      {
-        text: "Get Information & Lets Get In Touch With Our Team",
-        color: "#001845",
-        size: "clamp(24px, 4vw, 46px)",
-        weight: "700",
-      },
-    ],
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-    button: "Send Message",
-    data: [
-      {
-        icon: <FaMapLocationDot size={40} className="text-[#001845]" />,
-        title: "Head Office Address",
-        description: "A-21, 2nd Floor, BSI Business Park, Sector-63, Noida, Uttar Pradesh, India",
-      },
-      {
-        icon: <IoIosMailOpen size={40} className="text-[#001845]" />,
-        title: "Email Address",
-        description: "softqivo@gmail.com",
-      },
-      {
-        icon: <FaHeadphonesSimple size={40} className="text-[#001845]" />,
-        title: "Office Hour",
-        description: "Monday - Friday, 9:00 AM - 6:00 PM",
-      },
-    ],
-  },
+contact: {
+  label: "LET'S CONNECT",
+  headingParts: [
+    {
+      text: "Let’s Build Something ",
+      color: "#001845",
+      size: "clamp(24px, 4vw, 46px)",
+      weight: "700",
+    },
+    {
+      text: "Great Together.",
+      gradient: "linear-gradient(90deg, #A855F7, #7C3AED, #2563EB)",
+      size: "clamp(24px, 4vw, 46px)",
+      weight: "700",
+    },
+  ],
+  description:
+    "Have an idea, a project, or a business challenge in mind? Tell us what you’re looking to build, and our team will get back to you with the right direction.",
+  button: "Send Message",
+  data: [
+    {
+      icon: <FaMapLocationDot size={40} className="text-[#001845]" />,
+      title: "Head Office",
+      description:
+        "A-21, 2nd Floor, BSI Business Park, Sector-63, Noida, Uttar Pradesh, India",
+    },
+    {
+      icon: <IoIosMailOpen size={40} className="text-[#001845]" />,
+      title: "Email Us",
+      description: "softqivo@gmail.com",
+    },
+    {
+      icon: <FaHeadphonesSimple size={40} className="text-[#001845]" />,
+      title: "Working Hours",
+      description: "Monday - Friday, 9:00 AM - 6:00 PM",
+    },
+  ],
+},
   serviceDetails: {
     pointOfService: {
       title:
