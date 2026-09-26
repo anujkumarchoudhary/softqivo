@@ -10,7 +10,7 @@ import { useRouter } from "next/navigation";
 
 const WhatWeDo = (service: any) => {
   const router = useRouter();
-  const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
+  const { ref, isVisible } = useInViewOnce<HTMLDivElement>();
 
   return (
     <section ref={ref}>

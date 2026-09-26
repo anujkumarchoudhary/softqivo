@@ -11,7 +11,7 @@ export interface PageBannerProps {
   heading: string;
 }
 const PageBanner = ({ heading }: PageBannerProps) => {
-  const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
+  const { ref, isVisible } = useInViewOnce<HTMLDivElement>();
 
   return (
     <section ref={ref} className="relative h-[26vh] lg:h-[45vh] w-full overflow-hidden">

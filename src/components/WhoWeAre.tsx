@@ -9,7 +9,7 @@ import { useInViewOnce } from "@/src/hooks/useInViewOnce";
 import { staticData } from "../utills/Data";
 
 const WhoWeAre = () => {
-  const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
+  const { ref, isVisible } = useInViewOnce<HTMLDivElement>();
   const { label, headingParts, description, data } = staticData.home?.whoWeAre;
 
   return (
