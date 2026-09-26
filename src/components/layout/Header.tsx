@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import MaxWidth from "./MaxWidth";
 import logo from "../../../public/softqivo_04.png";
-// import logo from "../../../public/softqivo.png";
 
 import Image from "next/image";
 import { menuData } from "@/src/data/menu";
@@ -44,7 +43,8 @@ const Header = () => {
           })}
         </div>
         <div className="hidden lg:flex gap-8">
-          <Button name="Let's Talk" />
+          <Button name="Let's Talk"    handleClick={() => router.push("/schedule-meeting")}
+ />
         </div>
 
         {open ? (
