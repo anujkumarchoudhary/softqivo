@@ -1,10 +1,9 @@
 import Blog from "@/src/components/Blog";
-import PageBanner from "@/src/components/common/PageBanner";
 import CommonBanner from "@/src/components/CommonBanner";
 import LetsStart from "@/src/components/LetsStart";
 import { staticData } from "@/src/utills/Data";
 function page() {
-  const { services, caseStudies, process, team, blogs2, finalCta } =
+  const { blogs2 } =
     staticData?.home;
   return (
     <div>
