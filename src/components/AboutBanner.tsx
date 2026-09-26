@@ -7,7 +7,7 @@ import MaxWidth from "@/src/components/layout/MaxWidth";
 import Heading from "./common/Heading";
 import BackgroundEffects from "./BackgroundEffects";
 
-const AboutBanner = () => {
+const AboutBanner = ({data}: {data: any}) => {
   return (
     <section className="relative min-h-[78vh] overflow-hidden bg-black text-white">
 
