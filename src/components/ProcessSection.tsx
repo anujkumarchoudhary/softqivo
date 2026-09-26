@@ -217,6 +217,7 @@ export default function OurProcess({ data }: OurProcessProps) {
 
           <Heading
             isCenter={true}
+            isAccentLine={true}
             accentColor="#A855F7"
             labelColor="rgba(255,255,255,0.45)"
             textColor="#FFFFFF"

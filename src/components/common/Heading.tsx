@@ -60,7 +60,7 @@ const headingDefaults = {
     lineHeight: 1.08,
   },
   h2: {
-    fontSize: "clamp(2rem, 4vw, 3.5rem)",
+    fontSize: "clamp(2rem, 4vw, 3rem)",
     fontWeight: 700,
     lineHeight: 1.1,
   },
@@ -103,7 +103,7 @@ const Heading = ({
   isGradient = false,
   gradient,
   className = "",
-  as: Tag = "h1",
+  as: Tag = "h2",
 }: HeadingProps) => {
   const defaultHeading = headingDefaults[Tag];
   return (

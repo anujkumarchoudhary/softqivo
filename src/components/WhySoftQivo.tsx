@@ -12,6 +12,7 @@ import {
 import MaxWidth from "@/src/components/layout/MaxWidth";
 import { useInViewOnce } from "@/src/hooks/useInViewOnce";
 import Heading from "./common/Heading";
+import { useResponsive } from "../hooks/useResponsive";
 
 const reasons = [
   {
@@ -45,6 +46,7 @@ const reasons = [
 ];
 
 const WhySoftQivo = () => {
+  const { isDesktop } = useResponsive();
   const { ref, isVisible } =
     useInViewOnce<HTMLDivElement>();
 
@@ -90,13 +92,13 @@ const WhySoftQivo = () => {
     labelColor="rgba(255,255,255,0.5)"
     accentColor="#A855F7"
     textColor="rgba(255,255,255,0.5)"
-    isCenter={false}
+    isCenter={isDesktop ? false : true}
     isAccentCircle={true}
     isVisible={isVisible}
     as="h2"
     headingParts={[
       {
-        text: "More than",
+        text: "More than ",
         color: "#FFFFFF",
       },
       {
@@ -109,7 +111,7 @@ const WhySoftQivo = () => {
   />
 
   {/* CTA */}
-  <div className="mt-9">
+  <div className="mt-9 flex lg:block justify-center">
     <a
       href="/contact"
       className="group inline-flex items-center gap-3 text-sm font-semibold text-white/70 transition-colors hover:text-white"

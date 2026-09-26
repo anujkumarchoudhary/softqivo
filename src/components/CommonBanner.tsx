@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import BackgroundEffects from "./BackgroundEffects";
 import Heading from "./common/Heading";
 import MaxWidth from "./layout/MaxWidth";
+import { useResponsive } from "../hooks/useResponsive";
 
 interface CommonBannerProps {
   label?: string;
@@ -23,15 +24,16 @@ export default function CommonBanner({
   breakIndex,
   breadcrumb = "Contact",
 }: CommonBannerProps) {
+  const {isDesktop}=useResponsive()
   return (
 <section className="relative isolate overflow-hidden bg-black text-white">
   <BackgroundEffects />
 
-  <MaxWidth className=" py-20 max-w-310 sm:px-8 lg:px-12 lg:py-24">
+  <MaxWidth className=" py-12 max-w-310 sm:px-8 lg:px-12 lg:py-24">
       <Heading
         label={label}
         isAccentLine={true}
-        breakIndex={breakIndex}
+        breakIndex={isDesktop ? breakIndex : undefined}
         labelColor="rgba(255,255,255,0.7)"
         accentColor="#ffffff"
         textColor="rgba(255,255,255,0.6)"

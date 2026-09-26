@@ -37,15 +37,13 @@ export const staticData = {
           color: "#FFFFFF",
           font: "playfair",
           style: "italic",
-          size: "clamp(28px, 6vw, 54px)",
           weight: "400",
         },
 
         {
           text: "  Into Powerful Digital Solutions.",
           color: "#FFFFFF",
-          size: "clamp(28px, 6vw, 54px)",
-          weight: "700",
+          weight: "600",
           // gradient:
           //   "linear-gradient(90deg, #A855F7 0%, #7C3AED 50%, #2563EB 100%)",
         },
@@ -63,14 +61,12 @@ export const staticData = {
           text: "End-to-end digital solutions to",
           color: "#111118",
           style: "normal",
-          size: "clamp(36px, 5vw, 52px)",
           weight: "600",
         },
         {
           text: " grow your business.",
           color: "#111118",
           style: "normal",
-          size: "clamp(36px, 5vw, 52px)",
           weight: "600",
           gradient:
             "linear-gradient(90deg, #A855F7 0%, #7C3AED 50%, #2563EB 100%)",
@@ -131,7 +127,6 @@ export const staticData = {
           text: "Turning ideas into digital products",
           color: "#FFFFFF",
           style: "normal",
-          size: "clamp(36px, 5vw, 52px)",
           weight: "600",
         },
       ],
@@ -188,7 +183,6 @@ export const staticData = {
         {
           text: "Welcome to our custom software development service For Any Needs",
           color: "#001845",
-          size: "clamp(24px, 4vw, 46px)",
           weight: "700",
         },
       ],
@@ -202,13 +196,11 @@ export const staticData = {
           text: "We don't just build.",
           color: "#ffffff",
           style: "normal",
-          size: "clamp(36px, 5vw, 52px)",
           weight: "600",
         },
         {
           text: " We build with purpose.",
           style: "normal",
-          size: "clamp(36px, 5vw, 52px)",
           weight: "600",
           gradient: "linear-gradient(90deg, #A855F7, #3B82F6)",
 
@@ -262,13 +254,11 @@ export const staticData = {
         {
           text: "Small team.",
           color: "#111118",
-          size: "clamp(36px, 5vw, 52px)",
           weight: "700",
         },
         {
           text: " Big ideas.",
           color: "#111118",
-          size: "clamp(36px, 5vw, 52px)",
           weight: "700",
           gradient:
             "linear-gradient(90deg, #A855F7 0%, #7C3AED 50%, #2563EB 100%)",
@@ -352,7 +342,6 @@ export const staticData = {
         {
           text: "we specialize in providing tailor-made software solutions Custom Needed",
           color: "#001845",
-          size: "clamp(24px, 4vw, 46px)",
           weight: "700",
         },
       ],
@@ -381,7 +370,6 @@ export const staticData = {
         {
           text: "Discover Our Best Service Provided From Expert",
           color: "#001845",
-          size: "clamp(24px, 4vw, 46px)",
           weight: "700",
         },
       ],
@@ -451,7 +439,6 @@ export const staticData = {
         {
           text: "We Have Expertise To Build Customization Software From Idea",
           color: "#FFFFFF",
-          size: "clamp(24px, 4vw, 46px)",
           weight: "700",
         },
       ],
@@ -465,7 +452,6 @@ export const staticData = {
         {
           text: "we have the skills and expertise to deliver high-quality Custom software",
           color: "#001845",
-          size: "clamp(24px, 4vw, 46px)",
           weight: "700",
         },
       ],
@@ -481,7 +467,6 @@ export const staticData = {
         {
           text: "We work closely with you to develop a customized solution",
           color: "#001845",
-          size: "clamp(24px, 4vw, 46px)",
           weight: "700",
         },
       ],
@@ -507,7 +492,6 @@ export const staticData = {
         {
           text: "Choose Our Flexible Pricing Plan For Customizing Software",
           color: "#FFFFFF",
-          size: "clamp(24px, 4vw, 46px)",
           weight: "700",
         },
       ],
@@ -556,7 +540,6 @@ export const staticData = {
         {
           text: "We provide dedicated support throughout the development process and beyond",
           color: "#001845",
-          size: "clamp(24px, 4vw, 46px)",
           weight: "700",
         },
       ],
@@ -580,7 +563,6 @@ export const staticData = {
         {
           text: "Ideas, insights & digital thinking.",
           color: "#000000",
-          size: "clamp(24px, 4vw, 46px)",
           weight: "700",
         },
       ],
@@ -630,7 +612,6 @@ export const staticData = {
         {
           text: "Ideas, insights & digital thinking.",
           color: "#000000",
-          size: "clamp(24px, 4vw, 46px)",
           weight: "700",
         },
       ],
@@ -673,7 +654,7 @@ export const staticData = {
         },
 
         {
-          img: "/images/blogs/blog_04.png",
+          img: "/images/blogs/blog_03.png",
           category: "Mobile Development",
           title:
             "How to Build Mobile Apps People Actually Want to Use",
@@ -685,7 +666,7 @@ export const staticData = {
         },
 
         {
-          img: "/images/blogs/blog_05.png",
+          img: "/images/blogs/blog_02.png",
           category: "Backend Development",
           title:
             "Why a Strong Backend Is the Foundation of a Reliable Digital Product",
@@ -697,7 +678,7 @@ export const staticData = {
         },
 
         {
-          img: "/images/blogs/blog_06.png",
+          img: "/images/blogs/blog_01.png",
           category: "API Development",
           title:
             "Designing APIs That Are Ready for Growth and Integration",
@@ -709,7 +690,7 @@ export const staticData = {
         },
 
         {
-          img: "/images/blogs/blog_07.png",
+          img: "/images/blogs/blog_01.png",
           category: "Cloud & DevOps",
           title:
             "How Cloud Infrastructure Helps Modern Businesses Scale Faster",
@@ -721,7 +702,7 @@ export const staticData = {
         },
 
         {
-          img: "/images/blogs/blog_08.png",
+          img: "/images/blogs/blog_02.png",
           category: "Web Development",
           title:
             "Choosing the Right Technology Stack for Your Web Project",
@@ -733,7 +714,7 @@ export const staticData = {
         },
 
         {
-          img: "/images/blogs/blog_09.png",
+          img: "/images/blogs/blog_03.png",
           category: "UI/UX Design",
           title:
             "Designing Digital Experiences That Turn Visitors Into Customers",
@@ -884,8 +865,7 @@ export const staticData = {
         {
           text: "Built with technology that moves your business forward.",
           color: "#ffffff",
-          size: "clamp(24px, 4vw, 46px)",
-          weight: "700",
+          weight: "600",
         },
       ],
 
@@ -984,7 +964,6 @@ export const staticData = {
         {
           text: "What our clients say.",
           color: "#000000",
-          size: "clamp(24px, 4vw, 46px)",
           weight: "700",
         },
       ],
@@ -1080,7 +1059,6 @@ export const staticData = {
         {
           text: "Have an idea worth building?",
           color: "#FFFFFF",
-          size: "clamp(24px, 4vw, 46px)",
           weight: "700",
         },
       ],
@@ -1123,7 +1101,6 @@ export const staticData = {
         {
           text: "Ideas, insights & digital thinking.",
           color: "#000000",
-          size: "clamp(24px, 4vw, 46px)",
           weight: "700",
         },
       ],
@@ -1171,13 +1148,13 @@ export const staticData = {
     label: "LET'S CONNECT",
     headingParts: [
       {
-        text: "Let’s Build Something ",
+        text: "Let’s Build  ",
         color: "#001845",
         size: "clamp(24px, 4vw, 46px)",
         weight: "700",
       },
       {
-        text: "Great Together.",
+        text: "Together.",
         gradient: "linear-gradient(90deg, #A855F7, #7C3AED, #2563EB)",
         size: "clamp(24px, 4vw, 46px)",
         weight: "700",
