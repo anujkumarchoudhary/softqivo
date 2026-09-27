@@ -127,41 +127,74 @@ const GetEnquiryForm = ({
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = async (
-    e: React.FormEvent<HTMLFormElement>
-  ) => {
-    e.preventDefault();
+const handleSubmit = async (
+  e: React.FormEvent<HTMLFormElement>
+) => {
+  e.preventDefault();
 
-    if (!validateForm()) {
-      return;
+  if (!validateForm()) {
+    return;
+  }
+
+  try {
+    setIsSubmitting(true);
+
+    const response = await fetch("/api/enquiries", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: formData.name.trim(),
+        email: formData.email.trim(),
+        phone: formData.phone.trim(),
+        message: formData.message.trim(),
+        agree: formData.agree,
+      }),
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      throw new Error(
+        result?.message || "Failed to submit enquiry."
+      );
     }
 
-    try {
-      setIsSubmitting(true);
+    console.log("Enquiry submitted:", result);
 
-      console.log("Enquiry:", formData);
+    alert(
+      "Thank you! Your enquiry has been submitted successfully."
+    );
 
-      // Add your API / email service here
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+      agree: false,
+    });
 
-      alert("Thank you! Your enquiry has been submitted.");
+    setErrors({});
 
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        message: "",
-        agree: false,
-      });
+    handleClose();
 
-      setErrors({});
+  } catch (error) {
+    console.error(
+      "Enquiry submission failed:",
+      error
+    );
 
-      handleClose();
-    } catch (error) {
-      console.error("Enquiry submission failed:", error);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+    alert(
+      error instanceof Error
+        ? error.message
+        : "Something went wrong. Please try again."
+    );
+
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   return (
     <div
