@@ -1,9 +1,9 @@
 import React from "react";
 // import Heading from "../common/Heading";
-import InputField from "../ui/InputField";
 import Button from "../common/Button";
 import SelectField from "../ui/SelectField";
 import MessageField from "../ui/MessageField";
+import InputField from "../ui/InputField";
 
 const ContactForm = () => {
   return (
