@@ -40,7 +40,7 @@ const page = () => {
 
       `Performance directly affects the user experience. Slow pages, delayed interactions, and large assets can make even a well-designed application frustrating to use.`,
 
-      `Developers should optimize images, reduce unnecessary JavaScript, use efficient rendering strategies, cache appropriate resources, and monitor real-world performance. Core Web Vitals such as Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift are useful indicators when evaluating the experience users receive.`,
+      `Developers should optimize images, reduce unnecessary JavaScript, use efficient rendering strategies, cache appropriate resources, and monitor real-softqivo performance. Core Web Vitals such as Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift are useful indicators when evaluating the experience users receive.`,
 
       `Performance should not be treated as a final step before launch. Building with performance in mind from the beginning usually makes optimization easier and prevents expensive architectural changes later.`,
 

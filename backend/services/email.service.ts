@@ -24,7 +24,7 @@ export const sendEnquiryEmail = async ({
   }
 
   const mailOptions = {
-    from: `"SoftQivo Website" <${process.env.MAIL_FROM}>`,
+    from: `"SoftQivo" <${process.env.MAIL_FROM}>`,
 
     to: process.env.MAIL_TO,
 

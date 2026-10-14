@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
-import Header from "../components/layout/Header";
-import Footer from "../components/layout/Footer";
+import { Geist, Geist_Mono, Inter, Mona_Sans, Montserrat, Playfair_Display, Poppins, Roboto_Mono } from "next/font/google";
+
+export const metadata: Metadata = {
+  title: "My Application",
+  description: "My Next.js application",
+};
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,60 +31,32 @@ const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700", "800"],
 });
 
-export const metadata: Metadata = {
-  title: "SoftQivo Technology | Modern Web Development Company",
 
-  description:
-    "SoftQivo builds modern, fast, responsive, and SEO-friendly websites that help businesses establish a strong online presence and grow digitally.",
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
 
-  keywords: [
-    "SoftQivo",
-    "web development company",
-    "web development services",
-    "website development",
-    "custom web development",
-    "website design",
-    "responsive web development",
-    "business website",
-    "SEO-friendly websites",
-    "modern website development",
-    "professional web development",
-  ],
+const robotoMono = Roboto_Mono({
+  variable: "--font-roboto-mono",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
+});
 
-  authors: [{ name: "SoftQivo" }],
-  creator: "SoftQivo",
-  publisher: "SoftQivo",
+const monaSans = Mona_Sans({
+  variable: "--font-mona-sans",
+  subsets: ["latin"],
+});
 
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
-  },
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+  display: "swap",
+});
 
-  openGraph: {
-    title: "SoftQivo | Modern Web Development Solutions",
-    description:
-      "Create a powerful digital presence with SoftQivo. We develop modern, responsive, fast, user-friendly, and SEO-friendly websites for businesses and brands.",
-    siteName: "SoftQivo",
-    type: "website",
-    locale: "en_US",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "SoftQivo | Modern Web Development Solutions",
-    description:
-      "Professional web development and website design solutions built for performance, usability, and business growth.",
-  },
-
-  category: "technology",
-};
 
 export default function RootLayout({
   children,
@@ -89,15 +65,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased ${playfair.variable} ${poppins.variable}`}
-      >
-        <Header />
-
-        <main>{children}</main>
-
-        <Footer />
-      </body>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased ${playfair.variable} ${poppins.variable} ${inter.variable} ${robotoMono.variable} ${monaSans.variable} ${montserrat.variable}`}>{children}</body>
     </html>
   );
 }
