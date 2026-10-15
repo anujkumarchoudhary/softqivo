@@ -28,6 +28,26 @@ const nextApp = (0, next_1.default)({
 });
 const handle = nextApp.getRequestHandler();
 const Base = "/api/v1/";
+const allowedOrigins = [
+    "http://localhost:3000",
+    "http://localhost:4000",
+    "http://localhost:8000",
+    "http://localhost:8001",
+    "https://softqivo.com",
+    "https://www.softqivo.com",
+];
+const corsOptions = {
+    origin: (origin, callback) => {
+        // Allow requests without an Origin header, such as server-to-server requests.
+        if (!origin || allowedOrigins.includes(origin)) {
+            return callback(null, true);
+        }
+        return callback(new Error(`CORS blocked origin: ${origin}`));
+    },
+    credentials: true,
+    methods: ["GET", "HEAD", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+};
 const startServer = async () => {
     try {
         // Connect to MongoDB
@@ -35,17 +55,9 @@ const startServer = async () => {
         // Prepare Next.js
         await nextApp.prepare();
         const app = (0, express_1.default)();
-        // Middleware
-        const allowedOrigins = [
-            "http://localhost:3000",
-            "http://localhost:4000",
-            "http://localhost:8000",
-            "https://softqivo.com"
-        ];
-        app.use((0, cors_1.default)({
-            origin: allowedOrigins,
-            credentials: true,
-        }));
+        // CORS must run before API routes
+        app.use((0, cors_1.default)(corsOptions));
+        // Parse request bodies
         app.use(express_1.default.json({ limit: "10mb" }));
         app.use(express_1.default.urlencoded({
             extended: true,
@@ -92,7 +104,6 @@ Server started successfully
 
 Environment : ${process.env.NODE_ENV}
 Port        : ${port}
-URL         : http://localhost:${port}
 Chat API    : http://localhost:${port}/api/v1/chat
 Socket.IO   : enabled
 
