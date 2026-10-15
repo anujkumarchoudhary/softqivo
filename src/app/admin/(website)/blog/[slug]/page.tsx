@@ -344,12 +344,12 @@ const CreateBlog = ({ refresh }: any) => {
       </div>
 
       <div className="flex justify-end gap-2">
-        <SaveAndCancel
+        {/* <SaveAndCancel
           saveText={loading ? "Saving..." : "Submit"}
           handleClick={handleSubmit}
           cancelText="Cancel"
           cancelTextColor="#000000"
-        />
+        /> */}
       </div>
     </div>
   );
