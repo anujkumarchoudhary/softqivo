@@ -3,8 +3,8 @@ import Link from "next/link";
 type SaveAndCancelProps = {
   saveText?: string;
   cancelText?: string;
-  handleClick?: () => void;
-  handleClick2: () => void;
+  handleClick?: any;
+  handleClick2: any;
   className?: string;
 };
 
