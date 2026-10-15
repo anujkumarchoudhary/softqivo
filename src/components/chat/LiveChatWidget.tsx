@@ -501,7 +501,7 @@ const LiveChatWidget = () => {
           className="
           flex h-full min-h-0 w-full max-w-none flex-col
           overflow-hidden rounded-none bg-white shadow-2xl
-          sm:mb-4 sm:h-[625px] sm:max-h-[calc(100dvh-40px)]
+          sm:mb-4 sm:h-[550px] sm:max-h-[calc(100dvh-40px)]
           sm:w-[400px] sm:max-w-[400px] sm:rounded-2xl
         "
         >
@@ -666,7 +666,7 @@ const LiveChatWidget = () => {
                     />
                   </div>
 
-                  <div>
+                  <div className="">
                     <label
                       htmlFor="chat-details"
                       className="mb-1.5 block text-sm font-medium text-gray-700"
