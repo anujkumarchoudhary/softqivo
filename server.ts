@@ -32,6 +32,29 @@ const handle = nextApp.getRequestHandler();
 
 const Base = "/api/v1/";
 
+const allowedOrigins = [
+  "http://localhost:3000",
+  "http://localhost:4000",
+  "http://localhost:8000",
+  "http://localhost:8001",
+  "https://softqivo.com",
+  "https://www.softqivo.com",
+];
+
+const corsOptions: cors.CorsOptions = {
+  origin: (origin, callback) => {
+    // Allow requests without an Origin header, such as server-to-server requests.
+    if (!origin || allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+
+    return callback(new Error(`CORS blocked origin: ${origin}`));
+  },
+  credentials: true,
+  methods: ["GET", "HEAD", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
+
 const startServer = async () => {
   try {
     // Connect to MongoDB
@@ -42,21 +65,10 @@ const startServer = async () => {
 
     const app = express();
 
-    // Middleware
-    const allowedOrigins = [
-      "http://localhost:3000",
-      "http://localhost:4000",
-      "http://localhost:8000",
-      "https://softqivo.com"
-    ];
+    // CORS must run before API routes
+    app.use(cors(corsOptions));
 
-    app.use(
-      cors({
-        origin: allowedOrigins,
-        credentials: true,
-      }),
-    );
-
+    // Parse request bodies
     app.use(express.json({ limit: "10mb" }));
 
     app.use(
@@ -87,13 +99,13 @@ const startServer = async () => {
     const server = http.createServer(app);
 
     // Initialize Socket.IO
-const io = new Server(server, {
-  cors: {
-    origin: allowedOrigins,
-    credentials: true,
-    methods: ["GET", "POST", "PATCH"],
-  },
-});
+    const io = new Server(server, {
+      cors: {
+        origin: allowedOrigins,
+        credentials: true,
+        methods: ["GET", "POST", "PATCH"],
+      },
+    });
 
     // Register live chat socket events
     setChatIO(io);
@@ -113,7 +125,6 @@ Server started successfully
 
 Environment : ${process.env.NODE_ENV}
 Port        : ${port}
-URL         : http://localhost:${port}
 Chat API    : http://localhost:${port}/api/v1/chat
 Socket.IO   : enabled
 
