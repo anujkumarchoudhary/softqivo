@@ -881,7 +881,7 @@ const LiveChatWidget = () => {
                   </p>
 
                   <a
-                    href="https://wa.me/+919978735708"
+                    href="https://wa.me/+919953176985"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-5 inline-flex items-center gap-2 rounded-xl bg-green-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-green-700"
@@ -908,7 +908,7 @@ const LiveChatWidget = () => {
                   </p>
 
                   <a
-                    href="tel:+919978735708"
+                    href="tel:+919953176985"
                     className="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#063F3D] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#0A5551]"
                   >
                     <Phone size={18} />
@@ -933,7 +933,7 @@ const LiveChatWidget = () => {
                   </p>
 
                   <a
-                    href="mailto:nalandaindustri@gmail.com"
+                    href="mailto:softqivo@gmail.com"
                     className="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#063F3D] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#0A5551]"
                   >
                     <Mail size={18} />
