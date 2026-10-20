@@ -12,7 +12,6 @@ export const homePageSchema = {
     homeBreadcrumbSchema,
     organizationSchema,
     websiteSchema,
-    usaOfficeSchema,
     indiaOfficeSchema,
     homeFaqSchema,
   ],

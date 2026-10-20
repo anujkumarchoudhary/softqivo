@@ -12,11 +12,15 @@ import ProcessSection from "../../components/ProcessSection";
 import TeamSection from "../../components/TeamSection";
 import FinalCTA from "../../components/FinalCTA";
 import TechnologySection from "../../components/TechnologySection";
+import { homePageSchema } from "@/@core/lib/schema/pages/homePageSchema";
+import JsonLd from "@/@core/lib/schema/JsonLd";
 const page = () => {
   const { services, caseStudies, process, team, blogs, technologes, finalCta } =
     staticData?.home;
 
   return (
+    <>
+    <JsonLd data={homePageSchema} />
     <div>
       <Banner />
       <Services data={services} />
@@ -30,6 +34,7 @@ const page = () => {
       <FAQ />
       <FinalCTA />
     </div>
+    </>
   );
 };
 

@@ -1,40 +1,28 @@
 export const indiaOfficeSchema = {
-  "@context": "https://schema.org",
-
   "@type": "LocalBusiness",
-
-  "@id": "https://softqivo.com/#mohali-office",
-
-  name: "softqivo Digital Media",
-
-  image: "https://softqivo.com/_next/static/media/strap_Logo.cdbe72f0.svg",
-
-  url: "https://softqivo.com",
-
-  telephone: "+91-8907300008",
-
-  email: "info@softqivo.com",
-
+  "@id": "https://www.softqivo.com/#india-office",
+  name: "SoftQivo",
+  url: "https://www.softqivo.com/",
+  telephone: "+91-99531-76985",
+  email: "softqivo@gmail.com",
+  image: "https://www.softqivo.com/softqivo_04.png",
   priceRange: "$$",
 
   parentOrganization: {
-    "@id": "https://softqivo.com/#organization",
+    "@id": "https://www.softqivo.com/#organization",
   },
 
   address: {
     "@type": "PostalAddress",
-    streetAddress: "B-509, 5th Floor, Bestech Business Towers, Sector 66",
-    addressLocality: "SAS Nagar (Mohali)",
-    addressRegion: "Punjab",
-    postalCode: "160066",
+    streetAddress:
+      "A-21, 2nd Floor, BSI Business Park, Sector 63",
+    addressLocality: "Noida",
+    addressRegion: "Uttar Pradesh",
     addressCountry: "IN",
   },
 
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: "30.7046",
-    longitude: "76.7179",
+  areaServed: {
+    "@type": "Country",
+    name: "India",
   },
-
-  areaServed: "India",
 };
