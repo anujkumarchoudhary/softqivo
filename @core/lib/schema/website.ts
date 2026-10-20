@@ -1,23 +1,12 @@
 export const websiteSchema = {
-  "@context": "https://schema.org",
-
   "@type": "WebSite",
-
-  "@id": "https://softqivo.com/#website",
-
-  url: "https://softqivo.com",
-
-  name: "softqivo Digital Media",
-
+  "@id": "https://www.softqivo.com/#website",
+  url: "https://www.softqivo.com/",
+  name: "SoftQivo",
+  description:
+    "SoftQivo provides custom software development, web application development, SaaS development, and digital technology solutions for businesses.",
   publisher: {
-    "@id": "https://softqivo.com/#organization",
+    "@id": "https://www.softqivo.com/#organization",
   },
-
-  inLanguage: ["en-US", "en-IN"],
-
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "https://softqivo.com/?s={search_term_string}",
-    "query-input": "required name=search_term_string",
-  },
+  inLanguage: "en",
 };

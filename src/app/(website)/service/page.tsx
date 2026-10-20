@@ -4,6 +4,8 @@ import FinalCTA from '@/src/components/FinalCTA'
 import WhySoftQivo from '@/src/components/WhySoftQivo'
 import ProcessSection2 from '@/src/components/ProcessSection2'
 import OurServices from '@/src/components/OurServices'
+import JsonLd from '@/@core/lib/schema/JsonLd'
+import { servicePageSchema } from '@/@core/lib/schema/pages/servicePageSchema'
 
 export const metadata = {
   title: "Digital Solutions & Software Development Services | SoftQivo",
@@ -55,29 +57,33 @@ const page = () => {
   const { services } =
     staticData?.home;
   return (
-    <div>
-      {/* Banner */}
-      <CommonBanner
-        breakIndex={6}
-        label="OUR SERVICES"
-        title=" Digital solutions built "
-        highlight="for real growth."
-        description="From websites and web applications to custom software, mobile apps, and scalable backend systems, we build digital products designed to perform and grow with your business."
-        breadcrumb="Services"
-      />
+    <>
+      <JsonLd data={servicePageSchema} />
 
-      {/* Services */}
-      <OurServices data={services} />
+      <div>
+        {/* Banner */}
+        <CommonBanner
+          breakIndex={6}
+          label="OUR SERVICES"
+          title=" Digital solutions built "
+          highlight="for real growth."
+          description="From websites and web applications to custom software, mobile apps, and scalable backend systems, we build digital products designed to perform and grow with your business."
+          breadcrumb="Services"
+        />
 
-      {/* Why SoftQivo */}
-      <WhySoftQivo />
+        {/* Services */}
+        <OurServices data={services} />
 
-      {/* Process */}
-      <ProcessSection2/>
+        {/* Why SoftQivo */}
+        <WhySoftQivo />
 
-      {/* Final CTA */}
-      <FinalCTA />
-    </div>
+        {/* Process */}
+        <ProcessSection2 />
+
+        {/* Final CTA */}
+        <FinalCTA />
+      </div>
+    </>
   )
 }
 

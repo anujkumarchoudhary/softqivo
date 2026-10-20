@@ -57,39 +57,39 @@ const montserrat = Montserrat({
 });
 
 
-
 export const metadata: Metadata = {
-  title: "SoftQivo | PET & Polyester Strapping Manufacturer",
+  metadataBase: new URL("https://www.softqivo.com"),
+
+  title: {
+    default: "SoftQivo | Software Development & Digital Solutions",
+    template: "%s | SoftQivo",
+  },
 
   description:
-    "SoftQivo Pvt. Ltd. manufactures and supplies PET and polyester strapping for packaging, palletizing, bundling and industrial load-securing applications across India and international markets.",
+    "SoftQivo is a technology company delivering custom software development, web development, modern digital solutions, and scalable applications to help businesses grow.",
 
   keywords: [
     "SoftQivo",
-    "SoftQivo Pvt Ltd",
-    "PET strapping manufacturer",
-    "PET softqivo manufacturer",
-    "PET strapping supplier",
-    "PET strapping exporter",
-    "PET packing softqivo",
-    "PET strapping band",
-    "industrial PET strapping",
-    "polyester strapping manufacturer",
-    "polyester softqivo manufacturer",
-    "polyester strapping supplier",
-    "polyester packing softqivo",
-    "packaging softqivo manufacturer",
-    "packaging softqivo exporter",
-    "PET strapping manufacturer India",
-    "PET softqivo exporter India",
-    "PET strapping supplier India",
-    "industrial strapping solutions",
-    "load securing straps",
+    "SoftQivo Technology",
+    "software development company",
+    "web development company",
+    "custom software development",
+    "website development services",
+    "Next.js development",
+    "MERN stack development",
+    "full-stack development",
+    "business software solutions",
+    "digital transformation services",
+    "scalable web applications",
   ],
 
-  authors: [{ name: "SoftQivo Pvt. Ltd." }],
-  creator: "SoftQivo Pvt. Ltd.",
-  publisher: "SoftQivo Pvt. Ltd.",
+  authors: [{ name: "SoftQivo Technology" }],
+  creator: "SoftQivo Technology",
+  publisher: "SoftQivo Technology",
+
+  alternates: {
+    canonical: "/",
+  },
 
   robots: {
     index: true,
@@ -104,25 +104,33 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "SoftQivo | PET & Polyester Strapping Manufacturer",
+    title: "SoftQivo | Software Development & Digital Solutions",
     description:
-      "PET and polyester strapping manufactured for packaging, palletizing, bundling and industrial load-securing applications. Serving customers across India and international markets.",
+      "Build smarter digital experiences with SoftQivo. We deliver custom software, modern websites, and scalable technology solutions for growing businesses.",
+    url: "https://www.softqivo.com",
     siteName: "SoftQivo",
     type: "website",
     locale: "en_IN",
+    images: [
+      {
+        url: "/softqivo_04.png",
+        width: 1200,
+        height: 630,
+        alt: "SoftQivo Technology",
+      },
+    ],
   },
-
 
   twitter: {
     card: "summary_large_image",
-    title: "SoftQivo | PET & Polyester Strapping Manufacturer",
+    title: "SoftQivo | Software Development & Digital Solutions",
     description:
-      "Manufacturer and supplier of PET and polyester strapping for packaging, palletizing, bundling and industrial load-securing applications.",
+      "Custom software, modern web development, and scalable digital solutions for growing businesses.",
+    images: ["/softqivo_04.png"],
   },
 
-  category: "manufacturing",
+  category: "technology",
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
