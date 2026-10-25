@@ -1,15 +1,20 @@
+
 export const organizationSchema = {
   "@type": "Organization",
   "@id": "https://www.softqivo.com/#organization",
 
   name: "SoftQivo",
+  alternateName: "SoftQivo Technology",
   url: "https://www.softqivo.com/",
 
-  logo: "https://www.softqivo.com/softqivo_04.png",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://www.softqivo.com/softqivo_04.png",
+  },
   image: "https://www.softqivo.com/softqivo_04.png",
 
   description:
-    "SoftQivo provides custom software development, web application development, SaaS development, CRM solutions, UI/UX development, API integration, and scalable digital solutions for businesses.",
+    "SoftQivo is a software development company providing professional web development, custom website design, web application development, SaaS development, API integration, and scalable software solutions for businesses.",
 
   email: "softqivo@gmail.com",
   telephone: "+91-99531-76985",
@@ -19,6 +24,7 @@ export const organizationSchema = {
     streetAddress: "A-21, 2nd Floor, BSI Business Park, Sector 63",
     addressLocality: "Noida",
     addressRegion: "Uttar Pradesh",
+    postalCode: "201301",
     addressCountry: "IN",
   },
 
@@ -38,6 +44,8 @@ export const organizationSchema = {
   ],
 
   knowsAbout: [
+    "Web Development",
+    "Custom Website Design",
     "Custom Software Development",
     "Web Application Development",
     "SaaS Development",

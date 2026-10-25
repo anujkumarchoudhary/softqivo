@@ -19,11 +19,11 @@ type SupportItem = {
 export const staticData = {
   home: {
     banner: {
-      label: "SOFTWARE • DESIGN • INNOVATION",
+      label: "SOFTWARE • QUALITY • INNOVATION",
 
       headingParts: [
         {
-          text: "Transform Ideas ",
+          text: "Your Ideas, ",
           color: "#FFFFFF",
           font: "playfair",
           style: "italic",
@@ -31,7 +31,7 @@ export const staticData = {
         },
 
         {
-          text: " Into Powerful Digital Solutions.",
+          text: " Our Expertise in Web Development",
           color: "#FFFFFF",
           weight: "600",
           // gradient:
@@ -40,7 +40,7 @@ export const staticData = {
       ],
 
       description:
-        "We design and develop fast, scalable digital products that solve real business challenges, improve customer experiences, and create lasting business value.",
+        "We provide professional web development services, custom website design, responsive business websites, and scalable web applications tailored to your unique business needs and goals.",
 
       button: "Get a Quote",
       button2: "See Projects",
@@ -299,6 +299,7 @@ export const staticData = {
     },
 
     blogs: {
+      padding:["4rem", "0rem"],
       label: "Our Insights",
 
       headingParts: [
