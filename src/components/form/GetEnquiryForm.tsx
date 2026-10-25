@@ -1,6 +1,7 @@
 
 "use client";
 
+import Image from "next/image";
 import React, { useState } from "react";
 
 interface GetEnquiryFormProps {
@@ -198,11 +199,11 @@ const handleSubmit = async (
 
   return (
     <div
-      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm"
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 backdrop-blur-sm"
       onClick={handleClose}
     >
       <div
-        className="relative max-h-[90vh] w-full lg:w-[30%] overflow-y-auto rounded-3xl bg-white p-6 shadow-2xl sm:p-8"
+        className="relative max-h-[90vh] w-full lg:w-[65%] rounded-3xl bg-white shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close */}
@@ -215,7 +216,13 @@ const handleSubmit = async (
           ×
         </button>
 
-        {/* Heading */}
+       <div className=" lg:grid grid-cols-[50%_50%]">
+        <div className="hidden md:block relative aspect-16/12 mt-auto p-4">
+          <Image src={"/images/about/about_hero_banner.png"} fill alt="enquiry" />
+
+        </div>
+        <div className="py-8 px-16">
+           {/* Heading */}
         <div className="mb-8 pr-12">
           <span className="text-xs font-semibold uppercase tracking-[0.25em] text-purple-600">
             Get In Touch
@@ -391,12 +398,15 @@ const handleSubmit = async (
             <button
               type="submit"
               disabled={isSubmitting}
-              className="rounded-full cursor-pointer bg-black px-8 py-3 font-semibold text-white transition hover:bg-purple-600 disabled:cursor-not-allowed disabled:opacity-50"
+              className="rounded-full lg:w-fit w-full cursor-pointer bg-black px-8 py-3 font-semibold text-white transition hover:bg-purple-600 disabled:cursor-not-allowed disabled:opacity-50"
             >
               {isSubmitting ? "Sending..." : "Send Enquiry"}
             </button>
           </div>
         </form>
+        </div>
+
+       </div>
       </div>
     </div>
   );
