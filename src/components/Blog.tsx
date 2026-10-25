@@ -35,38 +35,38 @@ const Blog = ({ data }: any) => {
     startIndex,
     startIndex + postsPerPage
   );
-
+  const [top, bottom] = data?.padding ?? ["4rem", "4rem"]
   return (
     <section
       ref={ref}
-      className="py-12 lg:py-16"
+      style={{ paddingTop: top, paddingBottom: bottom }}
     >
       <MaxWidth>
         <div className="w-[70%] mx-auto">
           <Heading
-          label="Our Blog"
-          labelColor="#9333EA"
-          accentColor="#9333EA"
-          isAccentLine
-          textColor="#000000"
-          isVisible={isVisible}
-          isCenter={true}
-          as="h2"
-          className="mx-auto text-4xl font-bold leading-[1.05] tracking-[-0.04em] sm:text-5xl lg:text-6xl"
-          headingParts={[
-            {
-              text: "Ideas that ",
-              color: "#000000",
-              weight: 700,
-            },
-            {
-              text: "inspire. Insights",
-              gradient: "linear-gradient(to right, #9333EA, #3B82F6)",
-              weight: 700,
-            }
-          ]}
-          description="Explore practical insights, technology trends, and expert perspectives on building digital products, creating better experiences, and growing your business with technology."
-        />
+            label="Our Blog"
+            labelColor="#9333EA"
+            accentColor="#9333EA"
+            isAccentLine
+            textColor="#000000"
+            isVisible={isVisible}
+            isCenter={true}
+            as="h2"
+            className="mx-auto text-4xl font-bold leading-[1.05] tracking-[-0.04em] sm:text-5xl lg:text-6xl"
+            headingParts={[
+              {
+                text: "Ideas that ",
+                color: "#000000",
+                weight: 700,
+              },
+              {
+                text: "inspire. Insights",
+                gradient: "linear-gradient(to right, #9333EA, #3B82F6)",
+                weight: 700,
+              }
+            ]}
+            description="Explore practical insights, technology trends, and expert perspectives on building digital products, creating better experiences, and growing your business with technology."
+          />
         </div>
 
         {/* BLOG CARDS */}
@@ -164,11 +164,12 @@ const Blog = ({ data }: any) => {
         </div>
 
         {/* Pagination */}
-        <Pagination
+        {blogs?.length > 3 && <Pagination
           currentPage={currentPage}
           totalPages={totalPages}
           onPageChange={setCurrentPage}
-        />
+        />}
+
 
       </MaxWidth>
     </section>

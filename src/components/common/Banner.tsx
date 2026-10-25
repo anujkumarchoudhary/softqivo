@@ -54,7 +54,7 @@ const Banner = () => {
   return (
     <section
       ref={ref}
-      className="py-12 lg:py-20 bg-primary-bg  w-full overflow-hidden"
+      className="py-12 lg:py-26 bg-primary-bg  w-full overflow-hidden"
     >
       {/* Purple localized glow + grid */}
       <div className="pointer-events-none absolute -left-24 -top-24 h-[220px] w-[220px] lg:h-[420px] lg:w-[520px] opacity-70">
@@ -99,27 +99,13 @@ const Banner = () => {
       <MaxWidth className="my-auto">
         <div className="grid  grid-cols-1 lg:grid-cols-[45%_50%] justify-between gap-2 z-10">
           <div className="space-y-10 my-auto">
-            <div className="hidden lg:block">
+            <div className="block">
               <Heading
                 as="h1"
                 isDart={true}
                 isSparkles={true}
                 label={label}
-                breakIndex={5}
-                accentColor="#ffffff"
-                textColor="#ffffff"
-                isGradient={true}
-                headingParts={headingParts}
-                description={description}
-              />
-            </div>
-            <div className="block lg:hidden">
-              <Heading
-                isDart={true}
-                as="h1"
-                label={label}
-                isCenter={true}
-                isSparkles={true}
+                breakIndex={6}
                 accentColor="#ffffff"
                 textColor="#ffffff"
                 isGradient={true}
@@ -167,7 +153,7 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className="flex h-fit my-auto justify-end">
+          <div className="flex h-fit my-auto justify-end lg:mr-[-15%]">
             <Image src={banner_img} alt="Banner Image" />
           </div>
         </div>

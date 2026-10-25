@@ -203,8 +203,8 @@ const Heading = ({
       {/* Heading */}
 <Tag
   className={`
-    transition-all duration-700 delay-150
-    ${isCenter ? "text-center" : "text-left"}
+    transition-all text-center duration-700 delay-150
+    ${isCenter ? "text-center" : "text-center lg:text-left"}
     ${className}
     ${
       isVisible
