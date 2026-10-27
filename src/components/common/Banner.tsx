@@ -9,7 +9,7 @@ import banner_img from "../../../public/images/home/banner_05.png";
 
 import SaveAndCancel from "./SaveAndCancel";
 import { useResponsive } from "@/src/hooks/useResponsive";
-import img_1 from "../../../public/images/partner/aws.png";
+import img_1 from "../../../public/images/partner/aws-20.png";
 import img_2 from "../../../public/images/partner/digitalocean.png";
 import img_3 from "../../../public/images/partner/google.png";
 import img_4 from "../../../public/images/partner/microsoft.png";
@@ -26,10 +26,10 @@ const partners = [
     name: "AWS",
     image: img_1,
   },
-  {
-    name: "DigitalOcean",
-    image: img_2,
-  },
+  // {
+  //   name: "DigitalOcean",
+  //   image: img_2,
+  // },
   {
     name: "Google",
     image: img_3,
@@ -56,7 +56,6 @@ const Banner = () => {
       ref={ref}
       className="py-12 lg:py-26 bg-primary-bg  w-full overflow-hidden"
     >
-      {/* Purple localized glow + grid */}
       <div className="pointer-events-none absolute -left-24 -top-24 h-[220px] w-[220px] lg:h-[420px] lg:w-[520px] opacity-70">
         <div className="absolute inset-0 rounded-full bg-purple-600/[0.12] blur-[120px]" />
 
@@ -75,7 +74,6 @@ const Banner = () => {
           }}
         />
       </div>
-      {/* Blue localized glow + grid */}
       <div className="pointer-events-none absolute -bottom-28 right-0 h-[220px] w-[220px] lg:h-[420px] lg:w-[520px] opacity-70">
         <div className="absolute inset-0 rounded-full bg-blue-600/[0.12] blur-[120px]" />
 

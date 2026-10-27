@@ -42,7 +42,7 @@ const Blog = ({ data }: any) => {
       style={{ paddingTop: top, paddingBottom: bottom }}
     >
       <MaxWidth>
-        <div className="w-[70%] mx-auto">
+        <div className=" w-full lg:w-[70%] mx-auto">
           <Heading
             label="Our Blog"
             labelColor="#9333EA"

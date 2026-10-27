@@ -13,6 +13,7 @@ import {
   Phone,
   Mail,
 } from "lucide-react";
+import { useResponsive } from "@/src/hooks/useResponsive";
 
 type ChatMessage = {
   _id?: string;
@@ -53,6 +54,7 @@ const SOCKET_URL =
 const SESSION_KEY = "adaired-live-chat-session";
 
 const LiveChatWidget = () => {
+  const {isDesktop} =useResponsive()
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
   const [session, setSession] = useState<ChatSession | null>(null);
@@ -489,7 +491,7 @@ const LiveChatWidget = () => {
   return (
     <div
       className={`fixed z-[9999] ${isOpen && !isMinimized
-        ? "inset-0 sm:inset-auto sm:bottom-5 sm:right-5"
+        ? "inset-0 sm:inset-auto sm:bottom-1 sm:right-5"
         : "bottom-3 right-3 sm:bottom-5 sm:right-5"
         }`}
     >
@@ -502,7 +504,7 @@ const LiveChatWidget = () => {
           flex h-full min-h-0 w-full max-w-none flex-col
           overflow-hidden rounded-none bg-white shadow-2xl
           sm:mb-4 sm:h-[550px] sm:max-h-[calc(100dvh-40px)]
-          sm:w-[400px] sm:max-w-[400px] sm:rounded-2xl
+          sm:w-[380px] sm:max-w-[380px] sm:rounded-2xl
         "
         >
           {/* Header */}
@@ -681,7 +683,7 @@ const LiveChatWidget = () => {
                         setProjectDetails(event.target.value)
                       }
                       placeholder="Tell us about your requirement..."
-                      rows={4}
+                      rows={isDesktop ? 4:10}
                       maxLength={2000}
                       required
                       className="w-full resize-none rounded-xl border border-gray-300 px-3.5 py-3 text-sm outline-none transition focus:border-[#7B17F9] focus:ring-2 focus:ring-[#7B17F9]/15"
