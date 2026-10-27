@@ -70,6 +70,8 @@ const Footer = () => {
           <div className="mt-7 flex items-center gap-3">
             <a
               href="https://www.linkedin.com/company/softqivo"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="FaLinkedinIn"
               className="flex h-15 w-15 items-center justify-center rounded-full border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
             >
@@ -78,6 +80,8 @@ const Footer = () => {
 
             <a
               href="https://www.instagram.com/softqivo"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="FaInstagram"
               className="flex h-15 w-15 items-center justify-center rounded-full border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
             >
