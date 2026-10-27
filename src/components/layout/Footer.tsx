@@ -69,7 +69,7 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="mt-7 flex items-center gap-3">
             <a
-              href="#"
+              href="https://www.linkedin.com/company/softqivo"
               aria-label="FaLinkedinIn"
               className="flex h-15 w-15 items-center justify-center rounded-full border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
             >
@@ -77,7 +77,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="#"
+              href="https://www.instagram.com/softqivo"
               aria-label="FaInstagram"
               className="flex h-15 w-15 items-center justify-center rounded-full border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
             >
