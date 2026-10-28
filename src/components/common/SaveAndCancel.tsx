@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FiArrowUpRight } from "react-icons/fi";
 
 type SaveAndCancelProps = {
   saveText?: string;
@@ -10,7 +11,7 @@ type SaveAndCancelProps = {
 
 const SaveAndCancel = ({
   saveText = "Start a Project",
-  cancelText = "Explore Our Work",
+  cancelText,
   handleClick = () => {},
   handleClick2,
   className = "",
@@ -33,7 +34,7 @@ const SaveAndCancel = ({
           bg-gradient-to-r
           from-[#A855F7]
           to-[#2563EB]
-          px-5 py-3
+          px-6 py-3
           text-[14px]
           sm:text-[18px]
           font-medium
@@ -56,12 +57,12 @@ const SaveAndCancel = ({
             group-hover:translate-x-1
           "
         >
-          →
+          <FiArrowUpRight size={22}/>
         </span>
       </button>
 
       {/* Explore Our Work */}
-      <button
+      {cancelText && <button
       onClick={handleClick2}
         
         className="
@@ -69,7 +70,7 @@ const SaveAndCancel = ({
           rounded-md
           border border-white/20
           bg-white/[0.02]
-          px-5 py-3
+          px-6 py-3
           text-[14px]
           sm:text-[18px]
           font-medium
@@ -82,7 +83,8 @@ const SaveAndCancel = ({
         "
       >
         {cancelText}
-      </button>
+      </button>}
+      
     </div>
   );
 };

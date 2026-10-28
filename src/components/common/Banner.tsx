@@ -20,6 +20,7 @@ import { SiFsecure } from "react-icons/si";
 import BackgroundEffects from "../BackgroundEffects";
 import { useState } from "react";
 import GetEnquiryForm from "../form/GetEnquiryForm";
+import bgImage from '../../../public/images/home/banner_001.jpg'
 
 const partners = [
   {
@@ -54,47 +55,17 @@ const Banner = () => {
   return (
     <section
       ref={ref}
-      className="py-12 lg:py-26 bg-primary-bg  w-full overflow-hidden"
+      id="hero-banner"
+      className="sticky top-0 lg:h-screen w-full overflow-hidden bg-primary-bg bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage:
+          "url('/images/home/modern-software-development-vector-24033583 (1).avif')",
+      }}
     >
-      <div className="pointer-events-none absolute -left-24 -top-24 h-[220px] w-[220px] lg:h-[420px] lg:w-[520px] opacity-70">
-        <div className="absolute inset-0 rounded-full bg-purple-600/[0.12] blur-[120px]" />
-
-        <div
-          className="absolute inset-0 opacity-[0.07]"
-          style={{
-            backgroundImage: `
-          linear-gradient(rgba(168,85,247,0.8) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(168,85,247,0.8) 1px, transparent 1px)
-        `,
-            backgroundSize: "45px 45px",
-            maskImage:
-              "radial-gradient(ellipse at center, black 0%, transparent 72%)",
-            WebkitMaskImage:
-              "radial-gradient(ellipse at center, black 0%, transparent 72%)",
-          }}
-        />
-      </div>
-      <div className="pointer-events-none absolute -bottom-28 right-0 h-[220px] w-[220px] lg:h-[420px] lg:w-[520px] opacity-70">
-        <div className="absolute inset-0 rounded-full bg-blue-600/[0.12] blur-[120px]" />
-
-        <div
-          className="absolute inset-0 opacity-[0.07]"
-          style={{
-            backgroundImage: `
-          linear-gradient(rgba(37,99,235,0.8) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(37,99,235,0.8) 1px, transparent 1px)
-        `,
-            backgroundSize: "45px 45px",
-            maskImage:
-              "radial-gradient(ellipse at center, black 0%, transparent 72%)",
-            WebkitMaskImage:
-              "radial-gradient(ellipse at center, black 0%, transparent 72%)",
-          }}
-        />
-      </div>
+      <div className="absolute top-0 left-0 bg-black/60 w-full h-full" />
 
       {/* Content */}
-      <MaxWidth className="my-auto">
+      <MaxWidth className="my-auto absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 pt-20">
         <div className="grid  grid-cols-1 lg:grid-cols-[45%_50%] justify-between gap-2 z-10">
           <div className="space-y-10 my-auto">
             <div className="block">
@@ -120,7 +91,7 @@ const Banner = () => {
               <SaveAndCancel
                 saveText="Start a Project"
                 cancelText="Explore Our Work"
-                handleClick={()=>setOpen(!open)}
+                handleClick={() => setOpen(!open)}
                 handleClick2={() => {
                   document
                     .getElementById("case-studies")
@@ -152,7 +123,7 @@ const Banner = () => {
             </div>
           </div>
           <div className="flex h-fit my-auto justify-end lg:mr-[-15%]">
-            <Image src={banner_img} alt="Banner Image" />
+            {/* <Image src={banner_img} alt="Banner Image" /> */}
           </div>
         </div>
         <div className="mt-14 block lg:hidden ">
@@ -174,7 +145,7 @@ const Banner = () => {
           </div>
         </div>
       </MaxWidth>
-      <GetEnquiryForm isOpen={open} handleClose={()=>setOpen(false)} />
+      <GetEnquiryForm isOpen={open} handleClose={() => setOpen(false)} />
     </section>
   );
 };
