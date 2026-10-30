@@ -250,7 +250,7 @@ function ProcessCard({
 
     return (
         <motion.article
-            className="absolute bottom-0 top-0 left-0 w-[82%] overflow-hidden rounded-2xl border border-white/20 sm:w-[55%] lg:left-[var(--desktop-left)] lg:w-[24%]"
+            className="absolute bottom-0 top-0 left-0 w-full overflow-hidden rounded-2xl border border-white/20 sm:w-[55%] lg:left-[var(--desktop-left)] lg:w-[24%]"
             style={{
                 "--desktop-left": desktopLeft,
                 y: index === 0 ? "0%" : y,
