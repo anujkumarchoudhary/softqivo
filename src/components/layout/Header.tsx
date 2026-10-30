@@ -3,7 +3,7 @@
 
 import React, { useEffect, useState } from "react";
 import MaxWidth from "./MaxWidth";
-import logo from "../../../public/softqivo_04.png";
+import logo from "../../../public/images/home/sq_03.png";
 import Image from "next/image";
 import { menuData } from "@/src/data/menu";
 import Button from "../common/Button";
@@ -58,10 +58,10 @@ const Header = () => {
 
 
   const headerClass = bannerPassed
-    ? "bg-white text-black shadow-md"
+    ? "bg-white text-black shadow-lg"
     : scrolled
       ? "bg-[#001029] text-white shadow-lg"
-      : "bg-transparent text-white shadow-none";
+      : "bg-[#001029] shadow-lg text-white shadow-none";
 
   const headerLogoClass = bannerPassed
     ? "text-black"
@@ -76,7 +76,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed shadow-2xl inset-x-0 top-0 z-50 w-full
+      className={`fixed  shadow-2xl inset-x-0 top-0 z-50 w-full
         transition-colors duration-500 ease-in-out ${headerClass}`}
     >
       <MaxWidth className="py-2 flex justify-between lg:py-2.5">
@@ -84,20 +84,20 @@ const Header = () => {
           onClick={() => router.push("/")}
           className="cursor-pointer my-auto flex gap-2"
         >
-          {/* <Image
-              src={logo}
-              width={225}
-              height={50}
-              alt="SoftQivo logo"
-              priority
-              style={{
-                width: "clamp(180px, 18vw, 225px)",
-                height: "auto",
-              }}
-            /> */}
+          <Image
+            src={logo}
+            width={225}
+            height={50}
+            alt="SoftQivo logo"
+            priority
+            style={{
+              width: "clamp(180px, 18vw, 225px)",
+              height: "auto",
+            }}
+          />
           {/* <p className="my-auto text-[35px] font-bold text-blue-600">SQ</p>
           <p className={`my-auto text-[30px] font-normal ${headerLogoClass}`}>|</p> */}
-          <p className={`my-auto text-[35px] font-semibold ${headerLogoClass}`}>Soft<span className="text-blue-600">Q</span>ivo</p>
+          {/* <p className={`my-auto text-[35px] font-semibold ${headerLogoClass}`}>Soft<span className="text-blue-600">Q</span>ivo</p> */}
         </div>
 
         {/* <nav className="hidden lg:flex gap-2 font-semibold">
@@ -113,16 +113,21 @@ const Header = () => {
             ))}
           </nav> */}
 
-        <div className="hidden lg:flex gap-8">
+        <div className="hidden my-auto lg:flex gap-8">
           {/* <Button
             name="Let's Talk"
             handleClick={() => router.push("/schedule-meeting")}
           /> */}
-          <SaveAndCancel
+          {/* <SaveAndCancel
             saveText="Let's Talk"
             handleClick={() => setOpen(!open)}
-            className="mx-auto lg:mx-0" handleClick2={undefined}          />          
-          <LuAlignRight size={40} className="my-auto" />
+            className="mx-auto lg:mx-0" handleClick2={undefined}          />           */}
+          {/* <LuAlignRight size={40} className="my-auto" /> */}
+          <div className="flex flex-col items-end space-y-2.5">
+            <div className="w-14 h-0.75 bg-white" />
+            <div className="w-8 h-0.75 bg-white" />
+            {/* <div className="w-6 h-0.75 bg-white" /> */}
+          </div>
         </div>
 
         <button

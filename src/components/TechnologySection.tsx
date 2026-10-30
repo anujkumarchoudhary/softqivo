@@ -249,7 +249,7 @@ export default function TechnologySection({ data }: any) {
   const technologies = [...data.technologies, ...data.technologies];
 
   return (
-    <section className="relative overflow-hidden bg-black py-12 lg:py-16">
+    <section className="relative overflow-hidden bg-[#00132C] py-12 lg:py-16">
       {/* ================= BACKGROUND ================= */}
 
       {/* Center glow */}

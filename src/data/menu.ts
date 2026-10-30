@@ -7,14 +7,15 @@ export const menuData = [
 ];
 
 export const footerMenuData = [
-  { title: "Privacy Policy", link: "/privacy-policy" },
-  { title: "Terms of Service", link: "/terms-of-service" },
-  { title: "Help Center", link: "#" },
-  { title: "Careers", link: "#" },
-  { title: "Sitemap", link: "/sitemap" },
-  { title: "Accessibility", link: "#" },
-  { title: "Cookie Policy", link: "#" },
-  { title: "Press", link: "#" },
+  { title: "About", link: "/privacy-policy" },
   { title: "Blog", link: "/blog" },
+  { title: "Careers", link: "#" },
   { title: "Contact", link: "/contact" },
+  { title: "Sitemap", link: "/sitemap" },
+
+    { title: "Web Development", link: "/privacy-policy" },
+  { title: "Software Development", link: "/blog" },
+  { title: "App Development", link: "#" },
+  { title: "CRM Development", link: "/contact" },
+  { title: "HRM Development", link: "/sitemap" },
 ];

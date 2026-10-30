@@ -114,7 +114,7 @@ export default function CaseStudies({ data }: any) {
   };
 
   return (
-    <section id="case-studies" className="relative overflow-hidden bg-[#050507] py-12 lg:py-16">
+    <section id="case-studies" className="relative overflow-hidden bg-[#00132C] py-12 lg:py-16">
       {/* ================= BACKGROUND ================= */}
 
       {/* Localized glow */}
@@ -195,7 +195,7 @@ export default function CaseStudies({ data }: any) {
             {visibleProjects.map((project) => (
               <article
                 key={project.number}
-                className="group relative overflow-hidden rounded-xl border border-white/[0.12] bg-[#08080b] transition-all duration-500 hover:border-purple-500/30"
+                className="group relative overflow-hidden rounded-xl border border-white/[0.12] bg-[#00132C] transition-all duration-500 hover:border-purple-500/30"
               >
                 <div className="grid min-h-[330px] grid-cols-1 md:grid-cols-[42%_58%]">
                   {/* Content */}

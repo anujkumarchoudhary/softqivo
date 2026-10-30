@@ -36,12 +36,13 @@ import {
 } from "lucide-react";
 import { AiOutlineSafety } from "react-icons/ai";
 import { FaFacebookF, FaInstagram, FaLightbulb, FaLinkedinIn, FaRegLightbulb, FaRegUser, FaTwitter } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa6";
+import { FaBuildingUser, FaGithub } from "react-icons/fa6";
 import { HiLightBulb } from "react-icons/hi";
 import { IoRocketOutline } from "react-icons/io5";
 import { LuHandshake } from "react-icons/lu";
 
 const iconMap = {
+  FaBuildingUser,
   FaGithub,
   FaLinkedinIn,
   FaFacebookF,

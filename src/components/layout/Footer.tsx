@@ -4,10 +4,11 @@ import MaxWidth from "./MaxWidth";
 import { footerMenuData } from "@/src/data/menu";
 import Icon from "@/src/utills/iconMap ";
 import Image from "next/image";
+import FinalCTA from "../FinalCTA";
 
 const Footer = () => {
   return (
-    <footer className="relative overflow-hidden bg-primary-bg text-white">
+    <footer className="relative overflow-hidden bg-[#001029] text-white">
       {/* Purple localized glow + grid */}
       <div className="pointer-events-none absolute -left-24 -top-24 h-[420px] w-[520px] opacity-70">
         <div className="absolute inset-0 rounded-full bg-purple-600/[0.12] blur-[120px]" />
@@ -47,171 +48,181 @@ const Footer = () => {
           }}
         />
       </div>
-      <MaxWidth className="grid grid-cols-1 gap-10 py-12 lg:grid-cols-4 lg:gap-8 lg:py-20">
-        {/* Brand */}
-        <div>
-          <Image
-            src="/softqivo_04.png"
-            width={225}
-            height={50}
-            alt="logo"
-            style={{
-              width: "clamp(180px, 18vw, 225px)",
-              height: "auto",
-            }}
-          />
+      <MaxWidth >
+        <FinalCTA />
+        <div className="grid grid-cols-1 gap-10 py-12 lg:grid-cols-[35%_60%] justify-between lg:gap-4 lg:py-20">
+          {/* Brand */}
+          <div>
+            <Image
+              src="/images/home/sq_03.png"
+              width={225}
+              height={50}
+              alt="logo"
+              style={{
+                width: "clamp(180px, 18vw, 225px)",
+                height: "auto",
+              }}
+            />
 
-          <p className="mt-5 leading-7 text-white/70">
-            We build scalable digital solutions, modern web applications, and
-            custom software that help businesses grow and perform better.
-          </p>
+            <p className="mt-5 leading-9 text-white/70">
+              We build scalable digital solutions, modern web applications, and
+              custom software that help businesses grow and perform better.
+            </p>
 
-          {/* Social Icons */}
-          <div className="mt-7 flex items-center gap-3">
-            <a
-              href="https://www.linkedin.com/company/softqivo"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="FaLinkedinIn"
-              className="flex h-15 w-15 items-center justify-center rounded-full border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
-            >
-              <Icon name="FaLinkedinIn" size={30} />
-            </a>
+          </div>
 
-            <a
-              href="https://www.instagram.com/softqivo"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="FaInstagram"
-              className="flex h-15 w-15 items-center justify-center rounded-full border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
-            >
-              <Icon name="FaInstagram" size={30} />
-            </a>
+          <div className="grid grid-cols-3">
+            {/* Quick Links */}
+            <div>
+              <h3 className="mb-5 text-[22px] uppercase text-white font-medium">
+                Quick Links
+              </h3>
 
-            <a
-              href="https://x.com/softqivo"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="SoftQivo on X"
-              className="flex h-15 w-15 items-center justify-center rounded-full border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
-            >
-              <Icon name="FaTwitter" size={30} />
-            </a>
+              <ul className="space-y-2">
+                {footerMenuData.slice(0, 5).map((menu, idx) => (
+                  <li key={idx}>
+                    <a
+                      href={`${menu.link}`}
+                      className="group flex items-center gap-2 text-[18px] text-white/70 transition hover:text-white"
+                    >
+                      <Icon
+                        name="chevronRight"
+                        size={15}
+                        className="transition-transform duration-300 group-hover:translate-x-1"
+                      />
+
+                      <span>{menu.title}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* service Links */}
+            <div>
+              <h3 className="mb-5 text-[22px] uppercase text-white font-medium">
+                Service Links
+              </h3>
+
+              <ul className="space-y-2">
+                {footerMenuData.slice(5, 10).map((menu, idx) => (
+                  <li key={idx}>
+                    <a
+                      href={`${menu.link}`}
+                      className="group flex items-center gap-2 text-[18px] text-white/70 transition hover:text-white"
+                    >
+                      <Icon
+                        name="chevronRight"
+                        size={15}
+                        className="transition-transform duration-300 group-hover:translate-x-1"
+                      />
+
+                      <span>{menu.title}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Services */}
+            <div>
+              <h3 className="mb-5 text-[22px] uppercase text-white font-medium">
+                Social Media
+              </h3>
+              {/* Social Icons */}
+              <div className="mt-7 flex items-center gap-3">
+                <a
+                  href="https://www.linkedin.com/company/softqivo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="FaLinkedinIn"
+                  className="flex h-12 w-12 items-center justify-center rounded-[10px] border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
+                >
+                  <Icon name="FaLinkedinIn" size={25} />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/softqivo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="FaInstagram"
+                  className="flex h-12 w-12 items-center justify-center rounded-[10px] border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
+                >
+                  <Icon name="FaInstagram" size={25} />
+                </a>
+
+                <a
+                  href="https://x.com/softqivo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="SoftQivo on X"
+                  className="flex h-12 w-12 items-center justify-center rounded-[10px] border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
+                >
+                  <Icon name="FaTwitter" size={25} />
+                </a>
+              </div>
+
+            </div>
+
           </div>
         </div>
+        <div className=" flex justify-between space-y-5">
 
-        {/* Quick Links */}
-        <div>
-          <h3 className="mb-8 text-[25px] text-white font-semibold">
-            Quick Links
-          </h3>
+          {/* Phone */}
+          <div className="flex gap-3">
+            <div className="mt-1 shrink-0">
+              <Icon name="phone" size={19} className="text-white" />
+            </div>
 
-          <ul className="space-y-3">
-            {footerMenuData.slice(0, 5).map((menu, idx) => (
-              <li key={idx}>
-                <a
-                  href={`${menu.link}`}
-                  className="group flex items-center gap-2 text-[18px] text-white/70 transition hover:text-white"
-                >
-                  <Icon
-                    name="chevronRight"
-                    size={15}
-                    className="transition-transform duration-300 group-hover:translate-x-1"
-                  />
 
-                  <span>{menu.title}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
 
-        {/* Services */}
-        <div>
-          <h3 className="mb-8 text-[25px] text-white font-semibold">
-            Custom Software
-          </h3>
-
-          <ul className="space-y-3">
-            {footerMenuData.slice(5).map((menu, idx) => (
-              <li key={idx}>
-                <a
-                  href={`${menu.link}`}
-                  className="group flex items-center gap-2 text-[18px] text-white/70 transition hover:text-white"
-                >
-                  <Icon
-                    name="chevronRight"
-                    size={15}
-                    className="transition-transform duration-300 group-hover:translate-x-1"
-                  />
-
-                  <span>{menu.title}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Contact */}
-        <div>
-          <h3 className="mb-8 text-[25px] text-white font-semibold">
-            Contact Us
-          </h3>
-
-          <div className="space-y-5">
-            {/* Address */}
-            <div className="flex gap-3">
-              <Icon name="location" size={22} className="mt-1 shrink-0" />
+            <div>
+              <p className="mb-1 text-[18px] font-medium text-white">Phone</p>
 
               <a
-                href="https://share.google/E7oFNNvoY9Nm77Ais"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group"
+                href="tel:+919953176985"
+                className="text-[18px] text-white/65 transition hover:text-white"
               >
-                <p className="mb-1 text-[18px] font-medium text-white">
-                  Head Office
-                </p>
-
-                <p className="text-[16px] lg:text-[18px] leading-7 text-white/65 transition-colors group-hover:text-white">
-                  A-21, 2nd Floor, BSI Business Park, Sector-63, Noida, Uttar Pradesh, India
-                </p>
+                +91 99531 76985
               </a>
             </div>
-            {/* Phone */}
-            <div className="flex gap-3">
-              <div className="mt-1 shrink-0">
-                <Icon name="phone" size={19} className="text-white" />
-              </div>
+          </div>
 
-              <div>
-                <p className="mb-1 text-[18px] font-medium text-white">Phone</p>
+          {/* Address */}
+          <div className="flex gap-3">
+            <Icon name="location" size={22} className="mt-1 shrink-0" />
 
-                <a
-                  href="tel:+919953176985"
-                  className="text-[18px] text-white/65 transition hover:text-white"
-                >
-                  +91 99531 76985
-                </a>
-              </div>
+            <a
+              href="https://share.google/E7oFNNvoY9Nm77Ais"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
+            >
+              <p className="mb-1 text-[18px] font-medium text-white">
+                Head Office
+              </p>
+
+              <p className="text-[16px] lg:text-[18px] leading-7 text-white/65 transition-colors group-hover:text-white">
+                A-21, 2nd Floor, BSI Business Park, Sector-63, <br /> Noida, Uttar Pradesh, India
+              </p>
+            </a>
+          </div>
+
+          {/* Email */}
+          <div className="flex gap-3">
+            <div className="mt-1 shrink-0">
+              <Icon name="FaBuildingUser" size={19} className="text-white" />
             </div>
 
-            {/* Email */}
-            <div className="flex gap-3">
-              <div className="mt-1 shrink-0">
-                <Icon name="mail" size={19} className="text-white" />
-              </div>
+            <div>
+              <p className="mb-1 text-[18px] font-medium text-white">Founder</p>
 
-              <div>
-                <p className="mb-1 text-[18px] font-medium text-white">Email</p>
-
-                <a
-                  href="mailto:softqivo@gmail.com"
-                  className="text-[18px] text-white/65 transition hover:text-white"
-                >
-                  softqivo@gmail.com
-                </a>
-              </div>
+              <a
+                href="mailto:softqivo@gmail.com"
+                className="text-[18px] text-white/65 transition hover:text-white"
+              >
+                Anuj Choudhary
+              </a>
             </div>
           </div>
         </div>

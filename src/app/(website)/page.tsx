@@ -15,6 +15,7 @@ import TechnologySection from "../../components/TechnologySection";
 import { homePageSchema } from "@/@core/lib/schema/pages/homePageSchema";
 import JsonLd from "@/@core/lib/schema/JsonLd";
 import ProcessSection3 from "@/src/components/ProcessSection3";
+import KeyStats from "@/src/components/KeyStats";
 const page = () => {
   const { services, caseStudies, process, team, blogs, technologes, finalCta } =
     staticData?.home;
@@ -25,6 +26,7 @@ const page = () => {
       <div>
         <Banner />
         <section className="relative z-10 bg-white">
+          <KeyStats/>
           <Services data={services} />
         </section>
 
@@ -41,8 +43,8 @@ const page = () => {
         </section>
 
         <section className="relative z-10 bg-white">
-          <TeamSection data={team} />
-        </section>
+          <TeamSection data={team}/>
+       </section>
 
         <section className="relative z-10 bg-white">
           <TechnologySection data={technologes} />
@@ -52,7 +54,7 @@ const page = () => {
           <Feedback />
           <Blog data={blogs} />
           <FAQ />
-          <FinalCTA />
+          {/* <FinalCTA /> */}
         </section>
       </div>
     </>

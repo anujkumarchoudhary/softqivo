@@ -9,11 +9,11 @@
     color: #000000;
   }
 
-  h1 {
-    font-weight: 700;
-    font-size: clamp(2.2rem, 4vw, 4.0625rem);
-    line-height: clamp(3rem, 4vw, 5.3125rem);
-  }
+h1 {
+  font-weight: 700;
+  font-size: clamp(100px, 13vw, 200px);
+  line-height: clamp(110px, 13.5vw, 210px);
+}
 
   h2 {
     font-weight: 600;

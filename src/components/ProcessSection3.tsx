@@ -25,28 +25,28 @@ const defaultSteps: ProcessItem[] = [
         title: "Discover",
         description: "We understand your business, audience, goals, and challenges.",
         image: "/images/process/discover.jpg",
-        color: "#E84624",
+        color: "#FFFFFF",
     },
     {
         number: "02",
         title: "Strategize",
         description: "We create a clear roadmap and select the right technology.",
         image: "/images/process/strategize.jpg",
-        color: "#6941C6",
+        color: "#FFFFFF",
     },
     {
         number: "03",
         title: "Develop",
         description: "We build a responsive, scalable digital solution.",
         image: "/images/process/develop.jpg",
-        color: "#087F8C",
+        color: "#FFFFFF",
     },
     {
         number: "04",
         title: "Deliver",
         description: "We test, launch, and refine your solution.",
         image: "/images/process/deliver.jpg",
-        color: "#2563EB",
+        color: "#FFFFFF",
     },
 ];
 export default function ProcessSection3({
@@ -65,14 +65,14 @@ export default function ProcessSection3({
     return (
         <section
             ref={sectionRef}
-            className="relative bg-[#001029] text-white"
+            className="relative bg-[#00132C] text-white"
             style={{ height: `${(steps.length + 1) * 100}vh` }}
         >
             <MaxWidth className="sticky top-0 h-screen overflow-hidden">
                 <div className="mx-auto flex h-full flex-col py-10 md:py-24">
                     {/* Header */}
                     <div className="flex shrink-0 items-end justify-between gap-8">
-                        <h2 className="text-5xl text-white font-semibold leading-[1.05] tracking-tight md:text-6xl">
+                        <h2 className=" text-white font-semibold leading-13">
                             Our
                             <br />
                             Process
@@ -85,7 +85,7 @@ export default function ProcessSection3({
                     </div>
 
                     {/* Dynamic divider */}
-                    {/* <div className="mt-8 flex shrink-0 gap-3 md:mt-10">
+                    <div className="mt-8 flex shrink-0 gap-3 md:mt-10">
                         {steps.map((step, index) => (
                             <div key={step.number ?? index} className="flex-1">
                                 <div className="h-[2px] overflow-hidden bg-white/15">
@@ -95,12 +95,12 @@ export default function ProcessSection3({
                                         total={steps.length}
                                     />
                                 </div>
-                                <p className="mt-2 text-xs text-white/50">
+                                <p className="mt-2 text-xs text-white/80">
                                     {step.number ?? String(index + 1).padStart(2, "0")}
                                 </p>
                             </div>
                         ))}
-                    </div> */}
+                    </div>
 
                     {/* Cards stage */}
                     <div className="relative mt-6 min-h-0 flex-1">
@@ -178,12 +178,13 @@ function ProcessCard({
 
     return (
         <motion.article
-            className="absolute bottom-0 top-0 w-[82%] overflow-hidden rounded-2xl border border-white/20 bg-white sm:w-[55%] lg:w-[24%]"
+            className="absolute bottom-0 top-0 w-[82%] overflow-hidden rounded-2xl border border-white/20 sm:w-[55%] lg:w-[24%]"
             style={{
                 left,
                 y: index === 0 ? "0%" : y,
                 opacity: 1,
                 zIndex: index + 1,
+                backgroundColor: step.color || "#E3E3E3",
             }}
         >
             {/* <Image
@@ -195,21 +196,26 @@ function ProcessCard({
             /> */}
 
             {/* Consistent orange tint */}
-            <div className="absolute inset-0 bg-[#ef3b18]/50" />
-
+            <div
+                className="absolute inset-0"
+                style={{
+                    backgroundColor: step.color || "#E3E3E3",
+                    opacity: 0.12,
+                }}
+            />
             {/* Dark gradient only at the bottom for readable text */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent" />
 
             <div className="relative z-10 flex h-full flex-col p-5 md:p-7">
-                <span className="self-end text-6xl font-semibold leading-none text-white md:text-7xl lg:text-8xl">
+                <span className="self-end text-6xl font-semibold leading-none text-black/40 md:text-7xl lg:text-8xl">
                     {step.number ?? String(index + 1).padStart(2, "0")}
                 </span>
 
-                <div className="mt-auto max-w-[240px] pb-2">
-                    <h3 className="mb-3 text-xl font-semibold text-white md:text-2xl">
+                <div className="mt-auto  pb-2">
+                    <h3 className="mb-3 text-xl font-semibold text-black md:text-2xl">
                         {step.title}
                     </h3>
-                    <p className="text-sm leading-relaxed text-white md:text-base">
+                    <p className="text-sm leading-relaxed text-black md:text-base">
                         {step.description}
                     </p>
                 </div>

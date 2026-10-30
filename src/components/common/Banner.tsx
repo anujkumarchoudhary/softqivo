@@ -62,7 +62,7 @@ const Banner = () => {
           "url('/images/home/modern-software-development-vector-24033583 (1).avif')",
       }}
     >
-      <div className="absolute top-0 left-0 bg-black/60 w-full h-full" />
+      {/* <div className="absolute top-0 left-0 bg-black/60 w-full h-full" /> */}
 
       {/* Content */}
       <MaxWidth className="my-auto absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 pt-20">
@@ -104,7 +104,7 @@ const Banner = () => {
               />
             </div>
 
-            <div className="mt-24 hidden lg:block">
+            <div className="mt-20 hidden lg:block">
               <h3 className="text-secondary-color text-[20px] uppercase">
                 Trusted By Business Workplace
               </h3>

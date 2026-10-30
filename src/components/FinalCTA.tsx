@@ -218,8 +218,8 @@ interface FinalCTAProps {
 export default function FinalCTA() {
   const [open, setOpen] = useState(false);
   return (
-    <section className="bg-gradient-to-r from-purple-600 via-violet-600 to-blue-600 py-12 lg:py-16">
-      <MaxWidth>
+    <section className="bg-[#FFFFFF] px-[5%] py-12 mt-20 rounded-[20px] lg:py-16">
+      <>
         <motion.div
           initial={{ opacity: 0, scaleX: 0.96 }}
           whileInView={{ opacity: 1, scaleX: 1 }}
@@ -233,14 +233,14 @@ export default function FinalCTA() {
           <div className="pointer-events-none absolute -right-20 top-1/2 h-32 w-56 -translate-y-1/2 rounded-full bg-cyan-300/10 blur-3xl" />
 
           {/* Content */}
-          <div className="relative w-full lg:w-[90%] mx-auto z-10 lg:flex  items-center justify-between gap-6 px-7 py-4 sm:px-10 md:px-16">
+          <div className="relative w-full   mx-auto z-10 lg:flex  items-center justify-between gap-6">
             {/* Left */}
             <div className="space-y-5 ">
-              <h2 className="text-center lg:text-left font-semibold uppercase leading-none tracking-[-0.02em] text-white text-2xl lg:text-[55px]">
+              <h2 className="text-center lg:text-left font-semibold uppercase leading-none tracking-[-0.02em] text-black text-2xl lg:text-[35px]">
                 HAVE A PROJECT IN MIND?
               </h2>
 
-              <p className="mt-1.5 text-[18px] font-semibold  text-center lg:text-left text-white/70">
+              <p className="mt-1.5 text-[18px] font-semibold  text-center lg:text-left text-black/70">
                 "Let's build something amazing together.
               </p>
             </div>
@@ -248,7 +248,7 @@ export default function FinalCTA() {
             {/* Button */}
             <button
               onClick={() => setOpen(true)}
-              className="group cursor-pointer flex text-center shrink-0 mt-10 lg:mt-0 items-center gap-2 rounded-[4px] mx-auto lg:mx-0 w-fit bg-black px-5 py-3 text-[18px] font-semibold text-white transition-all duration-300 hover:bg-white hover:text-black sm:px-7 sm:py-3.5"
+              className="group cursor-pointer flex text-center rounded-lg shrink-0 mt-10 lg:mt-0 items-center gap-2 mx-auto lg:mx-0 w-fit bg-black px-5 py-3 text-[18px] font-semibold text-white transition-all duration-300 hover:bg-[#000000] hover:text-white sm:px-7 sm:py-3.5"
             >
               Let's Talk
               <Icon
@@ -259,7 +259,7 @@ export default function FinalCTA() {
             </button>
           </div>
         </motion.div>
-      </MaxWidth>
+      </>
       <GetEnquiryForm isOpen={open} handleClose={() => setOpen(false)} />
     </section>
   );

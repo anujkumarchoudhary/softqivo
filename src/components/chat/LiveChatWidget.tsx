@@ -508,7 +508,7 @@ const LiveChatWidget = () => {
         "
         >
           {/* Header */}
-          <header className="flex shrink-0 items-center justify-between bg-[#7B17F9] px-4 py-3.5 text-white sm:px-5 sm:py-4">
+          <header className="flex shrink-0 items-center justify-between bg-[#00132C] px-4 py-3.5 text-white sm:px-5 sm:py-4">
             <div className="flex min-w-0 items-center gap-3">
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[]">
                 <Headset size={22} />
@@ -606,7 +606,7 @@ const LiveChatWidget = () => {
                   // }
                 }}
                 className={`flex min-w-0 flex-col items-center justify-center gap-1 rounded-lg px-1 py-2 text-[10px] font-medium transition sm:flex-row sm:gap-1.5 sm:px-2 sm:py-2.5 sm:text-xs ${activeTab === id
-                  ? "bg-[#E8F5EC] text-[#7B17F9]"
+                  ? "bg-[#E8F5EC] text-[#00132C]"
                   : "text-gray-500 hover:bg-gray-100 hover:text-gray-800"
                   }`}
               >
@@ -641,7 +641,7 @@ const LiveChatWidget = () => {
                       autoComplete="name"
                       maxLength={100}
                       required
-                      className="w-full rounded-xl border border-gray-300 px-3.5 py-3 text-sm outline-none transition focus:border-[#7B17F9] focus:ring-2 focus:ring-[#7B17F9]/15"
+                      className="w-full rounded-xl border border-gray-300 px-3.5 py-3 text-sm outline-none transition focus:border-[#00132C] focus:ring-2 focus:ring-[#00132C]/15"
                     />
                   </div>
 
@@ -664,7 +664,7 @@ const LiveChatWidget = () => {
                       autoComplete="email"
                       maxLength={254}
                       required
-                      className="w-full rounded-xl border border-gray-300 px-3.5 py-3 text-sm outline-none transition focus:border-[#7B17F9] focus:ring-2 focus:ring-[#7B17F9]/15"
+                      className="w-full rounded-xl border border-gray-300 px-3.5 py-3 text-sm outline-none transition focus:border-[#00132C] focus:ring-2 focus:ring-[#00132C]/15"
                     />
                   </div>
 
@@ -686,7 +686,7 @@ const LiveChatWidget = () => {
                       rows={isDesktop ? 4:10}
                       maxLength={2000}
                       required
-                      className="w-full resize-none rounded-xl border border-gray-300 px-3.5 py-3 text-sm outline-none transition focus:border-[#7B17F9] focus:ring-2 focus:ring-[#7B17F9]/15"
+                      className="w-full resize-none rounded-xl border border-gray-300 px-3.5 py-3 text-sm outline-none transition focus:border-[#00132C] focus:ring-2 focus:ring-[#00132C]/15"
                     />
                   </div>
 
@@ -699,7 +699,7 @@ const LiveChatWidget = () => {
                   <button
                     type="submit"
                     disabled={isStarting}
-                    className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-[#7B17F9] px-4 py-3 font-medium text-white transition hover:bg-[#7B17F9] disabled:cursor-not-allowed disabled:opacity-60"
+                    className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-[#00132C] px-4 py-3 font-medium text-white transition hover:bg-[#00132C] disabled:cursor-not-allowed disabled:opacity-60"
                   >
                     {isStarting ? (
                       <>
@@ -721,7 +721,7 @@ const LiveChatWidget = () => {
                 <>
                   {/* Conversation header */}
                   <div className="flex shrink-0 items-start gap-3 border-b border-gray-100 bg-gray-50 px-4 py-3">
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#E8F5EC] text-[#7B17F9]">
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#E8F5EC] text-[#00132C]">
                       <Headset size={19} />
                     </div>
 
@@ -766,7 +766,7 @@ const LiveChatWidget = () => {
                         >
                           <div
                             className={`max-w-[88%] whitespace-pre-wrap break-words rounded-2xl px-3.5 py-3 text-sm leading-5 sm:max-w-[85%] ${isVisitor
-                              ? "rounded-br-md bg-[#7B17F9] text-white"
+                              ? "rounded-br-md bg-[#00132C] text-white"
                               : "rounded-bl-md border border-gray-200 bg-white text-gray-800"
                               }`}
                           >
@@ -833,7 +833,7 @@ const LiveChatWidget = () => {
                         placeholder="Type your message..."
                         rows={1}
                         maxLength={3000}
-                        className="max-h-28 min-h-11 min-w-0 flex-1 resize-y rounded-xl border border-gray-300 px-3.5 py-3 text-sm outline-none transition focus:border-[#7B17F9] focus:ring-2 focus:ring-[#7B17F9]/15"
+                        className="max-h-28 min-h-11 min-w-0 flex-1 resize-y rounded-xl border border-gray-300 px-3.5 py-3 text-sm outline-none transition focus:border-[#00132C] focus:ring-2 focus:ring-[#00132C]/15"
                       />
 
                       <button
@@ -842,7 +842,7 @@ const LiveChatWidget = () => {
                           !message.trim() || isSending || !isConnected
                         }
                         aria-label="Send message"
-                        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#7B17F9] text-white transition hover:bg-[#7B17F9] disabled:cursor-not-allowed disabled:opacity-50"
+                        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#00132C] text-white transition hover:bg-[#00132C] disabled:cursor-not-allowed disabled:opacity-50"
                       >
                         {isSending ? (
                           <LoaderCircle
@@ -871,7 +871,7 @@ const LiveChatWidget = () => {
                 <>
                   <MessageCircle
                     size={42}
-                    className="mx-auto mb-4 text-[#7B17F9]"
+                    className="mx-auto mb-4 text-[#00132C]"
                   />
 
                   <h3 className="text-lg font-semibold text-gray-900">
@@ -886,7 +886,7 @@ const LiveChatWidget = () => {
                     href="https://wa.me/+919953176985"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#7B17F9] px-5 py-3 text-sm font-medium text-white transition"
+                    className="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#00132C] px-5 py-3 text-sm font-medium text-white transition"
                   >
                     <MessageCircle size={18} />
                     Open WhatsApp
@@ -898,7 +898,7 @@ const LiveChatWidget = () => {
                 <>
                   <Phone
                     size={42}
-                    className="mx-auto mb-4 text-[#7B17F9]"
+                    className="mx-auto mb-4 text-[#00132C]"
                   />
 
                   <h3 className="text-lg font-semibold text-gray-900">
@@ -911,7 +911,7 @@ const LiveChatWidget = () => {
 
                   <a
                     href="tel:+919953176985"
-                    className="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#7B17F9] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#0A5551]"
+                    className="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#00132C] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#0A5551]"
                   >
                     <Phone size={18} />
                     Call us now
@@ -923,7 +923,7 @@ const LiveChatWidget = () => {
                 <>
                   <Mail
                     size={42}
-                    className="mx-auto mb-4 text-[#7B17F9]"
+                    className="mx-auto mb-4 text-[#00132C]"
                   />
 
                   <h3 className="text-lg font-semibold text-gray-900">
@@ -936,7 +936,7 @@ const LiveChatWidget = () => {
 
                   <a
                     href="mailto:softqivo@gmail.com"
-                    className="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#7B17F9] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#0A5551]"
+                    className="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#00132C] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#0A5551]"
                   >
                     <Mail size={18} />
                     Send an email
@@ -957,7 +957,7 @@ const LiveChatWidget = () => {
         >
           <MessageCircle
             size={18}
-            className="text-[#7B17F9]"
+            className="text-[#00132C]"
           />
 
           SoftQivo
@@ -975,10 +975,10 @@ const LiveChatWidget = () => {
           type="button"
           onClick={() => setIsOpen((prev) => !prev)}
           aria-label={isOpen ? "Close chat" : "Open chat"}
-          className="group relative bottom-5 right-5 flex h-14 w-14 items-center justify-center rounded-full bg-[#7B17F9] text-white shadow-[0_8px_30px_rgba(33,139,85,0.35)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-110 hover:bg-[#7B17F9] focus:outline-none focus:ring-4 focus:ring-[#39B972]/25 sm:h-[60px] sm:w-[60px]"
+          className="group relative bottom-5 right-5 flex h-14 w-14 items-center justify-center rounded-full bg-[#00132C] text-white shadow-[0_8px_30px_rgba(33,139,85,0.35)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-110 hover:bg-[#00132C] focus:outline-none focus:ring-4 focus:ring-[#39B972]/25 sm:h-[60px] sm:w-[60px]"
         >
           {!isOpen && (
-            <span className="absolute inset-0 animate-ping rounded-full bg-[#7B17F9] opacity-40" />
+            <span className="absolute inset-0 animate-ping rounded-full bg-[#00132C] opacity-40" />
           )}
 
           <span

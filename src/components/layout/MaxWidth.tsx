@@ -8,7 +8,7 @@ const MaxWidth = ({
   className?: string;
 }) => {
   return (
-    <div className={`w-[90%] lg:w-[85%] mx-auto ${className}`}>{children}</div>
+    <div className={`w-[90%] lg:w-[80%] mx-auto ${className}`}>{children}</div>
   );
 };
 
