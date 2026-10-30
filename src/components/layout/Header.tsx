@@ -77,7 +77,7 @@ const Header = () => {
   return (
     <header
       className={`fixed  shadow-2xl inset-x-0 top-0 z-50 w-full
-        transition-colors duration-500 ease-in-out ${headerClass}`}
+        transition-colors duration-500 ease-in-out bg-[#001029]`}
     >
       <MaxWidth className="py-2 flex justify-between lg:py-2.5">
         <div

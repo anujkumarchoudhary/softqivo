@@ -54,24 +54,27 @@ const FAQ = () => {
   const toggleFAQ = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
-
+  console.log(activeIndex, "activeIndex113")
   return (
-    <section className="bg-white py-12 lg:py-16">
-      <MaxWidth>
-        {/* Section Heading */}
-        <div className="mx-auto mb-14 w-[90%] lg:w-[50%] text-center">
-          <Heading
-            label="FAQ"
-            // accentColor="#0000FF"
-            isCenter={true}
-            headingParts={[{ text: "Frequently Asked Questions" }]}
-            description="Everything you need to know about our services, development process,
-            and working with SoftQivo."
-          />
+    <section className="bg-[#F7F7F7] py-12 lg:py-16">
+      <MaxWidth className="grid grid-cols-1 lg:grid-cols-[30%_60%] justify-between">
+        {/* Sticky Section Heading */}
+        <div className="relative">
+          <div className="lg:sticky lg:top-28">
+            <Heading
+              label="FAQ"
+              isAccentLine={true}
+              accentColor="#000000"
+              headingParts={[
+                { text: "Frequently Asked Questions" },
+              ]}
+              description="Everything you need to know about our services, development process, and working with SoftQivo."
+            />
+          </div>
         </div>
 
         {/* FAQ List */}
-        <div className="mx-auto w-full md:w-[80%]">
+        <div className="mx-auto mt-4 lg:mt-0 w-full">
           <div>
             {faqData.map((faq, index) => {
               const isOpen = activeIndex === index;
@@ -81,8 +84,8 @@ const FAQ = () => {
                   key={index}
                   className={`
             group
-            transition-all duration-300
-            hover:bg-primary-bg/[0.03]
+            transition-all duration-300 rounded-[10px]
+            ${activeIndex === index ? "bg-[#FFFFFF]/90 hover:bg-[#FFFFFF]/90" : "hover:bg-[#FFFFFF]/10"}
             ${index !== 0 ? "border-t border-black/10" : ""}
             ${index === faqData.length - 1 ? "border-b-0" : ""}
           `}
@@ -90,33 +93,35 @@ const FAQ = () => {
                   <button
                     type="button"
                     onClick={() => toggleFAQ(index)}
-                    className="flex w-full items-center justify-between gap-6 px-5 py-6 text-left transition-all duration-300 md:px-6"
+                    className="flex w-full items-center cursor-pointer justify-between gap-6 px-5 py-6 text-left transition-all duration-300 md:px-6"
                     aria-expanded={isOpen}
                   >
-                    <h3
+                    <div className="flex gap-2 text-lg font-medium md:text-xl
+                transition-colors duration-300">
+                      <span>Q{index+1}.</span>
+                      <h3
                       className={`
                 text-lg font-semibold md:text-xl
                 transition-colors duration-300
-                ${
-                  isOpen
-                    ? "text-primary-bg"
-                    : "text-primary-bg group-hover:text-primary-bg"
-                }
+                ${isOpen
+                          ? "text-[#000000]"
+                          : "text-primary-bg group-hover:text-primary-bg"
+                        }
               `}
                     >
                       {faq.question}
                     </h3>
+                    </div>
 
                     <span
                       className={`
                 flex h-9 w-9 shrink-0 items-center justify-center
                 rounded-full border
                 transition-all duration-300
-                ${
-                  isOpen
-                    ? "rotate-45 border-primary-bg bg-primary-bg text-white"
-                    : "border-black/10 bg-transparent text-primary-bg group-hover:border-primary-bg group-hover:bg-primary-bg group-hover:text-white"
-                }
+                ${isOpen
+                          ? "rotate-45 border-primary-bg bg-primary-bg text-white"
+                          : "border-black/10 bg-transparent text-primary-bg group-hover:border-primary-bg group-hover:bg-primary-bg group-hover:text-white"
+                        }
               `}
                     >
                       <Icon name="plus" size={18} />
@@ -127,15 +132,14 @@ const FAQ = () => {
                   <div
                     className={`
               grid transition-all duration-300 ease-in-out
-              ${
-                isOpen
-                  ? "grid-rows-[1fr] opacity-100"
-                  : "grid-rows-[0fr] opacity-0"
-              }
+              ${isOpen
+                        ? "grid-rows-[1fr] opacity-100"
+                        : "grid-rows-[0fr] opacity-0"
+                      }
             `}
                   >
                     <div className="overflow-hidden">
-                      <p className="w-full md:max-w-3xl px-5 pb-6 pr-12 leading-7 text-black/60 md:px-6">
+                      <p className={`w-full md:max-w-3xl px-5 pb-6 pr-12 leading-8  md:px-6 text-black/80`}>
                         {faq.answer}
                       </p>
                     </div>

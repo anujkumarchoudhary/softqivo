@@ -26,7 +26,6 @@ const page = () => {
       <div>
         <Banner />
         <section className="relative z-10 bg-white">
-          <KeyStats/>
           <Services data={services} />
         </section>
 

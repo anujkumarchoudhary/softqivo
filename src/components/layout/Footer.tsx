@@ -5,6 +5,7 @@ import { footerMenuData } from "@/src/data/menu";
 import Icon from "@/src/utills/iconMap ";
 import Image from "next/image";
 import FinalCTA from "../FinalCTA";
+import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -50,7 +51,7 @@ const Footer = () => {
       </div>
       <MaxWidth >
         <FinalCTA />
-        <div className="grid grid-cols-1 gap-10 py-12 lg:grid-cols-[35%_60%] justify-between lg:gap-4 lg:py-20">
+        <div className="grid grid-cols-1 gap-10 py-12 lg:grid-cols-[35%_65%] justify-between lg:gap-4 lg:py-20">
           {/* Brand */}
           <div>
             <Image
@@ -64,72 +65,11 @@ const Footer = () => {
               }}
             />
 
-            <p className="mt-5 leading-9 text-white/70">
+            <p className="mt-5 leading-8 text-white/70">
               We build scalable digital solutions, modern web applications, and
-              custom software that help businesses grow and perform better.
+              custom software.
             </p>
-
-          </div>
-
-          <div className="grid grid-cols-3">
-            {/* Quick Links */}
-            <div>
-              <h3 className="mb-5 text-[22px] uppercase text-white font-medium">
-                Quick Links
-              </h3>
-
-              <ul className="space-y-2">
-                {footerMenuData.slice(0, 5).map((menu, idx) => (
-                  <li key={idx}>
-                    <a
-                      href={`${menu.link}`}
-                      className="group flex items-center gap-2 text-[18px] text-white/70 transition hover:text-white"
-                    >
-                      <Icon
-                        name="chevronRight"
-                        size={15}
-                        className="transition-transform duration-300 group-hover:translate-x-1"
-                      />
-
-                      <span>{menu.title}</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* service Links */}
-            <div>
-              <h3 className="mb-5 text-[22px] uppercase text-white font-medium">
-                Service Links
-              </h3>
-
-              <ul className="space-y-2">
-                {footerMenuData.slice(5, 10).map((menu, idx) => (
-                  <li key={idx}>
-                    <a
-                      href={`${menu.link}`}
-                      className="group flex items-center gap-2 text-[18px] text-white/70 transition hover:text-white"
-                    >
-                      <Icon
-                        name="chevronRight"
-                        size={15}
-                        className="transition-transform duration-300 group-hover:translate-x-1"
-                      />
-
-                      <span>{menu.title}</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Services */}
-            <div>
-              <h3 className="mb-5 text-[22px] uppercase text-white font-medium">
-                Social Media
-              </h3>
-              {/* Social Icons */}
+           {/* Social Icons */}
               <div className="mt-7 flex items-center gap-3">
                 <a
                   href="https://www.linkedin.com/company/softqivo"
@@ -161,12 +101,76 @@ const Footer = () => {
                   <Icon name="FaTwitter" size={25} />
                 </a>
               </div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-[25%_35%_45%] space-y-10">
+            {/* Quick Links */}
+            <div>
+              <h3 className="mb-5 text-[22px] uppercase text-white font-medium">
+                Quick Links
+              </h3>
+
+              <ul className="space-y-2">
+                {footerMenuData.slice(0, 5).map((menu, idx) => (
+                  <li key={idx}>
+                    <a
+                      href={`${menu.link}`}
+                      className="group flex items-center gap-2 text-[18px] text-white/70 transition hover:text-white"
+                    >
+                      {/* <Icon
+                        name="chevronRight"
+                        size={15}
+                        className="transition-transform duration-300 group-hover:translate-x-1"
+                      /> */}
+                      <MdOutlineKeyboardDoubleArrowRight/>
+
+                      <span>{menu.title}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* service Links */}
+            <div>
+              <h3 className="mb-5 text-[22px] uppercase text-white font-medium">
+                Service Links
+              </h3>
+
+              <ul className="space-y-2">
+                {footerMenuData.slice(5, 10).map((menu, idx) => (
+                  <li key={idx}>
+                    <a
+                      href={`${menu.link}`}
+                      className="group flex items-center gap-2 text-[18px] text-white/70 transition hover:text-white"
+                    >
+                      {/* <Icon
+                        name="chevronRight"
+                        size={15}
+                        className="transition-transform duration-300 group-hover:translate-x-1"
+                      /> */}
+                       <MdOutlineKeyboardDoubleArrowRight/>
+
+                      <span>{menu.title}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Services */}
+            <div>
+              <h3 className="mb-5 text-[22px] uppercase text-white font-medium">
+                Stay in the Loop
+              </h3>
+              <p className="text-white/80">Subscribe for market insights, latest trends, and valuable strategies.</p>
+   
 
             </div>
 
           </div>
         </div>
-        <div className=" flex justify-between space-y-5">
+        <div className="block lg:flex justify-between pb-8 lg:pb-10 space-y-5">
 
           {/* Phone */}
           <div className="flex gap-3">

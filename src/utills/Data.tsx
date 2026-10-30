@@ -299,7 +299,7 @@ export const staticData = {
     },
 
     blogs: {
-      padding:["4rem", "0rem"],
+      padding:["4rem", "4rem"],
       label: "Our Insights",
 
       headingParts: [
@@ -706,14 +706,55 @@ export const staticData = {
 
       headingParts: [
         {
-          text: "What our clients say.",
+          text: "What our clients say about me.",
           color: "#000000",
-          weight: "700",
+          weight: "500",
         },
       ],
 
       data: [
         {
+          img: "/images/review/review_1.jpg",
+
+          message:
+            "SoftQivo understood our vision quickly and turned our ideas into a polished digital product that matched our goals.",
+
+          name: "Arjun Mehta",
+
+          comment:
+            "The team was responsive, professional, and technically strong throughout the project. Their attention to detail and willingness to understand our requirements made the development process smooth.",
+
+          designation: "Founder & CEO, Nexora",
+        },
+
+        {
+          img: "/images/review/review_2.webp",
+
+          message:
+            "Working with SoftQivo made our development process clear, collaborative, and straightforward from design through delivery.",
+
+          name: "Sarah Williams",
+
+          comment:
+            "The team handled design, development, and delivery with care. They listened to our feedback, communicated clearly, and consistently worked toward practical solutions for our product.",
+
+          designation: "Director, BrightLabs",
+        },
+
+        {
+          img: "/images/review/review_3.jpg",
+
+          message:
+            "SoftQivo helped us build a modern, scalable solution that gave our business a stronger technology foundation.",
+
+          name: "Rahul Sharma",
+
+          comment:
+            "Their combination of design thinking and technical expertise stood out throughout the project. The final product is fast, intuitive, and aligned with the way our business operates.",
+
+          designation: "Co-Founder, ElevateX",
+        },
+                {
           img: "/images/review/review_1.jpg",
 
           message:

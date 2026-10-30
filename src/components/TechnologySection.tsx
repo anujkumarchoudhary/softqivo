@@ -305,10 +305,10 @@ export default function TechnologySection({ data }: any) {
 
         <div className="relative mt-10 overflow-hidden">
           {/* Left fade */}
-          <div className="pointer-events-none absolute left-0 top-0 z-20 h-full w-20 bg-gradient-to-r from-black to-transparent" />
+          <div className="pointer-events-none absolute left-0 top-0 z-20 h-full w-20 bg-gradient-to-r from-[#00132C] to-transparent" />
 
           {/* Right fade */}
-          <div className="pointer-events-none absolute right-0 top-0 z-20 h-full w-20 bg-gradient-to-l from-black to-transparent" />
+          <div className="pointer-events-none absolute right-0 top-0 z-20 h-full w-20 bg-gradient-to-l from-[#00132C] to-transparent" />
 
           <motion.div
             className="flex w-max gap-3"

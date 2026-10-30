@@ -113,7 +113,7 @@ const Heading = ({
         <div
           className={``}
         >
-          { isSparkles &&  <div className={`flex items-center gap-5 justify-center lg:justify-normal  ${isCenter ? "text-center w-fit mx-auto" : "w-full"}`}>
+          {isSparkles && <div className={`flex items-center gap-5 justify-center lg:justify-normal  ${isCenter ? "text-center w-fit mx-auto" : "w-full"}`}>
             <span
               className="
                 flex
@@ -129,8 +129,8 @@ const Heading = ({
             >
               <Sparkles className="h-3.5 w-3.5 text-purple-400" />
             </span>
-                         <span
-            className={`
+            <span
+              className={`
         uppercase inline-block
         rounded-full
         bg-transparent
@@ -140,24 +140,24 @@ const Heading = ({
         tracking-[0.25em]
         font-semibold
       `}
-            style={{
-              color: labelColor ?? textColor,
-            }}
-          >
-            {label}
-          </span>
-            </div>}
+              style={{
+                color: labelColor ?? textColor,
+              }}
+            >
+              {label}
+            </span>
+          </div>}
           {isAccentCircle && (
             <div className={`flex items-center gap-5 justify-center lg:justify-normal  ${isCenter ? "text-center w-fit mx-auto" : "w-full"}`}>
               <span
-              className="h-2.5 w-2.5 animate-pulse rounded-full"
-              style={{
-                backgroundColor: accentColor ?? "#A855F7",
-                boxShadow: `0 0 12px ${accentColor ?? "#A855F7"}`,
-              }}
-            />
-             <span
-            className={`
+                className="h-2.5 w-2.5 animate-pulse rounded-full"
+                style={{
+                  backgroundColor: accentColor ?? "#A855F7",
+                  boxShadow: `0 0 12px ${accentColor ?? "#A855F7"}`,
+                }}
+              />
+              <span
+                className={`
         uppercase inline-block
         rounded-full
         bg-transparent
@@ -167,20 +167,20 @@ const Heading = ({
         tracking-[0.25em]
         font-semibold
       `}
-            style={{
-              color: labelColor ?? textColor,
-            }}
-          >
-            {label}
-          </span>
+                style={{
+                  color: labelColor ?? textColor,
+                }}
+              >
+                {label}
+              </span>
             </div>
           )}
-          
-          {isAccentLine && <div className={`flex items-center gap-5 justify-center lg:justify-normal  ${isCenter ? "text-center w-fit mx-auto" : "w-full"}`}>
-            <span className="h-px w-4 lg:w-7 animate-ping" style={{backgroundColor: accentColor ?? "#A855F7",animationDelay: "0s",}} />
 
-          <span
-            className={`
+          {isAccentLine && <div className={`flex items-center gap-5 justify-center lg:justify-normal  ${isCenter ? "text-center w-fit mx-auto" : "w-full"}`}>
+            <span className="h-px w-4 lg:w-7 1animate-ping" style={{ backgroundColor: accentColor ?? "#A855F7", animationDelay: "0s", }} />
+
+            <span
+              className={`
         uppercase inline-block
         rounded-full
         bg-transparent
@@ -190,135 +190,136 @@ const Heading = ({
         tracking-[0.25em]
         font-semibold
       `}
-            style={{
-              color: labelColor ?? textColor,
-            }}
-          >
-            {label}
-          </span>
-              <span className="h-px w-4 lg:w-7 animate-ping" style={{backgroundColor: accentColor ?? "#A855F7",animationDelay: "0.5s",}} /></div>}
+              style={{
+                color: labelColor ?? textColor,
+              }}
+            >
+              {label}
+            </span>
+            <span className="h-px w-4 lg:w-7 1animate-ping" 
+            style={{ backgroundColor: accentColor ?? "#A855F7", animationDelay: "0.5s", }} 
+            
+            /></div>}
         </div>
       )}
 
       {/* Heading */}
-<Tag
-  className={`
+      <Tag
+        className={`
     transition-all text-center duration-700 delay-150
     ${isCenter ? "text-center" : "text-center lg:text-left"}
     ${className}
-    ${
-      isVisible
-        ? "opacity-100 translate-y-0"
-        : "opacity-0 translate-y-10"
-    }
+    ${isVisible
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-10"
+          }
   `}
->
-  {(() => {
-    let wordCount = 0;
+      >
+        {(() => {
+          let wordCount = 0;
 
-    return headingParts?.map((part, partIndex) => {
-      const isPartGradient = Boolean(part.gradient);
+          return headingParts?.map((part, partIndex) => {
+            const isPartGradient = Boolean(part.gradient);
 
-      // Split while preserving whitespace
-      const words = part.text.split(/(\s+)/);
-
-      return (
-        <span key={partIndex}>
-          {words.map((word, wordIndex) => {
-            const isWhitespace = /^\s+$/.test(word);
-
-            if (isWhitespace) {
-              return word;
-            }
-
-            wordCount++;
-
-            const shouldBreak = wordCount === breakIndex;
+            // Split while preserving whitespace
+            const words = part.text.split(/(\s+)/);
 
             return (
-              <span key={wordIndex}>
-                <span
-                  className={`inline ${part.className ?? ""}`}
-                  style={{
-                    color: isPartGradient
-                      ? "transparent"
-                      : part.color ?? textColor,
+              <span key={partIndex}>
+                {words.map((word, wordIndex) => {
+                  const isWhitespace = /^\s+$/.test(word);
 
-                    backgroundImage: isPartGradient
-                      ? part.gradient
-                      : undefined,
+                  if (isWhitespace) {
+                    return word;
+                  }
 
-                    backgroundClip: isPartGradient
-                      ? "text"
-                      : undefined,
+                  wordCount++;
 
-                    WebkitBackgroundClip: isPartGradient
-                      ? "text"
-                      : undefined,
+                  const shouldBreak = wordCount === breakIndex;
 
-                    WebkitTextFillColor: isPartGradient
-                      ? "transparent"
-                      : undefined,
+                  return (
+                    <span key={wordIndex}>
+                      <span
+                        className={`inline ${part.className ?? ""}`}
+                        style={{
+                          color: isPartGradient
+                            ? "transparent"
+                            : part.color ?? textColor,
 
-                    fontFamily: part.font
-                      ? fontMap[part.font] || part.font
-                      : undefined,
+                          backgroundImage: isPartGradient
+                            ? part.gradient
+                            : undefined,
 
-                    fontStyle: part.style,
+                          backgroundClip: isPartGradient
+                            ? "text"
+                            : undefined,
 
-                    fontSize:
-                      part.size ?? defaultHeading.fontSize,
+                          WebkitBackgroundClip: isPartGradient
+                            ? "text"
+                            : undefined,
 
-                    fontWeight:
-                      part.weight ?? defaultHeading.fontWeight,
+                          WebkitTextFillColor: isPartGradient
+                            ? "transparent"
+                            : undefined,
 
-                    lineHeight:
-                      part.lineHeight ?? defaultHeading.lineHeight,
+                          fontFamily: part.font
+                            ? fontMap[part.font] || part.font
+                            : undefined,
 
-                    letterSpacing:
-                      part.letterSpacing ?? undefined,
-                  }}
-                >
-                  {word}
-                </span>
+                          fontStyle: part.style,
 
-                {shouldBreak && <br />}
+                          fontSize:
+                            part.size ?? defaultHeading.fontSize,
+
+                          fontWeight:
+                            part.weight ?? defaultHeading.fontWeight,
+
+                          lineHeight:
+                            part.lineHeight ?? defaultHeading.lineHeight,
+
+                          letterSpacing:
+                            part.letterSpacing ?? undefined,
+                        }}
+                      >
+                        {word}
+                      </span>
+
+                      {shouldBreak && <br />}
+                    </span>
+                  );
+                })}
               </span>
             );
-          })}
-        </span>
-      );
-    });
-  })()}
-</Tag>
+          });
+        })()}
+      </Tag>
 
-{/* Description */}
-{description && (
-  <p
-    className={`
+      {/* Description */}
+      {description && (
+        <p
+          className={`
       transition-all
       duration-700
       delay-300
       w-[90%]
-      ${
-        isCenter
-          ? "mx-auto text-center"
-          : "mx-auto text-center lg:mx-0 lg:text-left lg:w-full"
-      }
-      ${
-        isVisible
-          ? "opacity-100 translate-y-0"
-          : "opacity-0 translate-y-10"
-      }
+      leading-8
+      ${isCenter
+              ? "mx-auto text-center"
+              : "mx-auto text-center lg:mx-0 lg:text-left lg:w-full"
+            }
+      ${isVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-10"
+            }
       mt-6 lg:mt-8
     `}
-    style={{
-      color: textColor,
-    }}
-  >
-    {description}
-  </p>
-)}
+          style={{
+            color: textColor,
+          }}
+        >
+          {description}
+        </p>
+      )}
     </div>
   );
 };
