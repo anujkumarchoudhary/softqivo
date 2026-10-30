@@ -146,6 +146,85 @@ function ProgressLine({
     );
 }
 
+// function ProcessCard({
+//     step,
+//     index,
+//     total,
+//     progress,
+// }: {
+//     step: ProcessItem;
+//     index: number;
+//     total: number;
+//     progress: ReturnType<typeof useScroll>["scrollYProgress"];
+// }) {
+//     // Each new card enters during its own scroll interval.
+//     const start = index / (total + 1);
+//     const end = (index + 1) / (total + 1);
+
+//     const y = useTransform(
+//         progress,
+//         [start, end],
+//         ["110%", "0%"]
+//     );
+
+//     const opacity = useTransform(
+//         progress,
+//         [start, start + 0.04],
+//         [0, 1]
+//     );
+
+//     // Cards form a growing row and remain visible after entering.
+//     const left = `${index * 25}%`;
+
+//     return (
+//         <motion.article
+//             className="absolute bottom-0 top-0 w-[82%] overflow-hidden rounded-2xl border border-white/20 sm:w-[55%] lg:w-[24%]"
+//             style={{
+//                 left,
+//                 y: index === 0 ? "0%" : y,
+//                 opacity: 1,
+//                 zIndex: index + 1,
+//                 backgroundColor: step.color || "#E3E3E3",
+//             }}
+//         >
+//             {/* <Image
+//                 src={step.image}
+//                 alt={step.title}
+//                 fill
+//                 sizes="(max-width: 640px) 82vw, (max-width: 1024px) 55vw, 24vw"
+//                 className="object-cover"
+//             /> */}
+
+//             {/* Consistent orange tint */}
+//             <div
+//                 className="absolute inset-0"
+//                 style={{
+//                     backgroundColor: step.color || "#E3E3E3",
+//                     opacity: 0.12,
+//                 }}
+//             />
+//             {/* Dark gradient only at the bottom for readable text */}
+//             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent" />
+
+//             <div className="relative z-10 flex h-full flex-col p-5 md:p-7">
+//                 <span className="self-end text-6xl font-semibold leading-none text-white/60 md:text-7xl lg:text-8xl">
+//                     {step.number ?? String(index + 1).padStart(2, "0")}
+//                 </span>
+
+//                 <div className="mt-auto  pb-2">
+//                     <h3 className="mb-3 text-xl font-semibold text-white md:text-2xl">
+//                         {step.title}
+//                     </h3>
+//                     <p className="text-sm leading-relaxed text-white md:text-base">
+//                         {step.description}
+//                     </p>
+//                 </div>
+//             </div>
+//         </motion.article>
+//     );
+// }
+
+
 function ProcessCard({
     step,
     index,
@@ -157,7 +236,6 @@ function ProcessCard({
     total: number;
     progress: ReturnType<typeof useScroll>["scrollYProgress"];
 }) {
-    // Each new card enters during its own scroll interval.
     const start = index / (total + 1);
     const end = (index + 1) / (total + 1);
 
@@ -167,34 +245,19 @@ function ProcessCard({
         ["110%", "0%"]
     );
 
-    const opacity = useTransform(
-        progress,
-        [start, start + 0.04],
-        [0, 1]
-    );
-
-    // Cards form a growing row and remain visible after entering.
-    const left = `${index * 25}%`;
+    // Cards overlap on mobile/tablet and spread horizontally on desktop.
+    const desktopLeft = `${index * 25}%`;
 
     return (
         <motion.article
-            className="absolute bottom-0 top-0 w-[82%] overflow-hidden rounded-2xl border border-white/20 sm:w-[55%] lg:w-[24%]"
+            className="absolute bottom-0 top-0 left-0 w-[82%] overflow-hidden rounded-2xl border border-white/20 sm:w-[55%] lg:left-[var(--desktop-left)] lg:w-[24%]"
             style={{
-                left,
+                "--desktop-left": desktopLeft,
                 y: index === 0 ? "0%" : y,
-                opacity: 1,
                 zIndex: index + 1,
                 backgroundColor: step.color || "#E3E3E3",
-            }}
+            } as React.CSSProperties}
         >
-            {/* <Image
-                src={step.image}
-                alt={step.title}
-                fill
-                sizes="(max-width: 640px) 82vw, (max-width: 1024px) 55vw, 24vw"
-                className="object-cover"
-            /> */}
-
             {/* Consistent orange tint */}
             <div
                 className="absolute inset-0"
@@ -203,7 +266,8 @@ function ProcessCard({
                     opacity: 0.12,
                 }}
             />
-            {/* Dark gradient only at the bottom for readable text */}
+
+            {/* Dark gradient */}
             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent" />
 
             <div className="relative z-10 flex h-full flex-col p-5 md:p-7">
@@ -211,10 +275,11 @@ function ProcessCard({
                     {step.number ?? String(index + 1).padStart(2, "0")}
                 </span>
 
-                <div className="mt-auto  pb-2">
+                <div className="mt-auto pb-2">
                     <h3 className="mb-3 text-xl font-semibold text-white md:text-2xl">
                         {step.title}
                     </h3>
+
                     <p className="text-sm leading-relaxed text-white md:text-base">
                         {step.description}
                     </p>
