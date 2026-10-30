@@ -126,7 +126,7 @@ const Blog = ({ data }: any) => {
                 </div>
 
                 {/* Title */}
-                <h3 className="mt-5 text-2xl font-semibold leading-tight tracking-tight text-primary-color">
+                <h3 className="mt-5 text-2xl font-medium leading-9  text-primary-color">
                   {item.title}
                 </h3>
 

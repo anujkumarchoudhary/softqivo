@@ -56,7 +56,7 @@ const Banner = () => {
     <section
       ref={ref}
       id="hero-banner"
-      className="sticky top-0 lg:h-screen w-full overflow-hidden bg-primary-bg bg-cover bg-center bg-no-repeat"
+      className=" top-0 lg:h-screen w-full overflow-hidden bg-primary-bg bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage:
           "url('/images/home/modern-software-development-vector-24033583 (1).avif')",

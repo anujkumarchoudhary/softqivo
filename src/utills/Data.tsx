@@ -272,7 +272,7 @@ export const staticData = {
           twitter: "https://x.com/softqivo",
         },
         {
-          name: "Sherry Lin",
+          name: "Aman Kour",
           role: "UI/UX Designer",
           image: "/images/team/team_1.png",
           linkedin: "FaLinkedinIn",
@@ -280,7 +280,7 @@ export const staticData = {
           twitter: "https://x.com/softqivo",
         },
         {
-          name: "John Smith",
+          name: "Hari Om",
           role: "Lead Developer",
           image: "/images/team/team_2.png",
           linkedin: "FaLinkedinIn",
@@ -288,7 +288,7 @@ export const staticData = {
           twitter: "https://x.com/softqivo",
         },
         {
-          name: "Team Member",
+          name: "Amish Chouhan",
           role: "Sales & Marketing",
           image: "/images/team/team_3.png",
           linkedin: "FaLinkedinIn",
@@ -339,7 +339,7 @@ export const staticData = {
           img: "/images/blogs/blog_03.png",
           category: "Software Development",
           title:
-            "From Idea to Product: Building Software That Creates Real Business Value",
+            "From Idea to Product: Building Software That Creates Real Business",
           excerpt:
             "Explore the key decisions behind successful software products, from validating an idea and choosing technology to building for long-term growth.",
           date: "Aug 14, 2026",
@@ -388,7 +388,7 @@ export const staticData = {
           img: "/images/blogs/blog_03.png",
           category: "Software Development",
           title:
-            "From Idea to Product: Building Software That Creates Real Business Value",
+            "From Idea to Product: Building Software That Creates Real Business",
           excerpt:
             "Explore the key decisions behind successful software products, from validating an idea and choosing technology to building for long-term growth.",
           date: "Aug 14, 2026",
@@ -883,7 +883,7 @@ export const staticData = {
           img: "/images/blogs/blog_03.png",
           category: "Software Development",
           title:
-            "From Idea to Product: Building Software That Creates Real Business Value",
+            "From Idea to Product: Building Software That Creates Real Business",
           excerpt:
             "Learn how product strategy, user experience, technology choices, and continuous improvement can transform an early idea into a reliable software product built for real business needs.",
           date: "Sep 15, 2026",
@@ -1493,7 +1493,7 @@ sitemap: {
         },
         {
           title:
-            "From Idea to Product: Building Software That Creates Real Business Value",
+            "From Idea to Product: Building Software That Creates Real Business ",
           description:
             "Explore the process of turning an idea into a reliable software product.",
           href: "/blog/from-idea-to-product",

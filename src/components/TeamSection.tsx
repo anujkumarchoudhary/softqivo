@@ -8,7 +8,7 @@ import { useResponsive } from "../hooks/useResponsive";
 export default function TeamSection({ data }: any) {
   const { isDesktop } = useResponsive();
   return (
-    <section className="relative overflow-hidden bg-secondary-bg py-16 lg:py-24">
+    <section className="relative overflow-hidden bg-[#FFFFFF] py-16 lg:py-24">
       {/* Background glow */}
       <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-purple-600/10 blur-[140px]" />
 
@@ -21,7 +21,7 @@ export default function TeamSection({ data }: any) {
         <div className="w-full lg:w-[60%] mx-auto">
           <Heading
             isCenter={true}
-            label={data?.label}
+            // label={data?.label}
             headingParts={data.headingParts}
             description={data.description}
           />

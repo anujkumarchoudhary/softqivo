@@ -25,28 +25,28 @@ const defaultSteps: ProcessItem[] = [
         title: "Discover",
         description: "We understand your business, audience, goals, and challenges.",
         image: "/images/process/discover.jpg",
-        color: "#FFFFFF",
+        color: "#00132C",
     },
     {
         number: "02",
         title: "Strategize",
         description: "We create a clear roadmap and select the right technology.",
         image: "/images/process/strategize.jpg",
-        color: "#FFFFFF",
+        color: "#00132C",
     },
     {
         number: "03",
         title: "Develop",
         description: "We build a responsive, scalable digital solution.",
         image: "/images/process/develop.jpg",
-        color: "#FFFFFF",
+        color: "#00132C",
     },
     {
         number: "04",
         title: "Deliver",
         description: "We test, launch, and refine your solution.",
         image: "/images/process/deliver.jpg",
-        color: "#FFFFFF",
+        color: "#00132C",
     },
 ];
 export default function ProcessSection3({
@@ -65,20 +65,20 @@ export default function ProcessSection3({
     return (
         <section
             ref={sectionRef}
-            className="relative bg-[#00132C] text-white"
+            className="relative bg-[#F7F7F7] text-white"
             style={{ height: `${(steps.length + 1) * 100}vh` }}
         >
             <MaxWidth className="sticky top-0 h-screen overflow-hidden">
                 <div className="mx-auto flex h-full flex-col py-10 md:py-24">
                     {/* Header */}
                     <div className="flex shrink-0 items-end justify-between gap-8">
-                        <h2 className=" text-white font-semibold leading-13">
+                        <h2 className=" text-black font-semibold leading-13">
                             Our
                             <br />
                             Process
                         </h2>
 
-                        <p className="hidden max-w-[390px] pb-2 text-right text-base leading-relaxed text-white/50 md:block">
+                        <p className="hidden max-w-[390px] pb-2 text-right text-base leading-relaxed text-black/50 md:block">
                             A disciplined four-step framework that eliminates guesswork
                             and delivers predictable growth.
                         </p>
@@ -207,15 +207,15 @@ function ProcessCard({
             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent" />
 
             <div className="relative z-10 flex h-full flex-col p-5 md:p-7">
-                <span className="self-end text-6xl font-semibold leading-none text-black/40 md:text-7xl lg:text-8xl">
+                <span className="self-end text-6xl font-semibold leading-none text-white/60 md:text-7xl lg:text-8xl">
                     {step.number ?? String(index + 1).padStart(2, "0")}
                 </span>
 
                 <div className="mt-auto  pb-2">
-                    <h3 className="mb-3 text-xl font-semibold text-black md:text-2xl">
+                    <h3 className="mb-3 text-xl font-semibold text-white md:text-2xl">
                         {step.title}
                     </h3>
-                    <p className="text-sm leading-relaxed text-black md:text-base">
+                    <p className="text-sm leading-relaxed text-white md:text-base">
                         {step.description}
                     </p>
                 </div>

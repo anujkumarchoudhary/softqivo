@@ -106,7 +106,7 @@ const page = () => {
       {
         id: 2,
         img: blog_02,
-        title: "From Idea to Product: Building Software That Creates Real Business Value",
+        title: "From Idea to Product: Building Software That Creates Real Business ",
         date: "September 15, 2026",
         link: "/blog/3",
         description:
