@@ -526,7 +526,7 @@ const LiveChatWidget = () => {
                   />
 
                   {isConnected
-                    ? "Chat connection active"
+                    ? "Online"
                     : "Connecting..."}
                 </p>
               </div>

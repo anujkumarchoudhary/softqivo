@@ -128,7 +128,7 @@ const Header = () => {
             handleClick={() => setOpen(!open)}
             className="mx-auto lg:mx-0" handleClick2={undefined}/>           */}
           {/* <LuAlignRight size={40} className="my-auto" /> */}
-          <div className="flex my-auto flex-col items-end space-y-2.5">
+          <div className="flex my-auto flex-col items-end space-y-2.5 cursor-pointer">
             <div className="w-10 lg:w-14 h-0.75 bg-white" />
             <div className="w-6 lg:w-8 h-0.75 bg-white" />
             {/* <div className="w-6 h-0.75 bg-white" /> */}
@@ -173,7 +173,7 @@ const Header = () => {
 
                   <button
                     onClick={() => setOpen(false)}
-                    className="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 transition hover:bg-white hover:text-[#001029]"
+                    className="flex cursor-pointer h-11 w-11 items-center justify-center rounded-full border border-white/20 transition hover:bg-white hover:text-[#001029]"
                     aria-label="Close navigation menu"
                   >
                     <FiX size={22} />

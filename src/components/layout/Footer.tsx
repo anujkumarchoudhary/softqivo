@@ -69,38 +69,38 @@ const Footer = () => {
               We build scalable digital solutions, modern web applications, and
               custom software.
             </p>
-           {/* Social Icons */}
-              <div className="mt-7 flex items-center gap-3">
-                <a
-                  href="https://www.linkedin.com/company/softqivo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="FaLinkedinIn"
-                  className="flex h-12 w-12 items-center justify-center rounded-[10px] border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
-                >
-                  <Icon name="FaLinkedinIn" size={25} />
-                </a>
+            {/* Social Icons */}
+            <div className="mt-7 flex items-center gap-3">
+              <a
+                href="https://www.linkedin.com/company/softqivo"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="FaLinkedinIn"
+                className="flex h-12 w-12 items-center justify-center rounded-[10px] border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
+              >
+                <Icon name="FaLinkedinIn" size={25} className="text-light hover:text-dark" />
+              </a>
 
-                <a
-                  href="https://www.instagram.com/softqivo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="FaInstagram"
-                  className="flex h-12 w-12 items-center justify-center rounded-[10px] border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
-                >
-                  <Icon name="FaInstagram" size={25} />
-                </a>
+              <a
+                href="https://www.instagram.com/softqivo"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="FaInstagram"
+                className="flex h-12 w-12 items-center justify-center rounded-[10px] border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
+              >
+                <Icon name="FaInstagram" size={25} className="text-light hover:text-dark" />
+              </a>
 
-                <a
-                  href="https://x.com/softqivo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="SoftQivo on X"
-                  className="flex h-12 w-12 items-center justify-center rounded-[10px] border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
-                >
-                  <Icon name="FaTwitter" size={25} />
-                </a>
-              </div>
+              <a
+                href="https://x.com/softqivo"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="SoftQivo on X"
+                className="flex h-12 w-12 items-center justify-center rounded-[10px] border border-white/15 transition hover:border-white hover:bg-white hover:text-black"
+              >
+                <Icon name="FaTwitter" size={25} className="text-light hover:text-dark" />
+              </a>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-[25%_35%_45%] space-y-10">
@@ -122,7 +122,7 @@ const Footer = () => {
                         size={15}
                         className="transition-transform duration-300 group-hover:translate-x-1"
                       /> */}
-                      <MdOutlineKeyboardDoubleArrowRight/>
+                      <MdOutlineKeyboardDoubleArrowRight />
 
                       <span>{menu.title}</span>
                     </a>
@@ -149,7 +149,7 @@ const Footer = () => {
                         size={15}
                         className="transition-transform duration-300 group-hover:translate-x-1"
                       /> */}
-                       <MdOutlineKeyboardDoubleArrowRight/>
+                      <MdOutlineKeyboardDoubleArrowRight />
 
                       <span>{menu.title}</span>
                     </a>
@@ -164,7 +164,7 @@ const Footer = () => {
                 Stay in the Loop
               </h3>
               <p className="text-white/80">Subscribe for market insights, latest trends, and valuable strategies.</p>
-   
+
 
             </div>
 
@@ -191,7 +191,23 @@ const Footer = () => {
               </a>
             </div>
           </div>
+          {/* Email */}
+          <div className="flex gap-3">
+            <div className="mt-1 shrink-0">
+              <Icon name="mail" size={20} className="text-light" />
+            </div>
 
+            <div>
+              <p className="mb-1 text-[18px] font-medium text-white">Mail</p>
+
+              <a
+                href="mailto:softqivo@gmail.com"
+                className="text-[18px] text-white/65 transition hover:text-white"
+              >
+                softqivo@gmail.com
+              </a>
+            </div>
+          </div>
           {/* Address */}
           <div className="flex gap-3">
             <Icon name="location" size={20} className="mt-1 shrink-0 text-light" />
@@ -212,23 +228,7 @@ const Footer = () => {
             </a>
           </div>
 
-          {/* Email */}
-          <div className="flex gap-3">
-            <div className="mt-1 shrink-0">
-              <Icon name="FaBuildingUser" size={20} className="text-light" />
-            </div>
 
-            <div>
-              <p className="mb-1 text-[18px] font-medium text-white">Founder</p>
-
-              <a
-                href="mailto:softqivo@gmail.com"
-                className="text-[18px] text-white/65 transition hover:text-white"
-              >
-                Anuj Choudhary
-              </a>
-            </div>
-          </div>
         </div>
       </MaxWidth>
 
