@@ -13,22 +13,31 @@
 }
 
 @theme {
-  --color-primary-bg: #00132C;
-  --color-secondary-bg: #F7F7F7;
+  /* Primary Colors */
+  --color-dark: #000000;
+  --color-light: #ffffff;
+  --color-off-white: #f5f5f5;
+  --color-primary: #003d38;
+  --color-secondary: #39b972;
+  --color-tertiary: #8b5cf6;
+  --color-accent: #22d3ee;
+  --color-highlight: #a78bfa;
 
-  /* Text */
-  --color-primary-color: #030307;
-  --color-secondary-color: #ffffff;
+  /* Accent Colors */
+  --color-accent: #7c3aed;
+  --color-accent-light: #a78bfa;
 
-  /* Brand */
-  --color-brand-purple: #7c3aed;
-  --color-brand-blue: #2563eb;
+  /* Background Colors */
+  --color-background: #ffffff;
+  --color-background-dark: #0b1e2d;
 
-  --color-heading: #111827;
-  --color-text: #4b5563;
+  /* Text Colors */
+  --color-text-primary: #0b1e2d;
+  --color-text-secondary: #64748b;
+  --color-text-light: #ffffff;
 
-  --color-brand-purple: #7c3aed;
-  --color-brand-blue: #2563eb;
+  /* Border Colors */
+  --color-border: #e2e8f0;
 }
 
 @layer utilities {

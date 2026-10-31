@@ -39,6 +39,8 @@ export default function AboutSection() {
               isCenter={isDesktop ? false : true}
               isAccentLine={true}
               label="About SoftQivo"
+              labelColor="#000000"
+              accentColor="#000000"
               headingParts={[
                 { text: "We Turn Complex Ideas Into Simple ", weight: "600" },
                 {

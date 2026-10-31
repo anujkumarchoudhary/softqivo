@@ -218,7 +218,7 @@ interface FinalCTAProps {
 export default function FinalCTA() {
   const [open, setOpen] = useState(false);
   return (
-    <section className="bg-[#FFFFFF] px-[5%] py-12 mt-20 rounded-[20px] lg:py-16">
+    <section className="bg-[#FFFFFF] px-[5%] py-10 mt-12 rounded-[20px] lg:py-16">
       <>
         <motion.div
           initial={{ opacity: 0, scaleX: 0.96 }}

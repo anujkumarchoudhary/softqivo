@@ -249,7 +249,7 @@ export default function TechnologySection({ data }: any) {
   const technologies = [...data.technologies, ...data.technologies];
 
   return (
-    <section className="relative overflow-hidden bg-[#00132C] py-12 lg:py-16">
+    <section className="relative overflow-hidden bg-dark py-12 lg:py-16">
       {/* ================= BACKGROUND ================= */}
 
       {/* Center glow */}
@@ -305,10 +305,10 @@ export default function TechnologySection({ data }: any) {
 
         <div className="relative mt-10 overflow-hidden">
           {/* Left fade */}
-          <div className="pointer-events-none absolute left-0 top-0 z-20 h-full w-20 bg-gradient-to-r from-[#00132C] to-transparent" />
+          <div className="pointer-events-none absolute left-0 top-0 z-20 h-full w-20 bg-gradient-to-r from-dark to-transparent" />
 
           {/* Right fade */}
-          <div className="pointer-events-none absolute right-0 top-0 z-20 h-full w-20 bg-gradient-to-l from-[#00132C] to-transparent" />
+          <div className="pointer-events-none absolute right-0 top-0 z-20 h-full w-20 bg-gradient-to-l from-dark to-transparent" />
 
           <motion.div
             className="flex w-max gap-3"

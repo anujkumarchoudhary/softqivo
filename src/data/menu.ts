@@ -1,9 +1,10 @@
 export const menuData = [
   { title: "About", link: "/about" },
-  { title: "Services", link: "/service" },
   { title: "Blog", link: "/blog" },
   { title: "Portfolio", link: "/portfolio" },
   { title: "Contact", link: "/contact" },
+  { title: "Sitemap", link: "/sitemap" },
+
 ];
 
 export const footerMenuData = [
@@ -13,7 +14,7 @@ export const footerMenuData = [
   { title: "Contact", link: "/contact" },
   { title: "Sitemap", link: "/sitemap" },
 
-    { title: "Web Development", link: "/privacy-policy" },
+  { title: "Web Development", link: "/privacy-policy" },
   { title: "Software Development", link: "/blog" },
   { title: "App Development", link: "#" },
   { title: "CRM Development", link: "/contact" },

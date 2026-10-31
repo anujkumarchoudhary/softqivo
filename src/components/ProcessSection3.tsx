@@ -65,7 +65,7 @@ export default function ProcessSection3({
     return (
         <section
             ref={sectionRef}
-            className="relative bg-[#F7F7F7] text-white"
+            className="relative bg-off-white text-white"
             style={{ height: `${(steps.length + 1) * 100}vh` }}
         >
             <MaxWidth className="sticky top-0 h-screen overflow-hidden">

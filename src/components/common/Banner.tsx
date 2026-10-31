@@ -56,16 +56,16 @@ const Banner = () => {
     <section
       ref={ref}
       id="hero-banner"
-      className=" top-0 lg:h-screen w-full overflow-hidden bg-primary-bg bg-cover bg-center bg-no-repeat"
+      className="h-fit py-12 lg:h-screen w-full overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage:
           "url('/images/home/modern-software-development-vector-24033583 (1).avif')",
       }}
     >
-      {/* <div className="absolute top-0 left-0 bg-black/60 w-full h-full" /> */}
+      <div className="absolute top-0 left-0 w-full h-full bg-linear-to-r from-black via-black/60 to-transparent" />
 
       {/* Content */}
-      <MaxWidth className="my-auto absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 pt-20">
+      <MaxWidth className="my-auto lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2 pt-20">
         <div className="grid  grid-cols-1 lg:grid-cols-[45%_50%] justify-between gap-2 z-10">
           <div className="space-y-10 my-auto">
             <div className="block">
@@ -104,11 +104,11 @@ const Banner = () => {
               />
             </div>
 
-            <div className="mt-20 hidden lg:block">
-              <h3 className="text-secondary-color text-[20px] uppercase">
+            <div className=" hidden lg:block mt-10 lg:mt-20 space-y-4 lg:space-y-6">
+              <h3 className="text-light text-[clamp(14px,2vw,20px)] uppercase">
                 Trusted By Business Workplace
               </h3>
-              <div className="flex gap-14 mt-8">
+              <div className="flex gap-4 lg:gap-14 ">
                 {partners.map((partner, index) => (
                   <div key={index} className="flex items-center justify-center">
                     <Image
@@ -124,24 +124,6 @@ const Banner = () => {
           </div>
           <div className="flex h-fit my-auto justify-end lg:mr-[-15%]">
             {/* <Image src={banner_img} alt="Banner Image" /> */}
-          </div>
-        </div>
-        <div className="mt-14 block lg:hidden ">
-          <div className="flex gap-2 justify-center md:justify-start">
-            {/* <SiFsecure className="text-blue-400 my-auto w-6 h-6"/> */}
-            <h3 className="text-secondary-color text-[15px] lg:text-[18px] text-center my-auto uppercase">Trusted By Business Workplace</h3>
-          </div>
-          <div className="flex justify-center gap-3 lg:gap-14 mt-6">
-            {partners.map((partner, index) => (
-              <div key={index} className="flex items-center justify-center">
-                <Image
-                  src={partner.image}
-                  width={60}
-                  height={30}
-                  alt={partner.name}
-                />
-              </div>
-            ))}
           </div>
         </div>
       </MaxWidth>

@@ -56,7 +56,7 @@ const FAQ = () => {
   };
   console.log(activeIndex, "activeIndex113")
   return (
-    <section className="bg-[#F7F7F7] py-12 lg:py-16">
+    <section className="bg-off-white py-12 lg:py-16">
       <MaxWidth className="grid grid-cols-1 lg:grid-cols-[30%_60%] justify-between">
         {/* Sticky Section Heading */}
         <div className="relative">

@@ -9,7 +9,7 @@ import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="relative overflow-hidden bg-[#001029] text-white">
+    <footer className="relative overflow-hidden bg-dark text-secondary">
       {/* Purple localized glow + grid */}
       <div className="pointer-events-none absolute -left-24 -top-24 h-[420px] w-[520px] opacity-70">
         <div className="absolute inset-0 rounded-full bg-purple-600/[0.12] blur-[120px]" />
@@ -51,7 +51,7 @@ const Footer = () => {
       </div>
       <MaxWidth >
         <FinalCTA />
-        <div className="grid grid-cols-1 gap-10 py-12 lg:grid-cols-[35%_65%] justify-between lg:gap-4 lg:py-20">
+        <div className="grid grid-cols-1 gap-10 py-10 md:py-12 lg:grid-cols-[35%_65%] justify-between lg:gap-4 lg:py-20">
           {/* Brand */}
           <div>
             <Image
@@ -175,7 +175,7 @@ const Footer = () => {
           {/* Phone */}
           <div className="flex gap-3">
             <div className="mt-1 shrink-0">
-              <Icon name="phone" size={19} className="text-white" />
+              <Icon name="phone" size={20} className="text-light" />
             </div>
 
 
@@ -194,7 +194,7 @@ const Footer = () => {
 
           {/* Address */}
           <div className="flex gap-3">
-            <Icon name="location" size={22} className="mt-1 shrink-0" />
+            <Icon name="location" size={20} className="mt-1 shrink-0 text-light" />
 
             <a
               href="https://share.google/E7oFNNvoY9Nm77Ais"
@@ -207,7 +207,7 @@ const Footer = () => {
               </p>
 
               <p className="text-[16px] lg:text-[18px] leading-7 text-white/65 transition-colors group-hover:text-white">
-                A-21, 2nd Floor, BSI Business Park, Sector-63, <br /> Noida, Uttar Pradesh, India
+                A-21, 2nd Floor, BSI Business Park, Sector-63, <br className="hidden lg:block" /> Noida, Uttar Pradesh, India
               </p>
             </a>
           </div>
@@ -215,7 +215,7 @@ const Footer = () => {
           {/* Email */}
           <div className="flex gap-3">
             <div className="mt-1 shrink-0">
-              <Icon name="FaBuildingUser" size={19} className="text-white" />
+              <Icon name="FaBuildingUser" size={20} className="text-light" />
             </div>
 
             <div>

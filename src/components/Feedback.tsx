@@ -62,7 +62,7 @@ const Feedback = () => {
   };
 
   return (
-    <section ref={ref} className="bg-secondary-bg py-12 lg:py-16">
+    <section ref={ref} className="bg-off-white py-12 lg:py-16">
       <MaxWidth>
         {/* HEADING */}
         <div
@@ -103,13 +103,16 @@ const Feedback = () => {
               </div>
 
               {/* MESSAGE */}
-              <p className="flex-1 pb-8 font-normal leading-8 text-[#000000]">
+              <p className="flex-1  pb-8 font-normal leading-8 text-[#000000]">
                 <BiSolidQuoteAltLeft  className="mr-2  inline-block align-baseline text-[25px]" />
                 {item.message}
+                <br className=""/>
+                {item.message}
+                
                 {/* <BiSolidQuoteAltRight className="ml-1 inline-block align-baseline text-[22px]" /> */}
               </p>
               {/* AUTHOR */}
-              <div className="mt-auto flex items-center justify-between gap-3 border-t border-black/10 pt-5">
+              <div className=" flex items-center justify-between gap-3 border-t border-black/10 mt-8 pt-5">
                 <div className="flex min-w-0 items-center gap-4">
                   <Image
                     src={item.img}

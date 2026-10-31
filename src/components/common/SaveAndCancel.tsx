@@ -34,7 +34,7 @@ const SaveAndCancel = ({
           bg-gradient-to-r
           from-[#A855F7]
           to-[#2563EB]
-          px-6 py-3
+          px-5 lg:px-6 py-3
           text-[14px]
           sm:text-[18px]
           font-medium
@@ -70,7 +70,7 @@ const SaveAndCancel = ({
           rounded-md
           border border-white/20
           bg-white/[0.02]
-          px-6 py-3
+          px-5 lg:px-6 py-3
           text-[14px]
           sm:text-[18px]
           font-medium
