@@ -58,14 +58,11 @@ function page() {
     <div>
       <CommonBanner
         breakIndex={5}
-        label="OUR PORTFOLIO"
-        title="Ideas turned "
-        highlight="into real products."
-        description="Explore a selection of digital products, websites, applications, and software solutions we’ve designed and built to solve real business challenges."
+        label="work"
+        title="Our work."
         breadcrumb="Portfolio"
       />
       <OurPortfolio />
-      <LetsStart />
     </div>
   );
 }

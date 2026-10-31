@@ -9,7 +9,7 @@ import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="relative overflow-hidden bg-dark text-secondary">
+    <footer className="relative overflow-hidden bg-dark">
       {/* Purple localized glow + grid */}
       <div className="pointer-events-none absolute -left-24 -top-24 h-[420px] w-[520px] opacity-70">
         <div className="absolute inset-0 rounded-full bg-purple-600/[0.12] blur-[120px]" />
@@ -242,7 +242,7 @@ const Footer = () => {
               Privacy Policy
             </a>
 
-            <a href="/terms" className="transition hover:text-white">
+            <a href="/terms-of-service" className="transition hover:text-white">
               Terms & Conditions
             </a>
           </div>

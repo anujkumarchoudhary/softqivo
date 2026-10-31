@@ -4,6 +4,7 @@ import React from "react";
 import MaxWidth from "@/src/components/layout/MaxWidth";
 import Heading from "@/src/components/common/Heading"; 
 import { staticData } from "@/src/utills/Data";
+import CommonBanner from "@/src/components/CommonBanner";
 
 const TermsOfService = () => {
   const data = staticData?.termsOfService;
@@ -11,7 +12,7 @@ const TermsOfService = () => {
   return (
     <main className="bg-white text-black">
       {/* Hero */}
-      <section className="relative overflow-hidden border-b border-black/10">
+      {/* <section className="relative overflow-hidden border-b border-black/10">
         <MaxWidth className="py-20 lg:py-28">
           <div className="max-w-4xl">
             <p className="mb-5 text-sm font-semibold uppercase tracking-[0.2em] text-purple-600">
@@ -37,7 +38,8 @@ const TermsOfService = () => {
             </p>
           </div>
         </MaxWidth>
-      </section>
+      </section> */}
+      <CommonBanner label= {data?.label} title="Terms of Service"/>
 
       {/* Content */}
       <MaxWidth className="py-16 lg:py-24">

@@ -3,16 +3,17 @@ import React from "react";
 interface MessageFieldProps {
   label: string;
   placeholder?: string;
+  className?:string;
 }
 
-const MessageField = ({ label, placeholder }: MessageFieldProps) => {
+const MessageField = ({ label, placeholder,className }: MessageFieldProps) => {
   return (
-    <div>
-      <span className="text-[#FFFFFF] font-semibold">{label}</span>
+    <div className="">
+      <span className="text-dark font-semibold">{label}</span>
 
       <textarea
         placeholder={placeholder}
-        className="w-full p-3 outline-none border bg-[#FFFFFF] border-gray-300 mt-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent h-[150px] resize-none"
+        className={`${className} w-full h-40 text-[15px] rounded-lg mt-2 bg-[#F8F8F8] px-4 py-3 font-normal text-[#000000] outline-none placeholder:text-[#323232B2] focus:border-[#000000]`}
       />
     </div>
   );

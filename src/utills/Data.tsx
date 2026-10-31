@@ -9,6 +9,7 @@ import card_img_02 from "../../public/images/vision.jpg";
 import support_1 from "../../public/images/support/support_1.png";
 import { FaMapLocationDot, FaHeadphonesSimple } from "react-icons/fa6";
 import { IoIosMailOpen } from "react-icons/io";
+import { MdPhone } from "react-icons/md";
 
 type SupportItem = {
   icon: React.ReactNode;
@@ -713,89 +714,61 @@ export const staticData = {
       ],
 
       data: [
-        {
-          img: "/images/review/review_1.jpg",
-
-          message:
-            "SoftQivo understood our vision quickly and turned our ideas into a polished digital product that matched our goals.",
-
-          name: "Arjun Mehta",
-
-          comment:
-            "The team was responsive, professional, and technically strong throughout the project. Their attention to detail and willingness to understand our requirements made the development process smooth.",
-
-          designation: "Founder & CEO, Nexora",
-        },
-
-        {
-          img: "/images/review/review_2.webp",
-
-          message:
-            "Working with SoftQivo made our development process clear, collaborative, and straightforward from design through delivery.",
-
-          name: "Sarah Williams",
-
-          comment:
-            "The team handled design, development, and delivery with care. They listened to our feedback, communicated clearly, and consistently worked toward practical solutions for our product.",
-
-          designation: "Director, BrightLabs",
-        },
-
-        {
-          img: "/images/review/review_3.jpg",
-
-          message:
-            "SoftQivo helped us build a modern, scalable solution that gave our business a stronger technology foundation.",
-
-          name: "Rahul Sharma",
-
-          comment:
-            "Their combination of design thinking and technical expertise stood out throughout the project. The final product is fast, intuitive, and aligned with the way our business operates.",
-
-          designation: "Co-Founder, ElevateX",
-        },
-                {
-          img: "/images/review/review_1.jpg",
-
-          message:
-            "SoftQivo understood our vision quickly and turned our ideas into a polished digital product that matched our goals.",
-
-          name: "Arjun Mehta",
-
-          comment:
-            "The team was responsive, professional, and technically strong throughout the project. Their attention to detail and willingness to understand our requirements made the development process smooth.",
-
-          designation: "Founder & CEO, Nexora",
-        },
-
-        {
-          img: "/images/review/review_2.webp",
-
-          message:
-            "Working with SoftQivo made our development process clear, collaborative, and straightforward from design through delivery.",
-
-          name: "Sarah Williams",
-
-          comment:
-            "The team handled design, development, and delivery with care. They listened to our feedback, communicated clearly, and consistently worked toward practical solutions for our product.",
-
-          designation: "Director, BrightLabs",
-        },
-
-        {
-          img: "/images/review/review_3.jpg",
-
-          message:
-            "SoftQivo helped us build a modern, scalable solution that gave our business a stronger technology foundation.",
-
-          name: "Rahul Sharma",
-
-          comment:
-            "Their combination of design thinking and technical expertise stood out throughout the project. The final product is fast, intuitive, and aligned with the way our business operates.",
-
-          designation: "Co-Founder, ElevateX",
-        },
-      ],
+  {
+    img: "/images/review/review_1.jpg",
+    message:
+      "SoftQivo quickly understood our vision and transformed our ideas into a polished digital product that aligned with our business goals.",
+    name: "Arjun Mehta",
+    comment:
+      "The team was responsive, professional, and technically strong throughout the project. Their attention to detail and willingness to understand our requirements made the development process smooth.",
+    designation: "Founder & CEO, Nexora",
+  },
+  {
+    img: "/images/review/review_2.webp",
+    message:
+      "Working with SoftQivo made development clear, collaborative, and straightforward, guiding our project smoothly from design stage through final delivery.",
+    name: "Sarah Williams",
+    comment:
+      "The team handled design, development, and delivery with care. They listened to our feedback, communicated clearly, and consistently worked toward practical solutions for our product.",
+    designation: "Director, BrightLabs",
+  },
+  {
+    img: "/images/review/review_3.jpg",
+    message:
+      "SoftQivo helped us create a modern, scalable solution that strengthened our technology foundation and supported our business's evolving needs effectively.",
+    name: "Rahul Sharma",
+    comment:
+      "Their combination of design thinking and technical expertise stood out throughout the project. The final product is fast, intuitive, and aligned with the way our business operates.",
+    designation: "Co-Founder, ElevateX",
+  },
+  {
+    img: "/images/review/review_1.jpg",
+    message:
+      "SoftQivo quickly understood our vision and transformed our ideas into a polished digital product that aligned with our business goals.",
+    name: "Arjun Mehta",
+    comment:
+      "The team was responsive, professional, and technically strong throughout the project. Their attention to detail and willingness to understand our requirements made the development process smooth.",
+    designation: "Founder & CEO, Nexora",
+  },
+  {
+    img: "/images/review/review_2.webp",
+    message:
+      "Working with SoftQivo made development clear, collaborative, and straightforward, guiding our project smoothly from design stage through final delivery.",
+    name: "Sarah Williams",
+    comment:
+      "The team handled design, development, and delivery with care. They listened to our feedback, communicated clearly, and consistently worked toward practical solutions for our product.",
+    designation: "Director, BrightLabs",
+  },
+  {
+    img: "/images/review/review_3.jpg",
+    message:
+      "SoftQivo helped us create a modern, scalable solution that strengthened our technology foundation and supported our business's evolving needs effectively.",
+    name: "Rahul Sharma",
+    comment:
+      "Their combination of design thinking and technical expertise stood out throughout the project. The final product is fast, intuitive, and aligned with the way our business operates.",
+    designation: "Co-Founder, ElevateX",
+  },
+],
     },
 
     finalCta: {
@@ -921,14 +894,14 @@ export const staticData = {
           "A-21, 2nd Floor, BSI Business Park, Sector-63, Noida, Uttar Pradesh, India",
       },
       {
+        icon: <MdPhone size={40} className="text-[#001845]" />,
+        title: "Phone",
+        description: "+91 99531 76985",
+      },
+            {
         icon: <IoIosMailOpen size={40} className="text-[#001845]" />,
         title: "Email Us",
         description: "softqivo@gmail.com",
-      },
-      {
-        icon: <FaHeadphonesSimple size={40} className="text-[#001845]" />,
-        title: "Working Hours",
-        description: "Monday - Friday, 9:00 AM - 6:00 PM",
       },
     ],
   },
@@ -1192,9 +1165,9 @@ export const staticData = {
         "If you have questions about this Privacy Policy, your personal information, or our privacy practices, please contact us.",
       ],
       contact: {
-        company: "SoftQivo",
-        email: "YOUR_OFFICIAL_EMAIL",
-        website: "https://www.softqivo.com/",
+        company: "SoftQivo Technology",
+        email: "softqivo@gmail.com",
+        website: "https://www.softqivo.com",
       },
       closingParagraphs: [
         "We will make reasonable efforts to respond to privacy-related requests and inquiries within an appropriate period.",

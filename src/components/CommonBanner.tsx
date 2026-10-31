@@ -24,36 +24,35 @@ export default function CommonBanner({
   breakIndex,
   breadcrumb = "Contact",
 }: CommonBannerProps) {
-  const {isDesktop}=useResponsive()
+  const { isDesktop } = useResponsive()
   return (
-<section className="relative isolate overflow-hidden bg-black text-white">
-  <BackgroundEffects />
+    <section className="relative isolate overflow-hidden bg-black text-white">
+      <BackgroundEffects />
 
-  <MaxWidth className=" py-12 max-w-310 sm:px-8 lg:px-12 lg:py-24">
-      <Heading
-        label={label}
-        isAccentLine={true}
-        breakIndex={isDesktop ? breakIndex : undefined}
-        labelColor="rgba(255,255,255,0.7)"
-        accentColor="#ffffff"
-        textColor="rgba(255,255,255,0.6)"
-        isCenter={true}
-        isVisible={true}
-        as="h1"
-        headingParts={[
-          {
-            text: title,
-            color: "#FFFFFF",
-          },
-          {
-            text: highlight,
-            gradient:
-              "linear-gradient(90deg, #c084fc 0%, #a78bfa 50%, #3b82f6 100%)",
-          },
-        ]}
-        description={description}
-      />
-  </MaxWidth>
-</section>
+      <MaxWidth className="py-10 md:py-12 lg:py-24 mt-20 lg:mt-30">
+        <Heading
+          label={label}
+          isAccentLine={true}
+          breakIndex={isDesktop ? breakIndex : undefined}
+          labelColor="rgba(255,255,255,0.7)"
+          accentColor="#ffffff"
+          textColor="rgba(255,255,255,0.6)"
+          isVisible={true}
+          as="h1"
+          headingParts={[
+            {
+              text: title,
+              color: "#FFFFFF",
+            },
+            {
+              text: highlight,
+              gradient:
+                "linear-gradient(90deg, #c084fc 0%, #a78bfa 50%, #3b82f6 100%)",
+            },
+          ]}
+          description={description}
+        />
+      </MaxWidth>
+    </section>
   );
 }

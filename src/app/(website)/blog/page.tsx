@@ -59,9 +59,8 @@ function page() {
     staticData?.home;
   return (
     <div>
-      <CommonBanner title={"Ideas, insights & digital thinking."} description="Browse our latest articles to learn practical tips, emerging trends, and innovative solutions that empower businesses to increase visibility,attract customers."/>
+      <CommonBanner label="blogs" title={"Our Blogs."}/>
       <Blog data={blogs2} />
-      <LetsStart />
     </div>
   );
 }

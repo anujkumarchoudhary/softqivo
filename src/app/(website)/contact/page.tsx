@@ -60,28 +60,42 @@ export const metadata: Metadata = {
 const Page = () => {
   const { label, headingParts, description, data } = staticData?.contact;
   return (
- <div>
-   <CommonBanner title={"Contact Us"}/>
-     <MaxWidth className="py-16 grid grid-cols-1 lg:grid-cols-2 gap-[1rem] lg:gap-[4rem]">
-      <div className="my-auto">
-        <Heading accentColor="#001845" headingParts={headingParts} label={label} description={description} />
-        <div className="pt-[2rem] space-y-8 w-full lg:w-[60%]">
-          {data?.map((item, idx: number) => {
-            return (
-              <div key={idx} className="flex gap-4 ">
-                {item?.icon}
-                <span className="space-y-2">
-                  <h5>{item?.title}</h5>
-                  <p>{item?.description}</p>
-                </span>
-              </div>
-            );
-          })}
+    <div>
+      <CommonBanner label="Contact us" title={"Let’s talk."} />
+      <MaxWidth className="py-10 md:py-12 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-[1rem] lg:gap-[4rem]">
+        <div className="my-auto">
+          <Heading accentColor="#001845" headingParts={headingParts} label={label} description={description} />
+          <div className="pt-[2rem] space-y-8 w-full lg:w-[60%]">
+            {data?.map((item, idx: number) => {
+              return (
+                <div key={idx} className="flex gap-4 ">
+                  {item?.icon}
+                  <span className="space-y-2">
+                    <h5>{item?.title}</h5>
+                    <p>{item?.description}</p>
+                  </span>
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </div>
-      <ContactForm />
-    </MaxWidth>
- </div>
+        <ContactForm />
+      </MaxWidth>
+      {/* Google Map */}
+      <section className="w-full">
+        <iframe
+          title="SoftQivo Office Location"
+          src="https://www.google.com/maps?q=Noida,Uttar%20Pradesh,India&output=embed"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          allowFullScreen
+          className="w-full"
+        />
+      </section>
+    </div>
   );
 };
 

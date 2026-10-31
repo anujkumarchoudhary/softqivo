@@ -57,32 +57,32 @@ const headingDefaults = {
   h1: {
     fontSize: "clamp(2.25rem, 5vw, 3.5rem)",
     fontWeight: 600,
-    lineHeight: 1.08,
+    lineHeight: "clamp(1.1, 1.2, 1.25)",
   },
   h2: {
     fontSize: "clamp(2rem, 4vw, 3rem)",
     fontWeight: 700,
-    lineHeight: 1.1,
+    lineHeight: "clamp(1.2, 1.15, 1.2)",
   },
   h3: {
     fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
     fontWeight: 600,
-    lineHeight: 1.15,
+    lineHeight: "clamp(3.4, 1.2, 1.25)",
   },
   h4: {
     fontSize: "clamp(1.25rem, 2.5vw, 1.875rem)",
     fontWeight: 600,
-    lineHeight: 1.2,
+    lineHeight: "clamp(1.2, 1.25, 1.3)",
   },
   h5: {
     fontSize: "clamp(1.125rem, 2vw, 1.5rem)",
     fontWeight: 600,
-    lineHeight: 1.25,
+    lineHeight: "clamp(1.2, 1.25, 1.3)",
   },
   h6: {
     fontSize: "clamp(1rem, 1.5vw, 1.25rem)",
     fontWeight: 600,
-    lineHeight: 1.3,
+    lineHeight: "clamp(1.25, 1.3, 1.35)",
   },
 };
 
@@ -176,7 +176,7 @@ const Heading = ({
             </div>
           )}
 
-          {isAccentLine && <div className={`flex items-center gap-5 justify-center lg:justify-normal  ${isCenter ? "text-center w-fit mx-auto" : "w-full"}`}>
+          {isAccentLine && <div className={`flex items-center gap-2 lg:gap-5 justify-start lg:justify-normal  ${isCenter ? "text-center w-fit mx-auto" : "w-full"}`}>
             <span className="h-px w-4 lg:w-7 1animate-ping" style={{ backgroundColor: accentColor ?? "#A855F7", animationDelay: "0s", }} />
 
             <span
@@ -196,10 +196,11 @@ const Heading = ({
             >
               {label}
             </span>
-            <span className="h-px w-4 lg:w-7 1animate-ping" 
+            {/* <span className="h-px w-4 lg:w-7 1animate-ping" 
             style={{ backgroundColor: accentColor ?? "#A855F7", animationDelay: "0.5s", }} 
             
-            /></div>}
+            /> */}
+            </div>}
         </div>
       )}
 
@@ -207,7 +208,7 @@ const Heading = ({
       <Tag
         className={`
     transition-all text-center duration-700 delay-150
-    ${isCenter ? "text-center" : "text-center lg:text-left"}
+    ${isCenter ? "text-center" : "text-left"}
     ${className}
     ${isVisible
             ? "opacity-100 translate-y-0"
@@ -301,11 +302,10 @@ const Heading = ({
       transition-all
       duration-700
       delay-300
-      w-[90%]
       leading-8
       ${isCenter
               ? "mx-auto text-center"
-              : "mx-auto text-center lg:mx-0 lg:text-left lg:w-full"
+              : "mx-auto lg:mx-0 text-left lg:w-full"
             }
       ${isVisible
               ? "opacity-100 translate-y-0"

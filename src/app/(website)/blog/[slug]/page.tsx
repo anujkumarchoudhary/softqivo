@@ -9,6 +9,7 @@ import { BiCalendar } from "react-icons/bi";
 import LetsStart from "@/src/components/LetsStart";
 import { useRouter } from "next/navigation";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa6";
+import CommonBanner from "@/src/components/CommonBanner";
 
 const page = () => {
   const router = useRouter();
@@ -135,7 +136,8 @@ const page = () => {
 
   return (
     <div>
-      <PageBanner heading={"Blog Details"} />
+      <PageBanner  heading={"Blog Details"} />
+      {/* <CommonBanner label="blog details" title="we"/> */}
 
       <MaxWidth className="grid grid-cols-1 lg:grid-cols-3 gap-12 py-12">
         <div className="col-span-2">
@@ -236,8 +238,6 @@ const page = () => {
           </div>
         </div>
       </MaxWidth>
-
-      <LetsStart />
     </div>
   );
 };

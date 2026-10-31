@@ -6,6 +6,7 @@ import TechnologySection from "@/src/components/TechnologySection";
 import OurStory from "@/src/components/OurStory";
 import AboutBanner from "@/src/components/AboutBanner";
 import OurProcess from "@/src/components/ProcessSection";
+import CommonBanner from "@/src/components/CommonBanner";
 
 export const metadata = {
   title: "About SoftQivo | Digital Solutions & Software Development",
@@ -65,13 +66,13 @@ const Page = () => {
     staticData?.about;
   return (
     <div>
-      <AboutBanner data={banner}/>
+      {/* <AboutBanner data={banner}/> */}
+      <CommonBanner label="About Us" title="About."/>
       <OurStory />
       <OurProcess data={process} />
       <TeamSection data={team} />
       <TechnologySection data={technologes} />
       <Blog data={blogs} />
-      <FinalCTA />
     </div>
   );
 };

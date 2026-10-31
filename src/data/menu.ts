@@ -8,15 +8,15 @@ export const menuData = [
 ];
 
 export const footerMenuData = [
-  { title: "About", link: "/privacy-policy" },
+  { title: "About", link: "/about" },
   { title: "Blog", link: "/blog" },
   { title: "Careers", link: "#" },
   { title: "Contact", link: "/contact" },
   { title: "Sitemap", link: "/sitemap" },
 
-  { title: "Web Development", link: "/privacy-policy" },
-  { title: "Software Development", link: "/blog" },
+  { title: "Web Development", link: "#" },
+  { title: "Software Development", link: "#" },
   { title: "App Development", link: "#" },
-  { title: "CRM Development", link: "/contact" },
-  { title: "HRM Development", link: "/sitemap" },
+  { title: "CRM Development", link: "#" },
+  { title: "HRM Development", link: "#" },
 ];

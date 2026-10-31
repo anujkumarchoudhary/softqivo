@@ -237,7 +237,7 @@ function PortfolioCard({
           grid
           items-center
           gap-10
-          lg:grid-cols-[1.15fr_.85fr]
+          lg:grid-cols-[1.15fr_1.15fr]
           lg:gap-16
           ${isReverse ? "lg:[&>*:first-child]:order-2" : ""}
         `}
@@ -395,10 +395,12 @@ function PortfolioCard({
           <h3
             className="
               mt-6
-              max-w-xl
+              w-full
+              lg:w-[85%]
               text-3xl
-              font-semibold
-              leading-[1.1]
+              font-medium
+              leading-10
+              lg:leading-13
               tracking-[-0.035em]
               text-black
               sm:text-4xl

@@ -4,6 +4,7 @@ import Heading from "@/src/components/common/Heading";
 import { staticData } from "@/src/utills/Data";
 
 import type { Metadata } from "next";
+import CommonBanner from "@/src/components/CommonBanner";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | SoftQivo",
@@ -61,7 +62,7 @@ const PrivacyPolicy = () => {
   return (
     <main className="bg-white text-black">
       {/* Hero */}
-      <section className="relative overflow-hidden border-b border-black/10">
+      {/* <section className="relative overflow-hidden border-b border-black/10">
         <MaxWidth className="py-20 lg:py-28">
           <div className="max-w-4xl">
             <p className="mb-5 text-sm font-semibold uppercase tracking-[0.2em] text-purple-600">
@@ -87,7 +88,8 @@ const PrivacyPolicy = () => {
             </p>
           </div>
         </MaxWidth>
-      </section>
+      </section> */}
+      <CommonBanner label="Privacy Policy" title="Your Privacy Matters to Us"/>
 
       {/* Content */}
       <MaxWidth className="py-16 lg:py-24">
