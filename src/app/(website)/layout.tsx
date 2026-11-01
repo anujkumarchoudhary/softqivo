@@ -61,8 +61,13 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.softqivo.com"),
 
   title: {
-    default: "SoftQivo | Web Development Company in Noida & Digital Solutions",
+    default: "Web Development Company in Noida & Digital Solutions | SoftQivo",
     template: "%s | SoftQivo",
+  },
+   icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
 
   description:

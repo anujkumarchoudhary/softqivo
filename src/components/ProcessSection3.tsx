@@ -32,21 +32,21 @@ const defaultSteps: ProcessItem[] = [
         title: "Strategize",
         description: "We create a clear roadmap and select the right technology.",
         image: "/images/process/strategize.jpg",
-        color: "#00132C",
+        color: "#003D38",
     },
     {
         number: "03",
         title: "Develop",
         description: "We build a responsive, scalable digital solution.",
         image: "/images/process/develop.jpg",
-        color: "#00132C",
+        color: "#000000",
     },
     {
         number: "04",
         title: "Deliver",
         description: "We test, launch, and refine your solution.",
         image: "/images/process/deliver.jpg",
-        color: "#00132C",
+        color: "#001E1C",
     },
 ];
 export default function ProcessSection3({
@@ -72,7 +72,7 @@ export default function ProcessSection3({
                 <div className="mx-auto flex h-full flex-col py-10 md:py-24">
                     {/* Header */}
                     <div className="flex shrink-0 items-end justify-between gap-8">
-                        <h2 className=" text-black font-semibold leading-13">
+                        <h2 className=" text-black font-semibold leading-8 md:leading-13">
                             Our
                             <br />
                             Process
@@ -85,7 +85,7 @@ export default function ProcessSection3({
                     </div>
 
                     {/* Dynamic divider */}
-                    <div className="mt-8 flex shrink-0 gap-3 md:mt-10">
+                    <div className="mt-2 flex shrink-0 gap-3 md:mt-10">
                         {steps.map((step, index) => (
                             <div key={step.number ?? index} className="flex-1">
                                 <div className="h-[2px] overflow-hidden bg-white/15">
@@ -103,7 +103,7 @@ export default function ProcessSection3({
                     </div>
 
                     {/* Cards stage */}
-                    <div className="relative mt-6 min-h-0 flex-1">
+                    <div className="relative mt-2 md:mt-6 min-h-0 flex-1">
                         {steps.map((step, index) => (
                             <ProcessCard
                                 key={step.number ?? index}

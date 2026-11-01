@@ -119,8 +119,8 @@ const FAQ = () => {
                 rounded-full border
                 transition-all duration-300
                 ${isOpen
-                          ? "rotate-45 border-primary-bg bg-primary-bg text-white"
-                          : "border-black/10 bg-transparent text-primary-bg group-hover:border-primary-bg group-hover:bg-primary-bg group-hover:text-white"
+                          ? "rotate-45 border-primary-bg bg-dark text-light"
+                          : "border-black/10 bg-transparent text-dark group-hover:border-primary-bg group-hover:bg-primary-bg group-hover:text-dark"
                         }
               `}
                     >

@@ -3,7 +3,7 @@
 
 import React, { useEffect, useState } from "react";
 import MaxWidth from "./MaxWidth";
-import logo from "../../../public/images/home/sq_03.png";
+import logo from "../../../public/gridiant_logo.png";
 import Image from "next/image";
 import { footerMenuData, menuData } from "@/src/data/menu";
 import { useRouter } from "next/navigation";
@@ -99,7 +99,7 @@ const Header = () => {
             alt="SoftQivo logo"
             priority
             style={{
-              width: "clamp(180px, 18vw, 225px)",
+              width: "clamp(180px, 18vw, 210px)",
               height: "auto",
             }}
           />
@@ -128,10 +128,10 @@ const Header = () => {
             handleClick={() => setOpen(!open)}
             className="mx-auto lg:mx-0" handleClick2={undefined}/>           */}
           {/* <LuAlignRight size={40} className="my-auto" /> */}
-          <div className="flex my-auto flex-col items-end space-y-2.5 cursor-pointer">
-            <div className="w-10 lg:w-14 h-0.75 bg-white" />
-            <div className="w-6 lg:w-8 h-0.75 bg-white" />
-            {/* <div className="w-6 h-0.75 bg-white" /> */}
+          <div className="flex my-auto flex-col items-end space-y-2.25 cursor-pointer">
+            <div className="w-10 lg:w-12 h-0.5 bg-white" />
+            <div className="w-10 lg:w-12 h-0.5 bg-white" />
+            <div className="w-10 lg:w-12 h-0.5 bg-white" />
           </div>
         </div>
       </MaxWidth>

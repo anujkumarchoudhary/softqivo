@@ -240,7 +240,7 @@ export default function FinalCTA() {
                 HAVE A PROJECT IN MIND?
               </h2>
 
-              <p className="mt-1.5 text-[18px] font-semibold  text-center lg:text-left text-black/70">
+              <p className="mt-1.5 text-[18px] lg:font-semibold  text-center lg:text-left text-black/70">
                 "Let's build something amazing together.
               </p>
             </div>

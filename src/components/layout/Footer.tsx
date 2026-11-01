@@ -55,7 +55,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <Image
-              src="/images/home/sq_03.png"
+              src="/gridiant_logo.png"
               width={225}
               height={50}
               alt="logo"
