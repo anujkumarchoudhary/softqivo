@@ -128,10 +128,10 @@ const Header = () => {
             handleClick={() => setOpen(!open)}
             className="mx-auto lg:mx-0" handleClick2={undefined}/>           */}
           {/* <LuAlignRight size={40} className="my-auto" /> */}
-          <div className="flex my-auto flex-col items-end space-y-2.25 cursor-pointer">
-            <div className="w-10 lg:w-12 h-0.5 bg-white" />
-            <div className="w-10 lg:w-12 h-0.5 bg-white" />
-            <div className="w-10 lg:w-12 h-0.5 bg-white" />
+          <div className="flex my-auto flex-col items-end space-y-2 lg:space-y-2.25 cursor-pointer">
+            <div className=" w-10 lg:w-12 h-0.5 bg-white" />
+            <div className=" w-10 lg:w-12 h-0.5 bg-white" />
+            <div className=" w-10 lg:w-12 h-0.5 bg-white" />
           </div>
         </div>
       </MaxWidth>

@@ -100,7 +100,7 @@ const Banner = () => {
                       block: "start",
                     });
                 }}
-                className="mx-auto lg:mx-0"
+                className="mx-auto md:mx-0"
               />
             </div>
 
