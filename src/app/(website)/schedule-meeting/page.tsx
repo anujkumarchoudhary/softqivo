@@ -13,13 +13,13 @@ export const metadata: Metadata = {
     "digital product consultation",
   ],
   alternates: {
-    canonical: "https://www.softqivo.com/schedule-meeting",
+    canonical: "https://softqivo.com/schedule-meeting",
   },
   openGraph: {
     title: "Schedule a Meeting | SoftQivo",
     description:
       "Book a meeting with SoftQivo to discuss your next digital product or software project.",
-    url: "https://www.softqivo.com/schedule-meeting",
+    url: "https://softqivo.com/schedule-meeting",
     siteName: "SoftQivo",
     type: "website",
   },

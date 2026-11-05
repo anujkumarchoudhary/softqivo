@@ -60,7 +60,7 @@ const Footer = () => {
               height={50}
               alt="logo"
               style={{
-                width: "clamp(180px, 18vw, 225px)",
+                width: "clamp(160px, 18vw, 210px)",
                 height: "auto",
               }}
             />

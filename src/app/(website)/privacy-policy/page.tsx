@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Read SoftQivo's Privacy Policy to understand how we collect, use, protect, and manage personal information when you use our website and services.",
 
   alternates: {
-    canonical: "https://www.softqivo.com/privacy-policy",
+    canonical: "https://softqivo.com/privacy-policy",
   },
 
   openGraph: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       "Learn how SoftQivo handles personal information and protects your privacy when you use our website and services.",
 
-    url: "https://www.softqivo.com/privacy-policy",
+    url: "https://softqivo.com/privacy-policy",
 
     siteName: "SoftQivo",
 
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "https://www.softqivo.com/images/og/privacy-policy.jpg",
+        url: "https://softqivo.com/images/og/privacy-policy.jpg",
         width: 1200,
         height: 630,
         alt: "SoftQivo Privacy Policy",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     description:
       "Learn how SoftQivo collects, uses, and protects personal information when you use our website and services.",
 
-    images: ["https://www.softqivo.com/images/og/privacy-policy.jpg"],
+    images: ["https://softqivo.com/images/og/privacy-policy.jpg"],
   },
 
   robots: {

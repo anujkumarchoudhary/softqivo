@@ -43,7 +43,7 @@ const faqData = [
 
 export const homeFaqSchema = {
   "@type": "FAQPage",
-  "@id": "https://www.softqivo.com/#faq",
+  "@id": "https://softqivo.com/#faq",
   mainEntity: faqData.map(({ question, answer }) => ({
     "@type": "Question",
     name: question,

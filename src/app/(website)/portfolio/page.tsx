@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "Explore SoftQivo's portfolio and case studies featuring websites, web applications, custom software, UI/UX design, mobile apps, and digital solutions.",
 
   alternates: {
-    canonical: "https://www.softqivo.com/portfolio",
+    canonical: "https://softqivo.com/portfolio",
   },
 
   openGraph: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description:
       "Explore digital projects by SoftQivo, including websites, web applications, custom software, mobile apps, UI/UX design, and scalable digital solutions.",
 
-    url: "https://www.softqivo.com/portfolio",
+    url: "https://softqivo.com/portfolio",
 
     siteName: "SoftQivo",
 
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "https://www.softqivo.com/images/og/portfolio.jpg",
+        url: "https://softqivo.com/images/og/portfolio.jpg",
         width: 1200,
         height: 630,
         alt: "SoftQivo Portfolio and Case Studies",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     description:
       "Explore SoftQivo's digital projects, including websites, software, mobile applications, UI/UX design, and custom digital solutions.",
 
-    images: ["https://www.softqivo.com/images/og/portfolio.jpg"],
+    images: ["https://softqivo.com/images/og/portfolio.jpg"],
   },
 
   robots: {

@@ -1,17 +1,17 @@
 
 export const organizationSchema = {
   "@type": "Organization",
-  "@id": "https://www.softqivo.com/#organization",
+  "@id": "https://softqivo.com/#organization",
 
   name: "SoftQivo",
   alternateName: "SoftQivo Technology",
-  url: "https://www.softqivo.com/",
+  url: "https://softqivo.com/",
 
   logo: {
     "@type": "ImageObject",
-    url: "https://www.softqivo.com/softqivo_04.png",
+    url: "https://softqivo.com/softqivo_04.png",
   },
-  image: "https://www.softqivo.com/softqivo_04.png",
+  image: "https://softqivo.com/softqivo_04.png",
 
   description:
     "SoftQivo is a software development company providing professional web development, custom website design, web application development, SaaS development, API integration, and scalable software solutions for businesses.",

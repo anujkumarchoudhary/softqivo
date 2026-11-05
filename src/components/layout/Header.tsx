@@ -99,7 +99,7 @@ const Header = () => {
             alt="SoftQivo logo"
             priority
             style={{
-              width: "clamp(180px, 18vw, 210px)",
+              width: "clamp(160px, 18vw, 210px)",
               height: "auto",
             }}
           />
@@ -128,10 +128,10 @@ const Header = () => {
             handleClick={() => setOpen(!open)}
             className="mx-auto lg:mx-0" handleClick2={undefined}/>           */}
           {/* <LuAlignRight size={40} className="my-auto" /> */}
-          <div className="flex my-auto flex-col items-end space-y-2 lg:space-y-2.25 cursor-pointer">
-            <div className=" w-10 lg:w-12 h-0.5 bg-white" />
-            <div className=" w-10 lg:w-12 h-0.5 bg-white" />
-            <div className=" w-10 lg:w-12 h-0.5 bg-white" />
+          <div className="flex my-auto flex-col items-end space-y-1.5 lg:space-y-2.25 cursor-pointer">
+            <div className=" w-8 lg:w-10 h-0.5 bg-white" />
+            <div className=" w-8 lg:w-10 h-0.5 bg-white" />
+            <div className=" w-8 lg:w-10 h-0.5 bg-white" />
           </div>
         </div>
       </MaxWidth>
@@ -160,16 +160,16 @@ const Header = () => {
                 {/* Fixed Header */}
                 <div className="z-20 flex shrink-0 items-center justify-between border-b border-white/15 bg-dark/95 pb-6">
                   <Image
-                    src={logo}
-                    width={205}
-                    height={50}
-                    alt="SoftQivo logo"
-                    priority
-                    style={{
-                      width: "clamp(180px, 18vw, 205px)",
-                      height: "auto",
-                    }}
-                  />
+            src={logo}
+            width={225}
+            height={50}
+            alt="SoftQivo logo"
+            priority
+            style={{
+              width: "clamp(160px, 18vw, 210px)",
+              height: "auto",
+            }}
+          />
 
                   <button
                     onClick={() => setOpen(false)}

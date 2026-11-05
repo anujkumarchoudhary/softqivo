@@ -1,15 +1,15 @@
 export const indiaOfficeSchema = {
   "@type": "LocalBusiness",
-  "@id": "https://www.softqivo.com/#india-office",
+  "@id": "https://softqivo.com/#india-office",
   name: "SoftQivo",
-  url: "https://www.softqivo.com/",
+  url: "https://softqivo.com/",
   telephone: "+91-99531-76985",
   email: "softqivo@gmail.com",
-  image: "https://www.softqivo.com/softqivo_04.png",
+  image: "https://softqivo.com/softqivo_04.png",
   priceRange: "$$",
 
   parentOrganization: {
-    "@id": "https://www.softqivo.com/#organization",
+    "@id": "https://softqivo.com/#organization",
   },
 
   address: {

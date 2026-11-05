@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "Get in touch with SoftQivo to discuss your website, software, mobile app, UI/UX, backend, or cloud development project.",
 
   alternates: {
-    canonical: "https://www.softqivo.com/contact",
+    canonical: "https://softqivo.com/contact",
   },
 
   openGraph: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description:
       "Talk to SoftQivo about your next website, software, mobile application, UI/UX, backend, or cloud development project.",
 
-    url: "https://www.softqivo.com/contact",
+    url: "https://softqivo.com/contact",
 
     siteName: "SoftQivo",
 
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "https://www.softqivo.com/images/og/contact.jpg",
+        url: "https://softqivo.com/images/og/contact.jpg",
         width: 1200,
         height: 630,
         alt: "Contact SoftQivo",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     description:
       "Talk to SoftQivo about your next website, software, mobile application, UI/UX, backend, or cloud development project.",
 
-    images: ["https://www.softqivo.com/images/og/contact.jpg"],
+    images: ["https://softqivo.com/images/og/contact.jpg"],
   },
 
   robots: {

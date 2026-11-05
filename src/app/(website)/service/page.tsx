@@ -23,18 +23,18 @@ export const metadata = {
     "SoftQivo",
   ],
   alternates: {
-    canonical: "https://www.softqivo.com/services",
+    canonical: "https://softqivo.com/services",
   },
   openGraph: {
     title: "Digital Solutions & Software Development Services | SoftQivo",
     description:
       "From modern websites and mobile applications to custom software, APIs, and cloud solutions, SoftQivo builds scalable digital products for growing businesses.",
-    url: "https://www.softqivo.com/services",
+    url: "https://softqivo.com/services",
     siteName: "SoftQivo",
     type: "website",
     images: [
       {
-        url: "https://www.softqivo.com/images/og/services.jpg",
+        url: "https://softqivo.com/images/og/services.jpg",
         width: 1200,
         height: 630,
         alt: "SoftQivo Digital Solutions and Software Development Services",
@@ -46,7 +46,7 @@ export const metadata = {
     title: "Digital Solutions & Software Development Services | SoftQivo",
     description:
       "Build scalable digital products with SoftQivo — web, software, mobile, UI/UX, API, cloud, and DevOps services.",
-    images: ["https://www.softqivo.com/images/og/services.jpg"],
+    images: ["https://softqivo.com/images/og/services.jpg"],
   },
   robots: {
     index: true,

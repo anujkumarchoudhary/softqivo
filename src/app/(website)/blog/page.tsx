@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Explore SoftQivo's insights on web development, UI/UX design, software development, digital products, scalability, and modern technology.",
 
   alternates: {
-    canonical: "https://www.softqivo.com/blog",
+    canonical: "https://softqivo.com/blog",
   },
 
   openGraph: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description:
       "Explore insights from SoftQivo on web development, UI/UX design, software development, digital products, and modern technology.",
 
-    url: "https://www.softqivo.com/blog",
+    url: "https://softqivo.com/blog",
 
     siteName: "SoftQivo",
 
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "https://www.softqivo.com/images/og/blog.jpg",
+        url: "https://softqivo.com/images/og/blog.jpg",
         width: 1200,
         height: 630,
         alt: "SoftQivo Blog",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     description:
       "Read SoftQivo's insights on web development, UI/UX, software development, digital products, and modern technology.",
 
-    images: ["https://www.softqivo.com/images/og/blog.jpg"],
+    images: ["https://softqivo.com/images/og/blog.jpg"],
   },
 
   robots: {

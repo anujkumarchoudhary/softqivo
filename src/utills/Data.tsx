@@ -1167,7 +1167,7 @@ export const staticData = {
       contact: {
         company: "SoftQivo Technology",
         email: "softqivo@gmail.com",
-        website: "https://www.softqivo.com",
+        website: "https://softqivo.com",
       },
       closingParagraphs: [
         "We will make reasonable efforts to respond to privacy-related requests and inquiries within an appropriate period.",
@@ -1351,7 +1351,7 @@ termsOfService: {
       contact: {
         company: "SoftQivo",
         email: "YOUR_OFFICIAL_EMAIL",
-        website: "https://www.softqivo.com/",
+        website: "https://softqivo.com/",
       },
     },
   ],

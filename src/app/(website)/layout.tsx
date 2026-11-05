@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Mona_Sans, Montserrat, Playfair_Display, Poppins, Roboto_Mono } from "next/font/google";
 import "../globals.css";
 import Header from "../../components/layout/Header";
@@ -57,85 +56,6 @@ const montserrat = Montserrat({
 });
 
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://www.softqivo.com"),
-
-  title: {
-    default: "Web Development Company in Noida & Digital Solutions | SoftQivo",
-    template: "%s | SoftQivo",
-  },
-   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
-  },
-
-  description:
-    "SoftQivo is a technology company delivering custom software development, web development, modern digital solutions, and scalable applications to help businesses grow.",
-
-  keywords: [
-    "SoftQivo",
-    "SoftQivo Technology",
-    "software development company",
-    "web development company",
-    "custom software development",
-    "website development services",
-    "Next.js development",
-    "MERN stack development",
-    "full-stack development",
-    "business software solutions",
-    "digital transformation services",
-    "scalable web applications",
-  ],
-
-  authors: [{ name: "SoftQivo Technology" }],
-  creator: "SoftQivo Technology",
-  publisher: "SoftQivo Technology",
-
-  alternates: {
-    canonical: "/",
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
-  },
-
-  openGraph: {
-    title: "SoftQivo | Software Development & Digital Solutions",
-    description:
-      "Build smarter digital experiences with SoftQivo. We deliver custom software, modern websites, and scalable technology solutions for growing businesses.",
-    url: "https://www.softqivo.com",
-    siteName: "SoftQivo",
-    type: "website",
-    locale: "en_IN",
-    images: [
-      {
-        url: "/softqivo_04.png",
-        width: 1200,
-        height: 630,
-        alt: "SoftQivo Technology",
-      },
-    ],
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "SoftQivo | Software Development & Digital Solutions",
-    description:
-      "Custom software, modern web development, and scalable digital solutions for growing businesses.",
-    images: ["/softqivo_04.png"],
-  },
-
-  category: "technology",
-};
 export default function RootLayout({
   children,
 }: Readonly<{

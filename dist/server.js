@@ -34,7 +34,7 @@ const allowedOrigins = [
     "http://localhost:8000",
     "http://localhost:8001",
     "https://softqivo.com",
-    "https://www.softqivo.com",
+    "https://softqivo.com",
 ];
 const corsOptions = {
     origin: (origin, callback) => {
