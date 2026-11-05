@@ -62,7 +62,7 @@ const Banner = () => {
           "url('/images/home/modern-software-development-vector-24033583 (1).avif')",
       }}
     >
-      <div className="absolute top-0 left-0 w-full h-full bg-linear-to-r from-black via-black/60 to-transparent" />
+      {/* <div className="absolute top-0 left-0 w-full h-full bg-linear-to-r from-black/60 via-black/60 to-transparent" /> */}
 
       {/* Content */}
       <MaxWidth className="my-auto lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2 pt-20">
