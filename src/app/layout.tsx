@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     template: "%s | SoftQivo",
   },
   icons: {
-    icon: "/icon.png",
+    icon: "/icon.svg",
   },
 
   description:

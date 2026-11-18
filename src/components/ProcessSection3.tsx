@@ -25,14 +25,16 @@ const defaultSteps: ProcessItem[] = [
         title: "Discover",
         description: "We understand your business, audience, goals, and challenges.",
         image: "/images/process/discover.jpg",
-        color: "#00132C",
+        // color: "#00132C",
+        color: "#000000",
     },
     {
         number: "02",
         title: "Strategize",
         description: "We create a clear roadmap and select the right technology.",
         image: "/images/process/strategize.jpg",
-        color: "#003D38",
+        // color: "#003D38",
+        color: "#000000",
     },
     {
         number: "03",
@@ -46,7 +48,8 @@ const defaultSteps: ProcessItem[] = [
         title: "Deliver",
         description: "We test, launch, and refine your solution.",
         image: "/images/process/deliver.jpg",
-        color: "#001E1C",
+        // color: "#001E1C",
+        color: "#000000",
     },
 ];
 export default function ProcessSection3({

@@ -21,6 +21,7 @@ import BackgroundEffects from "../BackgroundEffects";
 import { useState } from "react";
 import GetEnquiryForm from "../form/GetEnquiryForm";
 import bgImage from '../../../public/images/home/banner_001.jpg'
+import { Sparkles } from "lucide-react";
 
 const partners = [
   {
@@ -56,11 +57,11 @@ const Banner = () => {
     <section
       ref={ref}
       id="hero-banner"
-      className="h-fit py-12 lg:h-screen w-full overflow-hidden bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage:
-          "url('/images/home/modern-software-development-vector-24033583 (1).avif')",
-      }}
+      className="h-fit py-12 lg:h-screen w-full overflow-hidden bg-[#000000] bg-center bg-no-repeat"
+    // style={{
+    //   backgroundImage:
+    //     "url('/images/home/modern-software-development-vector-24033583 (1).avif')",
+    // }}
     >
       {/* <div className="absolute top-0 left-0 w-full h-full bg-linear-to-r from-black/60 via-black/60 to-transparent" /> */}
 
@@ -69,7 +70,7 @@ const Banner = () => {
         <div className="grid  grid-cols-1 lg:grid-cols-[45%_50%] justify-between gap-2 z-10">
           <div className="space-y-10 my-auto">
             <div className="block">
-              <Heading
+              {/* <Heading
                 as="h1"
                 isDart={true}
                 isSparkles={true}
@@ -80,13 +81,93 @@ const Banner = () => {
                 isGradient={true}
                 headingParts={headingParts}
                 description={description}
-              />
+              /> */}
+              <div className={` space-y-3  `}>
+                {/* Label */}
+                {label && (
+                  <div
+                    className={``}
+                  >
+                    {<div className={`flex items-center gap-5 justify-center lg:justify-normal`}>
+                      <span
+                        className="
+                              flex
+                              h-8
+                              w-8
+                              items-center
+                              justify-center
+                              rounded-full
+                              border
+                              border-white/10
+                              bg-white/[0.04]
+                            "
+                      >
+                        <Sparkles className="h-3.5 w-3.5 text-purple-400" />
+                      </span>
+                      <span
+                        className={`
+                      uppercase inline-block
+                      rounded-full
+                      bg-transparent
+                      px-0 py-2
+                      text-[10px]
+                      lg:text-[12px]
+                      tracking-[0.25em]
+                      font-semibold
+                    `}
+                      style={{
+                        color: "#FBFBFB",
+                      }}
+                      >
+                        {label}
+                      </span>
+                    </div>}
+
+                  </div>
+                )}
+
+
+                {/* Heading */}
+                <h1 className="text-4xl md:text-5xl text-center lg:text-left lg:text-[clamp(2.15rem,5vw,3.5rem)] leading-tight font-semibold text-white">                  
+                  {headingParts?.map((part, index) => (
+                  <span
+                    key={index}
+                    style={{
+                      color: part.color || "#FFFFFF",
+                      fontFamily:
+                        part.font === "playfair"
+                          ? "var(--font-playfair)"
+                          : "inherit",
+                      fontStyle: part.style || "normal",
+                      fontWeight: part.weight || "400",
+                    }}
+                  >
+                    {part.text}
+                  </span>
+                ))}
+                </h1>
+
+                {/* Description */}
+                {description && (
+                  <p
+                    className={`
+                    leading-8
+                    text-center lg:text-left
+                    mt-6 lg:mt-8
+                  `}
+                  style={{
+                    color: "#FFFFFF",
+                  }}
+                  >
+                    {description}
+                  </p>
+                )}
+              </div>
             </div>
 
             {/* Buttons */}
             <div
-              className={`flex gap-4 transition-all duration-700 delay-500
-              ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+              className={`flex gap-4}`}
             >
               <SaveAndCancel
                 saveText="Start a Project"
@@ -123,7 +204,7 @@ const Banner = () => {
             </div>
           </div>
           <div className="flex h-fit my-auto justify-end lg:mr-[-15%]">
-            {/* <Image src={banner_img} alt="Banner Image" /> */}
+            <Image src={banner_img} alt="Banner Image" />
           </div>
         </div>
       </MaxWidth>
